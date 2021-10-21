@@ -8,6 +8,22 @@ use facturacion
 go
 
 
+create table Users
+(
+	UserID int identity(1,1) primary key,
+	LoginName varchar (100) unique not null,
+	Password varchar (100) not null,
+	FirstName varchar(100) not null,
+	LastName varchar(100) not null,
+	Email varchar(150)not null
+) 
+
+
+	insert into Users values ('admin','admin','Jackson','Collins','Support@SystemAll.biz')
+	insert into Users values ('Ben','abc123456','Benjamin','Thompson','BenThompson@MyCompany.com')                                                         
+	insert into Users values ('Kathy','abc123456','Kathrine','Smith','KathySmith@MyCompany.com')
+
+
 create table formas_pago
 (
 	id_forma_pago int identity(1,1)
@@ -53,4 +69,32 @@ create table detalles_factura
 
 
 --Productos almacenados, vistas, etc
+
+alter proc pa_Registrar_Users
+	@LoginName varchar(100),
+	@Password varchar(100),
+	@FirstName varchar(100),
+	@LastName varchar(100),
+	@Email varchar(150)
+as
+begin
+	insert into Users values 
+	(
+		@LoginName,
+		@Password,
+		@FirstName,
+		@LastName,
+		@Email
+	)
+end
+go
+
+--No se puede tener el mismo nombre de usuario
+
+exec pa_Registrar_Users 'egiam','fernandez357','Ezequiel','Giampaoli','ezegiampaoli@gmail.com'
+exec pa_Registrar_Users 'sampaoli','fernandez357','Ezequiel','Giampaoli','ezegiampaoli@gmail.com'
+exec pa_Registrar_Users 'fabio','FABIOCA','Fabio','Caceres','fabioCC@gmail.com'
+
+select * from Users
+
 

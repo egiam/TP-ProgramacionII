@@ -1,0 +1,21 @@
+D:\UTN\Carrera\Semestre 2\Programacion II\TP-ProgramacionII\TrabajoPracticoProg\TrabajoPracticoProg\bin\Debug\net5.0-windows\TrabajoPracticoProg.exe
+D:\UTN\Carrera\Semestre 2\Programacion II\TP-ProgramacionII\TrabajoPracticoProg\TrabajoPracticoProg\bin\Debug\net5.0-windows\TrabajoPracticoProg.deps.json
+D:\UTN\Carrera\Semestre 2\Programacion II\TP-ProgramacionII\TrabajoPracticoProg\TrabajoPracticoProg\bin\Debug\net5.0-windows\TrabajoPracticoProg.runtimeconfig.json
+D:\UTN\Carrera\Semestre 2\Programacion II\TP-ProgramacionII\TrabajoPracticoProg\TrabajoPracticoProg\bin\Debug\net5.0-windows\TrabajoPracticoProg.runtimeconfig.dev.json
+D:\UTN\Carrera\Semestre 2\Programacion II\TP-ProgramacionII\TrabajoPracticoProg\TrabajoPracticoProg\bin\Debug\net5.0-windows\TrabajoPracticoProg.dll
+D:\UTN\Carrera\Semestre 2\Programacion II\TP-ProgramacionII\TrabajoPracticoProg\TrabajoPracticoProg\bin\Debug\net5.0-windows\ref\TrabajoPracticoProg.dll
+D:\UTN\Carrera\Semestre 2\Programacion II\TP-ProgramacionII\TrabajoPracticoProg\TrabajoPracticoProg\bin\Debug\net5.0-windows\TrabajoPracticoProg.pdb
+D:\UTN\Carrera\Semestre 2\Programacion II\TP-ProgramacionII\TrabajoPracticoProg\TrabajoPracticoProg\obj\Debug\net5.0-windows\TrabajoPracticoProg.csproj.AssemblyReference.cache
+D:\UTN\Carrera\Semestre 2\Programacion II\TP-ProgramacionII\TrabajoPracticoProg\TrabajoPracticoProg\obj\Debug\net5.0-windows\TrabajoPracticoProg.FrmLogin.resources
+D:\UTN\Carrera\Semestre 2\Programacion II\TP-ProgramacionII\TrabajoPracticoProg\TrabajoPracticoProg\obj\Debug\net5.0-windows\TrabajoPracticoProg.csproj.GenerateResource.cache
+D:\UTN\Carrera\Semestre 2\Programacion II\TP-ProgramacionII\TrabajoPracticoProg\TrabajoPracticoProg\obj\Debug\net5.0-windows\TrabajoPracticoProg.GeneratedMSBuildEditorConfig.editorconfig
+D:\UTN\Carrera\Semestre 2\Programacion II\TP-ProgramacionII\TrabajoPracticoProg\TrabajoPracticoProg\obj\Debug\net5.0-windows\TrabajoPracticoProg.AssemblyInfoInputs.cache
+D:\UTN\Carrera\Semestre 2\Programacion II\TP-ProgramacionII\TrabajoPracticoProg\TrabajoPracticoProg\obj\Debug\net5.0-windows\TrabajoPracticoProg.AssemblyInfo.cs
+D:\UTN\Carrera\Semestre 2\Programacion II\TP-ProgramacionII\TrabajoPracticoProg\TrabajoPracticoProg\obj\Debug\net5.0-windows\TrabajoPracticoProg.csproj.CoreCompileInputs.cache
+D:\UTN\Carrera\Semestre 2\Programacion II\TP-ProgramacionII\TrabajoPracticoProg\TrabajoPracticoProg\obj\Debug\net5.0-windows\TrabajoPracticoProg.dll
+D:\UTN\Carrera\Semestre 2\Programacion II\TP-ProgramacionII\TrabajoPracticoProg\TrabajoPracticoProg\obj\Debug\net5.0-windows\ref\TrabajoPracticoProg.dll
+D:\UTN\Carrera\Semestre 2\Programacion II\TP-ProgramacionII\TrabajoPracticoProg\TrabajoPracticoProg\obj\Debug\net5.0-windows\TrabajoPracticoProg.pdb
+D:\UTN\Carrera\Semestre 2\Programacion II\TP-ProgramacionII\TrabajoPracticoProg\TrabajoPracticoProg\obj\Debug\net5.0-windows\TrabajoPracticoProg.genruntimeconfig.cache
+D:\UTN\Carrera\Semestre 2\Programacion II\TP-ProgramacionII\TrabajoPracticoProg\TrabajoPracticoProg\obj\Debug\net5.0-windows\TrabajoPracticoProg.Properties.Resources.resources
+D:\UTN\Carrera\Semestre 2\Programacion II\TP-ProgramacionII\TrabajoPracticoProg\TrabajoPracticoProg\obj\Debug\net5.0-windows\TrabajoPracticoProg.Presentacion.FrmLogin - Copy.resources
+D:\UTN\Carrera\Semestre 2\Programacion II\TP-ProgramacionII\TrabajoPracticoProg\TrabajoPracticoProg\obj\Debug\net5.0-windows\TrabajoPracticoProg.Presentacion.FrmRegistrarse.resources
