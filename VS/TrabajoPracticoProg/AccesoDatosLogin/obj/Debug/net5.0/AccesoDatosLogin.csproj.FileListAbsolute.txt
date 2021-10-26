@@ -13,3 +13,17 @@ D:\UTN\Carrera\Semestre 2\Programacion II\TP-ProgramacionII\VS\TrabajoPracticoPr
 D:\UTN\Carrera\Semestre 2\Programacion II\TP-ProgramacionII\VS\TrabajoPracticoProg\AccesoDatosLogin\obj\Debug\net5.0\AccesoDatosLogin.dll
 D:\UTN\Carrera\Semestre 2\Programacion II\TP-ProgramacionII\VS\TrabajoPracticoProg\AccesoDatosLogin\obj\Debug\net5.0\ref\AccesoDatosLogin.dll
 D:\UTN\Carrera\Semestre 2\Programacion II\TP-ProgramacionII\VS\TrabajoPracticoProg\AccesoDatosLogin\obj\Debug\net5.0\AccesoDatosLogin.pdb
+C:\Users\Felpu\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\AccesoDatosLogin\bin\Debug\net5.0\AccesoDatosLogin.deps.json
+C:\Users\Felpu\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\AccesoDatosLogin\bin\Debug\net5.0\AccesoDatosLogin.dll
+C:\Users\Felpu\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\AccesoDatosLogin\bin\Debug\net5.0\ref\AccesoDatosLogin.dll
+C:\Users\Felpu\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\AccesoDatosLogin\bin\Debug\net5.0\AccesoDatosLogin.pdb
+C:\Users\Felpu\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\AccesoDatosLogin\bin\Debug\net5.0\CommonLogin.dll
+C:\Users\Felpu\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\AccesoDatosLogin\bin\Debug\net5.0\CommonLogin.pdb
+C:\Users\Felpu\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\AccesoDatosLogin\obj\Debug\net5.0\AccesoDatosLogin.csproj.AssemblyReference.cache
+C:\Users\Felpu\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\AccesoDatosLogin\obj\Debug\net5.0\AccesoDatosLogin.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Felpu\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\AccesoDatosLogin\obj\Debug\net5.0\AccesoDatosLogin.AssemblyInfoInputs.cache
+C:\Users\Felpu\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\AccesoDatosLogin\obj\Debug\net5.0\AccesoDatosLogin.AssemblyInfo.cs
+C:\Users\Felpu\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\AccesoDatosLogin\obj\Debug\net5.0\AccesoDatosLogin.csproj.CoreCompileInputs.cache
+C:\Users\Felpu\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\AccesoDatosLogin\obj\Debug\net5.0\AccesoDatosLogin.dll
+C:\Users\Felpu\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\AccesoDatosLogin\obj\Debug\net5.0\ref\AccesoDatosLogin.dll
+C:\Users\Felpu\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\AccesoDatosLogin\obj\Debug\net5.0\AccesoDatosLogin.pdb

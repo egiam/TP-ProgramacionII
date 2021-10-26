@@ -271,6 +271,7 @@ namespace TrabajoPracticoProg.Presentacion
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmRegistrarse";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmRegistrarse";
             this.Load += new System.EventHandler(this.FrmRegistrarse_Load);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.FrmRegistrarse_MouseDown);

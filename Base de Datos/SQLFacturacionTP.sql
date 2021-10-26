@@ -101,3 +101,55 @@ exec pa_Registrar_Users 'fabio','FABIOCA','Fabio','Caceres','fabioCC@gmail.com'
 select * from Users
 
 
+
+
+
+CREATE PROCEDURE [dbo].[SP_PROXIMO_ID]
+@next int OUTPUT
+AS
+BEGIN
+	SET @next = (SELECT MAX(nro_factura)+1  FROM facturas);
+	IF @next is null
+	set @next=1 
+
+END
+
+
+GO
+
+CREATE PROCEDURE [dbo].[SP_INSERTAR_FACTURA] 
+	@cliente varchar(255), 
+	@forma int,
+	@nro_factura int
+AS
+BEGIN
+	INSERT INTO facturas(nro_factura, fecha, cliente, id_forma_pago)
+	VALUES (@nro_factura, GETDATE(), @cliente, @forma);
+
+END
+GO
+
+
+CREATE PROCEDURE [dbo].[SP_INSERTAR_DETALLES] 
+	@nro_factura int,
+	@detalle int, 
+	@id_articulo int, 
+	@cantidad int
+AS
+BEGIN
+	INSERT INTO detalles_factura(nro_factura,id_detalle, id_articulo, cantidad)
+    VALUES (@nro_factura, @detalle, @id_articulo, @cantidad);
+  
+END
+GO
+
+CREATE PROCEDURE [dbo].[SP_CONSULTAR_ARTICULOS]
+AS
+BEGIN
+	
+	SELECT * from articulos ORDER BY id_articulo;
+END
+GO
+
+
+
