@@ -15,13 +15,14 @@ create table Users
 	Password varchar (100) not null,
 	FirstName varchar(100) not null,
 	LastName varchar(100) not null,
-	Email varchar(150)not null
+	Email varchar(150)not null,
+	Position varchar(100)
 ) 
 
 
-	insert into Users values ('admin','admin','Jackson','Collins','Support@SystemAll.biz')
-	insert into Users values ('Ben','abc123456','Benjamin','Thompson','BenThompson@MyCompany.com')                                                         
-	insert into Users values ('Kathy','abc123456','Kathrine','Smith','KathySmith@MyCompany.com')
+	insert into Users values ('admin','admin','Jackson','Collins','Support@SystemAll.biz','Administrador')
+	insert into Users values ('Ben','abc123456','Benjamin','Thompson','BenThompson@MyCompany.com','')                                                         
+	insert into Users values ('Kathy','abc123456','Kathrine','Smith','KathySmith@MyCompany.com','')
 
 
 create table formas_pago
@@ -70,12 +71,13 @@ create table detalles_factura
 
 --Productos almacenados, vistas, etc
 
-alter proc pa_Registrar_Users
+create proc pa_Registrar_Users
 	@LoginName varchar(100),
 	@Password varchar(100),
 	@FirstName varchar(100),
 	@LastName varchar(100),
-	@Email varchar(150)
+	@Email varchar(150),
+	@Position varchar(100) = 'Empleado'
 as
 begin
 	insert into Users values 
@@ -84,14 +86,15 @@ begin
 		@Password,
 		@FirstName,
 		@LastName,
-		@Email
+		@Email,
+		@Position
 	)
 end
 go
 
 --No se puede tener el mismo nombre de usuario
 
-exec pa_Registrar_Users 'egiam','fernandez357','Ezequiel','Giampaoli','ezegiampaoli@gmail.com'
+exec pa_Registrar_Users 'egiam','fernandez357','Ezequiel','Giampaoli','ezegiampaoli@gmail.com','Gerente'
 exec pa_Registrar_Users 'sampaoli','fernandez357','Ezequiel','Giampaoli','ezegiampaoli@gmail.com'
 exec pa_Registrar_Users 'fabio','FABIOCA','Fabio','Caceres','fabioCC@gmail.com'
 

@@ -1,0 +1,257 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\UTN\\Carrera\\Semestre 2\\Programacion II\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\TrabajoPracticoProg\\Login.csproj": {}
+  },
+  "projects": {
+    "D:\\UTN\\Carrera\\Semestre 2\\Programacion II\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\AccesoDatosLogin\\AccesoDatosLogin.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\UTN\\Carrera\\Semestre 2\\Programacion II\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\AccesoDatosLogin\\AccesoDatosLogin.csproj",
+        "projectName": "AccesoDatosLogin",
+        "projectPath": "D:\\UTN\\Carrera\\Semestre 2\\Programacion II\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\AccesoDatosLogin\\AccesoDatosLogin.csproj",
+        "packagesPath": "C:\\Users\\Ezequiel\\.nuget\\packages\\",
+        "outputPath": "D:\\UTN\\Carrera\\Semestre 2\\Programacion II\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\AccesoDatosLogin\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Ezequiel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "D:\\UTN\\Carrera\\Semestre 2\\Programacion II\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\CommonLogin\\CommonLogin.csproj": {
+                "projectPath": "D:\\UTN\\Carrera\\Semestre 2\\Programacion II\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\CommonLogin\\CommonLogin.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\UTN\\Carrera\\Semestre 2\\Programacion II\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\CommonLogin\\CommonLogin.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\UTN\\Carrera\\Semestre 2\\Programacion II\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\CommonLogin\\CommonLogin.csproj",
+        "projectName": "CommonLogin",
+        "projectPath": "D:\\UTN\\Carrera\\Semestre 2\\Programacion II\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\CommonLogin\\CommonLogin.csproj",
+        "packagesPath": "C:\\Users\\Ezequiel\\.nuget\\packages\\",
+        "outputPath": "D:\\UTN\\Carrera\\Semestre 2\\Programacion II\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\CommonLogin\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Ezequiel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\UTN\\Carrera\\Semestre 2\\Programacion II\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\DominoLogin\\DominoLogin.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\UTN\\Carrera\\Semestre 2\\Programacion II\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\DominoLogin\\DominoLogin.csproj",
+        "projectName": "DominoLogin",
+        "projectPath": "D:\\UTN\\Carrera\\Semestre 2\\Programacion II\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\DominoLogin\\DominoLogin.csproj",
+        "packagesPath": "C:\\Users\\Ezequiel\\.nuget\\packages\\",
+        "outputPath": "D:\\UTN\\Carrera\\Semestre 2\\Programacion II\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\DominoLogin\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Ezequiel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "D:\\UTN\\Carrera\\Semestre 2\\Programacion II\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\AccesoDatosLogin\\AccesoDatosLogin.csproj": {
+                "projectPath": "D:\\UTN\\Carrera\\Semestre 2\\Programacion II\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\AccesoDatosLogin\\AccesoDatosLogin.csproj"
+              },
+              "D:\\UTN\\Carrera\\Semestre 2\\Programacion II\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\CommonLogin\\CommonLogin.csproj": {
+                "projectPath": "D:\\UTN\\Carrera\\Semestre 2\\Programacion II\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\CommonLogin\\CommonLogin.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\UTN\\Carrera\\Semestre 2\\Programacion II\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\TrabajoPracticoProg\\Login.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\UTN\\Carrera\\Semestre 2\\Programacion II\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\TrabajoPracticoProg\\Login.csproj",
+        "projectName": "Login",
+        "projectPath": "D:\\UTN\\Carrera\\Semestre 2\\Programacion II\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\TrabajoPracticoProg\\Login.csproj",
+        "packagesPath": "C:\\Users\\Ezequiel\\.nuget\\packages\\",
+        "outputPath": "D:\\UTN\\Carrera\\Semestre 2\\Programacion II\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\TrabajoPracticoProg\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Ezequiel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0-windows7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0-windows7.0": {
+            "targetAlias": "net5.0-windows",
+            "projectReferences": {
+              "D:\\UTN\\Carrera\\Semestre 2\\Programacion II\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\CommonLogin\\CommonLogin.csproj": {
+                "projectPath": "D:\\UTN\\Carrera\\Semestre 2\\Programacion II\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\CommonLogin\\CommonLogin.csproj"
+              },
+              "D:\\UTN\\Carrera\\Semestre 2\\Programacion II\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\DominoLogin\\DominoLogin.csproj": {
+                "projectPath": "D:\\UTN\\Carrera\\Semestre 2\\Programacion II\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\DominoLogin\\DominoLogin.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0-windows7.0": {
+          "targetAlias": "net5.0-windows",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WindowsForms": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

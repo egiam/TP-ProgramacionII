@@ -1,0 +1,20 @@
+D:\UTN\Carrera\Semestre 2\Programacion II\TP-ProgramacionII\VS\TrabajoPracticoProg\TrabajoPracticoProg\bin\Debug\net5.0-windows\Login.exe
+D:\UTN\Carrera\Semestre 2\Programacion II\TP-ProgramacionII\VS\TrabajoPracticoProg\TrabajoPracticoProg\bin\Debug\net5.0-windows\Login.deps.json
+D:\UTN\Carrera\Semestre 2\Programacion II\TP-ProgramacionII\VS\TrabajoPracticoProg\TrabajoPracticoProg\bin\Debug\net5.0-windows\Login.runtimeconfig.json
+D:\UTN\Carrera\Semestre 2\Programacion II\TP-ProgramacionII\VS\TrabajoPracticoProg\TrabajoPracticoProg\bin\Debug\net5.0-windows\Login.runtimeconfig.dev.json
+D:\UTN\Carrera\Semestre 2\Programacion II\TP-ProgramacionII\VS\TrabajoPracticoProg\TrabajoPracticoProg\bin\Debug\net5.0-windows\Login.dll
+D:\UTN\Carrera\Semestre 2\Programacion II\TP-ProgramacionII\VS\TrabajoPracticoProg\TrabajoPracticoProg\bin\Debug\net5.0-windows\ref\Login.dll
+D:\UTN\Carrera\Semestre 2\Programacion II\TP-ProgramacionII\VS\TrabajoPracticoProg\TrabajoPracticoProg\bin\Debug\net5.0-windows\Login.pdb
+D:\UTN\Carrera\Semestre 2\Programacion II\TP-ProgramacionII\VS\TrabajoPracticoProg\TrabajoPracticoProg\obj\Debug\net5.0-windows\Login.Presentacion.FrmLogin - Copy.resources
+D:\UTN\Carrera\Semestre 2\Programacion II\TP-ProgramacionII\VS\TrabajoPracticoProg\TrabajoPracticoProg\obj\Debug\net5.0-windows\TrabajoPracticoProg.FrmLogin.resources
+D:\UTN\Carrera\Semestre 2\Programacion II\TP-ProgramacionII\VS\TrabajoPracticoProg\TrabajoPracticoProg\obj\Debug\net5.0-windows\TrabajoPracticoProg.Presentacion.FrmRegistrarse.resources
+D:\UTN\Carrera\Semestre 2\Programacion II\TP-ProgramacionII\VS\TrabajoPracticoProg\TrabajoPracticoProg\obj\Debug\net5.0-windows\Login.Properties.Resources.resources
+D:\UTN\Carrera\Semestre 2\Programacion II\TP-ProgramacionII\VS\TrabajoPracticoProg\TrabajoPracticoProg\obj\Debug\net5.0-windows\Login.csproj.GenerateResource.cache
+D:\UTN\Carrera\Semestre 2\Programacion II\TP-ProgramacionII\VS\TrabajoPracticoProg\TrabajoPracticoProg\obj\Debug\net5.0-windows\Login.GeneratedMSBuildEditorConfig.editorconfig
+D:\UTN\Carrera\Semestre 2\Programacion II\TP-ProgramacionII\VS\TrabajoPracticoProg\TrabajoPracticoProg\obj\Debug\net5.0-windows\Login.AssemblyInfoInputs.cache
+D:\UTN\Carrera\Semestre 2\Programacion II\TP-ProgramacionII\VS\TrabajoPracticoProg\TrabajoPracticoProg\obj\Debug\net5.0-windows\Login.AssemblyInfo.cs
+D:\UTN\Carrera\Semestre 2\Programacion II\TP-ProgramacionII\VS\TrabajoPracticoProg\TrabajoPracticoProg\obj\Debug\net5.0-windows\Login.csproj.CoreCompileInputs.cache
+D:\UTN\Carrera\Semestre 2\Programacion II\TP-ProgramacionII\VS\TrabajoPracticoProg\TrabajoPracticoProg\obj\Debug\net5.0-windows\Login.dll
+D:\UTN\Carrera\Semestre 2\Programacion II\TP-ProgramacionII\VS\TrabajoPracticoProg\TrabajoPracticoProg\obj\Debug\net5.0-windows\ref\Login.dll
+D:\UTN\Carrera\Semestre 2\Programacion II\TP-ProgramacionII\VS\TrabajoPracticoProg\TrabajoPracticoProg\obj\Debug\net5.0-windows\Login.pdb
+D:\UTN\Carrera\Semestre 2\Programacion II\TP-ProgramacionII\VS\TrabajoPracticoProg\TrabajoPracticoProg\obj\Debug\net5.0-windows\Login.genruntimeconfig.cache

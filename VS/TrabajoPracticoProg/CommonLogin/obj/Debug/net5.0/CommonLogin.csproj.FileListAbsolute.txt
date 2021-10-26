@@ -1,0 +1,12 @@
+D:\UTN\Carrera\Semestre 2\Programacion II\TP-ProgramacionII\VS\TrabajoPracticoProg\CommonLogin\bin\Debug\net5.0\CommonLogin.deps.json
+D:\UTN\Carrera\Semestre 2\Programacion II\TP-ProgramacionII\VS\TrabajoPracticoProg\CommonLogin\bin\Debug\net5.0\CommonLogin.dll
+D:\UTN\Carrera\Semestre 2\Programacion II\TP-ProgramacionII\VS\TrabajoPracticoProg\CommonLogin\bin\Debug\net5.0\ref\CommonLogin.dll
+D:\UTN\Carrera\Semestre 2\Programacion II\TP-ProgramacionII\VS\TrabajoPracticoProg\CommonLogin\bin\Debug\net5.0\CommonLogin.pdb
+D:\UTN\Carrera\Semestre 2\Programacion II\TP-ProgramacionII\VS\TrabajoPracticoProg\CommonLogin\obj\Debug\net5.0\CommonLogin.csproj.AssemblyReference.cache
+D:\UTN\Carrera\Semestre 2\Programacion II\TP-ProgramacionII\VS\TrabajoPracticoProg\CommonLogin\obj\Debug\net5.0\CommonLogin.GeneratedMSBuildEditorConfig.editorconfig
+D:\UTN\Carrera\Semestre 2\Programacion II\TP-ProgramacionII\VS\TrabajoPracticoProg\CommonLogin\obj\Debug\net5.0\CommonLogin.AssemblyInfoInputs.cache
+D:\UTN\Carrera\Semestre 2\Programacion II\TP-ProgramacionII\VS\TrabajoPracticoProg\CommonLogin\obj\Debug\net5.0\CommonLogin.AssemblyInfo.cs
+D:\UTN\Carrera\Semestre 2\Programacion II\TP-ProgramacionII\VS\TrabajoPracticoProg\CommonLogin\obj\Debug\net5.0\CommonLogin.csproj.CoreCompileInputs.cache
+D:\UTN\Carrera\Semestre 2\Programacion II\TP-ProgramacionII\VS\TrabajoPracticoProg\CommonLogin\obj\Debug\net5.0\CommonLogin.dll
+D:\UTN\Carrera\Semestre 2\Programacion II\TP-ProgramacionII\VS\TrabajoPracticoProg\CommonLogin\obj\Debug\net5.0\ref\CommonLogin.dll
+D:\UTN\Carrera\Semestre 2\Programacion II\TP-ProgramacionII\VS\TrabajoPracticoProg\CommonLogin\obj\Debug\net5.0\CommonLogin.pdb

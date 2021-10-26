@@ -42,6 +42,7 @@ namespace TrabajoPracticoProg
             this.btnCerrar = new System.Windows.Forms.PictureBox();
             this.btnMinimizar = new System.Windows.Forms.PictureBox();
             this.btnRegistrarse = new System.Windows.Forms.LinkLabel();
+            this.lblErrorMessage = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
@@ -57,6 +58,7 @@ namespace TrabajoPracticoProg
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(250, 330);
             this.panel1.TabIndex = 0;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
             // 
             // pictureBox3
@@ -140,7 +142,7 @@ namespace TrabajoPracticoProg
             this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogin.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnLogin.ForeColor = System.Drawing.Color.LightGray;
-            this.btnLogin.Location = new System.Drawing.Point(297, 237);
+            this.btnLogin.Location = new System.Drawing.Point(297, 242);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(423, 40);
             this.btnLogin.TabIndex = 3;
@@ -153,7 +155,7 @@ namespace TrabajoPracticoProg
             this.linkContra.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
             this.linkContra.AutoSize = true;
             this.linkContra.LinkColor = System.Drawing.Color.DimGray;
-            this.linkContra.Location = new System.Drawing.Point(384, 290);
+            this.linkContra.Location = new System.Drawing.Point(384, 295);
             this.linkContra.Name = "linkContra";
             this.linkContra.Size = new System.Drawing.Size(149, 15);
             this.linkContra.TabIndex = 0;
@@ -187,7 +189,7 @@ namespace TrabajoPracticoProg
             this.btnRegistrarse.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
             this.btnRegistrarse.AutoSize = true;
             this.btnRegistrarse.LinkColor = System.Drawing.Color.DimGray;
-            this.btnRegistrarse.Location = new System.Drawing.Point(548, 290);
+            this.btnRegistrarse.Location = new System.Drawing.Point(548, 295);
             this.btnRegistrarse.Name = "btnRegistrarse";
             this.btnRegistrarse.Size = new System.Drawing.Size(64, 15);
             this.btnRegistrarse.TabIndex = 12;
@@ -195,12 +197,24 @@ namespace TrabajoPracticoProg
             this.btnRegistrarse.Text = "Registrarse";
             this.btnRegistrarse.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.btnRegistrarse_LinkClicked);
             // 
+            // lblErrorMessage
+            // 
+            this.lblErrorMessage.AutoSize = true;
+            this.lblErrorMessage.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblErrorMessage.ForeColor = System.Drawing.Color.DarkGray;
+            this.lblErrorMessage.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.lblErrorMessage.Location = new System.Drawing.Point(297, 194);
+            this.lblErrorMessage.Name = "lblErrorMessage";
+            this.lblErrorMessage.Size = new System.Drawing.Size(0, 18);
+            this.lblErrorMessage.TabIndex = 13;
+            // 
             // FrmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.ClientSize = new System.Drawing.Size(780, 330);
+            this.Controls.Add(this.lblErrorMessage);
             this.Controls.Add(this.btnRegistrarse);
             this.Controls.Add(this.btnMinimizar);
             this.Controls.Add(this.btnCerrar);
@@ -242,6 +256,7 @@ namespace TrabajoPracticoProg
         private System.Windows.Forms.PictureBox btnCerrar;
         private System.Windows.Forms.PictureBox btnMinimizar;
         private System.Windows.Forms.LinkLabel btnRegistrarse;
+        private System.Windows.Forms.Label lblErrorMessage;
     }
 }
 

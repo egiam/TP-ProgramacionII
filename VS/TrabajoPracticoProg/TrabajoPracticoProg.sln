@@ -3,7 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31729.503
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrabajoPracticoProg", "TrabajoPracticoProg\TrabajoPracticoProg.csproj", "{C7120D9E-0796-4522-9495-651B7BB65863}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Presentacion", "TrabajoPracticoProg\Presentacion.csproj", "{C7120D9E-0796-4522-9495-651B7BB65863}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Login", "Login", "{0A5AE082-9810-4780-AA5E-BF7208C77CA7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DominoLogin", "DominoLogin\DominoLogin.csproj", "{EE803AC8-E813-4890-B1B9-C88673E9015A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccesoDatosLogin", "AccesoDatosLogin\AccesoDatosLogin.csproj", "{9D6D98AF-71C1-404F-BFDE-5BDABE61D89B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonLogin", "CommonLogin\CommonLogin.csproj", "{9F500AC9-8655-4713-BB51-049C57214343}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +23,27 @@ Global
 		{C7120D9E-0796-4522-9495-651B7BB65863}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C7120D9E-0796-4522-9495-651B7BB65863}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C7120D9E-0796-4522-9495-651B7BB65863}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE803AC8-E813-4890-B1B9-C88673E9015A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE803AC8-E813-4890-B1B9-C88673E9015A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE803AC8-E813-4890-B1B9-C88673E9015A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE803AC8-E813-4890-B1B9-C88673E9015A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D6D98AF-71C1-404F-BFDE-5BDABE61D89B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D6D98AF-71C1-404F-BFDE-5BDABE61D89B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D6D98AF-71C1-404F-BFDE-5BDABE61D89B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D6D98AF-71C1-404F-BFDE-5BDABE61D89B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F500AC9-8655-4713-BB51-049C57214343}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F500AC9-8655-4713-BB51-049C57214343}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F500AC9-8655-4713-BB51-049C57214343}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F500AC9-8655-4713-BB51-049C57214343}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C7120D9E-0796-4522-9495-651B7BB65863} = {0A5AE082-9810-4780-AA5E-BF7208C77CA7}
+		{EE803AC8-E813-4890-B1B9-C88673E9015A} = {0A5AE082-9810-4780-AA5E-BF7208C77CA7}
+		{9D6D98AF-71C1-404F-BFDE-5BDABE61D89B} = {0A5AE082-9810-4780-AA5E-BF7208C77CA7}
+		{9F500AC9-8655-4713-BB51-049C57214343} = {0A5AE082-9810-4780-AA5E-BF7208C77CA7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C84FD56B-4E7E-467E-A3A7-F8F8CB8CD884}

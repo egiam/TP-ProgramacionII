@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\UTN\\Carrera\\Semestre 2\\Programacion II\\TP-ProgramacionII\\TrabajoPracticoProg\\TrabajoPracticoProg\\TrabajoPracticoProg.csproj": {}
+    "D:\\UTN\\Carrera\\Semestre 2\\Programacion II\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\TrabajoPracticoProg\\TrabajoPracticoProg.csproj": {}
   },
   "projects": {
-    "D:\\UTN\\Carrera\\Semestre 2\\Programacion II\\TP-ProgramacionII\\TrabajoPracticoProg\\TrabajoPracticoProg\\TrabajoPracticoProg.csproj": {
+    "D:\\UTN\\Carrera\\Semestre 2\\Programacion II\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\TrabajoPracticoProg\\TrabajoPracticoProg.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\UTN\\Carrera\\Semestre 2\\Programacion II\\TP-ProgramacionII\\TrabajoPracticoProg\\TrabajoPracticoProg\\TrabajoPracticoProg.csproj",
+        "projectUniqueName": "D:\\UTN\\Carrera\\Semestre 2\\Programacion II\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\TrabajoPracticoProg\\TrabajoPracticoProg.csproj",
         "projectName": "TrabajoPracticoProg",
-        "projectPath": "D:\\UTN\\Carrera\\Semestre 2\\Programacion II\\TP-ProgramacionII\\TrabajoPracticoProg\\TrabajoPracticoProg\\TrabajoPracticoProg.csproj",
+        "projectPath": "D:\\UTN\\Carrera\\Semestre 2\\Programacion II\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\TrabajoPracticoProg\\TrabajoPracticoProg.csproj",
         "packagesPath": "C:\\Users\\Ezequiel\\.nuget\\packages\\",
-        "outputPath": "D:\\UTN\\Carrera\\Semestre 2\\Programacion II\\TP-ProgramacionII\\TrabajoPracticoProg\\TrabajoPracticoProg\\obj\\",
+        "outputPath": "D:\\UTN\\Carrera\\Semestre 2\\Programacion II\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\TrabajoPracticoProg\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Ezequiel\\AppData\\Roaming\\NuGet\\NuGet.Config",

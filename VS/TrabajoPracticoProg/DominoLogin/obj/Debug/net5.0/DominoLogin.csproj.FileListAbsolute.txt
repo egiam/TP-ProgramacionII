@@ -1,0 +1,17 @@
+D:\UTN\Carrera\Semestre 2\Programacion II\TP-ProgramacionII\VS\TrabajoPracticoProg\DominoLogin\bin\Debug\net5.0\DominoLogin.deps.json
+D:\UTN\Carrera\Semestre 2\Programacion II\TP-ProgramacionII\VS\TrabajoPracticoProg\DominoLogin\bin\Debug\net5.0\DominoLogin.dll
+D:\UTN\Carrera\Semestre 2\Programacion II\TP-ProgramacionII\VS\TrabajoPracticoProg\DominoLogin\bin\Debug\net5.0\ref\DominoLogin.dll
+D:\UTN\Carrera\Semestre 2\Programacion II\TP-ProgramacionII\VS\TrabajoPracticoProg\DominoLogin\bin\Debug\net5.0\DominoLogin.pdb
+D:\UTN\Carrera\Semestre 2\Programacion II\TP-ProgramacionII\VS\TrabajoPracticoProg\DominoLogin\bin\Debug\net5.0\AccesoDatosLogin.dll
+D:\UTN\Carrera\Semestre 2\Programacion II\TP-ProgramacionII\VS\TrabajoPracticoProg\DominoLogin\bin\Debug\net5.0\CommonLogin.dll
+D:\UTN\Carrera\Semestre 2\Programacion II\TP-ProgramacionII\VS\TrabajoPracticoProg\DominoLogin\bin\Debug\net5.0\AccesoDatosLogin.pdb
+D:\UTN\Carrera\Semestre 2\Programacion II\TP-ProgramacionII\VS\TrabajoPracticoProg\DominoLogin\bin\Debug\net5.0\CommonLogin.pdb
+D:\UTN\Carrera\Semestre 2\Programacion II\TP-ProgramacionII\VS\TrabajoPracticoProg\DominoLogin\obj\Debug\net5.0\DominoLogin.csproj.AssemblyReference.cache
+D:\UTN\Carrera\Semestre 2\Programacion II\TP-ProgramacionII\VS\TrabajoPracticoProg\DominoLogin\obj\Debug\net5.0\DominoLogin.GeneratedMSBuildEditorConfig.editorconfig
+D:\UTN\Carrera\Semestre 2\Programacion II\TP-ProgramacionII\VS\TrabajoPracticoProg\DominoLogin\obj\Debug\net5.0\DominoLogin.AssemblyInfoInputs.cache
+D:\UTN\Carrera\Semestre 2\Programacion II\TP-ProgramacionII\VS\TrabajoPracticoProg\DominoLogin\obj\Debug\net5.0\DominoLogin.AssemblyInfo.cs
+D:\UTN\Carrera\Semestre 2\Programacion II\TP-ProgramacionII\VS\TrabajoPracticoProg\DominoLogin\obj\Debug\net5.0\DominoLogin.csproj.CoreCompileInputs.cache
+D:\UTN\Carrera\Semestre 2\Programacion II\TP-ProgramacionII\VS\TrabajoPracticoProg\DominoLogin\obj\Debug\net5.0\DominoLogin.csproj.CopyComplete
+D:\UTN\Carrera\Semestre 2\Programacion II\TP-ProgramacionII\VS\TrabajoPracticoProg\DominoLogin\obj\Debug\net5.0\DominoLogin.dll
+D:\UTN\Carrera\Semestre 2\Programacion II\TP-ProgramacionII\VS\TrabajoPracticoProg\DominoLogin\obj\Debug\net5.0\ref\DominoLogin.dll
+D:\UTN\Carrera\Semestre 2\Programacion II\TP-ProgramacionII\VS\TrabajoPracticoProg\DominoLogin\obj\Debug\net5.0\DominoLogin.pdb
