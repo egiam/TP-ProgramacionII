@@ -141,5 +141,10 @@ namespace TrabajoPracticoProg.Presentacion
         {
 
         }
+
+        private void btnVolver_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.Close();
+        }
     }
 }

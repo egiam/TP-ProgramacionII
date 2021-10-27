@@ -46,6 +46,7 @@ namespace TrabajoPracticoProg.Presentacion
             this.label5 = new System.Windows.Forms.Label();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.btnVolver = new System.Windows.Forms.LinkLabel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
@@ -104,7 +105,7 @@ namespace TrabajoPracticoProg.Presentacion
             this.btnRegistrarse.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegistrarse.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnRegistrarse.ForeColor = System.Drawing.Color.LightGray;
-            this.btnRegistrarse.Location = new System.Drawing.Point(313, 448);
+            this.btnRegistrarse.Location = new System.Drawing.Point(313, 440);
             this.btnRegistrarse.Name = "btnRegistrarse";
             this.btnRegistrarse.Size = new System.Drawing.Size(423, 40);
             this.btnRegistrarse.TabIndex = 17;
@@ -248,12 +249,26 @@ namespace TrabajoPracticoProg.Presentacion
             this.label6.Text = "_________________________________________________________________________________" +
     "______";
             // 
+            // btnVolver
+            // 
+            this.btnVolver.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.btnVolver.AutoSize = true;
+            this.btnVolver.LinkColor = System.Drawing.Color.DimGray;
+            this.btnVolver.Location = new System.Drawing.Point(499, 493);
+            this.btnVolver.Name = "btnVolver";
+            this.btnVolver.Size = new System.Drawing.Size(39, 15);
+            this.btnVolver.TabIndex = 29;
+            this.btnVolver.TabStop = true;
+            this.btnVolver.Text = "Volver";
+            this.btnVolver.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.btnVolver_LinkClicked);
+            // 
             // FrmRegistrarse
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.ClientSize = new System.Drawing.Size(800, 517);
+            this.Controls.Add(this.btnVolver);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.txtApellido);
@@ -302,5 +317,6 @@ namespace TrabajoPracticoProg.Presentacion
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.LinkLabel btnVolver;
     }
 }
