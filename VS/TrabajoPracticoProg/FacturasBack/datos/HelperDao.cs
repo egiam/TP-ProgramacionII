@@ -76,7 +76,7 @@ namespace FacturasBack.datos
 
                 cmdMaestro.Parameters.AddWithValue("@nro_factura", factura.NroFactura);
                 cmdMaestro.Parameters.AddWithValue("@cliente", factura.Cliente);
-                cmdMaestro.Parameters.AddWithValue("@id_forma_pago", factura.FormaPago.IdFormaPago);
+                cmdMaestro.Parameters.AddWithValue("@forma", factura.FormaPago.IdFormaPago);
 
 
                 cmdMaestro.ExecuteNonQuery();

@@ -9,9 +9,9 @@ namespace FacturasBack.datos
 {
     interface IFacturaDao
     {
-        List<Articulo> GetIngredientes();
+        List<Articulo> GetArticulos();
         bool Save(Factura oFactura);
 
-        int ProximoNroReceta();
+        int ProximoNroFactura();
     }
 }

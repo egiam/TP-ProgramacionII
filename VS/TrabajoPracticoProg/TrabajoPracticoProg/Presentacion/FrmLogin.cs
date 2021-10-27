@@ -30,7 +30,7 @@ namespace TrabajoPracticoProg
 
         private void FrmLogin_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void txtUsuario_Enter(object sender, EventArgs e)

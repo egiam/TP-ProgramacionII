@@ -7,6 +7,7 @@ using System.Data;
 using System.Data.SqlClient;
 using CommonLogin.Cache;
 
+
 namespace AccesoDatosLogin
 {
     public class UserDao : ConnectionToSQL

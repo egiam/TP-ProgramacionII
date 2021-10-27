@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FacturasBack.dominio
 {
-    class FormaPago
+    public class FormaPago
     {
         public int IdFormaPago { get; set; }
         public string Nombre { get; set; }

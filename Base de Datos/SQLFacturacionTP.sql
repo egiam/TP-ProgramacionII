@@ -34,7 +34,7 @@ create table formas_pago
 
 create table facturas
 (
-	nro_factura int identity(1,1)
+	nro_factura int, 
 	Constraint pk_factura primary key (nro_factura),
 	fecha datetime,
 	id_forma_pago int
@@ -125,22 +125,22 @@ AS
 BEGIN
 	INSERT INTO facturas(nro_factura, fecha, cliente, id_forma_pago)
 	VALUES (@nro_factura, GETDATE(), @cliente, @forma);
-
 END
 GO
 
 
+
 CREATE PROCEDURE [dbo].[SP_INSERTAR_DETALLES] 
 	@nro_factura int,
-	@detalle int, 
 	@id_articulo int, 
 	@cantidad int
 AS
 BEGIN
-	INSERT INTO detalles_factura(nro_factura,id_detalle, id_articulo, cantidad)
-    VALUES (@nro_factura, @detalle, @id_articulo, @cantidad);
+	INSERT INTO detalles_factura(nro_factura, id_articulo, cantidad)
+    VALUES (@nro_factura, @id_articulo, @cantidad);
   
 END
+
 GO
 
 CREATE PROCEDURE [dbo].[SP_CONSULTAR_ARTICULOS]

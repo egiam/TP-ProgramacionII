@@ -10,19 +10,19 @@ namespace FacturasBack.datos
 {
     class FacturaDao:IFacturaDao
     {
-        public List<Articulo> GetIngredientes()
+        public List<Articulo> GetArticulos()
         {
             List<Articulo> lst = new List<Articulo>();
 
             DataTable t = HelperDao.GetInstance().ConsultaSQL("SP_CONSULTAR_ARTICULOS");
             foreach (DataRow row in t.Rows)
             {
-                //Articulo oArticulo = new Articulo(); 
-                //oArticulo.IdArticulo = Convert.ToInt32(row[0].ToString());
-                //oArticulo.Nombre = row[1].ToString();
-                //oArticulo.PrecioUnitario = Convert.ToDouble(row[2].ToString());
+                Articulo oArticulo = new Articulo();
+                oArticulo.IdArticulo = Convert.ToInt32(row[0].ToString());
+                oArticulo.Nombre = row[1].ToString();
+                oArticulo.PrecioUnitario = Convert.ToDouble(row[2].ToString());
 
-                //lst.Add(oArticulo);
+                lst.Add(oArticulo);
             }
 
             return lst;
@@ -33,10 +33,6 @@ namespace FacturasBack.datos
             return HelperDao.GetInstance().EjecutarSQLConValorOUT("SP_PROXIMO_ID", "@next");
         }
 
-        public int ProximoNroReceta()
-        {
-            throw new NotImplementedException();
-        }
 
         public bool Save(Factura oFactura)
         {

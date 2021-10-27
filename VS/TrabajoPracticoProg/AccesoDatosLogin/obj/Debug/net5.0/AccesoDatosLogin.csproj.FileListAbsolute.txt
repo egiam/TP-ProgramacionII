@@ -24,6 +24,7 @@ C:\Users\Felpu\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\AccesoD
 C:\Users\Felpu\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\AccesoDatosLogin\obj\Debug\net5.0\AccesoDatosLogin.AssemblyInfoInputs.cache
 C:\Users\Felpu\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\AccesoDatosLogin\obj\Debug\net5.0\AccesoDatosLogin.AssemblyInfo.cs
 C:\Users\Felpu\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\AccesoDatosLogin\obj\Debug\net5.0\AccesoDatosLogin.csproj.CoreCompileInputs.cache
+C:\Users\Felpu\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\AccesoDatosLogin\obj\Debug\net5.0\AccesoDatosLogin.csproj.CopyComplete
 C:\Users\Felpu\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\AccesoDatosLogin\obj\Debug\net5.0\AccesoDatosLogin.dll
 C:\Users\Felpu\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\AccesoDatosLogin\obj\Debug\net5.0\ref\AccesoDatosLogin.dll
 C:\Users\Felpu\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\AccesoDatosLogin\obj\Debug\net5.0\AccesoDatosLogin.pdb

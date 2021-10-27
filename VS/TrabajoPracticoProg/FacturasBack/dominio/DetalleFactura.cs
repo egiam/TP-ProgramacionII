@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FacturasBack.dominio
 {
-    class DetalleFactura
+   public class DetalleFactura
     {
         public Articulo Articulo { get; set; }
         public int Cantidad { get; set; }
