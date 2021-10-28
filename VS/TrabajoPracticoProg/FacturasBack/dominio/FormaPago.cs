@@ -16,6 +16,10 @@ namespace FacturasBack.dominio
             IdFormaPago = idFormaPago;
             Nombre = nombre;
         }
+        public FormaPago()
+        {
+
+        }
 
         public override string ToString()
         {

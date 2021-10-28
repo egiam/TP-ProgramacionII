@@ -151,5 +151,14 @@ BEGIN
 END
 GO
 
+create PROCEDURE [dbo].[SP_CONSULTAR_FORMAS_DE_PAGO]
+AS
+BEGIN
+	
+	SELECT * from formas_pago ORDER BY id_forma_pago;
+END
+GO
+exec SP_CONSULTAR_FORMAS_DE_PAGO
+
 
 

@@ -22,6 +22,10 @@ namespace FacturasBack.negocio
         {
             return dao.GetArticulos();
         }
+        public List<FormaPago> ConsultarFormaPago()
+        {
+            return dao.GetFormaPago();
+        }
 
         public bool CrearFactura(Factura oFactura)
         {

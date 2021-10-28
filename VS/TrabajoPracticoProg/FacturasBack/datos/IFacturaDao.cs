@@ -10,6 +10,8 @@ namespace FacturasBack.datos
     interface IFacturaDao
     {
         List<Articulo> GetArticulos();
+
+        List<FormaPago> GetFormaPago();
         bool Save(Factura oFactura);
 
         int ProximoNroFactura();

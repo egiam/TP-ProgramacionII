@@ -13,9 +13,14 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AccesoDatosLogin", "AccesoD
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommonLogin", "CommonLogin\CommonLogin.csproj", "{9F500AC9-8655-4713-BB51-049C57214343}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FacturasBack", "FacturasBack\FacturasBack.csproj", "{42D3EC1B-7F32-4D54-9482-9259087314FF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FacturasBack", "FacturasBack\FacturasBack.csproj", "{42D3EC1B-7F32-4D54-9482-9259087314FF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FacturasWebAPI", "FacturasWebAPI\FacturasWebAPI.csproj", "{9E4CD686-073B-44FB-A97E-1F63DD92E0CC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FacturasWebAPI", "FacturasWebAPI\FacturasWebAPI.csproj", "{9E4CD686-073B-44FB-A97E-1F63DD92E0CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FacturasFront", "FacturasFront\FacturasFront.csproj", "{C915000E-C7E2-44D9-BA8D-DC1FFFDB511D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{42D3EC1B-7F32-4D54-9482-9259087314FF} = {42D3EC1B-7F32-4D54-9482-9259087314FF}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,6 +52,10 @@ Global
 		{9E4CD686-073B-44FB-A97E-1F63DD92E0CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9E4CD686-073B-44FB-A97E-1F63DD92E0CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9E4CD686-073B-44FB-A97E-1F63DD92E0CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C915000E-C7E2-44D9-BA8D-DC1FFFDB511D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C915000E-C7E2-44D9-BA8D-DC1FFFDB511D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C915000E-C7E2-44D9-BA8D-DC1FFFDB511D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C915000E-C7E2-44D9-BA8D-DC1FFFDB511D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

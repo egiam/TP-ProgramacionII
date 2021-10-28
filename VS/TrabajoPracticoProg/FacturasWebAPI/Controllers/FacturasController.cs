@@ -27,6 +27,13 @@ namespace FacturasWebAPI.Controllers
         }
 
 
+        [HttpGet("formas_de_pago")]
+        public IActionResult GetFormasPago()
+        {
+            return Ok(app.ConsultarFormaPago());
+        }
+
+
 
         [HttpPost("facturas")]
         public IActionResult PostFactura(Factura oFactura)

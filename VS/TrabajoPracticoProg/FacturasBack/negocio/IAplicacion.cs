@@ -11,6 +11,8 @@ namespace FacturasBack.negocio
     {
         public List<Articulo> ConsultarArticulos();
 
+        public List<FormaPago> ConsultarFormaPago();
+
         public bool CrearFactura(Factura oFactura);
 
     }

@@ -21,3 +21,4 @@ C:\Users\Felpu\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\CommonL
 C:\Users\Felpu\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\CommonLogin\obj\Debug\net5.0\CommonLogin.dll
 C:\Users\Felpu\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\CommonLogin\obj\Debug\net5.0\ref\CommonLogin.dll
 C:\Users\Felpu\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\CommonLogin\obj\Debug\net5.0\CommonLogin.pdb
+C:\Users\Felpu\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\CommonLogin\obj\Debug\net5.0\CommonLogin.csproj.AssemblyReference.cache

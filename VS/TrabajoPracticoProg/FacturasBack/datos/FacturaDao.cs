@@ -28,6 +28,23 @@ namespace FacturasBack.datos
             return lst;
         }
 
+        public List<FormaPago> GetFormaPago()
+        {
+            List<FormaPago> lst = new List<FormaPago>();
+
+            DataTable t = HelperDao.GetInstance().ConsultaSQL("SP_CONSULTAR_FORMAS_DE_PAGO");
+            foreach (DataRow row in t.Rows)
+            {
+                FormaPago oFormaPago = new FormaPago();
+                oFormaPago.IdFormaPago = Convert.ToInt32(row[0].ToString());
+                oFormaPago.Nombre = row[1].ToString();
+
+                lst.Add(oFormaPago);
+            }
+
+            return lst;
+        }
+
         public int ProximoNroFactura()
         {
             return HelperDao.GetInstance().EjecutarSQLConValorOUT("SP_PROXIMO_ID", "@next");
