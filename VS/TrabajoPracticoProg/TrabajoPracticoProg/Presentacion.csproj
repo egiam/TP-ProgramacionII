@@ -11,6 +11,7 @@
   <ItemGroup>
     <ProjectReference Include="..\CommonLogin\CommonLogin.csproj" />
     <ProjectReference Include="..\DominoLogin\DominoLogin.csproj" />
+    <ProjectReference Include="..\FacturasFront\FacturasFront.csproj" />
   </ItemGroup>
 
   <ItemGroup>

@@ -5,8 +5,6 @@ VisualStudioVersion = 16.0.31729.503
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Presentacion", "TrabajoPracticoProg\Presentacion.csproj", "{C7120D9E-0796-4522-9495-651B7BB65863}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Login", "Login", "{0A5AE082-9810-4780-AA5E-BF7208C77CA7}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DominoLogin", "DominoLogin\DominoLogin.csproj", "{EE803AC8-E813-4890-B1B9-C88673E9015A}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AccesoDatosLogin", "AccesoDatosLogin\AccesoDatosLogin.csproj", "{9D6D98AF-71C1-404F-BFDE-5BDABE61D89B}"
@@ -17,7 +15,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FacturasBack", "FacturasBac
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FacturasWebAPI", "FacturasWebAPI\FacturasWebAPI.csproj", "{9E4CD686-073B-44FB-A97E-1F63DD92E0CC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FacturasFront", "FacturasFront\FacturasFront.csproj", "{C915000E-C7E2-44D9-BA8D-DC1FFFDB511D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FacturasFront", "FacturasFront\FacturasFront.csproj", "{C915000E-C7E2-44D9-BA8D-DC1FFFDB511D}"
 	ProjectSection(ProjectDependencies) = postProject
 		{42D3EC1B-7F32-4D54-9482-9259087314FF} = {42D3EC1B-7F32-4D54-9482-9259087314FF}
 	EndProjectSection
@@ -59,12 +57,6 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{C7120D9E-0796-4522-9495-651B7BB65863} = {0A5AE082-9810-4780-AA5E-BF7208C77CA7}
-		{EE803AC8-E813-4890-B1B9-C88673E9015A} = {0A5AE082-9810-4780-AA5E-BF7208C77CA7}
-		{9D6D98AF-71C1-404F-BFDE-5BDABE61D89B} = {0A5AE082-9810-4780-AA5E-BF7208C77CA7}
-		{9F500AC9-8655-4713-BB51-049C57214343} = {0A5AE082-9810-4780-AA5E-BF7208C77CA7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C84FD56B-4E7E-467E-A3A7-F8F8CB8CD884}

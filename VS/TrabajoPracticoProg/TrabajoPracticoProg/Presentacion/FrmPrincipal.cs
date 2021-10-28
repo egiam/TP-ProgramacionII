@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using CommonLogin.Cache;
+using FacturasFront;
 
 namespace TrabajoPracticoProg.Presentacion
 {
@@ -146,6 +147,12 @@ namespace TrabajoPracticoProg.Presentacion
            MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
                 this.Close();
         }
+
+        private void btnNuevaFactura_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<FrmNuevaFactura>();
+            btnNuevaFactura.BackColor = Color.FromArgb(12, 61, 92);
+        }
         #endregion
 
 
@@ -174,8 +181,8 @@ namespace TrabajoPracticoProg.Presentacion
             }
         }
         private void CloseForms(object sender,FormClosedEventArgs e) {
-            //if (Application.OpenForms["Form1"] == null)
-            //    button1.BackColor = Color.FromArgb(4, 41, 68);
+            if (Application.OpenForms["FrmNuevaFactura"] == null)
+                btnNuevaFactura.BackColor = Color.FromArgb(4, 41, 68);
             //if (Application.OpenForms["Form2"] == null)
             //    button2.BackColor = Color.FromArgb(4, 41, 68);
             //if (Application.OpenForms["Form3"] == null)
