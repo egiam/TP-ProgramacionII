@@ -34,6 +34,13 @@ namespace FacturasWebAPI.Controllers
         }
 
 
+        [HttpGet("proximo_nro_factura")]
+        public IActionResult GetFacturaNro()
+        {
+            return Ok(app.ConsultarFacturaNro());
+        }
+
+
 
         [HttpPost("facturas")]
         public IActionResult PostFactura(Factura oFactura)

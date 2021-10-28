@@ -14,6 +14,6 @@ namespace FacturasBack.datos
         List<FormaPago> GetFormaPago();
         bool Save(Factura oFactura);
 
-        int ProximoNroFactura();
+        int GetFacturaNro();
     }
 }

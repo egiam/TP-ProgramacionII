@@ -45,7 +45,8 @@ namespace FacturasBack.datos
             return lst;
         }
 
-        public int ProximoNroFactura()
+
+        public int GetFacturaNro()
         {
             return HelperDao.GetInstance().EjecutarSQLConValorOUT("SP_PROXIMO_ID", "@next");
         }

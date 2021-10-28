@@ -15,15 +15,18 @@ namespace FacturasFront
 {
     public partial class FrmNuevaFactura : Form
     {
+        private Factura factura;
         public FrmNuevaFactura()
         {
             InitializeComponent();
+            factura = new Factura();
         }
 
         private async void FrmNuevaFactura_Load(object sender, EventArgs e)
         {
             await CargarCboArticulosAsync();
             await CargarCboFormasPagoAsync();
+            await AsignarNumeroFacturaAsync();
 
         }
 
@@ -51,6 +54,18 @@ namespace FacturasFront
             cboFormasPago.DataSource = lst;
             cboFormasPago.DisplayMember = "Nombre";
             cboFormasPago.ValueMember = "IdFormaPago";
+        }
+
+        private async Task AsignarNumeroFacturaAsync()
+        {
+            string url = "https://localhost:44357/api/Facturas/proximo_nro_factura";
+            using (HttpClient cliente = new HttpClient())
+            {
+                var result = await cliente.GetStringAsync(url);
+                factura.NroFactura = Int32.Parse(result);
+                lblFacturaNro.Text = "Factura Nro: " + result;
+            }
+
         }
 
     }
