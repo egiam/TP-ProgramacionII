@@ -36,16 +36,20 @@ namespace FacturasFront
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.cboFormasPago = new System.Windows.Forms.ComboBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvDetalles = new System.Windows.Forms.DataGridView();
+            this.cboArticulos = new System.Windows.Forms.ComboBox();
+            this.btnAgregar = new System.Windows.Forms.Button();
+            this.btnAceptar = new System.Windows.Forms.Button();
+            this.btnCancelar = new System.Windows.Forms.Button();
+            this.lblTotal = new System.Windows.Forms.Label();
+            this.nudCantidad = new System.Windows.Forms.NumericUpDown();
             this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColArt = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColPrecio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColCantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColAcciones = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cboArticulos = new System.Windows.Forms.ComboBox();
-            this.txtCantidad = new System.Windows.Forms.TextBox();
-            this.btnAgregar = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.ColPrecio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColAcciones = new System.Windows.Forms.DataGridViewButtonColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDetalles)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudCantidad)).BeginInit();
             this.SuspendLayout();
             // 
             // lblFecha
@@ -106,25 +110,84 @@ namespace FacturasFront
             this.cboFormasPago.Size = new System.Drawing.Size(182, 23);
             this.cboFormasPago.TabIndex = 6;
             // 
-            // dataGridView1
+            // dgvDetalles
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(200)))));
-            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvDetalles.AllowUserToAddRows = false;
+            this.dgvDetalles.AllowUserToDeleteRows = false;
+            this.dgvDetalles.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(200)))));
+            this.dgvDetalles.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvDetalles.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvDetalles.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Id,
             this.ColArt,
-            this.ColPrecio,
             this.ColCantidad,
+            this.ColPrecio,
             this.ColAcciones});
-            this.dataGridView1.Location = new System.Drawing.Point(57, 210);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(566, 150);
-            this.dataGridView1.TabIndex = 7;
+            this.dgvDetalles.Location = new System.Drawing.Point(30, 212);
+            this.dgvDetalles.Name = "dgvDetalles";
+            this.dgvDetalles.ReadOnly = true;
+            this.dgvDetalles.RowTemplate.Height = 25;
+            this.dgvDetalles.Size = new System.Drawing.Size(612, 150);
+            this.dgvDetalles.TabIndex = 7;
+            this.dgvDetalles.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDetalles_CellContentClick);
+            // 
+            // cboArticulos
+            // 
+            this.cboArticulos.FormattingEnabled = true;
+            this.cboArticulos.Location = new System.Drawing.Point(57, 183);
+            this.cboArticulos.Name = "cboArticulos";
+            this.cboArticulos.Size = new System.Drawing.Size(372, 23);
+            this.cboArticulos.TabIndex = 8;
+            this.cboArticulos.SelectedIndexChanged += new System.EventHandler(this.cboArticulos_SelectedIndexChanged);
+            // 
+            // btnAgregar
+            // 
+            this.btnAgregar.Location = new System.Drawing.Point(562, 181);
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.Size = new System.Drawing.Size(128, 25);
+            this.btnAgregar.TabIndex = 10;
+            this.btnAgregar.Text = "Agregar";
+            this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
+            // 
+            // btnAceptar
+            // 
+            this.btnAceptar.Location = new System.Drawing.Point(223, 387);
+            this.btnAceptar.Name = "btnAceptar";
+            this.btnAceptar.Size = new System.Drawing.Size(111, 23);
+            this.btnAceptar.TabIndex = 11;
+            this.btnAceptar.Text = "Aceptar";
+            this.btnAceptar.UseVisualStyleBackColor = true;
+            // 
+            // btnCancelar
+            // 
+            this.btnCancelar.Location = new System.Drawing.Point(342, 387);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(111, 23);
+            this.btnCancelar.TabIndex = 12;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.UseVisualStyleBackColor = true;
+            // 
+            // lblTotal
+            // 
+            this.lblTotal.AutoSize = true;
+            this.lblTotal.Location = new System.Drawing.Point(522, 374);
+            this.lblTotal.Name = "lblTotal";
+            this.lblTotal.Size = new System.Drawing.Size(35, 15);
+            this.lblTotal.TabIndex = 13;
+            this.lblTotal.Text = "Total:";
+            // 
+            // nudCantidad
+            // 
+            this.nudCantidad.Location = new System.Drawing.Point(437, 183);
+            this.nudCantidad.Name = "nudCantidad";
+            this.nudCantidad.Size = new System.Drawing.Size(120, 23);
+            this.nudCantidad.TabIndex = 14;
+            this.nudCantidad.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // Id
             // 
@@ -135,51 +198,34 @@ namespace FacturasFront
             // 
             // ColArt
             // 
+            this.ColArt.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.ColArt.HeaderText = "Artículo";
             this.ColArt.Name = "ColArt";
             this.ColArt.ReadOnly = true;
             // 
-            // ColPrecio
-            // 
-            this.ColPrecio.HeaderText = "Precio";
-            this.ColPrecio.Name = "ColPrecio";
-            this.ColPrecio.ReadOnly = true;
-            // 
             // ColCantidad
             // 
+            this.ColCantidad.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.ColCantidad.HeaderText = "Cantidad";
             this.ColCantidad.Name = "ColCantidad";
             this.ColCantidad.ReadOnly = true;
             // 
+            // ColPrecio
+            // 
+            this.ColPrecio.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.ColPrecio.HeaderText = "Precio";
+            this.ColPrecio.Name = "ColPrecio";
+            this.ColPrecio.ReadOnly = true;
+            // 
             // ColAcciones
             // 
+            this.ColAcciones.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.ColAcciones.HeaderText = "Acciones";
             this.ColAcciones.Name = "ColAcciones";
             this.ColAcciones.ReadOnly = true;
-            // 
-            // cboArticulos
-            // 
-            this.cboArticulos.FormattingEnabled = true;
-            this.cboArticulos.Location = new System.Drawing.Point(57, 183);
-            this.cboArticulos.Name = "cboArticulos";
-            this.cboArticulos.Size = new System.Drawing.Size(372, 23);
-            this.cboArticulos.TabIndex = 8;
-            // 
-            // txtCantidad
-            // 
-            this.txtCantidad.Location = new System.Drawing.Point(435, 183);
-            this.txtCantidad.Name = "txtCantidad";
-            this.txtCantidad.Size = new System.Drawing.Size(100, 23);
-            this.txtCantidad.TabIndex = 9;
-            // 
-            // btnAgregar
-            // 
-            this.btnAgregar.Location = new System.Drawing.Point(541, 181);
-            this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(128, 25);
-            this.btnAgregar.TabIndex = 10;
-            this.btnAgregar.Text = "Agregar";
-            this.btnAgregar.UseVisualStyleBackColor = true;
+            this.ColAcciones.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.ColAcciones.Text = "Quitar";
+            this.ColAcciones.UseColumnTextForButtonValue = true;
             // 
             // FrmNuevaFactura
             // 
@@ -187,10 +233,13 @@ namespace FacturasFront
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(200)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.nudCantidad);
+            this.Controls.Add(this.lblTotal);
+            this.Controls.Add(this.btnCancelar);
+            this.Controls.Add(this.btnAceptar);
             this.Controls.Add(this.btnAgregar);
-            this.Controls.Add(this.txtCantidad);
             this.Controls.Add(this.cboArticulos);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvDetalles);
             this.Controls.Add(this.cboFormasPago);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.dateTimePicker1);
@@ -201,7 +250,8 @@ namespace FacturasFront
             this.Name = "FrmNuevaFactura";
             this.Text = "Nueva Factura";
             this.Load += new System.EventHandler(this.FrmNuevaFactura_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDetalles)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudCantidad)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -216,15 +266,18 @@ namespace FacturasFront
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.ComboBox cboFormasPago;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvDetalles;
+        private System.Windows.Forms.ComboBox cboArticulos;
+        private System.Windows.Forms.Button btnAgregar;
+        private System.Windows.Forms.Button btnAceptar;
+        private System.Windows.Forms.Button btnCancelar;
+        private System.Windows.Forms.Label lblTotal;
+        private System.Windows.Forms.NumericUpDown nudCantidad;
         private System.Windows.Forms.DataGridViewTextBoxColumn Id;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColArt;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColPrecio;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColCantidad;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColAcciones;
-        private System.Windows.Forms.ComboBox cboArticulos;
-        private System.Windows.Forms.TextBox txtCantidad;
-        private System.Windows.Forms.Button btnAgregar;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColPrecio;
+        private System.Windows.Forms.DataGridViewButtonColumn ColAcciones;
     }
 }
 

@@ -16,6 +16,10 @@ namespace FacturasBack.dominio
             Articulo = articulo;
             Cantidad = cantidad;
         }
+        public DetalleFactura()
+        {
+
+        }
 
 
         public double CalcularSubtotal()

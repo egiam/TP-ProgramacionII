@@ -68,5 +68,50 @@ namespace FacturasFront
 
         }
 
+        private void cboArticulos_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+            if (ExisteArticuloEnGrilla(cboArticulos.Text))
+            {
+                MessageBox.Show("El Artículo ya fue ingresado!", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            DetalleFactura detalle = new DetalleFactura();
+            detalle.Articulo = (Articulo)cboArticulos.SelectedItem;
+            detalle.Cantidad = (int)nudCantidad.Value;
+            factura.AgregarDetalle(detalle);
+            dgvDetalles.Rows.Add(new string[] { "", detalle.Articulo.Nombre, detalle.Cantidad.ToString(), detalle.Articulo.PrecioUnitario.ToString() });
+            ActualizarTotales();
+
+        }
+        private void ActualizarTotales()
+        {
+            lblTotal.Text = "Total: $" + factura.CalcularTotal();
+        }
+
+        private bool ExisteArticuloEnGrilla(string text)
+        {
+            foreach (DataGridViewRow fila in dgvDetalles.Rows)
+            {
+                if (fila.Cells["ColArt"].Value.Equals(text))
+                    return true;
+            }
+            return false;
+        }
+
+        private void dgvDetalles_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (dgvDetalles.CurrentCell.ColumnIndex == 4)
+            {
+                factura.QuitarDetalle(dgvDetalles.CurrentRow.Index);
+                dgvDetalles.Rows.Remove(dgvDetalles.CurrentRow);
+                ActualizarTotales();
+            }
+        }
     }
 }

@@ -53,3 +53,4 @@ D:\UTN\Carrera\Semestre 2\Programacion II\TP-ProgramacionII\VS\TrabajoPracticoPr
 D:\UTN\Carrera\Semestre 2\Programacion II\TP-ProgramacionII\VS\TrabajoPracticoProg\FacturasFront\obj\Debug\net5.0-windows\ref\FacturasFront.dll
 D:\UTN\Carrera\Semestre 2\Programacion II\TP-ProgramacionII\VS\TrabajoPracticoProg\FacturasFront\obj\Debug\net5.0-windows\FacturasFront.pdb
 D:\UTN\Carrera\Semestre 2\Programacion II\TP-ProgramacionII\VS\TrabajoPracticoProg\FacturasFront\obj\Debug\net5.0-windows\FacturasFront.genruntimeconfig.cache
+C:\Users\Felpu\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\FacturasFront\obj\Debug\net5.0-windows\FacturasFront.FrmConsultarFactura.resources

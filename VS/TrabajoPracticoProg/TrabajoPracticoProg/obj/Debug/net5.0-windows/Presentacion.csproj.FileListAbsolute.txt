@@ -77,3 +77,12 @@ D:\UTN\Carrera\Semestre 2\Programacion II\TP-ProgramacionII\VS\TrabajoPracticoPr
 D:\UTN\Carrera\Semestre 2\Programacion II\TP-ProgramacionII\VS\TrabajoPracticoProg\TrabajoPracticoProg\bin\Debug\net5.0-windows\FacturasFront.dll
 D:\UTN\Carrera\Semestre 2\Programacion II\TP-ProgramacionII\VS\TrabajoPracticoProg\TrabajoPracticoProg\bin\Debug\net5.0-windows\FacturasFront.pdb
 D:\UTN\Carrera\Semestre 2\Programacion II\TP-ProgramacionII\VS\TrabajoPracticoProg\TrabajoPracticoProg\bin\Debug\net5.0-windows\FacturasBack.pdb
+C:\Users\Felpu\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\TrabajoPracticoProg\bin\Debug\net5.0-windows\FacturasFront.deps.json
+C:\Users\Felpu\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\TrabajoPracticoProg\bin\Debug\net5.0-windows\FacturasFront.runtimeconfig.json
+C:\Users\Felpu\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\TrabajoPracticoProg\bin\Debug\net5.0-windows\FacturasFront.runtimeconfig.dev.json
+C:\Users\Felpu\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\TrabajoPracticoProg\bin\Debug\net5.0-windows\FacturasFront.exe
+C:\Users\Felpu\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\TrabajoPracticoProg\bin\Debug\net5.0-windows\Newtonsoft.Json.dll
+C:\Users\Felpu\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\TrabajoPracticoProg\bin\Debug\net5.0-windows\FacturasBack.dll
+C:\Users\Felpu\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\TrabajoPracticoProg\bin\Debug\net5.0-windows\FacturasFront.dll
+C:\Users\Felpu\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\TrabajoPracticoProg\bin\Debug\net5.0-windows\FacturasFront.pdb
+C:\Users\Felpu\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\TrabajoPracticoProg\bin\Debug\net5.0-windows\FacturasBack.pdb
