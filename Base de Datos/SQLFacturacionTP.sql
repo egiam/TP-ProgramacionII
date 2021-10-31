@@ -147,7 +147,7 @@ BEGIN
   
 END
 select * from facturas
-
+select * from detalles_factura
 GO
 ------
 
@@ -155,16 +155,16 @@ alter PROCEDURE [dbo].[SP_EDITAR_FACTURA]
 	@cliente varchar(255), 
 	@forma int,
 	@nro_factura int,
-	@total decimal(10,2)
-	--@fecha datetime
+	@total decimal(10,2),
+	@fecha datetime
 AS
 
 	UPDATE facturas
-	SET  cliente=@cliente,id_forma_pago=@forma,total=@total
+	SET  fecha=@fecha, cliente=@cliente,id_forma_pago=@forma,total=@total
 	WHERE nro_factura=@nro_factura
 
 GO
-exec [dbo].[SP_EDITAR_FACTURA]  'Luis', 1, 1, 3500
+exec [dbo].[SP_EDITAR_FACTURA]  'Luis', 1, 1, 3500,'29/10/2021'
 
 select * from facturas
 
@@ -172,20 +172,20 @@ select * from facturas
 	SET  cliente='pepe', id_forma_pago=2, total=3500
 	WHERE nro_factura=1
 
-CREATE PROCEDURE [dbo].[SP_EDITAR_DETALLES] 
-	@nro_factura int,
-	@id_articulo int, 
-	@cantidad int,
-	@id_detalle int
+CREATE PROCEDURE  [dbo].[SP_ELIMINAR_DETALLES] 
+	@nro_factura int
 AS
-BEGIN
-	UPDATE detalles_factura
-	SET id_articulo=@id_articulo, cantidad=@cantidad
-	WHERE nro_factura=@nro_factura and id_detalle=@id_detalle 
-END
+	delete detalles_factura
+	where nro_factura=@nro_factura 
 
-GO
------
+exec[dbo].[SP_ELIMINAR_DETALLES] 4
+
+
+
+select * from facturas
+select * from detalles_factura
+
+ 
 
 CREATE PROCEDURE [dbo].[SP_CONSULTAR_ARTICULOS]
 AS
@@ -260,7 +260,7 @@ alter PROCEDURE [dbo].[SP_CONSULTAR_FACTURA_POR_ID]
 AS
 BEGIN
 	SELECT f.nro_factura, fecha, f.id_forma_pago,f.fecha_baja, f.total, cliente,d.id_articulo,cantidad,
-	a.nombre 'nombre_articulo',pre_unitario,fp.nombre 'nombre_forma_pago' 
+	a.nombre 'nombre_articulo',pre_unitario,fp.nombre 'nombre_forma_pago', d.id_detalle
 	FROM facturas f, detalles_factura d, articulos a, formas_pago fp
 	WHERE f.nro_factura = d.nro_factura
 	AND f.id_forma_pago=fp.id_forma_pago
