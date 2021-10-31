@@ -1,7 +1,9 @@
 ﻿using FacturasBack.dominio;
+using FacturasBack.negocio;
 using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -66,5 +68,11 @@ namespace FacturasBack.datos
         {
             return HelperDao.GetInstance().EjecutarInsertArticulo(oArticulo, "SP_INSERTAR_ARTICULO");
         }
+
+        public List<Factura> GetByFilters(List<Parametro> criterios)
+        {
+            return HelperDao.GetInstance().ConsultarFacturas("SP_CONSULTAR_FACTURAS", criterios);
+        }
+
     }
 }

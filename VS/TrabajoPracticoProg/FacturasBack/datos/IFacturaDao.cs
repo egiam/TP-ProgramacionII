@@ -1,4 +1,5 @@
 ﻿using FacturasBack.dominio;
+using FacturasBack.negocio;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,5 +19,7 @@ namespace FacturasBack.datos
         int GetFacturaNro();
 
         int GetArticuloNro();
+
+        List<Factura> GetByFilters(List<Parametro> criterios);
     }
 }

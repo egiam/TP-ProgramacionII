@@ -13,7 +13,7 @@ namespace FacturasBack.negocio
 
         public List<FormaPago> ConsultarFormaPago();
 
-
+        public List<Factura> ConsultarFacturas(List<Parametro> criterios);
 
         public int ConsultarFacturaNro();
 

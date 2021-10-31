@@ -37,6 +37,11 @@ namespace FacturasBack.negocio
             return dao.GetArticuloNro();
         }
 
+        public List<Factura> ConsultarFacturas(List<Parametro> criterios)
+        {
+            return dao.GetByFilters(criterios);//
+        }
+
         public bool CrearFactura(Factura oFactura)
         {
             return dao.SaveFactura(oFactura);

@@ -1,4 +1,5 @@
 ﻿using FacturasBack.dominio;
+using FacturasBack.negocio;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -186,5 +187,63 @@ namespace FacturasBack.datos
 
             return val;
         }
+
+        public List<Factura> ConsultarFacturas(string nombreSP, List<Parametro> criterios)
+        {
+            
+            List<Factura> lst = new List<Factura>();
+            DataTable table = new DataTable();
+            SqlConnection cnn = new SqlConnection(connectionString);
+            try
+            {
+                cnn.Open();
+
+                SqlCommand cmd = new SqlCommand(nombreSP, cnn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                foreach (Parametro p in criterios)
+                {
+                    if (p.Valor == null)
+                        cmd.Parameters.AddWithValue(p.Nombre, DBNull.Value);
+                    else
+                        cmd.Parameters.AddWithValue(p.Nombre, p.Valor.ToString());
+                }
+
+                table.Load(cmd.ExecuteReader());
+                //mappear los registros como objetos del dominio:
+
+                foreach (DataRow row in table.Rows)
+                {
+                    //Por cada registro creamos un objeto del dominio
+                    Factura oFactura = new Factura();
+                    oFactura.Cliente = row["cliente"].ToString();
+                    oFactura.Fecha = Convert.ToDateTime(row["fecha"].ToString());
+                    // oFactura.FormaPago = Convert.ToDouble(row["formaPago"].ToString());
+                    // oFactura.PresupuestoNro = Convert.ToInt32(row["presupuesto_nro"].ToString());
+                    // oFactura.Total = Convert.ToDouble(row["total"].ToString());
+                    //validar que fecha_baja no es null:
+                    //if (!row["fecha_baja"].Equals(DBNull.Value)) 
+                    //    oPresupuesto.FechaBaja = Convert.ToDateTime(row["fecha_baja"].ToString());
+
+                    //lst.Add(oPresupuesto);
+                }
+
+                cnn.Close();
+            }
+            catch (SqlException)
+            {
+                lst = null;
+            }
+            return lst;
+        }
+
+
+
+
+
+
+
+
+
     }
+
 }

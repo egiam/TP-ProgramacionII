@@ -30,21 +30,27 @@ namespace FacturasFront
         private void InitializeComponent()
         {
             this.gbFiltros = new System.Windows.Forms.GroupBox();
+            this.btnLimpiarFiltros = new System.Windows.Forms.Button();
+            this.chkBaja = new System.Windows.Forms.CheckBox();
+            this.btnConsultar = new System.Windows.Forms.Button();
             this.lblCliente = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.txtCliente = new System.Windows.Forms.TextBox();
+            this.dtpHasta = new System.Windows.Forms.DateTimePicker();
             this.label2 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dtpDesde = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
             this.gbResultados = new System.Windows.Forms.GroupBox();
-            this.btnNuevo = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColFecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColCliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColFormaPago = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColFecBaja = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColAcciones = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.btnNuevo = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
-            this.btnConsultar = new System.Windows.Forms.Button();
-            this.chkBaja = new System.Windows.Forms.CheckBox();
             this.txtEliminar = new System.Windows.Forms.Button();
-            this.btnEliminarFiltro = new System.Windows.Forms.Button();
             this.gbFiltros.SuspendLayout();
             this.gbResultados.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -52,14 +58,14 @@ namespace FacturasFront
             // 
             // gbFiltros
             // 
-            this.gbFiltros.Controls.Add(this.btnEliminarFiltro);
+            this.gbFiltros.Controls.Add(this.btnLimpiarFiltros);
             this.gbFiltros.Controls.Add(this.chkBaja);
             this.gbFiltros.Controls.Add(this.btnConsultar);
             this.gbFiltros.Controls.Add(this.lblCliente);
-            this.gbFiltros.Controls.Add(this.textBox1);
-            this.gbFiltros.Controls.Add(this.dateTimePicker2);
+            this.gbFiltros.Controls.Add(this.txtCliente);
+            this.gbFiltros.Controls.Add(this.dtpHasta);
             this.gbFiltros.Controls.Add(this.label2);
-            this.gbFiltros.Controls.Add(this.dateTimePicker1);
+            this.gbFiltros.Controls.Add(this.dtpDesde);
             this.gbFiltros.Controls.Add(this.label1);
             this.gbFiltros.Location = new System.Drawing.Point(43, 30);
             this.gbFiltros.Name = "gbFiltros";
@@ -67,6 +73,35 @@ namespace FacturasFront
             this.gbFiltros.TabIndex = 0;
             this.gbFiltros.TabStop = false;
             this.gbFiltros.Text = "Criterios de búsqueda";
+            // 
+            // btnLimpiarFiltros
+            // 
+            this.btnLimpiarFiltros.Location = new System.Drawing.Point(305, 90);
+            this.btnLimpiarFiltros.Name = "btnLimpiarFiltros";
+            this.btnLimpiarFiltros.Size = new System.Drawing.Size(142, 23);
+            this.btnLimpiarFiltros.TabIndex = 11;
+            this.btnLimpiarFiltros.Text = "Limpiar Filtros";
+            this.btnLimpiarFiltros.UseVisualStyleBackColor = true;
+            // 
+            // chkBaja
+            // 
+            this.chkBaja.AutoSize = true;
+            this.chkBaja.Location = new System.Drawing.Point(118, 65);
+            this.chkBaja.Name = "chkBaja";
+            this.chkBaja.Size = new System.Drawing.Size(89, 19);
+            this.chkBaja.TabIndex = 10;
+            this.chkBaja.Text = "Incluir bajas";
+            this.chkBaja.UseVisualStyleBackColor = true;
+            // 
+            // btnConsultar
+            // 
+            this.btnConsultar.Location = new System.Drawing.Point(118, 90);
+            this.btnConsultar.Name = "btnConsultar";
+            this.btnConsultar.Size = new System.Drawing.Size(142, 23);
+            this.btnConsultar.TabIndex = 9;
+            this.btnConsultar.Text = "Consultar";
+            this.btnConsultar.UseVisualStyleBackColor = true;
+            this.btnConsultar.Click += new System.EventHandler(this.btnConsultar_Click);
             // 
             // lblCliente
             // 
@@ -77,20 +112,19 @@ namespace FacturasFront
             this.lblCliente.TabIndex = 5;
             this.lblCliente.Text = "Cliente:";
             // 
-            // textBox1
+            // txtCliente
             // 
-            this.textBox1.Location = new System.Drawing.Point(119, 27);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(250, 23);
-            this.textBox1.TabIndex = 4;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.txtCliente.Location = new System.Drawing.Point(119, 27);
+            this.txtCliente.Name = "txtCliente";
+            this.txtCliente.Size = new System.Drawing.Size(250, 23);
+            this.txtCliente.TabIndex = 4;
             // 
-            // dateTimePicker2
+            // dtpHasta
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(564, 57);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(200, 23);
-            this.dateTimePicker2.TabIndex = 3;
+            this.dtpHasta.Location = new System.Drawing.Point(564, 57);
+            this.dtpHasta.Name = "dtpHasta";
+            this.dtpHasta.Size = new System.Drawing.Size(200, 23);
+            this.dtpHasta.TabIndex = 3;
             // 
             // label2
             // 
@@ -101,12 +135,12 @@ namespace FacturasFront
             this.label2.TabIndex = 2;
             this.label2.Text = "Fecha hasta:";
             // 
-            // dateTimePicker1
+            // dtpDesde
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(564, 24);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 23);
-            this.dateTimePicker1.TabIndex = 1;
+            this.dtpDesde.Location = new System.Drawing.Point(564, 24);
+            this.dtpDesde.Name = "dtpDesde";
+            this.dtpDesde.Size = new System.Drawing.Size(200, 23);
+            this.dtpDesde.TabIndex = 1;
             // 
             // label1
             // 
@@ -127,6 +161,69 @@ namespace FacturasFront
             this.gbResultados.TabStop = false;
             this.gbResultados.Text = "Resultados";
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Id,
+            this.ColFecha,
+            this.ColCliente,
+            this.ColFormaPago,
+            this.ColFecBaja,
+            this.ColAcciones});
+            this.dataGridView1.Location = new System.Drawing.Point(24, 19);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.RowTemplate.Height = 25;
+            this.dataGridView1.Size = new System.Drawing.Size(754, 176);
+            this.dataGridView1.TabIndex = 0;
+            // 
+            // Id
+            // 
+            this.Id.HeaderText = "Id";
+            this.Id.Name = "Id";
+            this.Id.ReadOnly = true;
+            this.Id.Visible = false;
+            // 
+            // ColFecha
+            // 
+            this.ColFecha.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.ColFecha.HeaderText = "Fecha";
+            this.ColFecha.Name = "ColFecha";
+            this.ColFecha.ReadOnly = true;
+            // 
+            // ColCliente
+            // 
+            this.ColCliente.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.ColCliente.HeaderText = "Cliente";
+            this.ColCliente.Name = "ColCliente";
+            this.ColCliente.ReadOnly = true;
+            // 
+            // ColFormaPago
+            // 
+            this.ColFormaPago.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.ColFormaPago.HeaderText = "Forma de Pago";
+            this.ColFormaPago.Name = "ColFormaPago";
+            this.ColFormaPago.ReadOnly = true;
+            // 
+            // ColFecBaja
+            // 
+            this.ColFecBaja.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.ColFecBaja.HeaderText = "Fecha Baja";
+            this.ColFecBaja.Name = "ColFecBaja";
+            this.ColFecBaja.ReadOnly = true;
+            // 
+            // ColAcciones
+            // 
+            this.ColAcciones.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.ColAcciones.HeaderText = "Acciones";
+            this.ColAcciones.Name = "ColAcciones";
+            this.ColAcciones.ReadOnly = true;
+            this.ColAcciones.Text = "Ver detalle";
+            this.ColAcciones.UseColumnTextForButtonValue = true;
+            // 
             // btnNuevo
             // 
             this.btnNuevo.Location = new System.Drawing.Point(43, 430);
@@ -135,18 +232,6 @@ namespace FacturasFront
             this.btnNuevo.TabIndex = 1;
             this.btnNuevo.Text = "Nuevo";
             this.btnNuevo.UseVisualStyleBackColor = true;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(24, 19);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(754, 176);
-            this.dataGridView1.TabIndex = 0;
             // 
             // btnEditar
             // 
@@ -166,25 +251,6 @@ namespace FacturasFront
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = true;
             // 
-            // btnConsultar
-            // 
-            this.btnConsultar.Location = new System.Drawing.Point(118, 90);
-            this.btnConsultar.Name = "btnConsultar";
-            this.btnConsultar.Size = new System.Drawing.Size(142, 23);
-            this.btnConsultar.TabIndex = 9;
-            this.btnConsultar.Text = "Consultar";
-            this.btnConsultar.UseVisualStyleBackColor = true;
-            // 
-            // chkBaja
-            // 
-            this.chkBaja.AutoSize = true;
-            this.chkBaja.Location = new System.Drawing.Point(118, 65);
-            this.chkBaja.Name = "chkBaja";
-            this.chkBaja.Size = new System.Drawing.Size(89, 19);
-            this.chkBaja.TabIndex = 10;
-            this.chkBaja.Text = "Incluir bajas";
-            this.chkBaja.UseVisualStyleBackColor = true;
-            // 
             // txtEliminar
             // 
             this.txtEliminar.Location = new System.Drawing.Point(241, 431);
@@ -193,15 +259,6 @@ namespace FacturasFront
             this.txtEliminar.TabIndex = 9;
             this.txtEliminar.Text = "Eliminar";
             this.txtEliminar.UseVisualStyleBackColor = true;
-            // 
-            // btnEliminarFiltro
-            // 
-            this.btnEliminarFiltro.Location = new System.Drawing.Point(305, 90);
-            this.btnEliminarFiltro.Name = "btnEliminarFiltro";
-            this.btnEliminarFiltro.Size = new System.Drawing.Size(142, 23);
-            this.btnEliminarFiltro.TabIndex = 11;
-            this.btnEliminarFiltro.Text = "Eliminar Filtro";
-            this.btnEliminarFiltro.UseVisualStyleBackColor = true;
             // 
             // FrmConsultarFactura
             // 
@@ -216,6 +273,7 @@ namespace FacturasFront
             this.Controls.Add(this.gbFiltros);
             this.Name = "FrmConsultarFactura";
             this.Text = "Consultar Factura";
+            this.Load += new System.EventHandler(this.FrmConsultarFactura_Load);
             this.gbFiltros.ResumeLayout(false);
             this.gbFiltros.PerformLayout();
             this.gbResultados.ResumeLayout(false);
@@ -228,19 +286,25 @@ namespace FacturasFront
 
         private System.Windows.Forms.GroupBox gbFiltros;
         private System.Windows.Forms.Label lblCliente;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.TextBox txtCliente;
+        private System.Windows.Forms.DateTimePicker dtpHasta;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dtpDesde;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox gbResultados;
         private System.Windows.Forms.Button btnNuevo;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button btnEliminarFiltro;
+        private System.Windows.Forms.Button btnLimpiarFiltros;
         private System.Windows.Forms.CheckBox chkBaja;
         private System.Windows.Forms.Button btnConsultar;
         private System.Windows.Forms.Button btnEditar;
         private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.Button txtEliminar;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Id;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColFecha;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColCliente;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColFormaPago;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColFecBaja;
+        private System.Windows.Forms.DataGridViewButtonColumn ColAcciones;
     }
 }

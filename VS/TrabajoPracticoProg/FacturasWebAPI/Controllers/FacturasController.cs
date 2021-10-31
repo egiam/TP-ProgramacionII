@@ -20,13 +20,6 @@ namespace FacturasWebAPI.Controllers
             app = new Aplicacion();
         }
 
-        [HttpGet("articulos")]
-        public IActionResult GetArticulos()
-        {
-            return Ok(app.ConsultarArticulos());
-        }
-
-
         [HttpGet("formas_de_pago")]
         public IActionResult GetFormasPago()
         {
@@ -39,14 +32,6 @@ namespace FacturasWebAPI.Controllers
         {
             return Ok(app.ConsultarFacturaNro());
         }
-
-        [HttpGet("proximo_nro_articulo")]
-        public IActionResult GetArticuloNro()
-        {
-            return Ok(app.ConsultarArticuloNro());
-        }
-
-
 
         [HttpPost("facturas")]
         public IActionResult PostFactura(Factura oFactura)
@@ -62,6 +47,28 @@ namespace FacturasWebAPI.Controllers
                 return BadRequest("¡No se pudo grabar la factura!");
         }
 
+        [HttpPost("consultar")]
+        public IActionResult GetFacturas(List<Parametro> lst)
+        {
+            if (lst == null || lst.Count == 0)
+                return BadRequest("Se requiere una lista de parámetros!");
+
+            return Ok(app.ConsultarFacturas(lst));
+        }
+
+        [HttpGet("proximo_nro_articulo")]
+        public IActionResult GetArticuloNro()
+        {
+            return Ok(app.ConsultarArticuloNro());
+        }
+
+        [HttpGet("articulos")]
+        public IActionResult GetArticulos()
+        {
+            return Ok(app.ConsultarArticulos());
+        }
+
+
         [HttpPost("articulos")]
         public IActionResult PostArticulo(Articulo oArticulo)
         {
@@ -75,5 +82,9 @@ namespace FacturasWebAPI.Controllers
             else
                 return BadRequest("¡No se pudo grabar el artículo!");
         }
+
+
+
+
     }
 }
