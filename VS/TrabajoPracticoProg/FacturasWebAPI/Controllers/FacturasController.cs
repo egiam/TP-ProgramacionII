@@ -40,6 +40,12 @@ namespace FacturasWebAPI.Controllers
             return Ok(app.ConsultarFacturaNro());
         }
 
+        [HttpGet("proximo_nro_articulo")]
+        public IActionResult GetArticuloNro()
+        {
+            return Ok(app.ConsultarArticuloNro());
+        }
+
 
 
         [HttpPost("facturas")]
@@ -54,6 +60,20 @@ namespace FacturasWebAPI.Controllers
                 return Ok("¡Se grabó exitosamente la factura!");
             else
                 return BadRequest("¡No se pudo grabar la factura!");
+        }
+
+        [HttpPost("articulos")]
+        public IActionResult PostArticulo(Articulo oArticulo)
+        {
+            if (oArticulo == null)
+            {
+                return BadRequest("Articulo null");
+            }
+
+            if (app.CrearArticulo(oArticulo))
+                return Ok("¡Se grabó exitosamente el artículo!");
+            else
+                return BadRequest("¡No se pudo grabar el artículo!");
         }
     }
 }

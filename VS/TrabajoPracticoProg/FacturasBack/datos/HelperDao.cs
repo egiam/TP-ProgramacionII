@@ -60,7 +60,7 @@ namespace FacturasBack.datos
         }
 
 
-        public bool EjecutarInsert(Factura factura, string spMaestro, string spDetalle)
+        public bool EjecutarInsertFactura(Factura factura, string spMaestro, string spDetalle)
         {
             bool ok = true;
 
@@ -92,6 +92,45 @@ namespace FacturasBack.datos
 
                     cmdDetalle.ExecuteNonQuery();
                 }
+
+                transaction.Commit();
+            }
+            catch (Exception)
+            {
+                transaction.Rollback();
+                ok = false;
+
+            }
+            finally
+            {
+                if (connection.State == ConnectionState.Open)
+                {
+                    connection.Close();
+                }
+            }
+            return ok;
+        }
+
+
+        public bool EjecutarInsertArticulo(Articulo articulo, string spArticulo)
+        {
+            bool ok = true;
+
+            SqlConnection connection = new SqlConnection(connectionString);
+            SqlTransaction transaction = null;
+            try
+            {
+                connection.Open();
+                transaction = connection.BeginTransaction();
+                //Se inserta Articulo
+                SqlCommand cmdMaestro = new SqlCommand(spArticulo, connection, transaction);
+                cmdMaestro.CommandType = CommandType.StoredProcedure;
+
+                cmdMaestro.Parameters.AddWithValue("@nombre", articulo.Nombre);
+                cmdMaestro.Parameters.AddWithValue("@precio", articulo.PrecioUnitario);
+
+
+                cmdMaestro.ExecuteNonQuery();
 
                 transaction.Commit();
             }

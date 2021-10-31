@@ -146,7 +146,7 @@ namespace FacturasFront
             if (success)
             {
                 MessageBox.Show("Factura registrada con éxito!", "Confirmación", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                await limipiarCamposAsync();
+                await limpiarCamposAsync();
             }
             else
             {
@@ -165,7 +165,7 @@ namespace FacturasFront
                 return (int)result.StatusCode == 200;
             }
         }
-        private async Task limipiarCamposAsync()
+        private async Task limpiarCamposAsync()
         {
             txtCliente.Text = string.Empty;
             txtCliente.Focus();
@@ -185,6 +185,11 @@ namespace FacturasFront
                 this.Dispose();
 
             }
+        }
+
+        private void nudCantidad_ValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

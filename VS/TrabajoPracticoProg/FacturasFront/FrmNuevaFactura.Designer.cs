@@ -229,6 +229,7 @@ namespace FacturasFront
             0,
             0,
             0});
+            this.nudCantidad.ValueChanged += new System.EventHandler(this.nudCantidad_ValueChanged);
             // 
             // FrmNuevaFactura
             // 

@@ -32,9 +32,18 @@ namespace FacturasBack.negocio
             return dao.GetFacturaNro();
         }
 
+        public int ConsultarArticuloNro()
+        {
+            return dao.GetArticuloNro();
+        }
+
         public bool CrearFactura(Factura oFactura)
         {
-            return dao.Save(oFactura);
+            return dao.SaveFactura(oFactura);
+        }
+        public bool CrearArticulo(Articulo oArticulo)
+        {
+            return dao.SaveArticulo(oArticulo);
         }
 
 

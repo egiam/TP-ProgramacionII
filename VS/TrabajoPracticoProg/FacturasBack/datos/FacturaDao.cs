@@ -51,10 +51,20 @@ namespace FacturasBack.datos
             return HelperDao.GetInstance().EjecutarSQLConValorOUT("SP_PROXIMO_ID", "@next");
         }
 
-
-        public bool Save(Factura oFactura)
+        
+        public int GetArticuloNro()
         {
-            return HelperDao.GetInstance().EjecutarInsert(oFactura, "SP_INSERTAR_FACTURA", "SP_INSERTAR_DETALLES");
+            return HelperDao.GetInstance().EjecutarSQLConValorOUT("SP_PROXIMO_ID_ART", "@next");
+        }
+
+        public bool SaveFactura(Factura oFactura)
+        {
+            return HelperDao.GetInstance().EjecutarInsertFactura(oFactura, "SP_INSERTAR_FACTURA", "SP_INSERTAR_DETALLES");
+        }
+
+        public bool SaveArticulo(Articulo oArticulo)
+        {
+            return HelperDao.GetInstance().EjecutarInsertArticulo(oArticulo, "SP_INSERTAR_ARTICULO");
         }
     }
 }

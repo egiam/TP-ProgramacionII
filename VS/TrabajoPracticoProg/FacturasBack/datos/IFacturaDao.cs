@@ -12,8 +12,11 @@ namespace FacturasBack.datos
         List<Articulo> GetArticulos();
 
         List<FormaPago> GetFormaPago();
-        bool Save(Factura oFactura);
+        bool SaveFactura(Factura oFactura);
+        bool SaveArticulo(Articulo oArticulo);
 
         int GetFacturaNro();
+
+        int GetArticuloNro();
     }
 }

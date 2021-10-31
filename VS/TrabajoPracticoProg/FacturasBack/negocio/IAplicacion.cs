@@ -17,7 +17,10 @@ namespace FacturasBack.negocio
 
         public int ConsultarFacturaNro();
 
+        public int ConsultarArticuloNro();
+
         public bool CrearFactura(Factura oFactura);
 
+        public bool CrearArticulo(Articulo oArticulo);
     }
 }
