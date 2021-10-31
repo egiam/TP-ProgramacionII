@@ -10,6 +10,7 @@ namespace FacturasBack.dominio
     {
         public Articulo Articulo { get; set; }
         public int Cantidad { get; set; }
+        public int idDetalle { get; set; }
 
         public DetalleFactura(Articulo articulo, int cantidad)
         {

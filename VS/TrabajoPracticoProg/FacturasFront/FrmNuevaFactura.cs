@@ -30,6 +30,7 @@ namespace FacturasFront
         {
             InitializeComponent();
             factura = new Factura();
+
         }
         public FrmNuevaFactura(Accion modo, int nroFactura)
         {
@@ -40,13 +41,16 @@ namespace FacturasFront
             if (modo.Equals(Accion.READ))
             {
                 gbDatosFactura.Enabled = false;
-                btnAceptar.Visible = false;
-                txtCliente.Enabled = false;
+                btnEditar.Visible = true;
+                btnEditar.Enabled = true;
+                btnAceptar.Enabled = false;
                 this.Text = "Ver Factura";
                 CargarFacturaAsync(nroFactura);
             }
 
         }
+
+
 
         private async void FrmNuevaFactura_Load(object sender, EventArgs e)
         {
@@ -187,8 +191,20 @@ namespace FacturasFront
             factura.Cliente = txtCliente.Text;
             factura.FormaPago = new FormaPago(cboFormasPago.SelectedIndex + 1, "");
             string data = JsonConvert.SerializeObject(factura);
-            string url = "https://localhost:44357/api/Facturas/facturas";
-            bool success = await ClienteSingleton.GetInstancia().GrabarFacturaAsync(url, data);
+            bool success=false;
+            if (modo.Equals(Accion.CREATE))
+            {
+                string url = "https://localhost:44357/api/Facturas/facturas";
+                success = await ClienteSingleton.GetInstancia().GrabarFacturaAsync(url, data);
+            }
+            else
+            if (modo.Equals(Accion.UPDATE))
+            {
+                string url = "https://localhost:44357/api/Facturas/facturas" + factura.NroFactura.ToString();
+                success = await ClienteSingleton.GetInstancia().GrabarFacturaAsync(url, data);
+            }
+        
+          
    
             if (success)
             {
@@ -222,6 +238,22 @@ namespace FacturasFront
             }
         }
 
+        private void label1_Click(object sender, EventArgs e)
+        {
 
+        }
+
+        private void nudCantidad_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+            btnAceptar.Enabled = true;
+            gbDatosFactura.Enabled = true;
+            btnEditar.Enabled = false;
+            this.modo = Accion.UPDATE;
+        }
     }
 }

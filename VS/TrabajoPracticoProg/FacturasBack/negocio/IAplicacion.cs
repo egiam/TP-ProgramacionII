@@ -24,6 +24,8 @@ namespace FacturasBack.negocio
         public bool CrearArticulo(Articulo oArticulo);
 
         public Factura ObtenerFacturaPorID(int id);
-        
+
+        public bool EditarFactura(Factura oFactura);
+
     }
 }

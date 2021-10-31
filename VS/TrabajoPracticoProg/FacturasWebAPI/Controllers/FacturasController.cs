@@ -93,6 +93,26 @@ namespace FacturasWebAPI.Controllers
             return Ok(app.ObtenerFacturaPorID(id));
         }
 
+        //[HttpPut("facturas")]
+        //public IActionResult Put(int id)
+        //{
+        //    if (id == 0)
+        //        return BadRequest("Id es requerido!");
+        //    return Ok(app.EditarFacturaPorID(id));
+        //}
+        [HttpPut("facturas")]
+        public IActionResult PutFactura(Factura oFactura)
+        {
+            if (oFactura == null)
+            {
+                return BadRequest("Factura null");
+            }
+
+            if (app.EditarFactura(oFactura))
+                return Ok("¡Se grabó exitosamente la factura!");
+            else
+                return BadRequest("¡No se pudo grabar la factura!");
+        }
 
 
 

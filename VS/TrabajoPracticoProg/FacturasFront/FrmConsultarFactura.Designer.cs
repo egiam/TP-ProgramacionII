@@ -41,16 +41,17 @@ namespace FacturasFront
             this.label1 = new System.Windows.Forms.Label();
             this.gbResultados = new System.Windows.Forms.GroupBox();
             this.dgvResultados = new System.Windows.Forms.DataGridView();
+            this.btnNuevo = new System.Windows.Forms.Button();
+            this.btnEditar = new System.Windows.Forms.Button();
+            this.btnSalir = new System.Windows.Forms.Button();
+            this.txtEliminar = new System.Windows.Forms.Button();
             this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColFecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColCliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColFormaPago = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColFecBaja = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColAcciones = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.btnNuevo = new System.Windows.Forms.Button();
-            this.btnEditar = new System.Windows.Forms.Button();
-            this.btnSalir = new System.Windows.Forms.Button();
-            this.txtEliminar = new System.Windows.Forms.Button();
+            this.ColAccionesBaja = new System.Windows.Forms.DataGridViewButtonColumn();
             this.gbFiltros.SuspendLayout();
             this.gbResultados.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvResultados)).BeginInit();
@@ -174,7 +175,8 @@ namespace FacturasFront
             this.ColCliente,
             this.ColFormaPago,
             this.ColFecBaja,
-            this.ColAcciones});
+            this.ColAcciones,
+            this.ColAccionesBaja});
             this.dgvResultados.Location = new System.Drawing.Point(24, 19);
             this.dgvResultados.Name = "dgvResultados";
             this.dgvResultados.ReadOnly = true;
@@ -182,6 +184,43 @@ namespace FacturasFront
             this.dgvResultados.Size = new System.Drawing.Size(754, 176);
             this.dgvResultados.TabIndex = 0;
             this.dgvResultados.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvResultados_CellContentClick);
+            // 
+            // btnNuevo
+            // 
+            this.btnNuevo.Location = new System.Drawing.Point(43, 430);
+            this.btnNuevo.Name = "btnNuevo";
+            this.btnNuevo.Size = new System.Drawing.Size(75, 23);
+            this.btnNuevo.TabIndex = 1;
+            this.btnNuevo.Text = "Nuevo";
+            this.btnNuevo.UseVisualStyleBackColor = true;
+            // 
+            // btnEditar
+            // 
+            this.btnEditar.Location = new System.Drawing.Point(143, 431);
+            this.btnEditar.Name = "btnEditar";
+            this.btnEditar.Size = new System.Drawing.Size(75, 23);
+            this.btnEditar.TabIndex = 7;
+            this.btnEditar.Text = "Editar";
+            this.btnEditar.UseVisualStyleBackColor = true;
+            // 
+            // btnSalir
+            // 
+            this.btnSalir.Location = new System.Drawing.Point(746, 431);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(75, 23);
+            this.btnSalir.TabIndex = 8;
+            this.btnSalir.Text = "Salir";
+            this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
+            // 
+            // txtEliminar
+            // 
+            this.txtEliminar.Location = new System.Drawing.Point(241, 431);
+            this.txtEliminar.Name = "txtEliminar";
+            this.txtEliminar.Size = new System.Drawing.Size(75, 23);
+            this.txtEliminar.TabIndex = 9;
+            this.txtEliminar.Text = "Eliminar";
+            this.txtEliminar.UseVisualStyleBackColor = true;
             // 
             // Id
             // 
@@ -221,48 +260,19 @@ namespace FacturasFront
             // ColAcciones
             // 
             this.ColAcciones.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.ColAcciones.HeaderText = "Acciones";
+            this.ColAcciones.HeaderText = "Acción";
             this.ColAcciones.Name = "ColAcciones";
             this.ColAcciones.ReadOnly = true;
-            this.ColAcciones.Text = "Ver detalle";
+            this.ColAcciones.Text = "Ver detalle / Editar";
             this.ColAcciones.UseColumnTextForButtonValue = true;
             // 
-            // btnNuevo
+            // ColAccionesBaja
             // 
-            this.btnNuevo.Location = new System.Drawing.Point(43, 430);
-            this.btnNuevo.Name = "btnNuevo";
-            this.btnNuevo.Size = new System.Drawing.Size(75, 23);
-            this.btnNuevo.TabIndex = 1;
-            this.btnNuevo.Text = "Nuevo";
-            this.btnNuevo.UseVisualStyleBackColor = true;
-            // 
-            // btnEditar
-            // 
-            this.btnEditar.Location = new System.Drawing.Point(143, 431);
-            this.btnEditar.Name = "btnEditar";
-            this.btnEditar.Size = new System.Drawing.Size(75, 23);
-            this.btnEditar.TabIndex = 7;
-            this.btnEditar.Text = "Editar";
-            this.btnEditar.UseVisualStyleBackColor = true;
-            // 
-            // btnSalir
-            // 
-            this.btnSalir.Location = new System.Drawing.Point(746, 431);
-            this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(75, 23);
-            this.btnSalir.TabIndex = 8;
-            this.btnSalir.Text = "Salir";
-            this.btnSalir.UseVisualStyleBackColor = true;
-            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
-            // 
-            // txtEliminar
-            // 
-            this.txtEliminar.Location = new System.Drawing.Point(241, 431);
-            this.txtEliminar.Name = "txtEliminar";
-            this.txtEliminar.Size = new System.Drawing.Size(75, 23);
-            this.txtEliminar.TabIndex = 9;
-            this.txtEliminar.Text = "Eliminar";
-            this.txtEliminar.UseVisualStyleBackColor = true;
+            this.ColAccionesBaja.HeaderText = "Acción";
+            this.ColAccionesBaja.Name = "ColAccionesBaja";
+            this.ColAccionesBaja.ReadOnly = true;
+            this.ColAccionesBaja.Text = "Quitar";
+            this.ColAccionesBaja.UseColumnTextForButtonValue = true;
             // 
             // FrmConsultarFactura
             // 
@@ -310,5 +320,6 @@ namespace FacturasFront
         private System.Windows.Forms.DataGridViewTextBoxColumn ColFormaPago;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColFecBaja;
         private System.Windows.Forms.DataGridViewButtonColumn ColAcciones;
+        private System.Windows.Forms.DataGridViewButtonColumn ColAccionesBaja;
     }
 }

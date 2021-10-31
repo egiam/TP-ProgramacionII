@@ -79,5 +79,10 @@ namespace FacturasBack.datos
         {
             return HelperDao.GetInstance().GetFacturaPorId("SP_CONSULTAR_FACTURA_POR_ID", id);
         }
+
+        public bool EditarFactura(Factura oFactura)
+        {
+            return HelperDao.GetInstance().EjecutarInsertFactura(oFactura, "SP_EDITAR_FACTURA", "SP_EDITAR_DETALLES");
+        }
     }
 }

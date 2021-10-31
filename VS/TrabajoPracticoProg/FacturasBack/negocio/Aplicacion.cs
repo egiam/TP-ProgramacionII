@@ -56,6 +56,11 @@ namespace FacturasBack.negocio
             return dao.GetFacturaPorId(id);
         }
 
+        public bool EditarFactura(Factura oFactura)
+        {
+            return dao.EditarFactura(oFactura);
+        }
 
-     }
+
+    }
 }

@@ -120,11 +120,12 @@ END
 
 GO
 
-CREATE PROCEDURE [dbo].[SP_INSERTAR_FACTURA] 
+alter PROCEDURE [dbo].[SP_INSERTAR_FACTURA] 
 	@cliente varchar(255), 
 	@forma int,
 	@nro_factura int,
-	@total decimal(10,2)
+	@total decimal(10,2),
+	@fecha datetime
 AS
 BEGIN
 	INSERT INTO facturas(nro_factura, fecha, cliente, id_forma_pago, total)
@@ -134,18 +135,57 @@ GO
 
 
 
-CREATE PROCEDURE [dbo].[SP_INSERTAR_DETALLES] 
+alter PROCEDURE [dbo].[SP_INSERTAR_DETALLES] 
 	@nro_factura int,
 	@id_articulo int, 
-	@cantidad int
+	@cantidad int,
+	@id_detalle int
 AS
 BEGIN
 	INSERT INTO detalles_factura(nro_factura, id_articulo, cantidad)
     VALUES (@nro_factura, @id_articulo, @cantidad);
   
 END
+select * from facturas
 
 GO
+------
+
+alter PROCEDURE [dbo].[SP_EDITAR_FACTURA] 
+	@cliente varchar(255), 
+	@forma int,
+	@nro_factura int,
+	@total decimal(10,2)
+	--@fecha datetime
+AS
+
+	UPDATE facturas
+	SET  cliente=@cliente,id_forma_pago=@forma,total=@total
+	WHERE nro_factura=@nro_factura
+
+GO
+exec [dbo].[SP_EDITAR_FACTURA]  'Luis', 1, 1, 3500
+
+select * from facturas
+
+	UPDATE facturas
+	SET  cliente='pepe', id_forma_pago=2, total=3500
+	WHERE nro_factura=1
+
+CREATE PROCEDURE [dbo].[SP_EDITAR_DETALLES] 
+	@nro_factura int,
+	@id_articulo int, 
+	@cantidad int,
+	@id_detalle int
+AS
+BEGIN
+	UPDATE detalles_factura
+	SET id_articulo=@id_articulo, cantidad=@cantidad
+	WHERE nro_factura=@nro_factura and id_detalle=@id_detalle 
+END
+
+GO
+-----
 
 CREATE PROCEDURE [dbo].[SP_CONSULTAR_ARTICULOS]
 AS

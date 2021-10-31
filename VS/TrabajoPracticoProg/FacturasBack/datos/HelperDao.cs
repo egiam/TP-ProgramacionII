@@ -61,6 +61,8 @@ namespace FacturasBack.datos
         }
 
 
+
+
         public bool EjecutarInsertFactura(Factura factura, string spMaestro, string spDetalle)
         {
             bool ok = true;
@@ -79,6 +81,7 @@ namespace FacturasBack.datos
                 cmdMaestro.Parameters.AddWithValue("@cliente", factura.Cliente);
                 cmdMaestro.Parameters.AddWithValue("@forma", factura.FormaPago.IdFormaPago);
                 cmdMaestro.Parameters.AddWithValue("@total", factura.Total);
+                cmdMaestro.Parameters.AddWithValue("@fecha", factura.Fecha);
 
 
                 cmdMaestro.ExecuteNonQuery();
@@ -91,6 +94,7 @@ namespace FacturasBack.datos
                     cmdDetalle.Parameters.AddWithValue("@nro_factura", factura.NroFactura);
                     cmdDetalle.Parameters.AddWithValue("@id_articulo", detalle.Articulo.IdArticulo);
                     cmdDetalle.Parameters.AddWithValue("@cantidad", detalle.Cantidad);
+                    cmdDetalle.Parameters.AddWithValue("@id_detalle", detalle.idDetalle);
 
                     cmdDetalle.ExecuteNonQuery();
                 }
@@ -112,7 +116,6 @@ namespace FacturasBack.datos
             }
             return ok;
         }
-
 
         public bool EjecutarInsertArticulo(Articulo articulo, string spArticulo)
         {
