@@ -17,7 +17,7 @@ namespace FacturasFront
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmConsultarFactura());
+            Application.Run(new FrmNuevaFactura());
         }
     }
 }

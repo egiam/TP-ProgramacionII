@@ -1,4 +1,5 @@
 ﻿using FacturasBack.dominio;
+using FacturasFront.clienteHttp;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -27,17 +28,23 @@ namespace FacturasFront
             
             await CargarCboArticulosAsync();
             await CargarCboFormasPagoAsync();
-            await AsignarNumeroFacturaAsync();
+            await AsignarNroFactura();
 
+
+        }
+
+        private async Task AsignarNroFactura()
+        {
+            string url = "https://localhost:44357/api/Facturas/proximo_nro_factura";
+            int nroFactura = await ClienteSingleton.GetInstancia().AsignarNumeroFacturaAsync(url);
+            factura.NroFactura = nroFactura;
+            lblFacturaNro.Text = "Factura Nro: " + nroFactura;
         }
 
         private async Task CargarCboArticulosAsync()
         {
-            string urlArticulo = "https://localhost:44357/api/Facturas/articulos";
-            HttpClient cliente = new HttpClient();
-            var result = await cliente.GetAsync(urlArticulo);
-            var contenido = await result.Content.ReadAsStringAsync();
-            List<Articulo> lst = JsonConvert.DeserializeObject<List<Articulo>>(contenido);
+            string url = "https://localhost:44357/api/Facturas/articulos";
+            List<Articulo> lst = await ClienteSingleton.GetInstancia().ConsultarArticulos(url);
 
             cboArticulos.DataSource = lst;
             cboArticulos.DisplayMember = "Nombre";
@@ -46,27 +53,12 @@ namespace FacturasFront
 
         private async Task CargarCboFormasPagoAsync()
         {
-            string urlFormaPago = "https://localhost:44357/api/Facturas/formas_de_pago";
-            HttpClient cliente = new HttpClient();
-            var result = await cliente.GetAsync(urlFormaPago);
-            var contenido = await result.Content.ReadAsStringAsync();
-            List<FormaPago> lst = JsonConvert.DeserializeObject<List<FormaPago>>(contenido);
+            string url = "https://localhost:44357/api/Facturas/formas_de_pago";
+            List<FormaPago> lst = await ClienteSingleton.GetInstancia().ConsultarFormasPago(url);
 
             cboFormasPago.DataSource = lst;
             cboFormasPago.DisplayMember = "Nombre";
             cboFormasPago.ValueMember = "IdFormaPago";
-        }
-
-        private async Task AsignarNumeroFacturaAsync()
-        {
-            string url = "https://localhost:44357/api/Facturas/proximo_nro_factura";
-            using (HttpClient cliente = new HttpClient())
-            {
-                var result = await cliente.GetStringAsync(url);
-                factura.NroFactura = Int32.Parse(result);
-                lblFacturaNro.Text = "Factura Nro: " + result;
-            }
-
         }
 
         private void cboArticulos_SelectedIndexChanged(object sender, EventArgs e)
@@ -145,8 +137,8 @@ namespace FacturasFront
             factura.Cliente = txtCliente.Text;
             factura.FormaPago = new FormaPago(cboFormasPago.SelectedIndex + 1, "");
             string data = JsonConvert.SerializeObject(factura);
-
-            bool success = await GrabarFacturaAsync(data);
+            string url = "https://localhost:44357/api/Facturas/facturas";
+            bool success = await ClienteSingleton.GetInstancia().GrabarFacturaAsync(url, data);
    
             if (success)
             {
@@ -160,16 +152,7 @@ namespace FacturasFront
 
         }
 
-        private async Task<bool> GrabarFacturaAsync(string data)
-        {
-            string url = "https://localhost:44357/api/Facturas/facturas";
-            using (HttpClient client = new HttpClient())
-            {
-                StringContent content = new StringContent(data, Encoding.UTF8, "application/json");
-                var result = await client.PostAsync(url, content);
-                return (int)result.StatusCode == 200;
-            }
-        }
+      
         private async Task limpiarCamposAsync()
         {
             txtCliente.Text = string.Empty;
@@ -179,7 +162,8 @@ namespace FacturasFront
             dgvDetalles.Rows.Clear();
             lblTotal.Text = "Total: ";
             nudCantidad.Value = 1;
-            await AsignarNumeroFacturaAsync();
+            await AsignarNroFactura();
+
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
