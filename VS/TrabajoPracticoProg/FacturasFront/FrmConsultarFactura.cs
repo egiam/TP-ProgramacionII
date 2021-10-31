@@ -14,6 +14,7 @@ using System.Windows.Forms;
 
 namespace FacturasFront
 {
+
     public partial class FrmConsultarFactura : Form
     {
         public FrmConsultarFactura()
@@ -85,6 +86,16 @@ namespace FacturasFront
         private void btnSalir_Click(object sender, EventArgs e)
         {
                 this.Dispose();
+        }
+
+        private void dgvResultados_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (dgvResultados.CurrentCell.ColumnIndex == 5)
+            {
+                int nroFactura = Convert.ToInt32(dgvResultados.CurrentRow.Cells["Id"].Value.ToString());
+                FrmNuevaFactura frm = new FrmNuevaFactura(Accion.READ, nroFactura);
+                frm.ShowDialog();
+            }
         }
     }
 }

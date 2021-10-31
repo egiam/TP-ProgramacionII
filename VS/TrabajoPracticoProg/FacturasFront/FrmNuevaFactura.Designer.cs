@@ -48,8 +48,10 @@ namespace FacturasFront
             this.btnCancelar = new System.Windows.Forms.Button();
             this.lblTotal = new System.Windows.Forms.Label();
             this.nudCantidad = new System.Windows.Forms.NumericUpDown();
+            this.gbDatosFactura = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDetalles)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudCantidad)).BeginInit();
+            this.gbDatosFactura.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblFecha
@@ -64,7 +66,7 @@ namespace FacturasFront
             // lblFacturaNro
             // 
             this.lblFacturaNro.AutoSize = true;
-            this.lblFacturaNro.Location = new System.Drawing.Point(46, 21);
+            this.lblFacturaNro.Location = new System.Drawing.Point(34, 33);
             this.lblFacturaNro.Name = "lblFacturaNro";
             this.lblFacturaNro.Size = new System.Drawing.Size(78, 15);
             this.lblFacturaNro.TabIndex = 1;
@@ -115,8 +117,8 @@ namespace FacturasFront
             // 
             this.dgvDetalles.AllowUserToAddRows = false;
             this.dgvDetalles.AllowUserToDeleteRows = false;
-            this.dgvDetalles.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(200)))));
-            this.dgvDetalles.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvDetalles.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.dgvDetalles.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dgvDetalles.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvDetalles.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Id,
@@ -124,11 +126,11 @@ namespace FacturasFront
             this.ColCantidad,
             this.ColPrecio,
             this.ColAcciones});
-            this.dgvDetalles.Location = new System.Drawing.Point(30, 212);
+            this.dgvDetalles.Location = new System.Drawing.Point(18, 209);
             this.dgvDetalles.Name = "dgvDetalles";
             this.dgvDetalles.ReadOnly = true;
             this.dgvDetalles.RowTemplate.Height = 25;
-            this.dgvDetalles.Size = new System.Drawing.Size(612, 150);
+            this.dgvDetalles.Size = new System.Drawing.Size(660, 140);
             this.dgvDetalles.TabIndex = 7;
             this.dgvDetalles.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDetalles_CellContentClick);
             // 
@@ -229,7 +231,16 @@ namespace FacturasFront
             0,
             0,
             0});
-            this.nudCantidad.ValueChanged += new System.EventHandler(this.nudCantidad_ValueChanged);
+            // 
+            // gbDatosFactura
+            // 
+            this.gbDatosFactura.Controls.Add(this.lblFacturaNro);
+            this.gbDatosFactura.Controls.Add(this.dgvDetalles);
+            this.gbDatosFactura.Location = new System.Drawing.Point(12, 3);
+            this.gbDatosFactura.Name = "gbDatosFactura";
+            this.gbDatosFactura.Size = new System.Drawing.Size(763, 435);
+            this.gbDatosFactura.TabIndex = 15;
+            this.gbDatosFactura.TabStop = false;
             // 
             // FrmNuevaFactura
             // 
@@ -243,19 +254,20 @@ namespace FacturasFront
             this.Controls.Add(this.btnAceptar);
             this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.cboArticulos);
-            this.Controls.Add(this.dgvDetalles);
             this.Controls.Add(this.cboFormasPago);
             this.Controls.Add(this.txtCliente);
             this.Controls.Add(this.dtpFecha);
             this.Controls.Add(this.lblFormaPago);
             this.Controls.Add(this.lblCliente);
-            this.Controls.Add(this.lblFacturaNro);
             this.Controls.Add(this.lblFecha);
+            this.Controls.Add(this.gbDatosFactura);
             this.Name = "FrmNuevaFactura";
             this.Text = "Nueva Factura";
             this.Load += new System.EventHandler(this.FrmNuevaFactura_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDetalles)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudCantidad)).EndInit();
+            this.gbDatosFactura.ResumeLayout(false);
+            this.gbDatosFactura.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -282,6 +294,7 @@ namespace FacturasFront
         private System.Windows.Forms.DataGridViewTextBoxColumn ColCantidad;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColPrecio;
         private System.Windows.Forms.DataGridViewButtonColumn ColAcciones;
+        private System.Windows.Forms.GroupBox gbDatosFactura;
     }
 }
 

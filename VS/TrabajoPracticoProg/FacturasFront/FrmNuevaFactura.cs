@@ -14,13 +14,38 @@ using System.Windows.Forms;
 
 namespace FacturasFront
 {
+    public enum Accion
+    {
+        CREATE,
+        READ,
+        UPDATE,
+        DELETE
+    }
     public partial class FrmNuevaFactura : Form
     {
         private Factura factura;
+        private Accion modo;
+
         public FrmNuevaFactura()
         {
             InitializeComponent();
             factura = new Factura();
+        }
+        public FrmNuevaFactura(Accion modo, int nroFactura)
+        {
+            InitializeComponent();
+           // servicio = new ServiceFactoryImp().CrearService();
+            this.modo = modo;
+
+            if (modo.Equals(Accion.READ))
+            {
+                gbDatosFactura.Enabled = false;
+                btnAceptar.Visible = false;
+                txtCliente.Enabled = false;
+                this.Text = "Ver Factura";
+                CargarFacturaAsync(nroFactura);
+            }
+
         }
 
         private async void FrmNuevaFactura_Load(object sender, EventArgs e)
@@ -33,12 +58,38 @@ namespace FacturasFront
 
         }
 
+        private async Task CargarFacturaAsync(int nro)
+        {
+            // servicio.ObtenerPresupuestoPorID(nro);
+            string url = "https://localhost:44357/api/Facturas/" + nro.ToString();
+            var resultado = await ClienteSingleton.GetInstancia().GetAsync(url);
+            this.factura = JsonConvert.DeserializeObject<Factura>(resultado);
+
+            txtCliente.Text = factura.Cliente;
+            dtpFecha.Value = factura.Fecha;
+
+          
+            lblFacturaNro.Text = "Factura Nro: " + factura.NroFactura.ToString();
+
+            dgvDetalles.Rows.Clear();
+            foreach (DetalleFactura oDetalle in factura.Detalles)
+            {
+                dgvDetalles.Rows.Add(new object[] { "", oDetalle.Articulo.Nombre, oDetalle.Cantidad, oDetalle.Articulo.PrecioUnitario }); ;
+            }
+            CalcularTotal();
+        }
+
         private async Task AsignarNroFactura()
         {
-            string url = "https://localhost:44357/api/Facturas/proximo_nro_factura";
-            int nroFactura = await ClienteSingleton.GetInstancia().AsignarNumeroFacturaAsync(url);
-            factura.NroFactura = nroFactura;
-            lblFacturaNro.Text = "Factura Nro: " + nroFactura;
+            if (modo.Equals(Accion.CREATE))
+            {
+
+
+                string url = "https://localhost:44357/api/Facturas/proximo_nro_factura";
+                int nroFactura = await ClienteSingleton.GetInstancia().AsignarNumeroFacturaAsync(url);
+                factura.NroFactura = nroFactura;
+                lblFacturaNro.Text = "Factura Nro: " + nroFactura;
+            }
         }
 
         private async Task CargarCboArticulosAsync()
@@ -81,14 +132,13 @@ namespace FacturasFront
             dgvDetalles.Rows.Add(new string[] { "", detalle.Articulo.Nombre, detalle.Cantidad.ToString(), detalle.Articulo.PrecioUnitario.ToString() });
 
             CalcularTotal();
-
         }
+
         private void CalcularTotal()
         {
             double total = factura.CalcularTotal();
             lblTotal.Text = "Total: $" + total.ToString();
             factura.Total = total;
-
         }
 
         private bool ExisteArticuloEnGrilla(string text)
@@ -149,9 +199,7 @@ namespace FacturasFront
             {
                 MessageBox.Show("Ha ocurrido un inconveniente al registrar la factura!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-
         }
-
       
         private async Task limpiarCamposAsync()
         {
@@ -163,7 +211,6 @@ namespace FacturasFront
             lblTotal.Text = "Total: ";
             nudCantidad.Value = 1;
             await AsignarNroFactura();
-
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
@@ -172,13 +219,9 @@ namespace FacturasFront
             if (result == DialogResult.Yes)
             {
                 this.Dispose();
-
             }
         }
 
-        private void nudCantidad_ValueChanged(object sender, EventArgs e)
-        {
 
-        }
     }
 }

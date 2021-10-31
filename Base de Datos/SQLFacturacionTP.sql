@@ -215,6 +215,21 @@ GO
 
 exec SP_CONSULTAR_FACTURAS @fecha_desde = '30/10/2021',@fecha_hasta = '31/10/2021 12:50:21'
 
+alter PROCEDURE [dbo].[SP_CONSULTAR_FACTURA_POR_ID]
+	@id int	
+AS
+BEGIN
+	SELECT f.nro_factura, fecha, f.id_forma_pago,f.fecha_baja, f.total, cliente,d.id_articulo,cantidad,
+	a.nombre 'nombre_articulo',pre_unitario,fp.nombre 'nombre_forma_pago' 
+	FROM facturas f, detalles_factura d, articulos a, formas_pago fp
+	WHERE f.nro_factura = d.nro_factura
+	AND f.id_forma_pago=fp.id_forma_pago
+	AND d.id_articulo = a.id_articulo
+	AND f.nro_factura = @id;
+END
+GO
+exec [SP_CONSULTAR_FACTURA_POR_ID] 4
 
 SELECT * from facturas
 select * from detalles_factura
+select * from articulos

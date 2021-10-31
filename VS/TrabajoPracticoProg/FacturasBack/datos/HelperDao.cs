@@ -240,7 +240,47 @@ namespace FacturasBack.datos
         }
 
 
+        public Factura GetFacturaPorId(string nombreSP, int id)
+        {
+            Factura oFactura = new Factura();
+            SqlConnection cnn = new SqlConnection(connectionString);
+            cnn.Open();
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = cnn;
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.CommandText = nombreSP;
+            cmd.Parameters.AddWithValue("@id", id);
+            SqlDataReader reader = cmd.ExecuteReader();
+            bool esPrimerRegistro = true;
 
+            while (reader.Read())
+            {
+                if (esPrimerRegistro)
+                {
+                    //solo para el primer resultado recuperamos los datos del MAESTRO:
+                    oFactura.NroFactura = Convert.ToInt32(reader["nro_factura"].ToString());
+                    oFactura.Cliente = reader["cliente"].ToString();
+                    oFactura.Fecha = Convert.ToDateTime(reader["fecha"].ToString());
+                    FormaPago formaPago = new FormaPago();
+                    formaPago.IdFormaPago= Convert.ToInt32(reader["id_forma_pago"].ToString());
+                    formaPago.Nombre = reader["nombre_forma_pago"].ToString();
+                    oFactura.FormaPago = formaPago;
+                    oFactura.Total = Convert.ToDouble(reader["total"].ToString());
+                    esPrimerRegistro = false;
+                }
+
+                DetalleFactura oDetalle = new DetalleFactura();
+                Articulo oArticulo = new Articulo();
+                oArticulo.IdArticulo = Convert.ToInt32(reader["id_articulo"].ToString());
+                oArticulo.Nombre = reader["nombre_articulo"].ToString();
+                oArticulo.PrecioUnitario = Convert.ToDouble(reader["pre_unitario"].ToString());
+                oDetalle.Articulo = oArticulo;
+                oDetalle.Cantidad = Convert.ToInt32(reader["cantidad"].ToString());
+                esPrimerRegistro = false;
+                oFactura.AgregarDetalle(oDetalle);
+            }
+            return oFactura;
+        }
 
 
 

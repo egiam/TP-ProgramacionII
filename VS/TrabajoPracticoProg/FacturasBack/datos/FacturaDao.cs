@@ -74,5 +74,10 @@ namespace FacturasBack.datos
             return HelperDao.GetInstance().ConsultarFacturas("SP_CONSULTAR_FACTURAS", criterios);
         }
 
+
+        public Factura GetFacturaPorId(int id)
+        {
+            return HelperDao.GetInstance().GetFacturaPorId("SP_CONSULTAR_FACTURA_POR_ID", id);
+        }
     }
 }

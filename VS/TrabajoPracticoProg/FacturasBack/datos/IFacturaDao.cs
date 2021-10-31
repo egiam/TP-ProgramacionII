@@ -21,5 +21,8 @@ namespace FacturasBack.datos
         int GetArticuloNro();
 
         List<Factura> GetByFilters(List<Parametro> criterios);
+
+
+        Factura GetFacturaPorId(int id);
     }
 }

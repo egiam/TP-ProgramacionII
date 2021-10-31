@@ -122,15 +122,15 @@ namespace FacturasFront
             // 
             // dtpHasta
             // 
-            this.dtpHasta.Location = new System.Drawing.Point(564, 57);
+            this.dtpHasta.Location = new System.Drawing.Point(508, 60);
             this.dtpHasta.Name = "dtpHasta";
-            this.dtpHasta.Size = new System.Drawing.Size(200, 23);
+            this.dtpHasta.Size = new System.Drawing.Size(227, 23);
             this.dtpHasta.TabIndex = 3;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(482, 63);
+            this.label2.Location = new System.Drawing.Point(426, 66);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(72, 15);
             this.label2.TabIndex = 2;
@@ -138,16 +138,16 @@ namespace FacturasFront
             // 
             // dtpDesde
             // 
-            this.dtpDesde.Location = new System.Drawing.Point(564, 24);
+            this.dtpDesde.Location = new System.Drawing.Point(508, 27);
             this.dtpDesde.Name = "dtpDesde";
-            this.dtpDesde.Size = new System.Drawing.Size(200, 23);
+            this.dtpDesde.Size = new System.Drawing.Size(227, 23);
             this.dtpDesde.TabIndex = 1;
             this.dtpDesde.Value = new System.DateTime(2021, 1, 1, 0, 0, 0, 0);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(482, 23);
+            this.label1.Location = new System.Drawing.Point(426, 26);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(75, 15);
             this.label1.TabIndex = 0;
@@ -181,6 +181,7 @@ namespace FacturasFront
             this.dgvResultados.RowTemplate.Height = 25;
             this.dgvResultados.Size = new System.Drawing.Size(754, 176);
             this.dgvResultados.TabIndex = 0;
+            this.dgvResultados.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvResultados_CellContentClick);
             // 
             // Id
             // 

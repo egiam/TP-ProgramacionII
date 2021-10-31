@@ -85,6 +85,16 @@ namespace FacturasWebAPI.Controllers
 
 
 
+        [HttpGet("{id}")]
+        public IActionResult Get(int id)
+        {
+            if (id == 0)
+                return BadRequest("Id es requerido!");
+            return Ok(app.ObtenerFacturaPorID(id));
+        }
+
+
+
 
     }
 }

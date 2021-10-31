@@ -51,6 +51,11 @@ namespace FacturasBack.negocio
             return dao.SaveArticulo(oArticulo);
         }
 
+        public Factura ObtenerFacturaPorID(int id)
+        {
+            return dao.GetFacturaPorId(id);
+        }
 
-    }
+
+     }
 }
