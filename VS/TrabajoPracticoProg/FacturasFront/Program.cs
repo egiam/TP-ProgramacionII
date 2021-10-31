@@ -18,6 +18,7 @@ namespace FacturasFront
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new FrmConsultarFactura());
+            //Application.Run(new FrmNuevaFactura());
         }
     }
 }

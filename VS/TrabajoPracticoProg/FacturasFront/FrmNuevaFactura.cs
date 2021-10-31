@@ -47,7 +47,16 @@ namespace FacturasFront
                 this.Text = "Ver Factura";
                 CargarFacturaAsync(nroFactura);
             }
-            
+
+            if (modo.Equals(Accion.CREATE))
+            {
+               factura = new Factura();
+              
+            }
+
+
+
+
 
         }
 
@@ -55,12 +64,9 @@ namespace FacturasFront
 
         private async void FrmNuevaFactura_Load(object sender, EventArgs e)
         {
-            
             await CargarCboArticulosAsync();
             await CargarCboFormasPagoAsync();
             await AsignarNroFactura();
-
-
         }
 
         private async Task CargarFacturaAsync(int nro)
@@ -189,6 +195,7 @@ namespace FacturasFront
 
             factura.Cliente = txtCliente.Text;
             factura.FormaPago = new FormaPago(cboFormasPago.SelectedIndex + 1, "");
+            factura.Fecha = dtpFecha.Value;
             string data = JsonConvert.SerializeObject(factura);
             bool success=false;
             string url = "https://localhost:44357/api/Facturas/facturas";

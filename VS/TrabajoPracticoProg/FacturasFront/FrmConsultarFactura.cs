@@ -97,5 +97,31 @@ namespace FacturasFront
                 frm.ShowDialog();
             }
         }
+
+        private void btnNuevo_Click(object sender, EventArgs e)
+        {
+            FrmNuevaFactura frm = new FrmNuevaFactura(Accion.CREATE, 0);
+            frm.ShowDialog();
+        }
+
+        private void dtpHasta_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dtpDesde_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

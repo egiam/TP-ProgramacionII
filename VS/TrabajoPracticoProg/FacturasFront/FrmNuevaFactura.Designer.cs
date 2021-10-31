@@ -87,16 +87,17 @@ namespace FacturasFront
             // dtpFecha
             // 
             this.dtpFecha.Enabled = false;
-            this.dtpFecha.Location = new System.Drawing.Point(121, 75);
+            this.dtpFecha.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpFecha.Location = new System.Drawing.Point(121, 78);
             this.dtpFecha.Name = "dtpFecha";
-            this.dtpFecha.Size = new System.Drawing.Size(214, 23);
+            this.dtpFecha.Size = new System.Drawing.Size(182, 23);
             this.dtpFecha.TabIndex = 4;
             // 
             // txtCliente
             // 
             this.txtCliente.Location = new System.Drawing.Point(121, 110);
             this.txtCliente.Name = "txtCliente";
-            this.txtCliente.Size = new System.Drawing.Size(453, 23);
+            this.txtCliente.Size = new System.Drawing.Size(318, 23);
             this.txtCliente.TabIndex = 5;
             // 
             // cboFormasPago

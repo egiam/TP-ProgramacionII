@@ -36,7 +36,7 @@ create table facturas
 (
 	nro_factura int, 
 	Constraint pk_factura primary key (nro_factura),
-	fecha datetime,
+	fecha date,
 	id_forma_pago int,
 	fecha_baja date null,
 	total decimal(12,2) not null,
@@ -121,9 +121,9 @@ END
 GO
 
 alter PROCEDURE [dbo].[SP_INSERTAR_FACTURA] 
+	@nro_factura int,
 	@cliente varchar(255), 
 	@forma int,
-	@nro_factura int,
 	@total decimal(10,2),
 	@fecha datetime
 AS
@@ -133,6 +133,7 @@ BEGIN
 END
 GO
 
+exec [dbo].[SP_INSERTAR_FACTURA] 4,'pepe',1,200,'01/01/0001'
 
 
 alter PROCEDURE [dbo].[SP_INSERTAR_DETALLES] 
@@ -140,6 +141,7 @@ alter PROCEDURE [dbo].[SP_INSERTAR_DETALLES]
 	@id_articulo int, 
 	@cantidad int,
 	@id_detalle int
+
 AS
 BEGIN
 	INSERT INTO detalles_factura(nro_factura, id_articulo, cantidad)
@@ -236,8 +238,8 @@ GO
 
 
 alter PROCEDURE [dbo].[SP_CONSULTAR_FACTURAS] 
-	@fecha_desde datetime = null,
-	@fecha_hasta datetime = null,
+	@fecha_desde date = null,
+	@fecha_hasta date = null,
 	@cliente varchar(255) =null,
 	@datos_baja varchar(1) = null
 AS
@@ -246,14 +248,16 @@ print @fecha_hasta
 	SELECT * FROM facturas f
 	join formas_pago fp on f.id_forma_pago=fp.id_forma_pago
 	WHERE 
-	 ((@fecha_desde is null and @fecha_hasta is null) OR (fecha >= @fecha_desde and fecha <= @fecha_hasta))
+	 ((@fecha_desde is null and @fecha_hasta is null) OR fecha between @fecha_desde and @fecha_hasta)--(fecha >= @fecha_desde and fecha <= @fecha_hasta))
 	 AND(@cliente is null OR (cliente like '%' + @cliente + '%'))
 	 AND (@datos_baja is null OR (@datos_baja = 'S') OR (@datos_baja = 'N' and fecha_baja is  null))
-	 
+
+
 END
 GO
 
-exec SP_CONSULTAR_FACTURAS @fecha_desde = '30/10/2021',@fecha_hasta = '31/10/2021 12:50:21'
+
+exec SP_CONSULTAR_FACTURAS @fecha_desde = '1/10/2021',@fecha_hasta = '31/10/2021'
 
 alter PROCEDURE [dbo].[SP_CONSULTAR_FACTURA_POR_ID]
 	@id int	
