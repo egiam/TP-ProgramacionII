@@ -71,7 +71,15 @@ namespace FacturasFront.clienteHttp
             //}
         }
 
-        public async Task<int> AsignarNumeroFacturaAsync(string url)//revisar nombre
+        public async Task<bool> EditarFacturaAsync(string url, string data)
+        {
+
+            StringContent content = new StringContent(data, Encoding.UTF8, "application/json");
+            var result = await cliente.PutAsync(url, content);
+            return (int)result.StatusCode == 200;
+        }
+
+            public async Task<int> AsignarNumeroFacturaAsync(string url)//revisar nombre
         {
             var result = await cliente.GetStringAsync(url);
             return Int32.Parse(result);

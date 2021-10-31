@@ -47,6 +47,7 @@ namespace FacturasFront
                 this.Text = "Ver Factura";
                 CargarFacturaAsync(nroFactura);
             }
+            
 
         }
 
@@ -87,8 +88,6 @@ namespace FacturasFront
         {
             if (modo.Equals(Accion.CREATE))
             {
-
-
                 string url = "https://localhost:44357/api/Facturas/proximo_nro_factura";
                 int nroFactura = await ClienteSingleton.GetInstancia().AsignarNumeroFacturaAsync(url);
                 factura.NroFactura = nroFactura;
@@ -192,33 +191,40 @@ namespace FacturasFront
             factura.FormaPago = new FormaPago(cboFormasPago.SelectedIndex + 1, "");
             string data = JsonConvert.SerializeObject(factura);
             bool success=false;
+            string url = "https://localhost:44357/api/Facturas/facturas";
+
             if (modo.Equals(Accion.CREATE))
-            {
-                string url = "https://localhost:44357/api/Facturas/facturas";
+            {        
                 success = await ClienteSingleton.GetInstancia().GrabarFacturaAsync(url, data);
+                MostrarMensajeResultado(success);
+                await limpiarCamposAsync();
             }
             else
             if (modo.Equals(Accion.UPDATE))
-            {
-                string url = "https://localhost:44357/api/Facturas/facturas" + factura.NroFactura.ToString();
-                success = await ClienteSingleton.GetInstancia().GrabarFacturaAsync(url, data);
+            {              
+                success = await ClienteSingleton.GetInstancia().EditarFacturaAsync(url, data);
+                MostrarMensajeResultado(success);
+                this.Dispose();
             }
         
-          
-   
-            if (success)
+           
+        }
+        private void MostrarMensajeResultado(bool resultado)
+        {
+            if (resultado)
             {
                 MessageBox.Show("Factura registrada con éxito!", "Confirmación", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                await limpiarCamposAsync();
             }
             else
             {
                 MessageBox.Show("Ha ocurrido un inconveniente al registrar la factura!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-      
+
+
         private async Task limpiarCamposAsync()
         {
+            factura = new Factura();
             txtCliente.Text = string.Empty;
             txtCliente.Focus();
             cboFormasPago.Text = string.Empty;
