@@ -40,7 +40,7 @@ namespace FacturasFront
             this.dtpDesde = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
             this.gbResultados = new System.Windows.Forms.GroupBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvResultados = new System.Windows.Forms.DataGridView();
             this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColFecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColCliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -53,7 +53,7 @@ namespace FacturasFront
             this.txtEliminar = new System.Windows.Forms.Button();
             this.gbFiltros.SuspendLayout();
             this.gbResultados.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvResultados)).BeginInit();
             this.SuspendLayout();
             // 
             // gbFiltros
@@ -141,6 +141,7 @@ namespace FacturasFront
             this.dtpDesde.Name = "dtpDesde";
             this.dtpDesde.Size = new System.Drawing.Size(200, 23);
             this.dtpDesde.TabIndex = 1;
+            this.dtpDesde.Value = new System.DateTime(2021, 1, 1, 0, 0, 0, 0);
             // 
             // label1
             // 
@@ -153,7 +154,7 @@ namespace FacturasFront
             // 
             // gbResultados
             // 
-            this.gbResultados.Controls.Add(this.dataGridView1);
+            this.gbResultados.Controls.Add(this.dgvResultados);
             this.gbResultados.Location = new System.Drawing.Point(43, 183);
             this.gbResultados.Name = "gbResultados";
             this.gbResultados.Size = new System.Drawing.Size(781, 228);
@@ -161,24 +162,24 @@ namespace FacturasFront
             this.gbResultados.TabStop = false;
             this.gbResultados.Text = "Resultados";
             // 
-            // dataGridView1
+            // dgvResultados
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvResultados.AllowUserToAddRows = false;
+            this.dgvResultados.AllowUserToDeleteRows = false;
+            this.dgvResultados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvResultados.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Id,
             this.ColFecha,
             this.ColCliente,
             this.ColFormaPago,
             this.ColFecBaja,
             this.ColAcciones});
-            this.dataGridView1.Location = new System.Drawing.Point(24, 19);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(754, 176);
-            this.dataGridView1.TabIndex = 0;
+            this.dgvResultados.Location = new System.Drawing.Point(24, 19);
+            this.dgvResultados.Name = "dgvResultados";
+            this.dgvResultados.ReadOnly = true;
+            this.dgvResultados.RowTemplate.Height = 25;
+            this.dgvResultados.Size = new System.Drawing.Size(754, 176);
+            this.dgvResultados.TabIndex = 0;
             // 
             // Id
             // 
@@ -277,7 +278,7 @@ namespace FacturasFront
             this.gbFiltros.ResumeLayout(false);
             this.gbFiltros.PerformLayout();
             this.gbResultados.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvResultados)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -293,7 +294,7 @@ namespace FacturasFront
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox gbResultados;
         private System.Windows.Forms.Button btnNuevo;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvResultados;
         private System.Windows.Forms.Button btnLimpiarFiltros;
         private System.Windows.Forms.CheckBox chkBaja;
         private System.Windows.Forms.Button btnConsultar;

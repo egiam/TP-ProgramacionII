@@ -37,11 +37,14 @@ create table facturas
 	nro_factura int, 
 	Constraint pk_factura primary key (nro_factura),
 	fecha datetime,
-	id_forma_pago int
+	id_forma_pago int,
+	fecha_baja date null,
+	total decimal(12,2) not null,
 	Constraint fk_facturas_forma_pago foreign key(id_forma_pago)
 	References formas_pago (id_forma_pago),
 	cliente varchar(75)
 )
+
 
 create table articulos 
 (
@@ -120,11 +123,12 @@ GO
 CREATE PROCEDURE [dbo].[SP_INSERTAR_FACTURA] 
 	@cliente varchar(255), 
 	@forma int,
-	@nro_factura int
+	@nro_factura int,
+	@total decimal(10,2)
 AS
 BEGIN
-	INSERT INTO facturas(nro_factura, fecha, cliente, id_forma_pago)
-	VALUES (@nro_factura, GETDATE(), @cliente, @forma);
+	INSERT INTO facturas(nro_factura, fecha, cliente, id_forma_pago, total)
+	VALUES (@nro_factura, GETDATE(), @cliente, @forma, @total);
 END
 GO
 
@@ -187,3 +191,30 @@ GO
 
 exec SP_INSERTAR_ARTICULO 'Cama', 15000
 select * from articulos
+
+GO
+
+
+alter PROCEDURE [dbo].[SP_CONSULTAR_FACTURAS] 
+	@fecha_desde datetime = null,
+	@fecha_hasta datetime = null,
+	@cliente varchar(255) =null,
+	@datos_baja varchar(1) = null
+AS
+BEGIN
+print @fecha_hasta
+	SELECT * FROM facturas f
+	join formas_pago fp on f.id_forma_pago=fp.id_forma_pago
+	WHERE 
+	 ((@fecha_desde is null and @fecha_hasta is null) OR (fecha >= @fecha_desde and fecha <= @fecha_hasta))
+	 AND(@cliente is null OR (cliente like '%' + @cliente + '%'))
+	 AND (@datos_baja is null OR (@datos_baja = 'S') OR (@datos_baja = 'N' and fecha_baja is  null))
+	 
+END
+GO
+
+exec SP_CONSULTAR_FACTURAS @fecha_desde = '30/10/2021',@fecha_hasta = '31/10/2021 12:50:21'
+
+
+SELECT * from facturas
+select * from detalles_factura

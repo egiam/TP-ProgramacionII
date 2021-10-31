@@ -13,6 +13,8 @@ namespace FacturasBack.dominio
         public DateTime Fecha { get; set; }
         public FormaPago FormaPago { get; set; }
         public string Cliente { get; set; }
+        public double Total { get; set; }
+        public DateTime FechaBaja { get; set; }
 
 
         //Generar la relacion 1 a muchos
@@ -42,6 +44,12 @@ namespace FacturasBack.dominio
                 total += item.CalcularSubtotal();
             }
             return total;
+        }
+
+        public string GetFechaBajaFormato()
+        {
+            string aux = FechaBaja.ToString("dd/MM/yyyy");
+            return aux.Equals("01/01/0001") ? "" : aux;
         }
     }
 }

@@ -78,6 +78,7 @@ namespace FacturasBack.datos
                 cmdMaestro.Parameters.AddWithValue("@nro_factura", factura.NroFactura);
                 cmdMaestro.Parameters.AddWithValue("@cliente", factura.Cliente);
                 cmdMaestro.Parameters.AddWithValue("@forma", factura.FormaPago.IdFormaPago);
+                cmdMaestro.Parameters.AddWithValue("@total", factura.Total);
 
 
                 cmdMaestro.ExecuteNonQuery();
@@ -213,18 +214,20 @@ namespace FacturasBack.datos
 
                 foreach (DataRow row in table.Rows)
                 {
-                    //Por cada registro creamos un objeto del dominio
                     Factura oFactura = new Factura();
                     oFactura.Cliente = row["cliente"].ToString();
                     oFactura.Fecha = Convert.ToDateTime(row["fecha"].ToString());
-                    // oFactura.FormaPago = Convert.ToDouble(row["formaPago"].ToString());
-                    // oFactura.PresupuestoNro = Convert.ToInt32(row["presupuesto_nro"].ToString());
-                    // oFactura.Total = Convert.ToDouble(row["total"].ToString());
+                    FormaPago formaPago = new FormaPago();
+                    formaPago.IdFormaPago = Convert.ToInt32(row["id_forma_pago"].ToString());
+                    formaPago.Nombre = row["nombre"].ToString();
+                    oFactura.FormaPago = formaPago;
+                    oFactura.NroFactura = Convert.ToInt32(row["nro_factura"].ToString());
+                    oFactura.Total = Convert.ToDouble(row["total"].ToString());
                     //validar que fecha_baja no es null:
-                    //if (!row["fecha_baja"].Equals(DBNull.Value)) 
-                    //    oPresupuesto.FechaBaja = Convert.ToDateTime(row["fecha_baja"].ToString());
+                    if (!row["fecha_baja"].Equals(DBNull.Value)) 
+                        oFactura.FechaBaja = Convert.ToDateTime(row["fecha_baja"].ToString());
 
-                    //lst.Add(oPresupuesto);
+                    lst.Add(oFactura);
                 }
 
                 cnn.Close();

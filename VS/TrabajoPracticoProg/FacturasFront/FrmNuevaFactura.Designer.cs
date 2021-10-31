@@ -33,7 +33,7 @@ namespace FacturasFront
             this.lblFacturaNro = new System.Windows.Forms.Label();
             this.lblCliente = new System.Windows.Forms.Label();
             this.lblFormaPago = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dtpFecha = new System.Windows.Forms.DateTimePicker();
             this.txtCliente = new System.Windows.Forms.TextBox();
             this.cboFormasPago = new System.Windows.Forms.ComboBox();
             this.dgvDetalles = new System.Windows.Forms.DataGridView();
@@ -88,13 +88,13 @@ namespace FacturasFront
             this.lblFormaPago.TabIndex = 3;
             this.lblFormaPago.Text = "Forma de Pago:";
             // 
-            // dateTimePicker1
+            // dtpFecha
             // 
-            this.dateTimePicker1.Enabled = false;
-            this.dateTimePicker1.Location = new System.Drawing.Point(98, 76);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(214, 23);
-            this.dateTimePicker1.TabIndex = 4;
+            this.dtpFecha.Enabled = false;
+            this.dtpFecha.Location = new System.Drawing.Point(98, 76);
+            this.dtpFecha.Name = "dtpFecha";
+            this.dtpFecha.Size = new System.Drawing.Size(214, 23);
+            this.dtpFecha.TabIndex = 4;
             // 
             // txtCliente
             // 
@@ -246,7 +246,7 @@ namespace FacturasFront
             this.Controls.Add(this.dgvDetalles);
             this.Controls.Add(this.cboFormasPago);
             this.Controls.Add(this.txtCliente);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.dtpFecha);
             this.Controls.Add(this.lblFormaPago);
             this.Controls.Add(this.lblCliente);
             this.Controls.Add(this.lblFacturaNro);
@@ -267,7 +267,7 @@ namespace FacturasFront
         private System.Windows.Forms.Label lblFacturaNro;
         private System.Windows.Forms.Label lblCliente;
         private System.Windows.Forms.Label lblFormaPago;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dtpFecha;
         private System.Windows.Forms.TextBox txtCliente;
         private System.Windows.Forms.ComboBox cboFormasPago;
         private System.Windows.Forms.DataGridView dgvDetalles;

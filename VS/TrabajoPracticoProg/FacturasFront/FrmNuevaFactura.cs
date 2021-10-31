@@ -24,6 +24,7 @@ namespace FacturasFront
 
         private async void FrmNuevaFactura_Load(object sender, EventArgs e)
         {
+            
             await CargarCboArticulosAsync();
             await CargarCboFormasPagoAsync();
             await AsignarNumeroFacturaAsync();
@@ -86,12 +87,16 @@ namespace FacturasFront
             detalle.Cantidad = (int)nudCantidad.Value;
             factura.AgregarDetalle(detalle);
             dgvDetalles.Rows.Add(new string[] { "", detalle.Articulo.Nombre, detalle.Cantidad.ToString(), detalle.Articulo.PrecioUnitario.ToString() });
-            ActualizarTotales();
+
+            CalcularTotal();
 
         }
-        private void ActualizarTotales()
+        private void CalcularTotal()
         {
-            lblTotal.Text = "Total: $" + factura.CalcularTotal();
+            double total = factura.CalcularTotal();
+            lblTotal.Text = "Total: $" + total.ToString();
+            factura.Total = total;
+
         }
 
         private bool ExisteArticuloEnGrilla(string text)
@@ -110,7 +115,7 @@ namespace FacturasFront
             {
                 factura.QuitarDetalle(dgvDetalles.CurrentRow.Index);
                 dgvDetalles.Rows.Remove(dgvDetalles.CurrentRow);
-                ActualizarTotales();
+                CalcularTotal();
             }
         }
 
