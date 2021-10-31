@@ -63,7 +63,7 @@ namespace FacturasBack.datos
 
 
 
-        public bool EjecutarInsertFactura(Factura factura, string spMaestro, string spDetalle)
+        public bool EjecutarInsertFactura(Factura factura, string spMaestro, string spEliminarDetalles, string spDetalle)
         {
             bool ok = true;
 
@@ -85,6 +85,12 @@ namespace FacturasBack.datos
 
 
                 cmdMaestro.ExecuteNonQuery();
+
+                SqlCommand cmdEliminar = new SqlCommand(spEliminarDetalles, connection, transaction);
+                cmdEliminar.CommandType = CommandType.StoredProcedure;
+                cmdEliminar.Parameters.AddWithValue("@nro_factura", factura.NroFactura);
+                cmdEliminar.ExecuteNonQuery();
+               
 
                 //Se inserta Detalle Factura 
                 foreach (DetalleFactura detalle in factura.Detalles)
@@ -279,6 +285,7 @@ namespace FacturasBack.datos
                 oArticulo.PrecioUnitario = Convert.ToDouble(reader["pre_unitario"].ToString());
                 oDetalle.Articulo = oArticulo;
                 oDetalle.Cantidad = Convert.ToInt32(reader["cantidad"].ToString());
+                oDetalle.idDetalle = Convert.ToInt32(reader["id_detalle"].ToString());
                 esPrimerRegistro = false;
                 oFactura.AgregarDetalle(oDetalle);
             }

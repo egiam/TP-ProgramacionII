@@ -61,7 +61,7 @@ namespace FacturasBack.datos
 
         public bool SaveFactura(Factura oFactura)
         {
-            return HelperDao.GetInstance().EjecutarInsertFactura(oFactura, "SP_INSERTAR_FACTURA", "SP_INSERTAR_DETALLES");
+            return HelperDao.GetInstance().EjecutarInsertFactura(oFactura, "SP_INSERTAR_FACTURA", "SP_ELIMINAR_DETALLES", "SP_INSERTAR_DETALLES");
         }
 
         public bool SaveArticulo(Articulo oArticulo)
@@ -82,7 +82,7 @@ namespace FacturasBack.datos
 
         public bool EditarFactura(Factura oFactura)
         {
-            return HelperDao.GetInstance().EjecutarInsertFactura(oFactura, "SP_EDITAR_FACTURA", "SP_EDITAR_DETALLES");
+            return HelperDao.GetInstance().EjecutarInsertFactura(oFactura, "SP_EDITAR_FACTURA", "SP_ELIMINAR_DETALLES", "SP_INSERTAR_DETALLES");
         }
     }
 }
