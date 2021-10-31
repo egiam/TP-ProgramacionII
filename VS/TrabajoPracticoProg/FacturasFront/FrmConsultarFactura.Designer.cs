@@ -30,7 +30,7 @@ namespace FacturasFront
         private void InitializeComponent()
         {
             this.gbFiltros = new System.Windows.Forms.GroupBox();
-            this.btnLimpiarFiltros = new System.Windows.Forms.Button();
+            this.btnLimpiarBusqueda = new System.Windows.Forms.Button();
             this.chkBaja = new System.Windows.Forms.CheckBox();
             this.btnConsultar = new System.Windows.Forms.Button();
             this.lblCliente = new System.Windows.Forms.Label();
@@ -58,7 +58,7 @@ namespace FacturasFront
             // 
             // gbFiltros
             // 
-            this.gbFiltros.Controls.Add(this.btnLimpiarFiltros);
+            this.gbFiltros.Controls.Add(this.btnLimpiarBusqueda);
             this.gbFiltros.Controls.Add(this.chkBaja);
             this.gbFiltros.Controls.Add(this.btnConsultar);
             this.gbFiltros.Controls.Add(this.lblCliente);
@@ -74,14 +74,15 @@ namespace FacturasFront
             this.gbFiltros.TabStop = false;
             this.gbFiltros.Text = "Criterios de búsqueda";
             // 
-            // btnLimpiarFiltros
+            // btnLimpiarBusqueda
             // 
-            this.btnLimpiarFiltros.Location = new System.Drawing.Point(305, 90);
-            this.btnLimpiarFiltros.Name = "btnLimpiarFiltros";
-            this.btnLimpiarFiltros.Size = new System.Drawing.Size(142, 23);
-            this.btnLimpiarFiltros.TabIndex = 11;
-            this.btnLimpiarFiltros.Text = "Limpiar Filtros";
-            this.btnLimpiarFiltros.UseVisualStyleBackColor = true;
+            this.btnLimpiarBusqueda.Location = new System.Drawing.Point(305, 90);
+            this.btnLimpiarBusqueda.Name = "btnLimpiarBusqueda";
+            this.btnLimpiarBusqueda.Size = new System.Drawing.Size(142, 23);
+            this.btnLimpiarBusqueda.TabIndex = 11;
+            this.btnLimpiarBusqueda.Text = "Limpiar Búsqueda";
+            this.btnLimpiarBusqueda.UseVisualStyleBackColor = true;
+            this.btnLimpiarBusqueda.Click += new System.EventHandler(this.btnLimpiarBusqueda_Click);
             // 
             // chkBaja
             // 
@@ -251,6 +252,7 @@ namespace FacturasFront
             this.btnSalir.TabIndex = 8;
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // txtEliminar
             // 
@@ -295,7 +297,7 @@ namespace FacturasFront
         private System.Windows.Forms.GroupBox gbResultados;
         private System.Windows.Forms.Button btnNuevo;
         private System.Windows.Forms.DataGridView dgvResultados;
-        private System.Windows.Forms.Button btnLimpiarFiltros;
+        private System.Windows.Forms.Button btnLimpiarBusqueda;
         private System.Windows.Forms.CheckBox chkBaja;
         private System.Windows.Forms.Button btnConsultar;
         private System.Windows.Forms.Button btnEditar;

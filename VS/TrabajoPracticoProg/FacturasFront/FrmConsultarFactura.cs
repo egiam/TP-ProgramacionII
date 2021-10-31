@@ -72,5 +72,19 @@ namespace FacturasFront
                 }); ;
             }
         }
+
+        private void btnLimpiarBusqueda_Click(object sender, EventArgs e)
+        {
+            txtCliente.Text = "";
+            dtpDesde.Value = new DateTime(2021, 01, 01);
+            dtpHasta.Value = DateTime.Now;
+            chkBaja.Checked = false;
+            dgvResultados.Rows.Clear();
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+                this.Dispose();
+        }
     }
 }
