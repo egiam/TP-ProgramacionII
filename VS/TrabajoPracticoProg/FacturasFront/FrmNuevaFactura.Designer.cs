@@ -34,20 +34,20 @@ namespace FacturasFront
             this.lblCliente = new System.Windows.Forms.Label();
             this.lblFormaPago = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtCliente = new System.Windows.Forms.TextBox();
             this.cboFormasPago = new System.Windows.Forms.ComboBox();
             this.dgvDetalles = new System.Windows.Forms.DataGridView();
+            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColArt = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColCantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColPrecio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColAcciones = new System.Windows.Forms.DataGridViewButtonColumn();
             this.cboArticulos = new System.Windows.Forms.ComboBox();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.btnAceptar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.lblTotal = new System.Windows.Forms.Label();
             this.nudCantidad = new System.Windows.Forms.NumericUpDown();
-            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColArt = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColCantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColPrecio = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColAcciones = new System.Windows.Forms.DataGridViewButtonColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDetalles)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudCantidad)).BeginInit();
             this.SuspendLayout();
@@ -90,17 +90,18 @@ namespace FacturasFront
             // 
             // dateTimePicker1
             // 
+            this.dateTimePicker1.Enabled = false;
             this.dateTimePicker1.Location = new System.Drawing.Point(98, 76);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(226, 23);
+            this.dateTimePicker1.Size = new System.Drawing.Size(214, 23);
             this.dateTimePicker1.TabIndex = 4;
             // 
-            // textBox1
+            // txtCliente
             // 
-            this.textBox1.Location = new System.Drawing.Point(99, 107);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(453, 23);
-            this.textBox1.TabIndex = 5;
+            this.txtCliente.Location = new System.Drawing.Point(99, 107);
+            this.txtCliente.Name = "txtCliente";
+            this.txtCliente.Size = new System.Drawing.Size(453, 23);
+            this.txtCliente.TabIndex = 5;
             // 
             // cboFormasPago
             // 
@@ -130,64 +131,6 @@ namespace FacturasFront
             this.dgvDetalles.Size = new System.Drawing.Size(612, 150);
             this.dgvDetalles.TabIndex = 7;
             this.dgvDetalles.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDetalles_CellContentClick);
-            // 
-            // cboArticulos
-            // 
-            this.cboArticulos.FormattingEnabled = true;
-            this.cboArticulos.Location = new System.Drawing.Point(57, 183);
-            this.cboArticulos.Name = "cboArticulos";
-            this.cboArticulos.Size = new System.Drawing.Size(372, 23);
-            this.cboArticulos.TabIndex = 8;
-            this.cboArticulos.SelectedIndexChanged += new System.EventHandler(this.cboArticulos_SelectedIndexChanged);
-            // 
-            // btnAgregar
-            // 
-            this.btnAgregar.Location = new System.Drawing.Point(562, 181);
-            this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(128, 25);
-            this.btnAgregar.TabIndex = 10;
-            this.btnAgregar.Text = "Agregar";
-            this.btnAgregar.UseVisualStyleBackColor = true;
-            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
-            // 
-            // btnAceptar
-            // 
-            this.btnAceptar.Location = new System.Drawing.Point(223, 387);
-            this.btnAceptar.Name = "btnAceptar";
-            this.btnAceptar.Size = new System.Drawing.Size(111, 23);
-            this.btnAceptar.TabIndex = 11;
-            this.btnAceptar.Text = "Aceptar";
-            this.btnAceptar.UseVisualStyleBackColor = true;
-            // 
-            // btnCancelar
-            // 
-            this.btnCancelar.Location = new System.Drawing.Point(342, 387);
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(111, 23);
-            this.btnCancelar.TabIndex = 12;
-            this.btnCancelar.Text = "Cancelar";
-            this.btnCancelar.UseVisualStyleBackColor = true;
-            // 
-            // lblTotal
-            // 
-            this.lblTotal.AutoSize = true;
-            this.lblTotal.Location = new System.Drawing.Point(522, 374);
-            this.lblTotal.Name = "lblTotal";
-            this.lblTotal.Size = new System.Drawing.Size(35, 15);
-            this.lblTotal.TabIndex = 13;
-            this.lblTotal.Text = "Total:";
-            // 
-            // nudCantidad
-            // 
-            this.nudCantidad.Location = new System.Drawing.Point(437, 183);
-            this.nudCantidad.Name = "nudCantidad";
-            this.nudCantidad.Size = new System.Drawing.Size(120, 23);
-            this.nudCantidad.TabIndex = 14;
-            this.nudCantidad.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
             // 
             // Id
             // 
@@ -227,6 +170,66 @@ namespace FacturasFront
             this.ColAcciones.Text = "Quitar";
             this.ColAcciones.UseColumnTextForButtonValue = true;
             // 
+            // cboArticulos
+            // 
+            this.cboArticulos.FormattingEnabled = true;
+            this.cboArticulos.Location = new System.Drawing.Point(57, 183);
+            this.cboArticulos.Name = "cboArticulos";
+            this.cboArticulos.Size = new System.Drawing.Size(372, 23);
+            this.cboArticulos.TabIndex = 8;
+            this.cboArticulos.SelectedIndexChanged += new System.EventHandler(this.cboArticulos_SelectedIndexChanged);
+            // 
+            // btnAgregar
+            // 
+            this.btnAgregar.Location = new System.Drawing.Point(562, 181);
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.Size = new System.Drawing.Size(128, 25);
+            this.btnAgregar.TabIndex = 10;
+            this.btnAgregar.Text = "Agregar";
+            this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
+            // 
+            // btnAceptar
+            // 
+            this.btnAceptar.Location = new System.Drawing.Point(223, 387);
+            this.btnAceptar.Name = "btnAceptar";
+            this.btnAceptar.Size = new System.Drawing.Size(111, 23);
+            this.btnAceptar.TabIndex = 11;
+            this.btnAceptar.Text = "Aceptar";
+            this.btnAceptar.UseVisualStyleBackColor = true;
+            this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
+            // 
+            // btnCancelar
+            // 
+            this.btnCancelar.Location = new System.Drawing.Point(342, 387);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(111, 23);
+            this.btnCancelar.TabIndex = 12;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
+            // 
+            // lblTotal
+            // 
+            this.lblTotal.AutoSize = true;
+            this.lblTotal.Location = new System.Drawing.Point(522, 374);
+            this.lblTotal.Name = "lblTotal";
+            this.lblTotal.Size = new System.Drawing.Size(35, 15);
+            this.lblTotal.TabIndex = 13;
+            this.lblTotal.Text = "Total:";
+            // 
+            // nudCantidad
+            // 
+            this.nudCantidad.Location = new System.Drawing.Point(437, 183);
+            this.nudCantidad.Name = "nudCantidad";
+            this.nudCantidad.Size = new System.Drawing.Size(120, 23);
+            this.nudCantidad.TabIndex = 14;
+            this.nudCantidad.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
             // FrmNuevaFactura
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -241,7 +244,7 @@ namespace FacturasFront
             this.Controls.Add(this.cboArticulos);
             this.Controls.Add(this.dgvDetalles);
             this.Controls.Add(this.cboFormasPago);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtCliente);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.lblFormaPago);
             this.Controls.Add(this.lblCliente);
@@ -264,7 +267,7 @@ namespace FacturasFront
         private System.Windows.Forms.Label lblCliente;
         private System.Windows.Forms.Label lblFormaPago;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtCliente;
         private System.Windows.Forms.ComboBox cboFormasPago;
         private System.Windows.Forms.DataGridView dgvDetalles;
         private System.Windows.Forms.ComboBox cboArticulos;

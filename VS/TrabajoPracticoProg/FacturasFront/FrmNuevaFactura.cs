@@ -113,5 +113,78 @@ namespace FacturasFront
                 ActualizarTotales();
             }
         }
+
+        private async void btnAceptar_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(txtCliente.Text))
+            {
+                MessageBox.Show("Debe ingresar un cliente!", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtCliente.Focus();
+                return;
+            }
+
+            if (string.IsNullOrEmpty(cboFormasPago.Text))
+            {
+                MessageBox.Show("Debe ingresar una forma de pago!", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                cboFormasPago.Focus();
+                return;
+            }
+
+            if (dgvDetalles.Rows.Count == 0)
+            {
+                MessageBox.Show("Debe ingresar un detalle al menos!", "Control", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                cboArticulos.Focus();
+                return;
+            }
+
+            factura.Cliente = txtCliente.Text;
+            factura.FormaPago = new FormaPago(cboFormasPago.SelectedIndex + 1, "");
+            string data = JsonConvert.SerializeObject(factura);
+
+            bool success = await GrabarFacturaAsync(data);
+   
+            if (success)
+            {
+                MessageBox.Show("Factura registrada con éxito!", "Confirmación", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                await limipiarCamposAsync();
+            }
+            else
+            {
+                MessageBox.Show("Ha ocurrido un inconveniente al registrar la factura!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+        }
+
+        private async Task<bool> GrabarFacturaAsync(string data)
+        {
+            string url = "https://localhost:44357/api/Facturas/facturas";
+            using (HttpClient client = new HttpClient())
+            {
+                StringContent content = new StringContent(data, Encoding.UTF8, "application/json");
+                var result = await client.PostAsync(url, content);
+                return (int)result.StatusCode == 200;
+            }
+        }
+        private async Task limipiarCamposAsync()
+        {
+            txtCliente.Text = string.Empty;
+            txtCliente.Focus();
+            cboFormasPago.Text = string.Empty;
+            cboArticulos.SelectedIndex = 0;
+            dgvDetalles.Rows.Clear();
+            lblTotal.Text = "Total: ";
+            nudCantidad.Value = 1;
+            await AsignarNumeroFacturaAsync();
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("¿Está seguro que desea cancelar?", "Salir", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
+                this.Dispose();
+
+            }
+        }
     }
 }

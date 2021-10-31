@@ -30,7 +30,6 @@ C:\Users\Felpu\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\Factura
 C:\Users\Felpu\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\FacturasWebAPI\obj\Debug\net5.0\staticwebassets\FacturasWebAPI.StaticWebAssets.xml
 C:\Users\Felpu\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\FacturasWebAPI\obj\Debug\net5.0\scopedcss\bundle\FacturasWebAPI.styles.css
 C:\Users\Felpu\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\FacturasWebAPI\obj\Debug\net5.0\FacturasWebAPI.RazorTargetAssemblyInfo.cache
-C:\Users\Felpu\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\FacturasWebAPI\obj\Debug\net5.0\FacturasWebAPI.csproj.CopyComplete
 C:\Users\Felpu\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\FacturasWebAPI\obj\Debug\net5.0\FacturasWebAPI.dll
 C:\Users\Felpu\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\FacturasWebAPI\obj\Debug\net5.0\ref\FacturasWebAPI.dll
 C:\Users\Felpu\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\FacturasWebAPI\obj\Debug\net5.0\FacturasWebAPI.pdb
