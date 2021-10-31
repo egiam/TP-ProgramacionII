@@ -161,4 +161,29 @@ GO
 exec SP_CONSULTAR_FORMAS_DE_PAGO
 
 
+CREATE PROCEDURE [dbo].[SP_PROXIMO_ID_ART]
+@next int OUTPUT
+AS
+BEGIN
+	SET @next = (SELECT MAX(id_articulo)+1  FROM articulos);
+	IF @next is null
+	set @next=1 
 
+END
+
+
+GO
+
+
+CREATE PROCEDURE [dbo].[SP_INSERTAR_ARTICULO] 
+	@nombre varchar(255), 
+	@precio decimal(10,2)
+AS
+BEGIN
+	INSERT INTO articulos( nombre, pre_unitario)
+	VALUES (@nombre, @precio);
+END
+GO
+
+exec SP_INSERTAR_ARTICULO 'Cama', 15000
+select * from articulos
