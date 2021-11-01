@@ -197,7 +197,7 @@ namespace FacturasFront
             factura.FormaPago = new FormaPago(cboFormasPago.SelectedIndex + 1, "");
             factura.Fecha = dtpFecha.Value;
             string data = JsonConvert.SerializeObject(factura);
-            bool success=false;
+            bool success;
             string url = "https://localhost:44357/api/Facturas/facturas";
 
             if (modo.Equals(Accion.CREATE))
