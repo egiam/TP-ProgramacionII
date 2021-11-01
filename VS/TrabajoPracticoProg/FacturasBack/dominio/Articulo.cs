@@ -11,6 +11,7 @@ namespace FacturasBack.dominio
         public int IdArticulo { get; set; }
         public string Nombre { get; set; }
         public double PrecioUnitario { get; set; }
+        public string DadoBaja { get; set; }
 
         public Articulo(int idArticulo, string nombre, double precioUnitario)
         {

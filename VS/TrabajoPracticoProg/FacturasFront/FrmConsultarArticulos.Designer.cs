@@ -30,29 +30,32 @@ namespace FacturasFront
         private void InitializeComponent()
         {
             this.gbBusqueda = new System.Windows.Forms.GroupBox();
-            this.lblNombre = new System.Windows.Forms.Label();
-            this.txtNombre = new System.Windows.Forms.TextBox();
-            this.lblPrecioDesde = new System.Windows.Forms.Label();
-            this.lblPrecioHasta = new System.Windows.Forms.Label();
-            this.nudPrecioDesde = new System.Windows.Forms.NumericUpDown();
-            this.nudPrecioHasta = new System.Windows.Forms.NumericUpDown();
-            this.btnConsultar = new System.Windows.Forms.Button();
             this.btnLimpiarBusqueda = new System.Windows.Forms.Button();
+            this.btnConsultar = new System.Windows.Forms.Button();
+            this.nudPrecioHasta = new System.Windows.Forms.NumericUpDown();
+            this.nudPrecioDesde = new System.Windows.Forms.NumericUpDown();
+            this.lblPrecioHasta = new System.Windows.Forms.Label();
+            this.lblPrecioDesde = new System.Windows.Forms.Label();
+            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.lblNombre = new System.Windows.Forms.Label();
             this.gbResultados = new System.Windows.Forms.GroupBox();
             this.dgvResultados = new System.Windows.Forms.DataGridView();
             this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColNombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColPrecio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColAccion = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.ColAccionEditar = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.chkDadoBaja = new System.Windows.Forms.CheckBox();
             this.gbBusqueda.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nudPrecioDesde)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudPrecioHasta)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudPrecioDesde)).BeginInit();
             this.gbResultados.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvResultados)).BeginInit();
             this.SuspendLayout();
             // 
             // gbBusqueda
             // 
+            this.gbBusqueda.Controls.Add(this.chkDadoBaja);
             this.gbBusqueda.Controls.Add(this.btnLimpiarBusqueda);
             this.gbBusqueda.Controls.Add(this.btnConsultar);
             this.gbBusqueda.Controls.Add(this.nudPrecioHasta);
@@ -68,47 +71,25 @@ namespace FacturasFront
             this.gbBusqueda.TabStop = false;
             this.gbBusqueda.Text = "Criterios de búsqueda";
             // 
-            // lblNombre
+            // btnLimpiarBusqueda
             // 
-            this.lblNombre.AutoSize = true;
-            this.lblNombre.Location = new System.Drawing.Point(27, 41);
-            this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(54, 15);
-            this.lblNombre.TabIndex = 0;
-            this.lblNombre.Text = "Nombre:";
+            this.btnLimpiarBusqueda.Location = new System.Drawing.Point(234, 147);
+            this.btnLimpiarBusqueda.Name = "btnLimpiarBusqueda";
+            this.btnLimpiarBusqueda.Size = new System.Drawing.Size(156, 23);
+            this.btnLimpiarBusqueda.TabIndex = 7;
+            this.btnLimpiarBusqueda.Text = "Limpiar Búsqueda";
+            this.btnLimpiarBusqueda.UseVisualStyleBackColor = true;
+            this.btnLimpiarBusqueda.Click += new System.EventHandler(this.btnLimpiarBusqueda_Click);
             // 
-            // txtNombre
+            // btnConsultar
             // 
-            this.txtNombre.Location = new System.Drawing.Point(87, 38);
-            this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(191, 23);
-            this.txtNombre.TabIndex = 1;
-            // 
-            // lblPrecioDesde
-            // 
-            this.lblPrecioDesde.AutoSize = true;
-            this.lblPrecioDesde.Location = new System.Drawing.Point(27, 75);
-            this.lblPrecioDesde.Name = "lblPrecioDesde";
-            this.lblPrecioDesde.Size = new System.Drawing.Size(94, 15);
-            this.lblPrecioDesde.TabIndex = 2;
-            this.lblPrecioDesde.Text = "Precio desde ($):";
-            // 
-            // lblPrecioHasta
-            // 
-            this.lblPrecioHasta.AutoSize = true;
-            this.lblPrecioHasta.Location = new System.Drawing.Point(27, 107);
-            this.lblPrecioHasta.Name = "lblPrecioHasta";
-            this.lblPrecioHasta.Size = new System.Drawing.Size(91, 15);
-            this.lblPrecioHasta.TabIndex = 3;
-            this.lblPrecioHasta.Text = "Precio hasta ($):";
-            // 
-            // nudPrecioDesde
-            // 
-            this.nudPrecioDesde.DecimalPlaces = 2;
-            this.nudPrecioDesde.Location = new System.Drawing.Point(127, 73);
-            this.nudPrecioDesde.Name = "nudPrecioDesde";
-            this.nudPrecioDesde.Size = new System.Drawing.Size(120, 23);
-            this.nudPrecioDesde.TabIndex = 4;
+            this.btnConsultar.Location = new System.Drawing.Point(52, 147);
+            this.btnConsultar.Name = "btnConsultar";
+            this.btnConsultar.Size = new System.Drawing.Size(156, 23);
+            this.btnConsultar.TabIndex = 6;
+            this.btnConsultar.Text = "Consultar";
+            this.btnConsultar.UseVisualStyleBackColor = true;
+            this.btnConsultar.Click += new System.EventHandler(this.btnConsultar_Click);
             // 
             // nudPrecioHasta
             // 
@@ -128,24 +109,47 @@ namespace FacturasFront
             0,
             0});
             // 
-            // btnConsultar
+            // nudPrecioDesde
             // 
-            this.btnConsultar.Location = new System.Drawing.Point(52, 147);
-            this.btnConsultar.Name = "btnConsultar";
-            this.btnConsultar.Size = new System.Drawing.Size(156, 23);
-            this.btnConsultar.TabIndex = 6;
-            this.btnConsultar.Text = "Consultar";
-            this.btnConsultar.UseVisualStyleBackColor = true;
-            this.btnConsultar.Click += new System.EventHandler(this.btnConsultar_Click);
+            this.nudPrecioDesde.DecimalPlaces = 2;
+            this.nudPrecioDesde.Location = new System.Drawing.Point(127, 73);
+            this.nudPrecioDesde.Name = "nudPrecioDesde";
+            this.nudPrecioDesde.Size = new System.Drawing.Size(120, 23);
+            this.nudPrecioDesde.TabIndex = 4;
             // 
-            // btnLimpiarBusqueda
+            // lblPrecioHasta
             // 
-            this.btnLimpiarBusqueda.Location = new System.Drawing.Point(234, 147);
-            this.btnLimpiarBusqueda.Name = "btnLimpiarBusqueda";
-            this.btnLimpiarBusqueda.Size = new System.Drawing.Size(156, 23);
-            this.btnLimpiarBusqueda.TabIndex = 7;
-            this.btnLimpiarBusqueda.Text = "Limpiar Búsqueda";
-            this.btnLimpiarBusqueda.UseVisualStyleBackColor = true;
+            this.lblPrecioHasta.AutoSize = true;
+            this.lblPrecioHasta.Location = new System.Drawing.Point(27, 107);
+            this.lblPrecioHasta.Name = "lblPrecioHasta";
+            this.lblPrecioHasta.Size = new System.Drawing.Size(91, 15);
+            this.lblPrecioHasta.TabIndex = 3;
+            this.lblPrecioHasta.Text = "Precio hasta ($):";
+            // 
+            // lblPrecioDesde
+            // 
+            this.lblPrecioDesde.AutoSize = true;
+            this.lblPrecioDesde.Location = new System.Drawing.Point(27, 75);
+            this.lblPrecioDesde.Name = "lblPrecioDesde";
+            this.lblPrecioDesde.Size = new System.Drawing.Size(94, 15);
+            this.lblPrecioDesde.TabIndex = 2;
+            this.lblPrecioDesde.Text = "Precio desde ($):";
+            // 
+            // txtNombre
+            // 
+            this.txtNombre.Location = new System.Drawing.Point(87, 38);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(191, 23);
+            this.txtNombre.TabIndex = 1;
+            // 
+            // lblNombre
+            // 
+            this.lblNombre.AutoSize = true;
+            this.lblNombre.Location = new System.Drawing.Point(27, 41);
+            this.lblNombre.Name = "lblNombre";
+            this.lblNombre.Size = new System.Drawing.Size(54, 15);
+            this.lblNombre.TabIndex = 0;
+            this.lblNombre.Text = "Nombre:";
             // 
             // gbResultados
             // 
@@ -166,7 +170,8 @@ namespace FacturasFront
             this.Id,
             this.ColNombre,
             this.ColPrecio,
-            this.ColAccion});
+            this.ColAccion,
+            this.ColAccionEditar});
             this.dgvResultados.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvResultados.Location = new System.Drawing.Point(3, 19);
             this.dgvResultados.Name = "dgvResultados";
@@ -174,6 +179,7 @@ namespace FacturasFront
             this.dgvResultados.RowTemplate.Height = 25;
             this.dgvResultados.Size = new System.Drawing.Size(554, 103);
             this.dgvResultados.TabIndex = 0;
+            this.dgvResultados.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvResultados_CellContentClick);
             // 
             // Id
             // 
@@ -207,6 +213,27 @@ namespace FacturasFront
             this.ColAccion.Text = "Eliminar";
             this.ColAccion.UseColumnTextForButtonValue = true;
             // 
+            // ColAccionEditar
+            // 
+            this.ColAccionEditar.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.ColAccionEditar.HeaderText = "Acción";
+            this.ColAccionEditar.Name = "ColAccionEditar";
+            this.ColAccionEditar.ReadOnly = true;
+            this.ColAccionEditar.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.ColAccionEditar.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.ColAccionEditar.Text = "Editar";
+            this.ColAccionEditar.UseColumnTextForButtonValue = true;
+            // 
+            // chkDadoBaja
+            // 
+            this.chkDadoBaja.AutoSize = true;
+            this.chkDadoBaja.Location = new System.Drawing.Point(287, 85);
+            this.chkDadoBaja.Name = "chkDadoBaja";
+            this.chkDadoBaja.Size = new System.Drawing.Size(79, 19);
+            this.chkDadoBaja.TabIndex = 8;
+            this.chkDadoBaja.Text = "Dado baja";
+            this.chkDadoBaja.UseVisualStyleBackColor = true;
+            // 
             // FrmConsultarArticulos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -218,8 +245,8 @@ namespace FacturasFront
             this.Text = "Consultar Articulos";
             this.gbBusqueda.ResumeLayout(false);
             this.gbBusqueda.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nudPrecioDesde)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudPrecioHasta)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudPrecioDesde)).EndInit();
             this.gbResultados.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvResultados)).EndInit();
             this.ResumeLayout(false);
@@ -243,5 +270,7 @@ namespace FacturasFront
         private System.Windows.Forms.DataGridViewTextBoxColumn ColNombre;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColPrecio;
         private System.Windows.Forms.DataGridViewButtonColumn ColAccion;
+        private System.Windows.Forms.DataGridViewButtonColumn ColAccionEditar;
+        private System.Windows.Forms.CheckBox chkDadoBaja;
     }
 }

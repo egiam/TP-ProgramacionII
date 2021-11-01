@@ -51,8 +51,11 @@ create table articulos
 	id_articulo int identity(1,1)
 	Constraint pk_articulo primary key(id_articulo),
 	nombre varchar(75),
-	pre_unitario decimal(10,2)
+	pre_unitario decimal(10,2),
+	dado_baja varchar(1)
+
 )
+
 
 create table detalles_factura
 (
@@ -193,9 +196,11 @@ alter PROCEDURE [dbo].[SP_CONSULTAR_ARTICULOS]
 AS
 BEGIN
 	
-	SELECT * from articulos ORDER BY id_articulo;
+	SELECT * from articulos where dado_baja='N' ORDER BY id_articulo;
 END
 GO
+
+exec SP_CONSULTAR_ARTICULOS
 
 create PROCEDURE [dbo].[SP_CONSULTAR_FORMAS_DE_PAGO]
 AS
@@ -292,16 +297,19 @@ GO
 alter PROCEDURE [dbo].[SP_CONSULTAR_ARTICULOS_FILTROS] 
 	@nombre varchar(255) =null,
 	@precio_desde decimal(20,2) = null,
-	@precio_hasta decimal(20,2) = null
-	
+	@precio_hasta decimal(20,2) = null,
+	@dado_baja varchar(1) = 'N'
 
 AS
 BEGIN
 	SELECT * FROM articulos
 	WHERE 
 	 ((@precio_desde is null and @precio_hasta is null) OR pre_unitario between @precio_desde and @precio_hasta)
-	 AND(@nombre is null OR (nombre like '%' + @nombre + '%'))
+	 AND(@nombre is null OR (nombre like '%' + @nombre + '%')) 
+	 AND @dado_baja = dado_baja 
 	
 END
 
-EXEC SP_CONSULTAR_ARTICULOS_FILTROS   
+EXEC SP_CONSULTAR_ARTICULOS_FILTROS
+
+select * from articulos

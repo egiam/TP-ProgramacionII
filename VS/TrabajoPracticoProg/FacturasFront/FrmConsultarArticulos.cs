@@ -35,6 +35,12 @@ namespace FacturasFront
                 val = txtNombre.Text;
             filtros.Add(new Parametro("@nombre", val));
 
+            string dadoBaja = "N";
+
+            if (chkDadoBaja.Checked)
+                dadoBaja = "S";
+            filtros.Add(new Parametro("@dado_baja", dadoBaja));
+
 
             List<Articulo> lst = null;
 
@@ -54,6 +60,41 @@ namespace FacturasFront
                                         oArticulo.Nombre,
                                         oArticulo.PrecioUnitario
                 }); ;
+            }
+        }
+
+        private void btnLimpiarBusqueda_Click(object sender, EventArgs e)
+        {
+            txtNombre.Text = "";
+            nudPrecioDesde.Value = 0;
+            nudPrecioHasta.Value = 15000;
+            dgvResultados.Rows.Clear();
+        }
+
+        private async void dgvResultados_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+            if (dgvResultados.CurrentCell.ColumnIndex == 3)
+            {
+                DataGridViewRow row = dgvResultados.CurrentRow; // fila actual o seleccionada
+                if (row != null)
+                {
+                    int idFactura = Int32.Parse(row.Cells["Id"].Value.ToString());
+                    if (MessageBox.Show("Seguro que desea eliminar el artículo seleccionado?", "Confirmación", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                    {
+                        string url = "https://localhost:44357/api/Facturas/" + idFactura.ToString();
+                        string respuesta = await ClienteSingleton.GetInstancia().DeleteAsync(url);
+
+                        if (respuesta == "true")
+                        {
+                            MessageBox.Show("Artículo eliminado!", "Confirmación", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            this.btnConsultar_Click(null, null);
+                        }
+                        else
+                            MessageBox.Show("Error al intentar dar de baja la factura!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+
             }
         }
     }

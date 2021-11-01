@@ -1,23 +1,15 @@
 use facturacion
 go
 
-insert into articulos (nombre, pre_unitario)
-values ('silla', 2000)
-
-insert into articulos (nombre, pre_unitario)
-values ('mesa', 3500)
-
-insert into articulos (nombre, pre_unitario)
-values ('alacena', 7000)
 
 delete articulos
 
-INSERT INTO articulos(nombre, pre_unitario) values('Mesa',3500)
-INSERT INTO articulos(nombre, pre_unitario) values('Placard',7800)
-INSERT INTO articulos(nombre, pre_unitario) values('Silla',1500)
-INSERT INTO articulos(nombre, pre_unitario) values('Escritorio',6500)
-INSERT INTO articulos(nombre, pre_unitario) values('Biblioteca',8000)
-INSERT INTO articulos(nombre, pre_unitario) values('Vajillero',9900)
+INSERT INTO articulos(nombre, pre_unitario, dado_baja) values('Mesa',3500,'N')
+INSERT INTO articulos(nombre, pre_unitario,dado_baja) values('Placard',7800,'N')
+INSERT INTO articulos(nombre, pre_unitario,dado_baja) values('Silla',1500,'N')
+INSERT INTO articulos(nombre, pre_unitario,dado_baja) values('Escritorio',6500,'N')
+INSERT INTO articulos(nombre, pre_unitario,dado_baja) values('Biblioteca',8000,'N')
+INSERT INTO articulos(nombre, pre_unitario,dado_baja) values('Vajillero',9900,'N')
 
 select * from facturas
 select* from detalles_factura
