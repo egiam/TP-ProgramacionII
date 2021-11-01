@@ -64,7 +64,10 @@ namespace FacturasBack.negocio
         {
             return dao.Delete(id);
         }
-
-
-     }
+        
+        public List<Articulo> ConsultarArticulos(List<Parametro> criterios)
+        {
+            return dao.GetArticulosByFilters(criterios);//
+        }
+    }
 }

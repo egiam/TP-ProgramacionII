@@ -189,7 +189,7 @@ select * from detalles_factura
 
  
 
-CREATE PROCEDURE [dbo].[SP_CONSULTAR_ARTICULOS]
+alter PROCEDURE [dbo].[SP_CONSULTAR_ARTICULOS]
 AS
 BEGIN
 	
@@ -248,7 +248,7 @@ print @fecha_hasta
 	SELECT * FROM facturas f
 	join formas_pago fp on f.id_forma_pago=fp.id_forma_pago
 	WHERE 
-	 ((@fecha_desde is null and @fecha_hasta is null) OR fecha between @fecha_desde and @fecha_hasta)--(fecha >= @fecha_desde and fecha <= @fecha_hasta))
+	 ((@fecha_desde is null and @fecha_hasta is null) OR fecha between @fecha_desde and @fecha_hasta)
 	 AND(@cliente is null OR (cliente like '%' + @cliente + '%'))
 	 AND (@datos_baja is null OR (@datos_baja = 'S') OR (@datos_baja = 'N' and fecha_baja is  null))
 
@@ -288,3 +288,20 @@ BEGIN
 	
 END
 GO
+
+alter PROCEDURE [dbo].[SP_CONSULTAR_ARTICULOS_FILTROS] 
+	@nombre varchar(255) =null,
+	@precio_desde decimal(20,2) = null,
+	@precio_hasta decimal(20,2) = null
+	
+
+AS
+BEGIN
+	SELECT * FROM articulos
+	WHERE 
+	 ((@precio_desde is null and @precio_hasta is null) OR pre_unitario between @precio_desde and @precio_hasta)
+	 AND(@nombre is null OR (nombre like '%' + @nombre + '%'))
+	
+END
+
+EXEC SP_CONSULTAR_ARTICULOS_FILTROS   

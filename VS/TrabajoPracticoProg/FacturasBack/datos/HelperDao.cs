@@ -324,6 +324,47 @@ namespace FacturasBack.datos
 
         }
 
+        public List<Articulo> ConsultarArticulos(string nombreSP, List<Parametro> criterios)
+        {
+
+            List<Articulo> lst = new List<Articulo>();
+            DataTable table = new DataTable();
+            SqlConnection cnn = new SqlConnection(connectionString);
+            try
+            {
+                cnn.Open();
+
+                SqlCommand cmd = new SqlCommand(nombreSP, cnn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                foreach (Parametro p in criterios)
+                {
+                    if (p.Valor == null)
+                        cmd.Parameters.AddWithValue(p.Nombre, DBNull.Value);
+                    else
+                        cmd.Parameters.AddWithValue(p.Nombre, p.Valor.ToString());
+                }
+
+                table.Load(cmd.ExecuteReader());
+                //mappear los registros como objetos del dominio:
+
+                foreach (DataRow row in table.Rows)
+                {
+                    Articulo oArticulo = new Articulo();
+                    oArticulo.Nombre = row["nombre"].ToString();
+                    oArticulo.IdArticulo = Convert.ToInt32(row["id_articulo"].ToString());
+                    oArticulo.PrecioUnitario = Convert.ToDouble(row["pre_unitario"].ToString());
+                     lst.Add(oArticulo);
+                }
+
+                cnn.Close();
+            }
+            catch (SqlException)
+            {
+                lst = null;
+            }
+            return lst;
+        }
+
 
 
     }

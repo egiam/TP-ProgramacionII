@@ -123,6 +123,15 @@ namespace FacturasWebAPI.Controllers
             return Ok(app.RegistrarBajaFactura(id));
         }
 
+        [HttpPost("consultar_articulos")]
+        public IActionResult GetArticulos(List<Parametro> lst)
+        {
+            if (lst == null || lst.Count == 0)
+                return BadRequest("Se requiere una lista de parámetros!");
+
+            return Ok(app.ConsultarArticulos(lst));
+        }
+
 
 
     }

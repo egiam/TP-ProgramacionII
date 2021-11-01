@@ -90,5 +90,10 @@ namespace FacturasBack.datos
             return HelperDao.GetInstance().DeleteFactura("SP_REGISTRAR_BAJA_FACTURAS", id);
         }
 
+        public List<Articulo> GetArticulosByFilters(List<Parametro> criterios)
+        {
+            return HelperDao.GetInstance().ConsultarArticulos("SP_CONSULTAR_ARTICULOS_FILTROS", criterios);
+        }
+
     }
 }

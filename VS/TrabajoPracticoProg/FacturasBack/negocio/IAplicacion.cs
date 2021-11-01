@@ -28,5 +28,7 @@ namespace FacturasBack.negocio
         public bool EditarFactura(Factura oFactura);
         public bool RegistrarBajaFactura(int id);
 
+        public List<Articulo> ConsultarArticulos(List<Parametro> criterios);
+
     }
 }
