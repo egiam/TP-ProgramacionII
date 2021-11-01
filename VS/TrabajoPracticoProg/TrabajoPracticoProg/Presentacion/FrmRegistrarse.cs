@@ -8,14 +8,29 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
+using CommonLogin.Cache;
+using AccesoDatosLogin;
 
 namespace TrabajoPracticoProg.Presentacion
 {
     public partial class FrmRegistrarse : Form
     {
+        public enum Accion
+        {
+            CREATE,
+            READ,
+            UPDATE,
+            DELETE
+        }
+
+        private RegistroDao registro;
+        private UserLoginCache cache;
+        private Accion modo;
+
         public FrmRegistrarse()
         {
             InitializeComponent();
+            cache = new UserLoginCache();
         }
 
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
@@ -143,6 +158,75 @@ namespace TrabajoPracticoProg.Presentacion
         }
 
         private void btnVolver_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnRegistrarse_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(txtApellido.Text))
+            {
+                MessageBox.Show("Debe ingresar un Apellido!", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtNombre.Focus();
+                return;
+            }
+
+            if (string.IsNullOrEmpty(txtNombre.Text))
+            {
+                MessageBox.Show("Debe ingresar un nombre!", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtNombre.Focus();
+                return;
+            }
+
+            if (string.IsNullOrEmpty(txtContra.Text))
+            {
+                MessageBox.Show("Debe ingresar una Contraseña!", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtNombre.Focus();
+                return;
+            }
+
+            if (string.IsNullOrEmpty(txtEmail.Text))
+            {
+                MessageBox.Show("Debe ingresar un Email!", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtNombre.Focus();
+                return;
+            }
+
+            if (string.IsNullOrEmpty(txtUsuario.Text))
+            {
+                MessageBox.Show("Debe ingresar un Usuario!", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtNombre.Focus();
+                return;
+            }
+
+            if (string.IsNullOrEmpty(txtPosicion.Text))
+            {
+                MessageBox.Show("Debe ingresar una Posicion Laboral!", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtNombre.Focus();
+                return;
+            }
+
+            cache.Password = txtContra.Text;
+            cache.Position = txtPosicion.Text;
+            cache.LoginName = txtUsuario.Text;
+            cache.LastName = txtApellido.Text;
+            cache.FirstName = txtNombre.Text;
+            cache.Email = txtEmail.Text;
+
+            if (registro.InsertarRegistro(cache))
+            {
+                MessageBox.Show("Registro exitoso.", "Informe", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                //Close();
+                Terminar();
+            }
+            else
+            {
+                MessageBox.Show("ERROR. No se pudo registrar el usuario.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+        }
+
+        private void Terminar()
         {
             this.Close();
         }

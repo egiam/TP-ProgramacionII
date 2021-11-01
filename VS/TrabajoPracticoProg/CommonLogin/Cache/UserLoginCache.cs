@@ -6,14 +6,27 @@ using System.Threading.Tasks;
 
 namespace CommonLogin.Cache
 {
-    public static class UserLoginCache
+    public class UserLoginCache
     {
-        public static int UserID { get; set; }
-        public static string Position { get; set; }
-        public static string FirstName { get; set; }
-        public static string LastName { get; set; }
-        public static string Email { get; set; }
-        public static string LoginName { get; set; }
-        public static string Password { get; set; }
+        public int UserID { get; set; }
+        public string Position { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public string Email { get; set; }
+        public string LoginName { get; set; }
+        public string Password { get; set; }
+
+        public UserLoginCache() { }
+
+        public UserLoginCache(int UserID, string Position, string FirstName, string LastName, string Email, string LoginName, string Password)
+        {
+            this.UserID = UserID;
+            this.Position = Position;
+            this.FirstName = FirstName;
+            this.LastName = LastName;
+            this.Email = Email;
+            this.LoginName = LoginName;
+            this.Password = Password;
+        }
     }
 }

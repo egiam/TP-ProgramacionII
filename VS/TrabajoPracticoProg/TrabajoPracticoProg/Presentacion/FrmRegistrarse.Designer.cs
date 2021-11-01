@@ -47,6 +47,8 @@ namespace TrabajoPracticoProg.Presentacion
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.btnVolver = new System.Windows.Forms.LinkLabel();
+            this.txtPosicion = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
@@ -111,6 +113,7 @@ namespace TrabajoPracticoProg.Presentacion
             this.btnRegistrarse.TabIndex = 17;
             this.btnRegistrarse.Text = "Registrarse";
             this.btnRegistrarse.UseVisualStyleBackColor = false;
+            this.btnRegistrarse.Click += new System.EventHandler(this.btnRegistrarse_Click);
             // 
             // label3
             // 
@@ -129,7 +132,7 @@ namespace TrabajoPracticoProg.Presentacion
             this.txtContra.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtContra.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtContra.ForeColor = System.Drawing.Color.DimGray;
-            this.txtContra.Location = new System.Drawing.Point(313, 158);
+            this.txtContra.Location = new System.Drawing.Point(313, 130);
             this.txtContra.Name = "txtContra";
             this.txtContra.Size = new System.Drawing.Size(423, 20);
             this.txtContra.TabIndex = 16;
@@ -142,7 +145,7 @@ namespace TrabajoPracticoProg.Presentacion
             // 
             this.label2.AutoSize = true;
             this.label2.ForeColor = System.Drawing.Color.DimGray;
-            this.label2.Location = new System.Drawing.Point(304, 167);
+            this.label2.Location = new System.Drawing.Point(304, 139);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(442, 15);
             this.label2.TabIndex = 19;
@@ -155,7 +158,7 @@ namespace TrabajoPracticoProg.Presentacion
             this.txtUsuario.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtUsuario.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtUsuario.ForeColor = System.Drawing.Color.DimGray;
-            this.txtUsuario.Location = new System.Drawing.Point(313, 88);
+            this.txtUsuario.Location = new System.Drawing.Point(313, 71);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(423, 20);
             this.txtUsuario.TabIndex = 15;
@@ -167,7 +170,7 @@ namespace TrabajoPracticoProg.Presentacion
             // 
             this.label1.AutoSize = true;
             this.label1.ForeColor = System.Drawing.Color.DimGray;
-            this.label1.Location = new System.Drawing.Point(304, 96);
+            this.label1.Location = new System.Drawing.Point(304, 79);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(442, 15);
             this.label1.TabIndex = 18;
@@ -180,7 +183,7 @@ namespace TrabajoPracticoProg.Presentacion
             this.txtNombre.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtNombre.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtNombre.ForeColor = System.Drawing.Color.DimGray;
-            this.txtNombre.Location = new System.Drawing.Point(313, 222);
+            this.txtNombre.Location = new System.Drawing.Point(313, 194);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(423, 20);
             this.txtNombre.TabIndex = 23;
@@ -192,7 +195,7 @@ namespace TrabajoPracticoProg.Presentacion
             // 
             this.label4.AutoSize = true;
             this.label4.ForeColor = System.Drawing.Color.DimGray;
-            this.label4.Location = new System.Drawing.Point(304, 231);
+            this.label4.Location = new System.Drawing.Point(304, 203);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(442, 15);
             this.label4.TabIndex = 24;
@@ -205,7 +208,7 @@ namespace TrabajoPracticoProg.Presentacion
             this.txtApellido.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtApellido.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtApellido.ForeColor = System.Drawing.Color.DimGray;
-            this.txtApellido.Location = new System.Drawing.Point(313, 285);
+            this.txtApellido.Location = new System.Drawing.Point(313, 255);
             this.txtApellido.Name = "txtApellido";
             this.txtApellido.Size = new System.Drawing.Size(423, 20);
             this.txtApellido.TabIndex = 25;
@@ -217,7 +220,7 @@ namespace TrabajoPracticoProg.Presentacion
             // 
             this.label5.AutoSize = true;
             this.label5.ForeColor = System.Drawing.Color.DimGray;
-            this.label5.Location = new System.Drawing.Point(304, 294);
+            this.label5.Location = new System.Drawing.Point(304, 264);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(442, 15);
             this.label5.TabIndex = 26;
@@ -230,7 +233,7 @@ namespace TrabajoPracticoProg.Presentacion
             this.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtEmail.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtEmail.ForeColor = System.Drawing.Color.DimGray;
-            this.txtEmail.Location = new System.Drawing.Point(313, 349);
+            this.txtEmail.Location = new System.Drawing.Point(313, 314);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(423, 20);
             this.txtEmail.TabIndex = 27;
@@ -242,7 +245,7 @@ namespace TrabajoPracticoProg.Presentacion
             // 
             this.label6.AutoSize = true;
             this.label6.ForeColor = System.Drawing.Color.DimGray;
-            this.label6.Location = new System.Drawing.Point(304, 358);
+            this.label6.Location = new System.Drawing.Point(304, 323);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(442, 15);
             this.label6.TabIndex = 28;
@@ -262,12 +265,37 @@ namespace TrabajoPracticoProg.Presentacion
             this.btnVolver.Text = "Volver";
             this.btnVolver.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.btnVolver_LinkClicked);
             // 
+            // txtPosicion
+            // 
+            this.txtPosicion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.txtPosicion.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtPosicion.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtPosicion.ForeColor = System.Drawing.Color.DimGray;
+            this.txtPosicion.Location = new System.Drawing.Point(313, 373);
+            this.txtPosicion.Name = "txtPosicion";
+            this.txtPosicion.Size = new System.Drawing.Size(423, 20);
+            this.txtPosicion.TabIndex = 30;
+            this.txtPosicion.Text = "Posicion";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.ForeColor = System.Drawing.Color.DimGray;
+            this.label7.Location = new System.Drawing.Point(304, 382);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(442, 15);
+            this.label7.TabIndex = 31;
+            this.label7.Text = "_________________________________________________________________________________" +
+    "______";
+            // 
             // FrmRegistrarse
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.ClientSize = new System.Drawing.Size(800, 517);
+            this.Controls.Add(this.txtPosicion);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.btnVolver);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.label6);
@@ -318,5 +346,7 @@ namespace TrabajoPracticoProg.Presentacion
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.LinkLabel btnVolver;
+        private System.Windows.Forms.TextBox txtPosicion;
+        private System.Windows.Forms.Label label7;
     }
 }
