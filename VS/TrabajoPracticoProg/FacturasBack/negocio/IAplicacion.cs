@@ -32,5 +32,7 @@ namespace FacturasBack.negocio
 
         public List<Articulo> ConsultarArticulos(List<Parametro> criterios);
 
+        public bool EditarArticulo(Articulo oArticulo);
+
     }
 }

@@ -99,5 +99,11 @@ namespace FacturasBack.datos
             return HelperDao.GetInstance().ConsultarArticulos("SP_CONSULTAR_ARTICULOS_FILTROS", criterios);
         }
 
+        public bool EditarArticulo(Articulo oArticulo)
+        {
+            return HelperDao.GetInstance().EjecutarInsertArticulo(oArticulo, "SP_EDITAR_ARTICULO");
+        }
+
+
     }
 }

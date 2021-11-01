@@ -22,3 +22,15 @@ D:\UTN\Carrera\Semestre 2\Programacion II\TP-ProgramacionII\VS\TrabajoPracticoPr
 D:\UTN\Carrera\Semestre 2\Programacion II\TP-ProgramacionII\VS\TrabajoPracticoProg\FacturasBack\obj\Debug\net5.0\FacturasBack.dll
 D:\UTN\Carrera\Semestre 2\Programacion II\TP-ProgramacionII\VS\TrabajoPracticoProg\FacturasBack\obj\Debug\net5.0\ref\FacturasBack.dll
 D:\UTN\Carrera\Semestre 2\Programacion II\TP-ProgramacionII\VS\TrabajoPracticoProg\FacturasBack\obj\Debug\net5.0\FacturasBack.pdb
+C:\Users\Luis\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\FacturasBack\bin\Debug\net5.0\FacturasBack.deps.json
+C:\Users\Luis\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\FacturasBack\bin\Debug\net5.0\FacturasBack.dll
+C:\Users\Luis\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\FacturasBack\bin\Debug\net5.0\ref\FacturasBack.dll
+C:\Users\Luis\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\FacturasBack\bin\Debug\net5.0\FacturasBack.pdb
+C:\Users\Luis\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\FacturasBack\obj\Debug\net5.0\FacturasBack.csproj.AssemblyReference.cache
+C:\Users\Luis\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\FacturasBack\obj\Debug\net5.0\FacturasBack.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Luis\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\FacturasBack\obj\Debug\net5.0\FacturasBack.AssemblyInfoInputs.cache
+C:\Users\Luis\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\FacturasBack\obj\Debug\net5.0\FacturasBack.AssemblyInfo.cs
+C:\Users\Luis\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\FacturasBack\obj\Debug\net5.0\FacturasBack.csproj.CoreCompileInputs.cache
+C:\Users\Luis\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\FacturasBack\obj\Debug\net5.0\FacturasBack.dll
+C:\Users\Luis\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\FacturasBack\obj\Debug\net5.0\ref\FacturasBack.dll
+C:\Users\Luis\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\FacturasBack\obj\Debug\net5.0\FacturasBack.pdb

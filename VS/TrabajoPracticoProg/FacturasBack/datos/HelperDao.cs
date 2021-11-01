@@ -134,14 +134,14 @@ namespace FacturasBack.datos
                 connection.Open();
                 transaction = connection.BeginTransaction();
                 //Se inserta Articulo
-                SqlCommand cmdMaestro = new SqlCommand(spArticulo, connection, transaction);
-                cmdMaestro.CommandType = CommandType.StoredProcedure;
+                SqlCommand cmd = new SqlCommand(spArticulo, connection, transaction);
+                cmd.CommandType = CommandType.StoredProcedure;
 
-                cmdMaestro.Parameters.AddWithValue("@nombre", articulo.Nombre);
-                cmdMaestro.Parameters.AddWithValue("@precio", articulo.PrecioUnitario);
+                cmd.Parameters.AddWithValue("@id", articulo.IdArticulo);
+                cmd.Parameters.AddWithValue("@nombre", articulo.Nombre);
+                cmd.Parameters.AddWithValue("@pre_unitario", articulo.PrecioUnitario);
 
-
-                cmdMaestro.ExecuteNonQuery();
+                cmd.ExecuteNonQuery();
 
                 transaction.Commit();
             }

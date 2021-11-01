@@ -41,19 +41,20 @@ namespace FacturasFront
                 articulo = articuloSeleccionado;
                 txtNombre.Text = articuloSeleccionado.Nombre;
                 nudPrecio.Value = Convert.ToDecimal(articuloSeleccionado.PrecioUnitario);
+                lblNroArticulo.Text = "Articulo Nro: " + articulo.IdArticulo.ToString() ;
+                this.Text = "Editar articulo";
             }
 
             if (modo.Equals(Accion.CREATE))
             {
                 articulo = new Articulo();
-
+                AsignarNumeroArticuloAsync();
             }
 
         }
 
         private async void FrmNuevoArticulo_Load(object sender, EventArgs e)
         {
-            await AsignarNumeroArticuloAsync();
         }
 
         private async Task AsignarNumeroArticuloAsync()
@@ -100,8 +101,8 @@ namespace FacturasFront
             else
             if (modo.Equals(Accion.UPDATE))
             {
-              //  success = await EditarArticuloAsync(data);
-           //     MostrarMensajeResultado(success);
+                success = await EditarArticuloAsync(data);
+                MostrarMensajeResultado(success);
                 this.Dispose();
             }
        
@@ -137,11 +138,11 @@ namespace FacturasFront
 
         private async Task<bool> EditarArticuloAsync(string data)
         {
-            string url = "https://localhost:44357/api/articulos/articulos";
+            string url = "https://localhost:44357/api/articulos/articulo";
             using (HttpClient client = new HttpClient())
             {
                 StringContent content = new StringContent(data, Encoding.UTF8, "application/json");
-                var result = await client.PostAsync(url, content);
+                var result = await client.PutAsync(url, content);
                 return (int)result.StatusCode == 200;
             }
         }

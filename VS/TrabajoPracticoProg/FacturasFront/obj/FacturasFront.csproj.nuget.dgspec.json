@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Felpu\\Documents\\GitHub\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\FacturasFront\\FacturasFront.csproj": {}
+    "C:\\Users\\Luis\\Documents\\GitHub\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\FacturasFront\\FacturasFront.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Felpu\\Documents\\GitHub\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\FacturasBack\\FacturasBack.csproj": {
+    "C:\\Users\\Luis\\Documents\\GitHub\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\FacturasBack\\FacturasBack.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Felpu\\Documents\\GitHub\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\FacturasBack\\FacturasBack.csproj",
+        "projectUniqueName": "C:\\Users\\Luis\\Documents\\GitHub\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\FacturasBack\\FacturasBack.csproj",
         "projectName": "FacturasBack",
-        "projectPath": "C:\\Users\\Felpu\\Documents\\GitHub\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\FacturasBack\\FacturasBack.csproj",
-        "packagesPath": "C:\\Users\\Felpu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Felpu\\Documents\\GitHub\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\FacturasBack\\obj\\",
+        "projectPath": "C:\\Users\\Luis\\Documents\\GitHub\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\FacturasBack\\FacturasBack.csproj",
+        "packagesPath": "C:\\Users\\Luis\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Luis\\Documents\\GitHub\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\FacturasBack\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Felpu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Luis\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -60,21 +60,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Felpu\\Documents\\GitHub\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\FacturasFront\\FacturasFront.csproj": {
+    "C:\\Users\\Luis\\Documents\\GitHub\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\FacturasFront\\FacturasFront.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Felpu\\Documents\\GitHub\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\FacturasFront\\FacturasFront.csproj",
+        "projectUniqueName": "C:\\Users\\Luis\\Documents\\GitHub\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\FacturasFront\\FacturasFront.csproj",
         "projectName": "FacturasFront",
-        "projectPath": "C:\\Users\\Felpu\\Documents\\GitHub\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\FacturasFront\\FacturasFront.csproj",
-        "packagesPath": "C:\\Users\\Felpu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Felpu\\Documents\\GitHub\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\FacturasFront\\obj\\",
+        "projectPath": "C:\\Users\\Luis\\Documents\\GitHub\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\FacturasFront\\FacturasFront.csproj",
+        "packagesPath": "C:\\Users\\Luis\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Luis\\Documents\\GitHub\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\FacturasFront\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Felpu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Luis\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -88,8 +88,8 @@
           "net5.0-windows7.0": {
             "targetAlias": "net5.0-windows",
             "projectReferences": {
-              "C:\\Users\\Felpu\\Documents\\GitHub\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\FacturasBack\\FacturasBack.csproj": {
-                "projectPath": "C:\\Users\\Felpu\\Documents\\GitHub\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\FacturasBack\\FacturasBack.csproj"
+              "C:\\Users\\Luis\\Documents\\GitHub\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\FacturasBack\\FacturasBack.csproj": {
+                "projectPath": "C:\\Users\\Luis\\Documents\\GitHub\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\FacturasBack\\FacturasBack.csproj"
               }
             }
           }
@@ -127,7 +127,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

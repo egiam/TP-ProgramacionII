@@ -30,5 +30,7 @@ namespace FacturasBack.datos
         public bool DeleteArticulo(int id);
 
         List<Articulo> GetArticulosByFilters(List<Parametro> criterios);
+
+        bool EditarArticulo(Articulo oArticulo);
     }
 }

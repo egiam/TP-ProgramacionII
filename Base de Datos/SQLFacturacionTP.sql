@@ -220,6 +220,7 @@ GO
 
 
 CREATE OR ALTER PROCEDURE [dbo].[SP_INSERTAR_ARTICULO] 
+	@id int,
 	@nombre varchar(255), 
 	@precio decimal(10,2)
 AS
@@ -314,4 +315,25 @@ BEGIN
 END
 GO
 SP_REGISTRAR_BAJA_ARTICULO 7
+
+GO
+
 select * from articulos
+
+GO
+
+CREATE OR ALTER PROCEDURE [dbo].[SP_EDITAR_ARTICULO] 
+	@id int,
+	@nombre varchar(75),
+	@pre_unitario decimal(10,2)
+AS
+BEGIN
+	UPDATE articulos SET nombre=@nombre, pre_unitario=@pre_unitario
+	WHERE id_articulo = @id;
+	
+END
+GO
+
+select * from articulos
+
+exec[SP_EDITAR_ARTICULO] 2, 'Ventana', 2000

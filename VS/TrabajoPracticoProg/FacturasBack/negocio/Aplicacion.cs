@@ -74,5 +74,10 @@ namespace FacturasBack.negocio
         {
             return dao.GetArticulosByFilters(criterios);//
         }
+
+        public bool EditarArticulo(Articulo oArticulo)
+        {
+            return dao.EditarArticulo(oArticulo);
+        }
     }
 }

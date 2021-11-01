@@ -141,6 +141,21 @@ namespace FacturasWebAPI.Controllers
         }
 
 
+        [HttpPut("/api/articulos/articulo")]
+        public IActionResult PutArticulo(Articulo oArticulo)
+        {
+            if (oArticulo == null)
+            {
+                return BadRequest("Artículo null!");
+            }
+
+            if (app.EditarArticulo(oArticulo))
+                return Ok("¡Se grabó exitosamente el artículo!");
+            else
+                return BadRequest("¡No se pudo grabar el artículo!");
+        }
+
+
 
     }
 }

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Felpu\\Documents\\GitHub\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\AccesoDatosLogin\\AccesoDatosLogin.csproj": {}
+    "C:\\Users\\Luis\\Documents\\GitHub\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\AccesoDatosLogin\\AccesoDatosLogin.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Felpu\\Documents\\GitHub\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\AccesoDatosLogin\\AccesoDatosLogin.csproj": {
+    "C:\\Users\\Luis\\Documents\\GitHub\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\AccesoDatosLogin\\AccesoDatosLogin.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Felpu\\Documents\\GitHub\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\AccesoDatosLogin\\AccesoDatosLogin.csproj",
+        "projectUniqueName": "C:\\Users\\Luis\\Documents\\GitHub\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\AccesoDatosLogin\\AccesoDatosLogin.csproj",
         "projectName": "AccesoDatosLogin",
-        "projectPath": "C:\\Users\\Felpu\\Documents\\GitHub\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\AccesoDatosLogin\\AccesoDatosLogin.csproj",
-        "packagesPath": "C:\\Users\\Felpu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Felpu\\Documents\\GitHub\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\AccesoDatosLogin\\obj\\",
+        "projectPath": "C:\\Users\\Luis\\Documents\\GitHub\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\AccesoDatosLogin\\AccesoDatosLogin.csproj",
+        "packagesPath": "C:\\Users\\Luis\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Luis\\Documents\\GitHub\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\AccesoDatosLogin\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Felpu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Luis\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +28,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\Felpu\\Documents\\GitHub\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\CommonLogin\\CommonLogin.csproj": {
-                "projectPath": "C:\\Users\\Felpu\\Documents\\GitHub\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\CommonLogin\\CommonLogin.csproj"
+              "C:\\Users\\Luis\\Documents\\GitHub\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\CommonLogin\\CommonLogin.csproj": {
+                "projectPath": "C:\\Users\\Luis\\Documents\\GitHub\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\CommonLogin\\CommonLogin.csproj"
               }
             }
           }
@@ -64,21 +64,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Felpu\\Documents\\GitHub\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\CommonLogin\\CommonLogin.csproj": {
+    "C:\\Users\\Luis\\Documents\\GitHub\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\CommonLogin\\CommonLogin.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Felpu\\Documents\\GitHub\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\CommonLogin\\CommonLogin.csproj",
+        "projectUniqueName": "C:\\Users\\Luis\\Documents\\GitHub\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\CommonLogin\\CommonLogin.csproj",
         "projectName": "CommonLogin",
-        "projectPath": "C:\\Users\\Felpu\\Documents\\GitHub\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\CommonLogin\\CommonLogin.csproj",
-        "packagesPath": "C:\\Users\\Felpu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Felpu\\Documents\\GitHub\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\CommonLogin\\obj\\",
+        "projectPath": "C:\\Users\\Luis\\Documents\\GitHub\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\CommonLogin\\CommonLogin.csproj",
+        "packagesPath": "C:\\Users\\Luis\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Luis\\Documents\\GitHub\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\CommonLogin\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Felpu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Luis\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -118,7 +118,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

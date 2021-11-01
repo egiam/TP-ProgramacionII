@@ -654,19 +654,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Felpu\\.nuget\\packages\\": {}
+    "C:\\Users\\Luis\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Felpu\\Documents\\GitHub\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\FacturasWebAPI\\FacturasWebAPI.csproj",
+      "projectUniqueName": "C:\\Users\\Luis\\Documents\\GitHub\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\FacturasWebAPI\\FacturasWebAPI.csproj",
       "projectName": "FacturasWebAPI",
-      "projectPath": "C:\\Users\\Felpu\\Documents\\GitHub\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\FacturasWebAPI\\FacturasWebAPI.csproj",
-      "packagesPath": "C:\\Users\\Felpu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Felpu\\Documents\\GitHub\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\FacturasWebAPI\\obj\\",
+      "projectPath": "C:\\Users\\Luis\\Documents\\GitHub\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\FacturasWebAPI\\FacturasWebAPI.csproj",
+      "packagesPath": "C:\\Users\\Luis\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Luis\\Documents\\GitHub\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\FacturasWebAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Felpu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Luis\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -680,8 +680,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\Felpu\\Documents\\GitHub\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\FacturasBack\\FacturasBack.csproj": {
-              "projectPath": "C:\\Users\\Felpu\\Documents\\GitHub\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\FacturasBack\\FacturasBack.csproj"
+            "C:\\Users\\Luis\\Documents\\GitHub\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\FacturasBack\\FacturasBack.csproj": {
+              "projectPath": "C:\\Users\\Luis\\Documents\\GitHub\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\FacturasBack\\FacturasBack.csproj"
             }
           }
         }
@@ -719,7 +719,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }
