@@ -153,6 +153,24 @@ namespace TrabajoPracticoProg.Presentacion
             AbrirFormulario<FrmNuevaFactura>();
             btnNuevaFactura.BackColor = Color.FromArgb(12, 61, 92);
         }
+
+        private void btnConsultarFactura_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<FrmConsultarFactura>();
+            btnConsultarFactura.BackColor = Color.FromArgb(12, 61, 92);
+        }
+
+        private void btnConsultarArticulos_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<FrmConsultarArticulos>();
+            btnConsultarArticulos.BackColor = Color.FromArgb(12, 61, 92);
+        }
+
+        private void btnNuevoArticulo_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<FrmNuevoArticulo>();
+            btnNuevoArticulo.BackColor = Color.FromArgb(12, 61, 92);
+        }
         #endregion
 
 
@@ -183,6 +201,12 @@ namespace TrabajoPracticoProg.Presentacion
         private void CloseForms(object sender,FormClosedEventArgs e) {
             if (Application.OpenForms["FrmNuevaFactura"] == null)
                 btnNuevaFactura.BackColor = Color.FromArgb(4, 41, 68);
+            if (Application.OpenForms["FrmConsultarFactura"] == null)
+                btnConsultarFactura.BackColor = Color.FromArgb(4, 41, 68);
+            if (Application.OpenForms["FrmConsultarArticulos"] == null)
+                btnConsultarArticulos.BackColor = Color.FromArgb(4, 41, 68);
+            if (Application.OpenForms["FrmNuevoArticulo"] == null)
+                btnNuevoArticulo.BackColor = Color.FromArgb(4, 41, 68);
             //if (Application.OpenForms["Form2"] == null)
             //    button2.BackColor = Color.FromArgb(4, 41, 68);
             //if (Application.OpenForms["Form3"] == null)

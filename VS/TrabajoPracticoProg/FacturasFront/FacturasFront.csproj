@@ -11,6 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\CommonLogin\CommonLogin.csproj" />
     <ProjectReference Include="..\FacturasBack\FacturasBack.csproj" />
   </ItemGroup>
 

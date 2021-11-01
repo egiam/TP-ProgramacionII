@@ -38,11 +38,11 @@
             this.lblName = new System.Windows.Forms.Label();
             this.lblPosition = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnConsultarFactura = new System.Windows.Forms.Button();
             this.btnNuevaFactura = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnConsultarArticulos = new System.Windows.Forms.Button();
             this.btnLogOut = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btnNuevoArticulo = new System.Windows.Forms.Button();
             this.panelBarraTitulo = new System.Windows.Forms.Panel();
             this.btnRestaurar = new System.Windows.Forms.PictureBox();
             this.btnMinimizar = new System.Windows.Forms.PictureBox();
@@ -105,11 +105,11 @@
             this.panelMenu.Controls.Add(this.lblName);
             this.panelMenu.Controls.Add(this.lblPosition);
             this.panelMenu.Controls.Add(this.pictureBox2);
-            this.panelMenu.Controls.Add(this.button2);
+            this.panelMenu.Controls.Add(this.btnConsultarFactura);
             this.panelMenu.Controls.Add(this.btnNuevaFactura);
-            this.panelMenu.Controls.Add(this.button3);
+            this.panelMenu.Controls.Add(this.btnConsultarArticulos);
             this.panelMenu.Controls.Add(this.btnLogOut);
-            this.panelMenu.Controls.Add(this.button4);
+            this.panelMenu.Controls.Add(this.btnNuevoArticulo);
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 37);
             this.panelMenu.Margin = new System.Windows.Forms.Padding(2);
@@ -170,23 +170,24 @@
             this.pictureBox2.TabIndex = 7;
             this.pictureBox2.TabStop = false;
             // 
-            // button2
+            // btnConsultarFactura
             // 
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(50)))), ((int)(((byte)(70)))));
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button2.ForeColor = System.Drawing.Color.Gainsboro;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(2, 250);
-            this.button2.Margin = new System.Windows.Forms.Padding(2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(219, 46);
-            this.button2.TabIndex = 6;
-            this.button2.Text = "button2";
-            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnConsultarFactura.FlatAppearance.BorderSize = 0;
+            this.btnConsultarFactura.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(50)))), ((int)(((byte)(70)))));
+            this.btnConsultarFactura.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
+            this.btnConsultarFactura.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnConsultarFactura.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnConsultarFactura.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnConsultarFactura.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnConsultarFactura.Location = new System.Drawing.Point(2, 250);
+            this.btnConsultarFactura.Margin = new System.Windows.Forms.Padding(2);
+            this.btnConsultarFactura.Name = "btnConsultarFactura";
+            this.btnConsultarFactura.Size = new System.Drawing.Size(219, 46);
+            this.btnConsultarFactura.TabIndex = 6;
+            this.btnConsultarFactura.Text = "Consultar Facturas";
+            this.btnConsultarFactura.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnConsultarFactura.UseVisualStyleBackColor = true;
+            this.btnConsultarFactura.Click += new System.EventHandler(this.btnConsultarFactura_Click);
             // 
             // btnNuevaFactura
             // 
@@ -207,23 +208,24 @@
             this.btnNuevaFactura.UseVisualStyleBackColor = true;
             this.btnNuevaFactura.Click += new System.EventHandler(this.btnNuevaFactura_Click);
             // 
-            // button3
+            // btnConsultarArticulos
             // 
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(50)))), ((int)(((byte)(70)))));
-            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button3.ForeColor = System.Drawing.Color.Gainsboro;
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(2, 300);
-            this.button3.Margin = new System.Windows.Forms.Padding(2);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(219, 46);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "button3";
-            this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnConsultarArticulos.FlatAppearance.BorderSize = 0;
+            this.btnConsultarArticulos.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(50)))), ((int)(((byte)(70)))));
+            this.btnConsultarArticulos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
+            this.btnConsultarArticulos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnConsultarArticulos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnConsultarArticulos.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnConsultarArticulos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnConsultarArticulos.Location = new System.Drawing.Point(2, 300);
+            this.btnConsultarArticulos.Margin = new System.Windows.Forms.Padding(2);
+            this.btnConsultarArticulos.Name = "btnConsultarArticulos";
+            this.btnConsultarArticulos.Size = new System.Drawing.Size(219, 46);
+            this.btnConsultarArticulos.TabIndex = 3;
+            this.btnConsultarArticulos.Text = "Consultar Articulos";
+            this.btnConsultarArticulos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnConsultarArticulos.UseVisualStyleBackColor = true;
+            this.btnConsultarArticulos.Click += new System.EventHandler(this.btnConsultarArticulos_Click);
             // 
             // btnLogOut
             // 
@@ -245,23 +247,24 @@
             this.btnLogOut.UseVisualStyleBackColor = true;
             this.btnLogOut.Click += new System.EventHandler(this.btnLogOut_Click);
             // 
-            // button4
+            // btnNuevoArticulo
             // 
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(50)))), ((int)(((byte)(70)))));
-            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button4.ForeColor = System.Drawing.Color.Gainsboro;
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(2, 350);
-            this.button4.Margin = new System.Windows.Forms.Padding(2);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(219, 46);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "button4";
-            this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnNuevoArticulo.FlatAppearance.BorderSize = 0;
+            this.btnNuevoArticulo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(50)))), ((int)(((byte)(70)))));
+            this.btnNuevoArticulo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
+            this.btnNuevoArticulo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNuevoArticulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnNuevoArticulo.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnNuevoArticulo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnNuevoArticulo.Location = new System.Drawing.Point(2, 350);
+            this.btnNuevoArticulo.Margin = new System.Windows.Forms.Padding(2);
+            this.btnNuevoArticulo.Name = "btnNuevoArticulo";
+            this.btnNuevoArticulo.Size = new System.Drawing.Size(219, 46);
+            this.btnNuevoArticulo.TabIndex = 3;
+            this.btnNuevoArticulo.Text = "Nuevo Articulo";
+            this.btnNuevoArticulo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnNuevoArticulo.UseVisualStyleBackColor = true;
+            this.btnNuevoArticulo.Click += new System.EventHandler(this.btnNuevoArticulo_Click);
             // 
             // panelBarraTitulo
             // 
@@ -377,10 +380,10 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox btnRestaurar;
         private System.Windows.Forms.Button btnLogOut;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnNuevoArticulo;
+        private System.Windows.Forms.Button btnConsultarFactura;
         private System.Windows.Forms.Button btnNuevaFactura;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnConsultarArticulos;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label lblEmail;
         private System.Windows.Forms.Label lblName;

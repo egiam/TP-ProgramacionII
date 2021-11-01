@@ -87,3 +87,8 @@ C:\Users\Luis\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\Facturas
 C:\Users\Luis\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\FacturasFront\obj\Debug\net5.0-windows\ref\FacturasFront.dll
 C:\Users\Luis\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\FacturasFront\obj\Debug\net5.0-windows\FacturasFront.pdb
 C:\Users\Luis\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\FacturasFront\obj\Debug\net5.0-windows\FacturasFront.genruntimeconfig.cache
+D:\UTN\Carrera\Semestre 2\Programacion II\TP-ProgramacionII\VS\TrabajoPracticoProg\FacturasFront\obj\Debug\net5.0-windows\FacturasFront.FrmConsultarArticulos.resources
+D:\UTN\Carrera\Semestre 2\Programacion II\TP-ProgramacionII\VS\TrabajoPracticoProg\FacturasFront\obj\Debug\net5.0-windows\FacturasFront.FrmConsultarFactura.resources
+D:\UTN\Carrera\Semestre 2\Programacion II\TP-ProgramacionII\VS\TrabajoPracticoProg\FacturasFront\obj\Debug\net5.0-windows\FacturasFront.FrmNuevoArticulo.resources
+D:\UTN\Carrera\Semestre 2\Programacion II\TP-ProgramacionII\VS\TrabajoPracticoProg\FacturasFront\bin\Debug\net5.0-windows\CommonLogin.dll
+D:\UTN\Carrera\Semestre 2\Programacion II\TP-ProgramacionII\VS\TrabajoPracticoProg\FacturasFront\bin\Debug\net5.0-windows\CommonLogin.pdb
