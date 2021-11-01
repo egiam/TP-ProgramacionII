@@ -44,5 +44,19 @@ namespace AccesoDatosLogin
                 }
             }
         }
+
+
+        public void anyMethod()
+        {
+            if (UserLoginCache.Position == Positions.Empleado)
+            {
+                //Lineas o métodos que quieras ejecutar para el cargo recepcionita
+            }
+            if (UserLoginCache.Position == Positions.Gerente)
+            {
+                //Lineas o métodos que quieras ejecutar para el cargo contador
+            }
+        }
+
     }
 }

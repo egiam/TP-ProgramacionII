@@ -180,6 +180,11 @@ namespace TrabajoPracticoProg.Presentacion
             this.Size = new Size(sw, sh);
             this.Location = new Point(lx, ly);
         }
+
+        private void btnMenu_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<FrmMenu>();
+        }
         #endregion
 
 
