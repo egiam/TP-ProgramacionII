@@ -368,7 +368,7 @@ namespace FacturasBack.datos
 
         public int EjecutarInsertRegistro(string spMaestro, Usuario oUsuario)
         {
-            SqlConnection cnn = new SqlConnection();
+            SqlConnection cnn = new SqlConnection(connectionString);
             SqlCommand cmd = new SqlCommand();
 
             int filasAfectadas = 0;
@@ -384,14 +384,14 @@ namespace FacturasBack.datos
                 cmd.CommandText = spMaestro;
                 cmd.CommandType = CommandType.StoredProcedure;
 
-                //Procedimiento
+                //Parametros
                 cmd.Parameters.AddWithValue("@LoginName", oUsuario.LoginName);
                 cmd.Parameters.AddWithValue("@Password", oUsuario.Password);
                 cmd.Parameters.AddWithValue("@FirstName", oUsuario.FirstName);
                 cmd.Parameters.AddWithValue("@LastName", oUsuario.LastName);
                 cmd.Parameters.AddWithValue("@Email", oUsuario.Email);
                 cmd.Parameters.AddWithValue("@Position", oUsuario.Position);
-                cmd.ExecuteNonQuery();
+                filasAfectadas = cmd.ExecuteNonQuery();
 
                 trans.Commit();
             }

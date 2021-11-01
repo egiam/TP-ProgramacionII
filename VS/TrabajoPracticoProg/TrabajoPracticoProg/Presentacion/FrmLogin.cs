@@ -96,7 +96,7 @@ namespace TrabajoPracticoProg
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            if (txtUsuario.Text != "Username" && txtUsuario.TextLength > 2)
+            if (txtUsuario.Text != "Username")// && txtUsuario.TextLength > 2)
             {
                 if (txtContra.Text != "Password")
                 {

@@ -174,7 +174,7 @@ namespace TrabajoPracticoProg.Presentacion
             
             if (string.IsNullOrEmpty(txtUsuario.Text) || txtUsuario.Text == "Usuario")
             {
-                MessageBox.Show("Debe ingresar un Usuario!", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Debe ingresar un Usuario valido!", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 txtUsuario.Focus();
                 return;
             }
@@ -245,19 +245,19 @@ namespace TrabajoPracticoProg.Presentacion
 
         private void txtPosicion_Enter(object sender, EventArgs e)
         {
-            if (txtNombre.Text == "Posicion")
+            if (txtPosicion.Text == "Posicion")
             {
-                txtNombre.Text = "";
-                txtNombre.ForeColor = Color.LightGray;
+                txtPosicion.Text = "";
+                txtPosicion.ForeColor = Color.LightGray;
             }
         }
 
         private void txtPosicion_Leave(object sender, EventArgs e)
         {
-            if (txtEmail.Text == "")
+            if (txtPosicion.Text == "")
             {
-                txtEmail.Text = "Posicion";
-                txtEmail.ForeColor = Color.Silver;
+                txtPosicion.Text = "Posicion";
+                txtPosicion.ForeColor = Color.Silver;
             }
         }
     }
