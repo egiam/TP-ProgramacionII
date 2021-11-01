@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "dgSpecHash": "E6LM1HXk1mCUTL4qHyNayov8UrhNhMlBm6a3qFS5AdIENAHlyuuvXm7HxmxPugoDKCXT6ogMzIBatpptPO6rNg==",
-  "success": false,
+  "dgSpecHash": "+SzXu0k16mFvzgCVElGVbAlFFVnPw1svq+weXy5kOILXtPKU7IVpIPBpfcwm99Rlbiw0cJYYEm/f37BujKTG5Q==",
+  "success": true,
   "projectFilePath": "D:\\UTN\\Carrera\\Semestre 2\\Programacion II\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\DominoLogin\\DominoLogin.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Ezequiel\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
@@ -14,15 +14,5 @@
     "C:\\Users\\Ezequiel\\.nuget\\packages\\system.security.accesscontrol\\4.7.0\\system.security.accesscontrol.4.7.0.nupkg.sha512",
     "C:\\Users\\Ezequiel\\.nuget\\packages\\system.security.principal.windows\\4.7.0\\system.security.principal.windows.4.7.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1201",
-      "level": "Error",
-      "message": "Project FacturasFront is not compatible with net5.0 (.NETCoreApp,Version=v5.0). Project FacturasFront supports: net5.0-windows7.0 (.NETCoreApp,Version=v5.0)",
-      "libraryId": "FacturasFront",
-      "targetGraphs": [
-        "net5.0"
-      ]
-    }
-  ]
+  "logs": []
 }

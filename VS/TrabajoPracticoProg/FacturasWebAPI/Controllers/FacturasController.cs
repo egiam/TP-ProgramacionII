@@ -20,24 +20,17 @@ namespace FacturasWebAPI.Controllers
             app = new Aplicacion();
         }
 
-        [HttpGet("proximo_nro_factura")]
-        public IActionResult GetFacturaNro()
-        {
-            return Ok(app.ConsultarFacturaNro());
-        }
-
         [HttpGet("formas_de_pago")]
         public IActionResult GetFormasPago()
         {
             return Ok(app.ConsultarFormaPago());
         }
 
-        [HttpGet("{id}")]
-        public IActionResult Get(int id)
+
+        [HttpGet("proximo_nro_factura")]
+        public IActionResult GetFacturaNro()
         {
-            if (id == 0)
-                return BadRequest("Id es requerido!");
-            return Ok(app.ObtenerFacturaPorID(id));
+            return Ok(app.ConsultarFacturaNro());
         }
 
         [HttpPost("facturas")]
@@ -63,6 +56,50 @@ namespace FacturasWebAPI.Controllers
             return Ok(app.ConsultarFacturas(lst));
         }
 
+        [HttpGet("proximo_nro_articulo")]
+        public IActionResult GetArticuloNro()
+        {
+            return Ok(app.ConsultarArticuloNro());
+        }
+
+        [HttpGet("articulos")]
+        public IActionResult GetArticulos()
+        {
+            return Ok(app.ConsultarArticulos());
+        }
+
+
+        [HttpPost("articulos")]
+        public IActionResult PostArticulo(Articulo oArticulo)
+        {
+            if (oArticulo == null)
+            {
+                return BadRequest("Articulo null");
+            }
+
+            if (app.CrearArticulo(oArticulo))
+                return Ok("¡Se grabó exitosamente el artículo!");
+            else
+                return BadRequest("¡No se pudo grabar el artículo!");
+        }
+
+
+
+        [HttpGet("{id}")]
+        public IActionResult Get(int id)
+        {
+            if (id == 0)
+                return BadRequest("Id es requerido!");
+            return Ok(app.ObtenerFacturaPorID(id));
+        }
+
+        //[HttpPut("facturas")]
+        //public IActionResult Put(int id)
+        //{
+        //    if (id == 0)
+        //        return BadRequest("Id es requerido!");
+        //    return Ok(app.EditarFacturaPorID(id));
+        //}
         [HttpPut("facturas")]
         public IActionResult PutFactura(Factura oFactura)
         {
@@ -77,6 +114,7 @@ namespace FacturasWebAPI.Controllers
                 return BadRequest("¡No se pudo grabar la factura!");
         }
 
+
         [HttpDelete("{id}")]
         public IActionResult Delete(int id)
         {
@@ -84,5 +122,40 @@ namespace FacturasWebAPI.Controllers
                 return BadRequest("Id es requerido!");
             return Ok(app.RegistrarBajaFactura(id));
         }
+
+        [HttpPost("consultar_articulos")]
+        public IActionResult GetArticulos(List<Parametro> lst)
+        {
+            if (lst == null || lst.Count == 0)
+                return BadRequest("Se requiere una lista de parámetros!");
+
+            return Ok(app.ConsultarArticulos(lst));
+        }
+
+        [HttpDelete("/api/articulos/{id}")]
+        public IActionResult DeleteArticulo(int id)
+        {
+            if (id == 0)
+                return BadRequest("Id es requerido!");
+            return Ok(app.RegistrarBajaArticulo(id));
+        }
+
+
+        [HttpPut("/api/articulos/articulo")]
+        public IActionResult PutArticulo(Articulo oArticulo)
+        {
+            if (oArticulo == null)
+            {
+                return BadRequest("Artículo null!");
+            }
+
+            if (app.EditarArticulo(oArticulo))
+                return Ok("¡Se grabó exitosamente el artículo!");
+            else
+                return BadRequest("¡No se pudo grabar el artículo!");
+        }
+
+
+
     }
 }

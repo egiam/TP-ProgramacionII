@@ -136,7 +136,6 @@
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
           "CommonLogin": "1.0.0",
-          "FacturasFront": "1.0.0",
           "System.Data.SqlClient": "4.8.3"
         },
         "compile": {
@@ -154,16 +153,6 @@
         },
         "runtime": {
           "bin/placeholder/CommonLogin.dll": {}
-        }
-      },
-      "FacturasFront/1.0.0": {
-        "type": "project",
-        "framework": "Unsupported,Version=v0.0",
-        "compile": {
-          "bin/placeholder/FacturasFront.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/FacturasFront.dll": {}
         }
       }
     }
@@ -491,11 +480,6 @@
       "type": "project",
       "path": "../CommonLogin/CommonLogin.csproj",
       "msbuildProject": "../CommonLogin/CommonLogin.csproj"
-    },
-    "FacturasFront/1.0.0": {
-      "type": "project",
-      "path": "../FacturasFront/FacturasFront.csproj",
-      "msbuildProject": "../FacturasFront/FacturasFront.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -506,19 +490,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Luis\\.nuget\\packages\\": {}
+    "C:\\Users\\Ezequiel\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Luis\\Documents\\GitHub\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\DominoLogin\\DominoLogin.csproj",
+      "projectUniqueName": "D:\\UTN\\Carrera\\Semestre 2\\Programacion II\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\DominoLogin\\DominoLogin.csproj",
       "projectName": "DominoLogin",
-      "projectPath": "C:\\Users\\Luis\\Documents\\GitHub\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\DominoLogin\\DominoLogin.csproj",
-      "packagesPath": "C:\\Users\\Luis\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Luis\\Documents\\GitHub\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\DominoLogin\\obj\\",
+      "projectPath": "D:\\UTN\\Carrera\\Semestre 2\\Programacion II\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\DominoLogin\\DominoLogin.csproj",
+      "packagesPath": "C:\\Users\\Ezequiel\\.nuget\\packages\\",
+      "outputPath": "D:\\UTN\\Carrera\\Semestre 2\\Programacion II\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\DominoLogin\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Luis\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Ezequiel\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -532,11 +516,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\Luis\\Documents\\GitHub\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\AccesoDatosLogin\\AccesoDatosLogin.csproj": {
-              "projectPath": "C:\\Users\\Luis\\Documents\\GitHub\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\AccesoDatosLogin\\AccesoDatosLogin.csproj"
+            "D:\\UTN\\Carrera\\Semestre 2\\Programacion II\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\AccesoDatosLogin\\AccesoDatosLogin.csproj": {
+              "projectPath": "D:\\UTN\\Carrera\\Semestre 2\\Programacion II\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\AccesoDatosLogin\\AccesoDatosLogin.csproj"
             },
-            "C:\\Users\\Luis\\Documents\\GitHub\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\CommonLogin\\CommonLogin.csproj": {
-              "projectPath": "C:\\Users\\Luis\\Documents\\GitHub\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\CommonLogin\\CommonLogin.csproj"
+            "D:\\UTN\\Carrera\\Semestre 2\\Programacion II\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\CommonLogin\\CommonLogin.csproj": {
+              "projectPath": "D:\\UTN\\Carrera\\Semestre 2\\Programacion II\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\CommonLogin\\CommonLogin.csproj"
             }
           }
         }
@@ -571,19 +555,8 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1201",
-      "level": "Error",
-      "message": "Project FacturasFront is not compatible with net5.0 (.NETCoreApp,Version=v5.0). Project FacturasFront supports: net5.0-windows7.0 (.NETCoreApp,Version=v5.0)",
-      "libraryId": "FacturasFront",
-      "targetGraphs": [
-        "net5.0"
-      ]
-    }
-  ]
+  }
 }

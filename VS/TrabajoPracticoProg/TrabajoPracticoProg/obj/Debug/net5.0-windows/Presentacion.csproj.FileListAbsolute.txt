@@ -85,47 +85,46 @@ C:\Users\Felpu\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\Trabajo
 C:\Users\Felpu\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\TrabajoPracticoProg\bin\Debug\net5.0-windows\FacturasFront.dll
 C:\Users\Felpu\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\TrabajoPracticoProg\bin\Debug\net5.0-windows\FacturasFront.pdb
 C:\Users\Felpu\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\TrabajoPracticoProg\bin\Debug\net5.0-windows\FacturasBack.pdb
-C:\Users\Luis\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\TrabajoPracticoProg\bin\Debug\net5.0-windows\FacturasFront.deps.json
-C:\Users\Luis\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\TrabajoPracticoProg\bin\Debug\net5.0-windows\FacturasFront.runtimeconfig.json
-C:\Users\Luis\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\TrabajoPracticoProg\bin\Debug\net5.0-windows\FacturasFront.runtimeconfig.dev.json
-C:\Users\Luis\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\TrabajoPracticoProg\bin\Debug\net5.0-windows\FacturasFront.exe
-C:\Users\Luis\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\TrabajoPracticoProg\bin\Debug\net5.0-windows\Presentacion.exe
-C:\Users\Luis\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\TrabajoPracticoProg\bin\Debug\net5.0-windows\Presentacion.deps.json
-C:\Users\Luis\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\TrabajoPracticoProg\bin\Debug\net5.0-windows\Presentacion.runtimeconfig.json
-C:\Users\Luis\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\TrabajoPracticoProg\bin\Debug\net5.0-windows\Presentacion.runtimeconfig.dev.json
-C:\Users\Luis\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\TrabajoPracticoProg\bin\Debug\net5.0-windows\Presentacion.dll
-C:\Users\Luis\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\TrabajoPracticoProg\bin\Debug\net5.0-windows\ref\Presentacion.dll
-C:\Users\Luis\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\TrabajoPracticoProg\bin\Debug\net5.0-windows\Presentacion.pdb
-C:\Users\Luis\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\TrabajoPracticoProg\bin\Debug\net5.0-windows\Newtonsoft.Json.dll
-C:\Users\Luis\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\TrabajoPracticoProg\bin\Debug\net5.0-windows\System.Data.SqlClient.dll
-C:\Users\Luis\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\TrabajoPracticoProg\bin\Debug\net5.0-windows\runtimes\win-arm64\native\sni.dll
-C:\Users\Luis\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\TrabajoPracticoProg\bin\Debug\net5.0-windows\runtimes\win-x64\native\sni.dll
-C:\Users\Luis\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\TrabajoPracticoProg\bin\Debug\net5.0-windows\runtimes\win-x86\native\sni.dll
-C:\Users\Luis\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\TrabajoPracticoProg\bin\Debug\net5.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
-C:\Users\Luis\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\TrabajoPracticoProg\bin\Debug\net5.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
-C:\Users\Luis\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\TrabajoPracticoProg\bin\Debug\net5.0-windows\AccesoDatosLogin.dll
-C:\Users\Luis\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\TrabajoPracticoProg\bin\Debug\net5.0-windows\CommonLogin.dll
-C:\Users\Luis\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\TrabajoPracticoProg\bin\Debug\net5.0-windows\DominoLogin.dll
-C:\Users\Luis\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\TrabajoPracticoProg\bin\Debug\net5.0-windows\FacturasBack.dll
-C:\Users\Luis\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\TrabajoPracticoProg\bin\Debug\net5.0-windows\FacturasFront.dll
-C:\Users\Luis\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\TrabajoPracticoProg\bin\Debug\net5.0-windows\CommonLogin.pdb
-C:\Users\Luis\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\TrabajoPracticoProg\bin\Debug\net5.0-windows\DominoLogin.pdb
-C:\Users\Luis\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\TrabajoPracticoProg\bin\Debug\net5.0-windows\FacturasFront.pdb
-C:\Users\Luis\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\TrabajoPracticoProg\bin\Debug\net5.0-windows\AccesoDatosLogin.pdb
-C:\Users\Luis\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\TrabajoPracticoProg\bin\Debug\net5.0-windows\FacturasBack.pdb
-C:\Users\Luis\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\TrabajoPracticoProg\obj\Debug\net5.0-windows\Presentacion.csproj.AssemblyReference.cache
-C:\Users\Luis\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\TrabajoPracticoProg\obj\Debug\net5.0-windows\Presentacion.Presentacion.FrmLogin - Copy.resources
-C:\Users\Luis\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\TrabajoPracticoProg\obj\Debug\net5.0-windows\TrabajoPracticoProg.FrmLogin.resources
-C:\Users\Luis\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\TrabajoPracticoProg\obj\Debug\net5.0-windows\TrabajoPracticoProg.Presentacion.FrmPrincipal.resources
-C:\Users\Luis\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\TrabajoPracticoProg\obj\Debug\net5.0-windows\TrabajoPracticoProg.Presentacion.FrmRegistrarse.resources
-C:\Users\Luis\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\TrabajoPracticoProg\obj\Debug\net5.0-windows\Presentacion.Properties.Resources.resources
-C:\Users\Luis\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\TrabajoPracticoProg\obj\Debug\net5.0-windows\Presentacion.csproj.GenerateResource.cache
-C:\Users\Luis\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\TrabajoPracticoProg\obj\Debug\net5.0-windows\Presentacion.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Luis\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\TrabajoPracticoProg\obj\Debug\net5.0-windows\Presentacion.AssemblyInfoInputs.cache
-C:\Users\Luis\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\TrabajoPracticoProg\obj\Debug\net5.0-windows\Presentacion.AssemblyInfo.cs
-C:\Users\Luis\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\TrabajoPracticoProg\obj\Debug\net5.0-windows\Presentacion.csproj.CoreCompileInputs.cache
-C:\Users\Luis\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\TrabajoPracticoProg\obj\Debug\net5.0-windows\Presentacion.csproj.CopyComplete
-C:\Users\Luis\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\TrabajoPracticoProg\obj\Debug\net5.0-windows\Presentacion.dll
-C:\Users\Luis\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\TrabajoPracticoProg\obj\Debug\net5.0-windows\ref\Presentacion.dll
-C:\Users\Luis\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\TrabajoPracticoProg\obj\Debug\net5.0-windows\Presentacion.pdb
-C:\Users\Luis\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\TrabajoPracticoProg\obj\Debug\net5.0-windows\Presentacion.genruntimeconfig.cache
+D:\UTN\Carrera\Semestre 2\Programacion II\Commits a traves de la Historia\TP-ProgramacionII-main 4  Arreglo de btnRestaurar\VS\TrabajoPracticoProg\TrabajoPracticoProg\obj\Debug\net5.0-windows\Presentacion.csproj.AssemblyReference.cache
+D:\UTN\Carrera\Semestre 2\Programacion II\Commits a traves de la Historia\TP-ProgramacionII-main 4  Arreglo de btnRestaurar\VS\TrabajoPracticoProg\TrabajoPracticoProg\obj\Debug\net5.0-windows\Presentacion.dll
+D:\UTN\Carrera\Semestre 2\Programacion II\Commits a traves de la Historia\TP-ProgramacionII-main 4  Arreglo de btnRestaurar\VS\TrabajoPracticoProg\TrabajoPracticoProg\obj\Debug\net5.0-windows\ref\Presentacion.dll
+D:\UTN\Carrera\Semestre 2\Programacion II\Commits a traves de la Historia\TP-ProgramacionII-main 4  Arreglo de btnRestaurar\VS\TrabajoPracticoProg\TrabajoPracticoProg\obj\Debug\net5.0-windows\Presentacion.pdb
+D:\UTN\Carrera\Semestre 2\Programacion II\Commits a traves de la Historia\TP-ProgramacionII-main 4  Arreglo de btnRestaurar\VS\TrabajoPracticoProg\TrabajoPracticoProg\bin\Debug\net5.0-windows\FacturasFront.deps.json
+D:\UTN\Carrera\Semestre 2\Programacion II\Commits a traves de la Historia\TP-ProgramacionII-main 4  Arreglo de btnRestaurar\VS\TrabajoPracticoProg\TrabajoPracticoProg\bin\Debug\net5.0-windows\FacturasFront.runtimeconfig.json
+D:\UTN\Carrera\Semestre 2\Programacion II\Commits a traves de la Historia\TP-ProgramacionII-main 4  Arreglo de btnRestaurar\VS\TrabajoPracticoProg\TrabajoPracticoProg\bin\Debug\net5.0-windows\FacturasFront.runtimeconfig.dev.json
+D:\UTN\Carrera\Semestre 2\Programacion II\Commits a traves de la Historia\TP-ProgramacionII-main 4  Arreglo de btnRestaurar\VS\TrabajoPracticoProg\TrabajoPracticoProg\bin\Debug\net5.0-windows\FacturasFront.exe
+D:\UTN\Carrera\Semestre 2\Programacion II\Commits a traves de la Historia\TP-ProgramacionII-main 4  Arreglo de btnRestaurar\VS\TrabajoPracticoProg\TrabajoPracticoProg\bin\Debug\net5.0-windows\Presentacion.exe
+D:\UTN\Carrera\Semestre 2\Programacion II\Commits a traves de la Historia\TP-ProgramacionII-main 4  Arreglo de btnRestaurar\VS\TrabajoPracticoProg\TrabajoPracticoProg\bin\Debug\net5.0-windows\Presentacion.deps.json
+D:\UTN\Carrera\Semestre 2\Programacion II\Commits a traves de la Historia\TP-ProgramacionII-main 4  Arreglo de btnRestaurar\VS\TrabajoPracticoProg\TrabajoPracticoProg\bin\Debug\net5.0-windows\Presentacion.runtimeconfig.json
+D:\UTN\Carrera\Semestre 2\Programacion II\Commits a traves de la Historia\TP-ProgramacionII-main 4  Arreglo de btnRestaurar\VS\TrabajoPracticoProg\TrabajoPracticoProg\bin\Debug\net5.0-windows\Presentacion.runtimeconfig.dev.json
+D:\UTN\Carrera\Semestre 2\Programacion II\Commits a traves de la Historia\TP-ProgramacionII-main 4  Arreglo de btnRestaurar\VS\TrabajoPracticoProg\TrabajoPracticoProg\bin\Debug\net5.0-windows\Presentacion.dll
+D:\UTN\Carrera\Semestre 2\Programacion II\Commits a traves de la Historia\TP-ProgramacionII-main 4  Arreglo de btnRestaurar\VS\TrabajoPracticoProg\TrabajoPracticoProg\bin\Debug\net5.0-windows\ref\Presentacion.dll
+D:\UTN\Carrera\Semestre 2\Programacion II\Commits a traves de la Historia\TP-ProgramacionII-main 4  Arreglo de btnRestaurar\VS\TrabajoPracticoProg\TrabajoPracticoProg\bin\Debug\net5.0-windows\Presentacion.pdb
+D:\UTN\Carrera\Semestre 2\Programacion II\Commits a traves de la Historia\TP-ProgramacionII-main 4  Arreglo de btnRestaurar\VS\TrabajoPracticoProg\TrabajoPracticoProg\bin\Debug\net5.0-windows\Newtonsoft.Json.dll
+D:\UTN\Carrera\Semestre 2\Programacion II\Commits a traves de la Historia\TP-ProgramacionII-main 4  Arreglo de btnRestaurar\VS\TrabajoPracticoProg\TrabajoPracticoProg\bin\Debug\net5.0-windows\System.Data.SqlClient.dll
+D:\UTN\Carrera\Semestre 2\Programacion II\Commits a traves de la Historia\TP-ProgramacionII-main 4  Arreglo de btnRestaurar\VS\TrabajoPracticoProg\TrabajoPracticoProg\bin\Debug\net5.0-windows\runtimes\win-arm64\native\sni.dll
+D:\UTN\Carrera\Semestre 2\Programacion II\Commits a traves de la Historia\TP-ProgramacionII-main 4  Arreglo de btnRestaurar\VS\TrabajoPracticoProg\TrabajoPracticoProg\bin\Debug\net5.0-windows\runtimes\win-x64\native\sni.dll
+D:\UTN\Carrera\Semestre 2\Programacion II\Commits a traves de la Historia\TP-ProgramacionII-main 4  Arreglo de btnRestaurar\VS\TrabajoPracticoProg\TrabajoPracticoProg\bin\Debug\net5.0-windows\runtimes\win-x86\native\sni.dll
+D:\UTN\Carrera\Semestre 2\Programacion II\Commits a traves de la Historia\TP-ProgramacionII-main 4  Arreglo de btnRestaurar\VS\TrabajoPracticoProg\TrabajoPracticoProg\bin\Debug\net5.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\UTN\Carrera\Semestre 2\Programacion II\Commits a traves de la Historia\TP-ProgramacionII-main 4  Arreglo de btnRestaurar\VS\TrabajoPracticoProg\TrabajoPracticoProg\bin\Debug\net5.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\UTN\Carrera\Semestre 2\Programacion II\Commits a traves de la Historia\TP-ProgramacionII-main 4  Arreglo de btnRestaurar\VS\TrabajoPracticoProg\TrabajoPracticoProg\bin\Debug\net5.0-windows\AccesoDatosLogin.dll
+D:\UTN\Carrera\Semestre 2\Programacion II\Commits a traves de la Historia\TP-ProgramacionII-main 4  Arreglo de btnRestaurar\VS\TrabajoPracticoProg\TrabajoPracticoProg\bin\Debug\net5.0-windows\CommonLogin.dll
+D:\UTN\Carrera\Semestre 2\Programacion II\Commits a traves de la Historia\TP-ProgramacionII-main 4  Arreglo de btnRestaurar\VS\TrabajoPracticoProg\TrabajoPracticoProg\bin\Debug\net5.0-windows\DominoLogin.dll
+D:\UTN\Carrera\Semestre 2\Programacion II\Commits a traves de la Historia\TP-ProgramacionII-main 4  Arreglo de btnRestaurar\VS\TrabajoPracticoProg\TrabajoPracticoProg\bin\Debug\net5.0-windows\FacturasBack.dll
+D:\UTN\Carrera\Semestre 2\Programacion II\Commits a traves de la Historia\TP-ProgramacionII-main 4  Arreglo de btnRestaurar\VS\TrabajoPracticoProg\TrabajoPracticoProg\bin\Debug\net5.0-windows\FacturasFront.dll
+D:\UTN\Carrera\Semestre 2\Programacion II\Commits a traves de la Historia\TP-ProgramacionII-main 4  Arreglo de btnRestaurar\VS\TrabajoPracticoProg\TrabajoPracticoProg\bin\Debug\net5.0-windows\CommonLogin.pdb
+D:\UTN\Carrera\Semestre 2\Programacion II\Commits a traves de la Historia\TP-ProgramacionII-main 4  Arreglo de btnRestaurar\VS\TrabajoPracticoProg\TrabajoPracticoProg\bin\Debug\net5.0-windows\DominoLogin.pdb
+D:\UTN\Carrera\Semestre 2\Programacion II\Commits a traves de la Historia\TP-ProgramacionII-main 4  Arreglo de btnRestaurar\VS\TrabajoPracticoProg\TrabajoPracticoProg\bin\Debug\net5.0-windows\FacturasFront.pdb
+D:\UTN\Carrera\Semestre 2\Programacion II\Commits a traves de la Historia\TP-ProgramacionII-main 4  Arreglo de btnRestaurar\VS\TrabajoPracticoProg\TrabajoPracticoProg\bin\Debug\net5.0-windows\AccesoDatosLogin.pdb
+D:\UTN\Carrera\Semestre 2\Programacion II\Commits a traves de la Historia\TP-ProgramacionII-main 4  Arreglo de btnRestaurar\VS\TrabajoPracticoProg\TrabajoPracticoProg\bin\Debug\net5.0-windows\FacturasBack.pdb
+D:\UTN\Carrera\Semestre 2\Programacion II\Commits a traves de la Historia\TP-ProgramacionII-main 4  Arreglo de btnRestaurar\VS\TrabajoPracticoProg\TrabajoPracticoProg\obj\Debug\net5.0-windows\Presentacion.Presentacion.FrmLogin - Copy.resources
+D:\UTN\Carrera\Semestre 2\Programacion II\Commits a traves de la Historia\TP-ProgramacionII-main 4  Arreglo de btnRestaurar\VS\TrabajoPracticoProg\TrabajoPracticoProg\obj\Debug\net5.0-windows\TrabajoPracticoProg.FrmLogin.resources
+D:\UTN\Carrera\Semestre 2\Programacion II\Commits a traves de la Historia\TP-ProgramacionII-main 4  Arreglo de btnRestaurar\VS\TrabajoPracticoProg\TrabajoPracticoProg\obj\Debug\net5.0-windows\TrabajoPracticoProg.Presentacion.FrmPrincipal.resources
+D:\UTN\Carrera\Semestre 2\Programacion II\Commits a traves de la Historia\TP-ProgramacionII-main 4  Arreglo de btnRestaurar\VS\TrabajoPracticoProg\TrabajoPracticoProg\obj\Debug\net5.0-windows\Presentacion.Properties.Resources.resources
+D:\UTN\Carrera\Semestre 2\Programacion II\Commits a traves de la Historia\TP-ProgramacionII-main 4  Arreglo de btnRestaurar\VS\TrabajoPracticoProg\TrabajoPracticoProg\obj\Debug\net5.0-windows\Presentacion.csproj.GenerateResource.cache
+D:\UTN\Carrera\Semestre 2\Programacion II\Commits a traves de la Historia\TP-ProgramacionII-main 4  Arreglo de btnRestaurar\VS\TrabajoPracticoProg\TrabajoPracticoProg\obj\Debug\net5.0-windows\Presentacion.GeneratedMSBuildEditorConfig.editorconfig
+D:\UTN\Carrera\Semestre 2\Programacion II\Commits a traves de la Historia\TP-ProgramacionII-main 4  Arreglo de btnRestaurar\VS\TrabajoPracticoProg\TrabajoPracticoProg\obj\Debug\net5.0-windows\Presentacion.AssemblyInfoInputs.cache
+D:\UTN\Carrera\Semestre 2\Programacion II\Commits a traves de la Historia\TP-ProgramacionII-main 4  Arreglo de btnRestaurar\VS\TrabajoPracticoProg\TrabajoPracticoProg\obj\Debug\net5.0-windows\Presentacion.AssemblyInfo.cs
+D:\UTN\Carrera\Semestre 2\Programacion II\Commits a traves de la Historia\TP-ProgramacionII-main 4  Arreglo de btnRestaurar\VS\TrabajoPracticoProg\TrabajoPracticoProg\obj\Debug\net5.0-windows\Presentacion.csproj.CoreCompileInputs.cache
+D:\UTN\Carrera\Semestre 2\Programacion II\Commits a traves de la Historia\TP-ProgramacionII-main 4  Arreglo de btnRestaurar\VS\TrabajoPracticoProg\TrabajoPracticoProg\obj\Debug\net5.0-windows\Presentacion.csproj.CopyComplete
+D:\UTN\Carrera\Semestre 2\Programacion II\Commits a traves de la Historia\TP-ProgramacionII-main 4  Arreglo de btnRestaurar\VS\TrabajoPracticoProg\TrabajoPracticoProg\obj\Debug\net5.0-windows\Presentacion.genruntimeconfig.cache

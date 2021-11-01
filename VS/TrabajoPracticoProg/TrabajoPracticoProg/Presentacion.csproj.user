@@ -7,8 +7,5 @@
     <Compile Update="Presentacion\FrmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Presentacion\FrmRegistrarse.cs">
-      <SubType>Form</SubType>
-    </Compile>
   </ItemGroup>
 </Project>

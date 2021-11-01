@@ -140,16 +140,6 @@
         "runtime": {
           "bin/placeholder/CommonLogin.dll": {}
         }
-      },
-      "FacturasFront/1.0.0": {
-        "type": "project",
-        "framework": "Unsupported,Version=v0.0",
-        "compile": {
-          "bin/placeholder/FacturasFront.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/FacturasFront.dll": {}
-        }
       }
     }
   },
@@ -471,17 +461,11 @@
       "type": "project",
       "path": "../CommonLogin/CommonLogin.csproj",
       "msbuildProject": "../CommonLogin/CommonLogin.csproj"
-    },
-    "FacturasFront/1.0.0": {
-      "type": "project",
-      "path": "../FacturasFront/FacturasFront.csproj",
-      "msbuildProject": "../FacturasFront/FacturasFront.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
       "CommonLogin >= 1.0.0",
-      "FacturasFront >= 1.0.0",
       "System.Data.SqlClient >= 4.8.3"
     ]
   },
@@ -514,9 +498,6 @@
           "projectReferences": {
             "D:\\UTN\\Carrera\\Semestre 2\\Programacion II\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\CommonLogin\\CommonLogin.csproj": {
               "projectPath": "D:\\UTN\\Carrera\\Semestre 2\\Programacion II\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\CommonLogin\\CommonLogin.csproj"
-            },
-            "D:\\UTN\\Carrera\\Semestre 2\\Programacion II\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\FacturasFront\\FacturasFront.csproj": {
-              "projectPath": "D:\\UTN\\Carrera\\Semestre 2\\Programacion II\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\FacturasFront\\FacturasFront.csproj"
             }
           }
         }
@@ -554,16 +535,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1201",
-      "level": "Error",
-      "message": "Project FacturasFront is not compatible with net5.0 (.NETCoreApp,Version=v5.0). Project FacturasFront supports: net5.0-windows7.0 (.NETCoreApp,Version=v5.0)",
-      "libraryId": "FacturasFront",
-      "targetGraphs": [
-        "net5.0"
-      ]
-    }
-  ]
+  }
 }

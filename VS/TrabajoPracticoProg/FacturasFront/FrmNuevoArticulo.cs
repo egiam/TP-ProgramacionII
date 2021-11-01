@@ -29,7 +29,6 @@ namespace FacturasFront
         {
             InitializeComponent();
             articulo = new Articulo();
-            AsignarNumeroArticuloAsync();
         }
         public FrmNuevoArticulo(Accion modo, Articulo articuloSeleccionado)
         {
@@ -60,7 +59,7 @@ namespace FacturasFront
 
         private async Task AsignarNumeroArticuloAsync()
         {
-            string url = "https://localhost:44357/api/Articulos/proximo_nro_articulo";
+            string url = "https://localhost:44357/api/Facturas/proximo_nro_articulo";
             using (HttpClient cliente = new HttpClient())
             {
                 var result = await cliente.GetStringAsync(url);
@@ -126,7 +125,7 @@ namespace FacturasFront
 
         private async Task<bool> GrabarArticuloAsync(string data)
         {
-            string url = "https://localhost:44357/api/Articulos/articulos";
+            string url = "https://localhost:44357/api/Facturas/articulos";
             using (HttpClient client = new HttpClient())
             {
                 StringContent content = new StringContent(data, Encoding.UTF8, "application/json");

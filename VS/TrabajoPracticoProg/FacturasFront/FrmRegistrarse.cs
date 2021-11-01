@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
 using CommonLogin.Cache;
-using AccesoDatosLogin;
+//using AccesoDatosLogin;
 
 namespace TrabajoPracticoProg.Presentacion
 {
@@ -23,14 +23,14 @@ namespace TrabajoPracticoProg.Presentacion
             DELETE
         }
 
-        private RegistroDao registro;
-        private UserLoginCache cache;
+        //private RegistroDao registro;
+        //private UserLoginCache cache;
         private Accion modo;
 
         public FrmRegistrarse()
         {
             InitializeComponent();
-            cache = new UserLoginCache();
+            //cache = new UserLoginCache();
         }
 
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
@@ -206,23 +206,23 @@ namespace TrabajoPracticoProg.Presentacion
                 return;
             }
 
-            cache.Password = txtContra.Text;
-            cache.Position = txtPosicion.Text;
-            cache.LoginName = txtUsuario.Text;
-            cache.LastName = txtApellido.Text;
-            cache.FirstName = txtNombre.Text;
-            cache.Email = txtEmail.Text;
+            //cache.Password = txtContra.Text;
+            //cache.Position = txtPosicion.Text;
+            //cache.LoginName = txtUsuario.Text;
+            //cache.LastName = txtApellido.Text;
+            //cache.FirstName = txtNombre.Text;
+            //cache.Email = txtEmail.Text;
 
-            if (registro.InsertarRegistro(cache))
-            {
-                MessageBox.Show("Registro exitoso.", "Informe", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                //Close();
-                Terminar();
-            }
-            else
-            {
-                MessageBox.Show("ERROR. No se pudo registrar el usuario.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            //if (registro.InsertarRegistro(cache))
+            //{
+            //    MessageBox.Show("Registro exitoso.", "Informe", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            //    //Close();
+            //    Terminar();
+            //}
+            //else
+            //{
+            //    MessageBox.Show("ERROR. No se pudo registrar el usuario.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //}
 
         }
 

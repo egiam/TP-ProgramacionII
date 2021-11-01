@@ -13,6 +13,7 @@ using DominoLogin;
 using System.Data.SqlClient;
 using Presentacion;
 using CommonLogin.Cache;
+using FacturasFront;
 
 namespace TrabajoPracticoProg
 {

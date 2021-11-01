@@ -28,18 +28,18 @@ C:\Users\Felpu\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\AccesoD
 C:\Users\Felpu\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\AccesoDatosLogin\obj\Debug\net5.0\AccesoDatosLogin.dll
 C:\Users\Felpu\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\AccesoDatosLogin\obj\Debug\net5.0\ref\AccesoDatosLogin.dll
 C:\Users\Felpu\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\AccesoDatosLogin\obj\Debug\net5.0\AccesoDatosLogin.pdb
-C:\Users\Luis\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\AccesoDatosLogin\bin\Debug\net5.0\AccesoDatosLogin.deps.json
-C:\Users\Luis\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\AccesoDatosLogin\bin\Debug\net5.0\AccesoDatosLogin.dll
-C:\Users\Luis\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\AccesoDatosLogin\bin\Debug\net5.0\ref\AccesoDatosLogin.dll
-C:\Users\Luis\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\AccesoDatosLogin\bin\Debug\net5.0\AccesoDatosLogin.pdb
-C:\Users\Luis\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\AccesoDatosLogin\bin\Debug\net5.0\CommonLogin.dll
-C:\Users\Luis\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\AccesoDatosLogin\bin\Debug\net5.0\CommonLogin.pdb
-C:\Users\Luis\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\AccesoDatosLogin\obj\Debug\net5.0\AccesoDatosLogin.csproj.AssemblyReference.cache
-C:\Users\Luis\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\AccesoDatosLogin\obj\Debug\net5.0\AccesoDatosLogin.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Luis\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\AccesoDatosLogin\obj\Debug\net5.0\AccesoDatosLogin.AssemblyInfoInputs.cache
-C:\Users\Luis\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\AccesoDatosLogin\obj\Debug\net5.0\AccesoDatosLogin.AssemblyInfo.cs
-C:\Users\Luis\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\AccesoDatosLogin\obj\Debug\net5.0\AccesoDatosLogin.csproj.CoreCompileInputs.cache
-C:\Users\Luis\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\AccesoDatosLogin\obj\Debug\net5.0\AccesoDatosLogin.csproj.CopyComplete
-C:\Users\Luis\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\AccesoDatosLogin\obj\Debug\net5.0\AccesoDatosLogin.dll
-C:\Users\Luis\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\AccesoDatosLogin\obj\Debug\net5.0\ref\AccesoDatosLogin.dll
-C:\Users\Luis\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\AccesoDatosLogin\obj\Debug\net5.0\AccesoDatosLogin.pdb
+D:\UTN\Carrera\Semestre 2\Programacion II\Commits a traves de la Historia\TP-ProgramacionII-main 4  Arreglo de btnRestaurar\VS\TrabajoPracticoProg\AccesoDatosLogin\bin\Debug\net5.0\AccesoDatosLogin.deps.json
+D:\UTN\Carrera\Semestre 2\Programacion II\Commits a traves de la Historia\TP-ProgramacionII-main 4  Arreglo de btnRestaurar\VS\TrabajoPracticoProg\AccesoDatosLogin\bin\Debug\net5.0\AccesoDatosLogin.dll
+D:\UTN\Carrera\Semestre 2\Programacion II\Commits a traves de la Historia\TP-ProgramacionII-main 4  Arreglo de btnRestaurar\VS\TrabajoPracticoProg\AccesoDatosLogin\bin\Debug\net5.0\ref\AccesoDatosLogin.dll
+D:\UTN\Carrera\Semestre 2\Programacion II\Commits a traves de la Historia\TP-ProgramacionII-main 4  Arreglo de btnRestaurar\VS\TrabajoPracticoProg\AccesoDatosLogin\bin\Debug\net5.0\AccesoDatosLogin.pdb
+D:\UTN\Carrera\Semestre 2\Programacion II\Commits a traves de la Historia\TP-ProgramacionII-main 4  Arreglo de btnRestaurar\VS\TrabajoPracticoProg\AccesoDatosLogin\bin\Debug\net5.0\CommonLogin.dll
+D:\UTN\Carrera\Semestre 2\Programacion II\Commits a traves de la Historia\TP-ProgramacionII-main 4  Arreglo de btnRestaurar\VS\TrabajoPracticoProg\AccesoDatosLogin\bin\Debug\net5.0\CommonLogin.pdb
+D:\UTN\Carrera\Semestre 2\Programacion II\Commits a traves de la Historia\TP-ProgramacionII-main 4  Arreglo de btnRestaurar\VS\TrabajoPracticoProg\AccesoDatosLogin\obj\Debug\net5.0\AccesoDatosLogin.csproj.AssemblyReference.cache
+D:\UTN\Carrera\Semestre 2\Programacion II\Commits a traves de la Historia\TP-ProgramacionII-main 4  Arreglo de btnRestaurar\VS\TrabajoPracticoProg\AccesoDatosLogin\obj\Debug\net5.0\AccesoDatosLogin.GeneratedMSBuildEditorConfig.editorconfig
+D:\UTN\Carrera\Semestre 2\Programacion II\Commits a traves de la Historia\TP-ProgramacionII-main 4  Arreglo de btnRestaurar\VS\TrabajoPracticoProg\AccesoDatosLogin\obj\Debug\net5.0\AccesoDatosLogin.AssemblyInfoInputs.cache
+D:\UTN\Carrera\Semestre 2\Programacion II\Commits a traves de la Historia\TP-ProgramacionII-main 4  Arreglo de btnRestaurar\VS\TrabajoPracticoProg\AccesoDatosLogin\obj\Debug\net5.0\AccesoDatosLogin.AssemblyInfo.cs
+D:\UTN\Carrera\Semestre 2\Programacion II\Commits a traves de la Historia\TP-ProgramacionII-main 4  Arreglo de btnRestaurar\VS\TrabajoPracticoProg\AccesoDatosLogin\obj\Debug\net5.0\AccesoDatosLogin.csproj.CoreCompileInputs.cache
+D:\UTN\Carrera\Semestre 2\Programacion II\Commits a traves de la Historia\TP-ProgramacionII-main 4  Arreglo de btnRestaurar\VS\TrabajoPracticoProg\AccesoDatosLogin\obj\Debug\net5.0\AccesoDatosLogin.csproj.CopyComplete
+D:\UTN\Carrera\Semestre 2\Programacion II\Commits a traves de la Historia\TP-ProgramacionII-main 4  Arreglo de btnRestaurar\VS\TrabajoPracticoProg\AccesoDatosLogin\obj\Debug\net5.0\AccesoDatosLogin.dll
+D:\UTN\Carrera\Semestre 2\Programacion II\Commits a traves de la Historia\TP-ProgramacionII-main 4  Arreglo de btnRestaurar\VS\TrabajoPracticoProg\AccesoDatosLogin\obj\Debug\net5.0\ref\AccesoDatosLogin.dll
+D:\UTN\Carrera\Semestre 2\Programacion II\Commits a traves de la Historia\TP-ProgramacionII-main 4  Arreglo de btnRestaurar\VS\TrabajoPracticoProg\AccesoDatosLogin\obj\Debug\net5.0\AccesoDatosLogin.pdb
