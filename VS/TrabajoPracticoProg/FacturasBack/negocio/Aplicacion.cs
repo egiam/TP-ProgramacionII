@@ -64,7 +64,12 @@ namespace FacturasBack.negocio
         {
             return dao.Delete(id);
         }
-        
+
+        public bool RegistrarBajaArticulo(int id)
+        {
+            return dao.DeleteArticulo(id);
+        }
+
         public List<Articulo> ConsultarArticulos(List<Parametro> criterios)
         {
             return dao.GetArticulosByFilters(criterios);//

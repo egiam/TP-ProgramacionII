@@ -284,12 +284,12 @@ select * from detalles_factura
 select * from articulos
 
 
-CREATE PROCEDURE [dbo].[SP_REGISTRAR_BAJA_FACTURAS] 
-	@nro_factura int
+ALTER PROCEDURE [dbo].[SP_REGISTRAR_BAJA_FACTURAS] 
+	@id int
 AS
 BEGIN
 	UPDATE facturas SET fecha_baja = GETDATE()
-	WHERE nro_factura = @nro_factura;
+	WHERE nro_factura = @id;
 	
 END
 GO
@@ -312,4 +312,15 @@ END
 
 EXEC SP_CONSULTAR_ARTICULOS_FILTROS
 
+
+CREATE PROCEDURE [dbo].[SP_REGISTRAR_BAJA_ARTICULO] 
+	@id int
+AS
+BEGIN
+	UPDATE articulos SET dado_baja='S'
+	WHERE id_articulo = @id;
+	
+END
+GO
+SP_REGISTRAR_BAJA_ARTICULO 7
 select * from articulos

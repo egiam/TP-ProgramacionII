@@ -132,6 +132,14 @@ namespace FacturasWebAPI.Controllers
             return Ok(app.ConsultarArticulos(lst));
         }
 
+        [HttpDelete("/api/articulos/{id}")]
+        public IActionResult DeleteArticulo(int id)
+        {
+            if (id == 0)
+                return BadRequest("Id es requerido!");
+            return Ok(app.RegistrarBajaArticulo(id));
+        }
+
 
 
     }

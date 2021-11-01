@@ -87,7 +87,11 @@ namespace FacturasBack.datos
 
         public bool Delete(int id)
         {
-            return HelperDao.GetInstance().DeleteFactura("SP_REGISTRAR_BAJA_FACTURAS", id);
+            return HelperDao.GetInstance().Delete("SP_REGISTRAR_BAJA_FACTURAS", id);
+        }
+        public bool DeleteArticulo(int id)
+        {
+            return HelperDao.GetInstance().Delete("SP_REGISTRAR_BAJA_ARTICULO", id);
         }
 
         public List<Articulo> GetArticulosByFilters(List<Parametro> criterios)

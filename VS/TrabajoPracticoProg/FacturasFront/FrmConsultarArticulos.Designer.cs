@@ -30,6 +30,7 @@ namespace FacturasFront
         private void InitializeComponent()
         {
             this.gbBusqueda = new System.Windows.Forms.GroupBox();
+            this.chkDadoBaja = new System.Windows.Forms.CheckBox();
             this.btnLimpiarBusqueda = new System.Windows.Forms.Button();
             this.btnConsultar = new System.Windows.Forms.Button();
             this.nudPrecioHasta = new System.Windows.Forms.NumericUpDown();
@@ -45,7 +46,6 @@ namespace FacturasFront
             this.ColPrecio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColAccion = new System.Windows.Forms.DataGridViewButtonColumn();
             this.ColAccionEditar = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.chkDadoBaja = new System.Windows.Forms.CheckBox();
             this.gbBusqueda.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudPrecioHasta)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudPrecioDesde)).BeginInit();
@@ -70,6 +70,16 @@ namespace FacturasFront
             this.gbBusqueda.TabIndex = 0;
             this.gbBusqueda.TabStop = false;
             this.gbBusqueda.Text = "Criterios de búsqueda";
+            // 
+            // chkDadoBaja
+            // 
+            this.chkDadoBaja.AutoSize = true;
+            this.chkDadoBaja.Location = new System.Drawing.Point(287, 85);
+            this.chkDadoBaja.Name = "chkDadoBaja";
+            this.chkDadoBaja.Size = new System.Drawing.Size(79, 19);
+            this.chkDadoBaja.TabIndex = 8;
+            this.chkDadoBaja.Text = "Dado baja";
+            this.chkDadoBaja.UseVisualStyleBackColor = true;
             // 
             // btnLimpiarBusqueda
             // 
@@ -156,7 +166,7 @@ namespace FacturasFront
             this.gbResultados.Controls.Add(this.dgvResultados);
             this.gbResultados.Location = new System.Drawing.Point(52, 248);
             this.gbResultados.Name = "gbResultados";
-            this.gbResultados.Size = new System.Drawing.Size(560, 125);
+            this.gbResultados.Size = new System.Drawing.Size(710, 234);
             this.gbResultados.TabIndex = 1;
             this.gbResultados.TabStop = false;
             this.gbResultados.Text = "Resultados";
@@ -177,7 +187,7 @@ namespace FacturasFront
             this.dgvResultados.Name = "dgvResultados";
             this.dgvResultados.ReadOnly = true;
             this.dgvResultados.RowTemplate.Height = 25;
-            this.dgvResultados.Size = new System.Drawing.Size(554, 103);
+            this.dgvResultados.Size = new System.Drawing.Size(704, 212);
             this.dgvResultados.TabIndex = 0;
             this.dgvResultados.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvResultados_CellContentClick);
             // 
@@ -210,7 +220,7 @@ namespace FacturasFront
             this.ColAccion.ReadOnly = true;
             this.ColAccion.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.ColAccion.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.ColAccion.Text = "Eliminar";
+            this.ColAccion.Text = "Dar de baja";
             this.ColAccion.UseColumnTextForButtonValue = true;
             // 
             // ColAccionEditar
@@ -224,21 +234,11 @@ namespace FacturasFront
             this.ColAccionEditar.Text = "Editar";
             this.ColAccionEditar.UseColumnTextForButtonValue = true;
             // 
-            // chkDadoBaja
-            // 
-            this.chkDadoBaja.AutoSize = true;
-            this.chkDadoBaja.Location = new System.Drawing.Point(287, 85);
-            this.chkDadoBaja.Name = "chkDadoBaja";
-            this.chkDadoBaja.Size = new System.Drawing.Size(79, 19);
-            this.chkDadoBaja.TabIndex = 8;
-            this.chkDadoBaja.Text = "Dado baja";
-            this.chkDadoBaja.UseVisualStyleBackColor = true;
-            // 
             // FrmConsultarArticulos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(839, 494);
             this.Controls.Add(this.gbResultados);
             this.Controls.Add(this.gbBusqueda);
             this.Name = "FrmConsultarArticulos";
@@ -266,11 +266,11 @@ namespace FacturasFront
         private System.Windows.Forms.Label lblNombre;
         private System.Windows.Forms.GroupBox gbResultados;
         private System.Windows.Forms.DataGridView dgvResultados;
+        private System.Windows.Forms.CheckBox chkDadoBaja;
         private System.Windows.Forms.DataGridViewTextBoxColumn Id;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColNombre;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColPrecio;
         private System.Windows.Forms.DataGridViewButtonColumn ColAccion;
         private System.Windows.Forms.DataGridViewButtonColumn ColAccionEditar;
-        private System.Windows.Forms.CheckBox chkDadoBaja;
     }
 }

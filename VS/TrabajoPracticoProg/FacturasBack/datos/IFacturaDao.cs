@@ -27,6 +27,7 @@ namespace FacturasBack.datos
         bool EditarFactura(Factura oFactura);
 
         public bool Delete(int id);
+        public bool DeleteArticulo(int id);
 
         List<Articulo> GetArticulosByFilters(List<Parametro> criterios);
     }

@@ -293,7 +293,7 @@ namespace FacturasBack.datos
         }
 
 
-        public bool DeleteFactura(string nombreSP, int nro)
+        public bool Delete(string nombreSP, int nro)
         {
 
             SqlConnection cnn = new SqlConnection(connectionString);
@@ -305,7 +305,7 @@ namespace FacturasBack.datos
                 t = cnn.BeginTransaction();
                 SqlCommand cmd = new SqlCommand(nombreSP, cnn, t);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@nro_factura", nro);
+                cmd.Parameters.AddWithValue("@id", nro);
                 affected = cmd.ExecuteNonQuery();
                 t.Commit();
 
