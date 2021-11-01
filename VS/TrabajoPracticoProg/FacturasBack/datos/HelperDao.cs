@@ -293,7 +293,36 @@ namespace FacturasBack.datos
         }
 
 
+        public bool DeleteFactura(string nombreSP, int nro)
+        {
 
+            SqlConnection cnn = new SqlConnection(connectionString);
+            SqlTransaction t = null;
+            int affected = 0;
+            try
+            {
+                cnn.Open();
+                t = cnn.BeginTransaction();
+                SqlCommand cmd = new SqlCommand(nombreSP, cnn, t);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@nro_factura", nro);
+                affected = cmd.ExecuteNonQuery();
+                t.Commit();
+
+            }
+            catch (SqlException)
+            {
+                t.Rollback();
+            }
+            finally
+            {
+                if (cnn != null && cnn.State == ConnectionState.Open)
+                    cnn.Close();
+            }
+
+            return affected == 1;
+
+        }
 
 
 

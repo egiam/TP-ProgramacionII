@@ -25,5 +25,7 @@ namespace FacturasBack.datos
 
         Factura GetFacturaPorId(int id);
         bool EditarFactura(Factura oFactura);
+
+        public bool Delete(int id);
     }
 }

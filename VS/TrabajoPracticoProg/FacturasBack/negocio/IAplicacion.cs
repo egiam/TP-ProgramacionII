@@ -26,6 +26,7 @@ namespace FacturasBack.negocio
         public Factura ObtenerFacturaPorID(int id);
 
         public bool EditarFactura(Factura oFactura);
+        public bool RegistrarBajaFactura(int id);
 
     }
 }

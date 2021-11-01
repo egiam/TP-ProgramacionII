@@ -60,7 +60,11 @@ namespace FacturasBack.negocio
         {
             return dao.EditarFactura(oFactura);
         }
+        public bool RegistrarBajaFactura(int id)
+        {
+            return dao.Delete(id);
+        }
 
 
-    }
+     }
 }

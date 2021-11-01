@@ -88,7 +88,7 @@ namespace FacturasFront
                 this.Dispose();
         }
 
-        private void dgvResultados_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private async void dgvResultados_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             if (dgvResultados.CurrentCell.ColumnIndex == 5)
             {
@@ -96,7 +96,32 @@ namespace FacturasFront
                 FrmNuevaFactura frm = new FrmNuevaFactura(Accion.READ, nroFactura);
                 frm.ShowDialog();
             }
+
+            if (dgvResultados.CurrentCell.ColumnIndex == 6)
+            {
+                DataGridViewRow row = dgvResultados.CurrentRow; // fila actual o seleccionada
+                if (row != null)
+                {
+                    int idFactura = Int32.Parse(row.Cells["Id"].Value.ToString());
+                    if (MessageBox.Show("Seguro que desea eliminar la factura seleccionada?", "Confirmación", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                    {
+                        string url = "https://localhost:44357/api/Facturas/" + idFactura.ToString();
+                        string respuesta = await ClienteSingleton.GetInstancia().DeleteAsync(url);
+
+                        if (respuesta=="true")
+                        {
+                            MessageBox.Show("Factura dada de baja!", "Confirmación", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            this.btnConsultar_Click(null, null);
+                        }
+                        else
+                            MessageBox.Show("Error al intentar dar de baja la factura!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+
+            }
         }
+
+
 
         private void btnNuevo_Click(object sender, EventArgs e)
         {

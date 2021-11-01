@@ -115,6 +115,15 @@ namespace FacturasWebAPI.Controllers
         }
 
 
+        [HttpDelete("{id}")]
+        public IActionResult Delete(int id)
+        {
+            if (id == 0)
+                return BadRequest("Id es requerido!");
+            return Ok(app.RegistrarBajaFactura(id));
+        }
+
+
 
     }
 }

@@ -277,3 +277,14 @@ exec [SP_CONSULTAR_FACTURA_POR_ID] 4
 SELECT * from facturas
 select * from detalles_factura
 select * from articulos
+
+
+CREATE PROCEDURE [dbo].[SP_REGISTRAR_BAJA_FACTURAS] 
+	@nro_factura int
+AS
+BEGIN
+	UPDATE facturas SET fecha_baja = GETDATE()
+	WHERE nro_factura = @nro_factura;
+	
+END
+GO

@@ -47,7 +47,7 @@ namespace FacturasBack.datos
             return lst;
         }
 
-
+        //mover el nombre de los sp dentro de cada metodo
         public int GetFacturaNro()
         {
             return HelperDao.GetInstance().EjecutarSQLConValorOUT("SP_PROXIMO_ID", "@next");
@@ -84,5 +84,11 @@ namespace FacturasBack.datos
         {
             return HelperDao.GetInstance().EjecutarInsertFactura(oFactura, "SP_EDITAR_FACTURA", "SP_ELIMINAR_DETALLES", "SP_INSERTAR_DETALLES");
         }
+
+        public bool Delete(int id)
+        {
+            return HelperDao.GetInstance().DeleteFactura("SP_REGISTRAR_BAJA_FACTURAS", id);
+        }
+
     }
 }
