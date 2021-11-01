@@ -92,18 +92,19 @@ namespace TrabajoPracticoProg.Presentacion
             sw = this.Size.Width;
             sh = this.Size.Height;
             btnMaximizar.Visible = false;
-            btnRestaurar. Visible = true;
+            btnRestaurar.Visible = true;
+            btnRestaurar.Enabled = true;
             this.Size = Screen.PrimaryScreen.WorkingArea.Size;
             this.Location = Screen.PrimaryScreen.WorkingArea.Location;
         }
 
-        private void btnRestaurar_Click(object sender, EventArgs e)
-        {
-            btnMaximizar.Visible = true ;
-            btnRestaurar.Visible = false;
-            this.Size = new Size(sw,sh);
-            this.Location = new Point(lx,ly);
-        }
+        //private void btnRestaurar_Click(object sender, EventArgs e)
+        //{
+        //    btnMaximizar.Visible = true ;
+        //    btnRestaurar.Visible = false;
+        //    this.Size = new Size(sw,sh);
+        //    this.Location = new Point(lx,ly);
+        //}
 
         private void panelBarraTitulo_MouseMove(object sender, MouseEventArgs e)
         {
@@ -170,6 +171,14 @@ namespace TrabajoPracticoProg.Presentacion
         {
             AbrirFormulario<FrmNuevoArticulo>();
             //btnNuevoArticulo.BackColor = Color.FromArgb(12, 61, 92);
+        }
+
+        private void btnRestaurar_Click_1(object sender, EventArgs e)
+        {
+            btnMaximizar.Visible = true;
+            btnRestaurar.Visible = false;
+            this.Size = new Size(sw, sh);
+            this.Location = new Point(lx, ly);
         }
         #endregion
 
