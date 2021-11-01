@@ -16,5 +16,9 @@ namespace FacturasFront
         {
             InitializeComponent();
         }
+
+        private void FrmDesarrolladores_Load(object sender, EventArgs e)
+        {
+        }
     }
 }

@@ -9,7 +9,6 @@ D:\UTN\Carrera\Semestre 2\Programacion II\TP-ProgramacionII\VS\TrabajoPracticoPr
 D:\UTN\Carrera\Semestre 2\Programacion II\TP-ProgramacionII\VS\TrabajoPracticoProg\AccesoDatosLogin\obj\Debug\net5.0\AccesoDatosLogin.AssemblyInfoInputs.cache
 D:\UTN\Carrera\Semestre 2\Programacion II\TP-ProgramacionII\VS\TrabajoPracticoProg\AccesoDatosLogin\obj\Debug\net5.0\AccesoDatosLogin.AssemblyInfo.cs
 D:\UTN\Carrera\Semestre 2\Programacion II\TP-ProgramacionII\VS\TrabajoPracticoProg\AccesoDatosLogin\obj\Debug\net5.0\AccesoDatosLogin.csproj.CoreCompileInputs.cache
-D:\UTN\Carrera\Semestre 2\Programacion II\TP-ProgramacionII\VS\TrabajoPracticoProg\AccesoDatosLogin\obj\Debug\net5.0\AccesoDatosLogin.csproj.CopyComplete
 D:\UTN\Carrera\Semestre 2\Programacion II\TP-ProgramacionII\VS\TrabajoPracticoProg\AccesoDatosLogin\obj\Debug\net5.0\AccesoDatosLogin.dll
 D:\UTN\Carrera\Semestre 2\Programacion II\TP-ProgramacionII\VS\TrabajoPracticoProg\AccesoDatosLogin\obj\Debug\net5.0\ref\AccesoDatosLogin.dll
 D:\UTN\Carrera\Semestre 2\Programacion II\TP-ProgramacionII\VS\TrabajoPracticoProg\AccesoDatosLogin\obj\Debug\net5.0\AccesoDatosLogin.pdb
