@@ -85,3 +85,4 @@ C:\Users\Felpu\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\Trabajo
 C:\Users\Felpu\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\TrabajoPracticoProg\bin\Debug\net5.0-windows\FacturasFront.dll
 C:\Users\Felpu\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\TrabajoPracticoProg\bin\Debug\net5.0-windows\FacturasFront.pdb
 C:\Users\Felpu\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\TrabajoPracticoProg\bin\Debug\net5.0-windows\FacturasBack.pdb
+D:\UTN\Carrera\Semestre 2\Programacion II\TP-ProgramacionII\VS\TrabajoPracticoProg\TrabajoPracticoProg\obj\Debug\net5.0-windows\Presentacion.csproj.CopyComplete
