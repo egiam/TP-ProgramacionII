@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\CommonLogin\CommonLogin.csproj" />
+    <ProjectReference Include="..\FacturasFront\FacturasFront.csproj" />
   </ItemGroup>
 
 </Project>
