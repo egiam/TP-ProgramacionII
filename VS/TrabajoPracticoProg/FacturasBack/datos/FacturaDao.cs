@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace FacturasBack.datos
 {
-    class FacturaDao:IFacturaDao
+    public class FacturaDao:IFacturaDao
     {
         public List<Articulo> GetArticulos()
         {
@@ -104,6 +104,18 @@ namespace FacturasBack.datos
             return HelperDao.GetInstance().EjecutarInsertArticulo(oArticulo, "SP_EDITAR_ARTICULO");
         }
 
+
+        public bool InsertarRegistro(Usuario oUsuario)
+        {
+            bool resultado = true;
+            int filasAfectadas = 0;
+
+            filasAfectadas = HelperDao.GetInstance().EjecutarInsertRegistro("pa_Registrar_Users", oUsuario);
+
+            if (filasAfectadas == 0) resultado = false;
+
+            return resultado;
+        }
 
     }
 }

@@ -125,3 +125,5 @@ D:\UTN\Carrera\Semestre 2\Programacion II\Commits a traves de la Historia\TP-Pro
 D:\UTN\Carrera\Semestre 2\Programacion II\Commits a traves de la Historia\TP-ProgramacionII-main 4  Arreglo de btnRestaurar\VS\TrabajoPracticoProg\FacturasFront\obj\Debug\net5.0-windows\ref\FacturasFront.dll
 D:\UTN\Carrera\Semestre 2\Programacion II\Commits a traves de la Historia\TP-ProgramacionII-main 4  Arreglo de btnRestaurar\VS\TrabajoPracticoProg\FacturasFront\obj\Debug\net5.0-windows\FacturasFront.pdb
 D:\UTN\Carrera\Semestre 2\Programacion II\Commits a traves de la Historia\TP-ProgramacionII-main 4  Arreglo de btnRestaurar\VS\TrabajoPracticoProg\FacturasFront\obj\Debug\net5.0-windows\FacturasFront.genruntimeconfig.cache
+D:\UTN\Carrera\Semestre 2\Programacion II\TP-ProgramacionII\VS\TrabajoPracticoProg\FacturasFront\obj\Debug\net5.0-windows\TrabajoPracticoProg.Presentacion.FrmRegistrarse.resources
+D:\UTN\Carrera\Semestre 2\Programacion II\TP-ProgramacionII\VS\TrabajoPracticoProg\FacturasFront\obj\Debug\net5.0-windows\FacturasFront.csproj.CopyComplete

@@ -34,5 +34,7 @@ namespace FacturasBack.negocio
 
         public bool EditarArticulo(Articulo oArticulo);
 
+        //public bool NuevoRegistro(Usuario oUsuario);
+
     }
 }

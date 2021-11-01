@@ -276,6 +276,8 @@ namespace TrabajoPracticoProg.Presentacion
             this.txtPosicion.Size = new System.Drawing.Size(423, 20);
             this.txtPosicion.TabIndex = 30;
             this.txtPosicion.Text = "Posicion";
+            this.txtPosicion.Enter += new System.EventHandler(this.txtPosicion_Enter);
+            this.txtPosicion.Leave += new System.EventHandler(this.txtPosicion_Leave);
             // 
             // label7
             // 

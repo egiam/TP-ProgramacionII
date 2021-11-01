@@ -366,6 +366,50 @@ namespace FacturasBack.datos
         }
 
 
+        public int EjecutarInsertRegistro(string spMaestro, Usuario oUsuario)
+        {
+            SqlConnection cnn = new SqlConnection();
+            SqlCommand cmd = new SqlCommand();
+
+            int filasAfectadas = 0;
+            SqlTransaction trans = null;
+
+            try
+            {
+                cmd.Parameters.Clear();
+                cnn.Open();
+                trans = cnn.BeginTransaction();
+                cmd.Connection = cnn;
+                cmd.Transaction = trans;
+                cmd.CommandText = spMaestro;
+                cmd.CommandType = CommandType.StoredProcedure;
+
+                //Procedimiento
+                cmd.Parameters.AddWithValue("@LoginName", oUsuario.LoginName);
+                cmd.Parameters.AddWithValue("@Password", oUsuario.Password);
+                cmd.Parameters.AddWithValue("@FirstName", oUsuario.FirstName);
+                cmd.Parameters.AddWithValue("@LastName", oUsuario.LastName);
+                cmd.Parameters.AddWithValue("@Email", oUsuario.Email);
+                cmd.Parameters.AddWithValue("@Position", oUsuario.Position);
+                cmd.ExecuteNonQuery();
+
+                trans.Commit();
+            }
+            catch (Exception e)
+            {
+                throw e;
+                string mensaje = e.Message;
+                trans.Rollback();
+                filasAfectadas = 0;
+            }
+            finally
+            {
+                if (cnn != null && cnn.State == ConnectionState.Open) cnn.Close();
+            }
+
+            return filasAfectadas;
+        }
+
 
     }
 

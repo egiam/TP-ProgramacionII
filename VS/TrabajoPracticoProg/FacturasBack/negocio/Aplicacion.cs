@@ -79,5 +79,10 @@ namespace FacturasBack.negocio
         {
             return dao.EditarArticulo(oArticulo);
         }
+
+        //public bool NuevoRegistro(Usuario oUsuario)
+        //{
+        //    return dao.InsertarRegistro(oUsuario);
+        //}
     }
 }

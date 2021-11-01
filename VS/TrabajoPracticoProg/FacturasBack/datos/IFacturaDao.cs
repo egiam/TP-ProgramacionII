@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace FacturasBack.datos
 {
-    interface IFacturaDao
+    public interface IFacturaDao
     {
         List<Articulo> GetArticulos();
 
@@ -32,5 +32,7 @@ namespace FacturasBack.datos
         List<Articulo> GetArticulosByFilters(List<Parametro> criterios);
 
         bool EditarArticulo(Articulo oArticulo);
+
+        bool InsertarRegistro(Usuario oUsuario);
     }
 }

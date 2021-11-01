@@ -9,6 +9,9 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
 using CommonLogin.Cache;
+using FacturasBack.negocio;
+using FacturasBack.dominio;
+using FacturasBack.datos;
 //using AccesoDatosLogin;
 
 namespace TrabajoPracticoProg.Presentacion
@@ -25,12 +28,16 @@ namespace TrabajoPracticoProg.Presentacion
 
         //private RegistroDao registro;
         //private UserLoginCache cache;
+        private Usuario oUsuario;
+        private IAplicacion aplicacion;
+        private GestorRegistro gestor;
         private Accion modo;
 
         public FrmRegistrarse()
         {
             InitializeComponent();
-            //cache = new UserLoginCache();
+            oUsuario = new Usuario();
+            gestor = new GestorRegistro(new DaoFactory());
         }
 
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
@@ -164,71 +171,94 @@ namespace TrabajoPracticoProg.Presentacion
 
         private void btnRegistrarse_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(txtApellido.Text))
-            {
-                MessageBox.Show("Debe ingresar un Apellido!", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                txtNombre.Focus();
-                return;
-            }
-
-            if (string.IsNullOrEmpty(txtNombre.Text))
-            {
-                MessageBox.Show("Debe ingresar un nombre!", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                txtNombre.Focus();
-                return;
-            }
-
-            if (string.IsNullOrEmpty(txtContra.Text))
-            {
-                MessageBox.Show("Debe ingresar una Contraseña!", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                txtNombre.Focus();
-                return;
-            }
-
-            if (string.IsNullOrEmpty(txtEmail.Text))
-            {
-                MessageBox.Show("Debe ingresar un Email!", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                txtNombre.Focus();
-                return;
-            }
-
-            if (string.IsNullOrEmpty(txtUsuario.Text))
+            
+            if (string.IsNullOrEmpty(txtUsuario.Text) || txtUsuario.Text == "Usuario")
             {
                 MessageBox.Show("Debe ingresar un Usuario!", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtUsuario.Focus();
+                return;
+            }
+
+            if (string.IsNullOrEmpty(txtContra.Text) || txtContra.Text == "Contraseña")
+            {
+                MessageBox.Show("Debe ingresar una Contraseña!", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtContra.Focus();
+                return;
+            }
+
+            if (string.IsNullOrEmpty(txtNombre.Text) || txtNombre.Text == "Nombre")
+            {
+                MessageBox.Show("Debe ingresar un Nombre!", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 txtNombre.Focus();
                 return;
             }
 
-            if (string.IsNullOrEmpty(txtPosicion.Text))
+            if (string.IsNullOrEmpty(txtApellido.Text) || txtApellido.Text == "Apellido")
+            {
+                MessageBox.Show("Debe ingresar un Apellido!", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtApellido.Focus();
+                return;
+            }
+            
+            if (string.IsNullOrEmpty(txtEmail.Text) || txtEmail.Text == "Email")
+            {
+                MessageBox.Show("Debe ingresar un Email!", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtEmail.Focus();
+                return;
+            }  
+
+            if (string.IsNullOrEmpty(txtPosicion.Text) || txtPosicion.Text == "Posicion")
             {
                 MessageBox.Show("Debe ingresar una Posicion Laboral!", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                txtNombre.Focus();
+                txtPosicion.Focus();
                 return;
             }
 
-            //cache.Password = txtContra.Text;
-            //cache.Position = txtPosicion.Text;
-            //cache.LoginName = txtUsuario.Text;
-            //cache.LastName = txtApellido.Text;
-            //cache.FirstName = txtNombre.Text;
-            //cache.Email = txtEmail.Text;
+            GuradarRegistro();
+        }
 
-            //if (registro.InsertarRegistro(cache))
-            //{
-            //    MessageBox.Show("Registro exitoso.", "Informe", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            //    //Close();
-            //    Terminar();
-            //}
-            //else
-            //{
-            //    MessageBox.Show("ERROR. No se pudo registrar el usuario.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            //}
+        private void GuradarRegistro()
+        {
+            oUsuario.Password = txtContra.Text;
+            oUsuario.Position = txtPosicion.Text;
+            oUsuario.LoginName = txtUsuario.Text;
+            oUsuario.LastName = txtApellido.Text;
+            oUsuario.FirstName = txtNombre.Text;
+            oUsuario.Email = txtEmail.Text;
 
+            if (gestor.NuevoRegistro(oUsuario))
+            {
+                MessageBox.Show("Receta registrada con exito.", "Informe", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                //Close();
+                Terminar();
+            }
+            else
+            {
+                MessageBox.Show("ERROR. No se pudo registrar la factura.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void Terminar()
         {
             this.Close();
+        }
+
+        private void txtPosicion_Enter(object sender, EventArgs e)
+        {
+            if (txtNombre.Text == "Posicion")
+            {
+                txtNombre.Text = "";
+                txtNombre.ForeColor = Color.LightGray;
+            }
+        }
+
+        private void txtPosicion_Leave(object sender, EventArgs e)
+        {
+            if (txtEmail.Text == "")
+            {
+                txtEmail.Text = "Posicion";
+                txtEmail.ForeColor = Color.Silver;
+            }
         }
     }
 }
