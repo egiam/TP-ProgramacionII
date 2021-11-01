@@ -22,3 +22,15 @@ C:\Users\Felpu\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\CommonL
 C:\Users\Felpu\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\CommonLogin\obj\Debug\net5.0\ref\CommonLogin.dll
 C:\Users\Felpu\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\CommonLogin\obj\Debug\net5.0\CommonLogin.pdb
 C:\Users\Felpu\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\CommonLogin\obj\Debug\net5.0\CommonLogin.csproj.AssemblyReference.cache
+C:\Users\Luis\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\CommonLogin\bin\Debug\net5.0\CommonLogin.deps.json
+C:\Users\Luis\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\CommonLogin\bin\Debug\net5.0\CommonLogin.dll
+C:\Users\Luis\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\CommonLogin\bin\Debug\net5.0\ref\CommonLogin.dll
+C:\Users\Luis\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\CommonLogin\bin\Debug\net5.0\CommonLogin.pdb
+C:\Users\Luis\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\CommonLogin\obj\Debug\net5.0\CommonLogin.csproj.AssemblyReference.cache
+C:\Users\Luis\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\CommonLogin\obj\Debug\net5.0\CommonLogin.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Luis\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\CommonLogin\obj\Debug\net5.0\CommonLogin.AssemblyInfoInputs.cache
+C:\Users\Luis\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\CommonLogin\obj\Debug\net5.0\CommonLogin.AssemblyInfo.cs
+C:\Users\Luis\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\CommonLogin\obj\Debug\net5.0\CommonLogin.csproj.CoreCompileInputs.cache
+C:\Users\Luis\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\CommonLogin\obj\Debug\net5.0\CommonLogin.dll
+C:\Users\Luis\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\CommonLogin\obj\Debug\net5.0\ref\CommonLogin.dll
+C:\Users\Luis\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\CommonLogin\obj\Debug\net5.0\CommonLogin.pdb

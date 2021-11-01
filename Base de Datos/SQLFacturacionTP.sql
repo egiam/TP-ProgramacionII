@@ -215,6 +215,8 @@ BEGIN
 
 END
 
+GO
+Select * from articulos
 
 GO
 
@@ -222,15 +224,15 @@ GO
 CREATE OR ALTER PROCEDURE [dbo].[SP_INSERTAR_ARTICULO] 
 	@id int,
 	@nombre varchar(255), 
-	@precio decimal(10,2)
+	@pre_unitario decimal(10,2)
 AS
 BEGIN
-	INSERT INTO articulos( nombre, pre_unitario)
-	VALUES (@nombre, @precio);
+	INSERT INTO articulos( nombre, pre_unitario, dado_baja)
+	VALUES (@nombre, @pre_unitario, 'N');
 END
 GO
 
-exec SP_INSERTAR_ARTICULO 'Cama', 15000
+exec SP_INSERTAR_ARTICULO 1, 'Cama', 15000
 select * from articulos
 
 GO
