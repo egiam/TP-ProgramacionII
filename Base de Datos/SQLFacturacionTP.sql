@@ -77,7 +77,7 @@ create table detalles_factura
 
 --Productos almacenados, vistas, etc
 
-create proc pa_Registrar_Users
+CREATE OR ALTER proc pa_Registrar_Users
 	@LoginName varchar(100),
 	@Password varchar(100),
 	@FirstName varchar(100),
@@ -108,9 +108,9 @@ select * from Users
 
 
 
+GO
 
-
-CREATE PROCEDURE [dbo].[SP_PROXIMO_ID]
+CREATE OR ALTER PROCEDURE [dbo].[SP_PROXIMO_ID]
 @next int OUTPUT
 AS
 BEGIN
@@ -123,7 +123,7 @@ END
 
 GO
 
-alter PROCEDURE [dbo].[SP_INSERTAR_FACTURA] 
+CREATE OR ALTER PROCEDURE [dbo].[SP_INSERTAR_FACTURA] 
 	@nro_factura int,
 	@cliente varchar(255), 
 	@forma int,
@@ -139,7 +139,7 @@ GO
 exec [dbo].[SP_INSERTAR_FACTURA] 4,'pepe',1,200,'01/01/0001'
 
 
-alter PROCEDURE [dbo].[SP_INSERTAR_DETALLES] 
+CREATE OR ALTER PROCEDURE [dbo].[SP_INSERTAR_DETALLES] 
 	@nro_factura int,
 	@id_articulo int, 
 	@cantidad int,
@@ -156,7 +156,7 @@ select * from detalles_factura
 GO
 ------
 
-alter PROCEDURE [dbo].[SP_EDITAR_FACTURA] 
+CREATE OR ALTER PROCEDURE [dbo].[SP_EDITAR_FACTURA] 
 	@cliente varchar(255), 
 	@forma int,
 	@nro_factura int,
@@ -171,13 +171,9 @@ AS
 GO
 exec [dbo].[SP_EDITAR_FACTURA]  'Luis', 1, 1, 3500,'29/10/2021'
 
-select * from facturas
 
-	UPDATE facturas
-	SET  cliente='pepe', id_forma_pago=2, total=3500
-	WHERE nro_factura=1
 
-CREATE PROCEDURE  [dbo].[SP_ELIMINAR_DETALLES] 
+CREATE OR ALTER PROCEDURE  [dbo].[SP_ELIMINAR_DETALLES] 
 	@nro_factura int
 AS
 	delete detalles_factura
@@ -185,14 +181,11 @@ AS
 
 exec[dbo].[SP_ELIMINAR_DETALLES] 4
 
-
-
-select * from facturas
-select * from detalles_factura
+GO
 
  
 
-alter PROCEDURE [dbo].[SP_CONSULTAR_ARTICULOS]
+CREATE OR ALTER PROCEDURE [dbo].[SP_CONSULTAR_ARTICULOS]
 AS
 BEGIN
 	
@@ -202,7 +195,7 @@ GO
 
 exec SP_CONSULTAR_ARTICULOS
 
-create PROCEDURE [dbo].[SP_CONSULTAR_FORMAS_DE_PAGO]
+CREATE OR ALTER PROCEDURE [dbo].[SP_CONSULTAR_FORMAS_DE_PAGO]
 AS
 BEGIN
 	
@@ -212,7 +205,7 @@ GO
 exec SP_CONSULTAR_FORMAS_DE_PAGO
 
 
-CREATE PROCEDURE [dbo].[SP_PROXIMO_ID_ART]
+CREATE OR ALTER PROCEDURE [dbo].[SP_PROXIMO_ID_ART]
 @next int OUTPUT
 AS
 BEGIN
@@ -226,7 +219,7 @@ END
 GO
 
 
-CREATE PROCEDURE [dbo].[SP_INSERTAR_ARTICULO] 
+CREATE OR ALTER PROCEDURE [dbo].[SP_INSERTAR_ARTICULO] 
 	@nombre varchar(255), 
 	@precio decimal(10,2)
 AS
@@ -242,7 +235,7 @@ select * from articulos
 GO
 
 
-alter PROCEDURE [dbo].[SP_CONSULTAR_FACTURAS] 
+CREATE OR ALTER PROCEDURE [dbo].[SP_CONSULTAR_FACTURAS] 
 	@fecha_desde date = null,
 	@fecha_hasta date = null,
 	@cliente varchar(255) =null,
@@ -264,7 +257,7 @@ GO
 
 exec SP_CONSULTAR_FACTURAS @fecha_desde = '1/10/2021',@fecha_hasta = '31/10/2021'
 
-alter PROCEDURE [dbo].[SP_CONSULTAR_FACTURA_POR_ID]
+CREATE OR ALTER PROCEDURE [dbo].[SP_CONSULTAR_FACTURA_POR_ID]
 	@id int	
 AS
 BEGIN
@@ -279,12 +272,10 @@ END
 GO
 exec [SP_CONSULTAR_FACTURA_POR_ID] 4
 
-SELECT * from facturas
-select * from detalles_factura
-select * from articulos
 
+GO
 
-ALTER PROCEDURE [dbo].[SP_REGISTRAR_BAJA_FACTURAS] 
+CREATE OR ALTER PROCEDURE [dbo].[SP_REGISTRAR_BAJA_FACTURAS] 
 	@id int
 AS
 BEGIN
@@ -294,7 +285,7 @@ BEGIN
 END
 GO
 
-alter PROCEDURE [dbo].[SP_CONSULTAR_ARTICULOS_FILTROS] 
+CREATE OR ALTER PROCEDURE [dbo].[SP_CONSULTAR_ARTICULOS_FILTROS] 
 	@nombre varchar(255) =null,
 	@precio_desde decimal(20,2) = null,
 	@precio_hasta decimal(20,2) = null,
@@ -313,7 +304,7 @@ END
 EXEC SP_CONSULTAR_ARTICULOS_FILTROS
 
 
-CREATE PROCEDURE [dbo].[SP_REGISTRAR_BAJA_ARTICULO] 
+CREATE OR ALTER PROCEDURE [dbo].[SP_REGISTRAR_BAJA_ARTICULO] 
 	@id int
 AS
 BEGIN
