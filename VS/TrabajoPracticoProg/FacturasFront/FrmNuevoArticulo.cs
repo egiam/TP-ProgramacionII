@@ -109,8 +109,6 @@ namespace FacturasFront
            
         }
 
-
-
         private void MostrarMensajeResultado(bool resultado)
         {
             if (resultado)
@@ -132,7 +130,7 @@ namespace FacturasFront
             {
                 StringContent content = new StringContent(data, Encoding.UTF8, "application/json");
                 var result = await client.PostAsync(url, content);
-                return (int)result.StatusCode == 200;
+                return result.IsSuccessStatusCode;
             }
         }
 
@@ -143,7 +141,7 @@ namespace FacturasFront
             {
                 StringContent content = new StringContent(data, Encoding.UTF8, "application/json");
                 var result = await client.PutAsync(url, content);
-                return (int)result.StatusCode == 200;
+                return result.IsSuccessStatusCode;
             }
         }
 

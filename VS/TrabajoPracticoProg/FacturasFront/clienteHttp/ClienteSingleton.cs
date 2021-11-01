@@ -61,7 +61,7 @@ namespace FacturasFront.clienteHttp
            
             StringContent content = new StringContent(data, Encoding.UTF8, "application/json");
             var result = await cliente.PostAsync(url, content);
-            return (int)result.StatusCode == 200;
+            return result.IsSuccessStatusCode;
 
             //using (HttpClient client = new HttpClient())
             //{
@@ -76,7 +76,7 @@ namespace FacturasFront.clienteHttp
 
             StringContent content = new StringContent(data, Encoding.UTF8, "application/json");
             var result = await cliente.PutAsync(url, content);
-            return (int)result.StatusCode == 200;
+            return result.IsSuccessStatusCode;
         }
 
             public async Task<int> AsignarNumeroFacturaAsync(string url)//revisar nombre
