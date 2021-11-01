@@ -15,11 +15,40 @@ namespace FacturasFront
 {
     public partial class FrmNuevoArticulo : Form
     {
+        public enum Accion
+        {
+            CREATE,
+            READ,
+            UPDATE,
+            DELETE
+        }
         private Articulo articulo;
+        private Accion modo;
+
         public FrmNuevoArticulo()
         {
             InitializeComponent();
             articulo = new Articulo();
+        }
+        public FrmNuevoArticulo(Accion modo, Articulo articuloSeleccionado)
+        {
+            InitializeComponent();
+            // servicio = new ServiceFactoryImp().CrearService();
+            this.modo = modo;
+
+            if (modo.Equals(Accion.UPDATE))
+            {
+                articulo = articuloSeleccionado;
+                txtNombre.Text = articuloSeleccionado.Nombre;
+                nudPrecio.Value = Convert.ToDecimal(articuloSeleccionado.PrecioUnitario);
+            }
+
+            if (modo.Equals(Accion.CREATE))
+            {
+                articulo = new Articulo();
+
+            }
+
         }
 
         private async void FrmNuevoArticulo_Load(object sender, EventArgs e)
@@ -60,22 +89,55 @@ namespace FacturasFront
             articulo.PrecioUnitario = Convert.ToDouble(nudPrecio.Text);
             string data = JsonConvert.SerializeObject(articulo);
 
-            bool success = await GrabarArticuloAsync(data);
+            bool success = false;
 
-            if (success)
+            if (modo.Equals(Accion.CREATE))
+            {
+                success = await GrabarArticuloAsync(data); //agregar singleton
+                MostrarMensajeResultado(success);
+                await limpiarCamposAsync();
+            }
+            else
+            if (modo.Equals(Accion.UPDATE))
+            {
+              //  success = await EditarArticuloAsync(data);
+           //     MostrarMensajeResultado(success);
+                this.Dispose();
+            }
+       
+           
+        }
+
+
+
+        private void MostrarMensajeResultado(bool resultado)
+        {
+            if (resultado)
             {
                 MessageBox.Show("Artículo registrado con éxito!", "Confirmación", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                await limpiarCamposAsync();
+                
             }
             else
             {
                 MessageBox.Show("Ha ocurrido un inconveniente al registrar el artículo!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+
         }
 
         private async Task<bool> GrabarArticuloAsync(string data)
         {
             string url = "https://localhost:44357/api/Facturas/articulos";
+            using (HttpClient client = new HttpClient())
+            {
+                StringContent content = new StringContent(data, Encoding.UTF8, "application/json");
+                var result = await client.PostAsync(url, content);
+                return (int)result.StatusCode == 200;
+            }
+        }
+
+        private async Task<bool> EditarArticuloAsync(string data)
+        {
+            string url = "https://localhost:44357/api/articulos/articulos";
             using (HttpClient client = new HttpClient())
             {
                 StringContent content = new StringContent(data, Encoding.UTF8, "application/json");
@@ -102,6 +164,11 @@ namespace FacturasFront
                 this.Dispose();
 
             }
+
+        }
+
+        private void nudPrecio_ValueChanged(object sender, EventArgs e)
+        {
 
         }
     }

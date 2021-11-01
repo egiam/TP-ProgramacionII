@@ -73,8 +73,16 @@ namespace FacturasFront
 
         private async void dgvResultados_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
             if (dgvResultados.CurrentCell.ColumnIndex == 3)
+            {
+                Articulo articuloSeleccionado = new Articulo();
+                articuloSeleccionado.Nombre =dgvResultados.CurrentRow.Cells["ColNombre"].Value.ToString();
+                articuloSeleccionado.IdArticulo = Convert.ToInt32(dgvResultados.CurrentRow.Cells["Id"].Value.ToString());
+                articuloSeleccionado.PrecioUnitario = Convert.ToDouble(dgvResultados.CurrentRow.Cells["ColPrecio"].Value.ToString());
+                FrmNuevoArticulo frm = new FrmNuevoArticulo((FrmNuevoArticulo.Accion)Accion.UPDATE, articuloSeleccionado);
+                frm.ShowDialog();
+            }
+            if (dgvResultados.CurrentCell.ColumnIndex == 4)
             {
                 DataGridViewRow row = dgvResultados.CurrentRow; // fila actual o seleccionada
                 if (row != null)

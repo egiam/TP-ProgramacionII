@@ -68,9 +68,15 @@ namespace FacturasFront
             // 
             this.nudPrecio.DecimalPlaces = 2;
             this.nudPrecio.Location = new System.Drawing.Point(147, 127);
+            this.nudPrecio.Maximum = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            0});
             this.nudPrecio.Name = "nudPrecio";
             this.nudPrecio.Size = new System.Drawing.Size(198, 23);
             this.nudPrecio.TabIndex = 3;
+            this.nudPrecio.ValueChanged += new System.EventHandler(this.nudPrecio_ValueChanged);
             // 
             // btnAceptar
             // 

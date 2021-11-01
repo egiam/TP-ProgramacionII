@@ -44,8 +44,8 @@ namespace FacturasFront
             this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColNombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColPrecio = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColAccion = new System.Windows.Forms.DataGridViewButtonColumn();
             this.ColAccionEditar = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.ColAccion = new System.Windows.Forms.DataGridViewButtonColumn();
             this.gbBusqueda.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudPrecioHasta)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudPrecioDesde)).BeginInit();
@@ -180,8 +180,8 @@ namespace FacturasFront
             this.Id,
             this.ColNombre,
             this.ColPrecio,
-            this.ColAccion,
-            this.ColAccionEditar});
+            this.ColAccionEditar,
+            this.ColAccion});
             this.dgvResultados.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvResultados.Location = new System.Drawing.Point(3, 19);
             this.dgvResultados.Name = "dgvResultados";
@@ -212,17 +212,6 @@ namespace FacturasFront
             this.ColPrecio.Name = "ColPrecio";
             this.ColPrecio.ReadOnly = true;
             // 
-            // ColAccion
-            // 
-            this.ColAccion.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.ColAccion.HeaderText = "Acción";
-            this.ColAccion.Name = "ColAccion";
-            this.ColAccion.ReadOnly = true;
-            this.ColAccion.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.ColAccion.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.ColAccion.Text = "Dar de baja";
-            this.ColAccion.UseColumnTextForButtonValue = true;
-            // 
             // ColAccionEditar
             // 
             this.ColAccionEditar.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
@@ -233,6 +222,17 @@ namespace FacturasFront
             this.ColAccionEditar.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             this.ColAccionEditar.Text = "Editar";
             this.ColAccionEditar.UseColumnTextForButtonValue = true;
+            // 
+            // ColAccion
+            // 
+            this.ColAccion.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.ColAccion.HeaderText = "Acción";
+            this.ColAccion.Name = "ColAccion";
+            this.ColAccion.ReadOnly = true;
+            this.ColAccion.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.ColAccion.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.ColAccion.Text = "Dar de Baja";
+            this.ColAccion.UseColumnTextForButtonValue = true;
             // 
             // FrmConsultarArticulos
             // 
@@ -270,7 +270,7 @@ namespace FacturasFront
         private System.Windows.Forms.DataGridViewTextBoxColumn Id;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColNombre;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColPrecio;
-        private System.Windows.Forms.DataGridViewButtonColumn ColAccion;
         private System.Windows.Forms.DataGridViewButtonColumn ColAccionEditar;
+        private System.Windows.Forms.DataGridViewButtonColumn ColAccion;
     }
 }
