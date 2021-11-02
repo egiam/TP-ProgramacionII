@@ -90,6 +90,7 @@
             // 
             // panelformularios
             // 
+            this.panelformularios.AutoScroll = true;
             this.panelformularios.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(200)))));
             this.panelformularios.Controls.Add(this.pictureBox1);
             this.panelformularios.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -102,6 +103,7 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(28, 30);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
@@ -113,6 +115,7 @@
             // 
             // panelMenu
             // 
+            this.panelMenu.AutoScroll = true;
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(41)))), ((int)(((byte)(68)))));
             this.panelMenu.Controls.Add(this.btnMenu);
             this.panelMenu.Controls.Add(this.lblEmail);
@@ -134,6 +137,7 @@
             // 
             // btnMenu
             // 
+            this.btnMenu.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnMenu.Image = ((System.Drawing.Image)(resources.GetObject("btnMenu.Image")));
             this.btnMenu.Location = new System.Drawing.Point(175, 5);
             this.btnMenu.Name = "btnMenu";
@@ -145,6 +149,7 @@
             // 
             // lblEmail
             // 
+            this.lblEmail.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblEmail.AutoSize = true;
             this.lblEmail.Font = new System.Drawing.Font("Segoe UI", 9.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblEmail.ForeColor = System.Drawing.Color.DarkGray;
@@ -156,6 +161,7 @@
             // 
             // lblName
             // 
+            this.lblName.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblName.AutoSize = true;
             this.lblName.Font = new System.Drawing.Font("Segoe UI", 9.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblName.ForeColor = System.Drawing.Color.DarkGray;
@@ -167,6 +173,7 @@
             // 
             // lblPosition
             // 
+            this.lblPosition.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblPosition.AutoSize = true;
             this.lblPosition.Font = new System.Drawing.Font("Segoe UI", 9.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblPosition.ForeColor = System.Drawing.Color.DarkGray;
@@ -178,6 +185,7 @@
             // 
             // pictureBox2
             // 
+            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(3, 30);
             this.pictureBox2.Name = "pictureBox2";
@@ -188,6 +196,7 @@
             // 
             // btnConsultarFactura
             // 
+            this.btnConsultarFactura.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnConsultarFactura.FlatAppearance.BorderSize = 0;
             this.btnConsultarFactura.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(50)))), ((int)(((byte)(70)))));
             this.btnConsultarFactura.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
@@ -207,6 +216,7 @@
             // 
             // btnNuevaFactura
             // 
+            this.btnNuevaFactura.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnNuevaFactura.FlatAppearance.BorderSize = 0;
             this.btnNuevaFactura.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(50)))), ((int)(((byte)(70)))));
             this.btnNuevaFactura.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
@@ -226,6 +236,7 @@
             // 
             // btnConsultarArticulos
             // 
+            this.btnConsultarArticulos.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnConsultarArticulos.FlatAppearance.BorderSize = 0;
             this.btnConsultarArticulos.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(50)))), ((int)(((byte)(70)))));
             this.btnConsultarArticulos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
@@ -245,6 +256,7 @@
             // 
             // btnLogOut
             // 
+            this.btnLogOut.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btnLogOut.FlatAppearance.BorderSize = 0;
             this.btnLogOut.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(50)))), ((int)(((byte)(70)))));
             this.btnLogOut.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
@@ -265,6 +277,7 @@
             // 
             // btnNuevoArticulo
             // 
+            this.btnNuevoArticulo.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnNuevoArticulo.FlatAppearance.BorderSize = 0;
             this.btnNuevoArticulo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(50)))), ((int)(((byte)(70)))));
             this.btnNuevoArticulo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
