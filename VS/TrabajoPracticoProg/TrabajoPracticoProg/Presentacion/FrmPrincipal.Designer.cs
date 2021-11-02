@@ -419,7 +419,7 @@
             this.nuevoArticuloToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.nuevoArticuloToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.nuevoArticuloToolStripMenuItem.Name = "nuevoArticuloToolStripMenuItem";
-            this.nuevoArticuloToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.nuevoArticuloToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
             this.nuevoArticuloToolStripMenuItem.Text = "Nuevo Articulo";
             this.nuevoArticuloToolStripMenuItem.Click += new System.EventHandler(this.nuevoArticuloToolStripMenuItem_Click);
             // 
@@ -429,7 +429,7 @@
             this.consultarArticuloToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.consultarArticuloToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.consultarArticuloToolStripMenuItem.Name = "consultarArticuloToolStripMenuItem";
-            this.consultarArticuloToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.consultarArticuloToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
             this.consultarArticuloToolStripMenuItem.Text = "Consultar Articulo";
             this.consultarArticuloToolStripMenuItem.Click += new System.EventHandler(this.consultarArticuloToolStripMenuItem_Click);
             // 
@@ -450,7 +450,7 @@
             this.nuevoFacturaToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.nuevoFacturaToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.nuevoFacturaToolStripMenuItem.Name = "nuevoFacturaToolStripMenuItem";
-            this.nuevoFacturaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.nuevoFacturaToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
             this.nuevoFacturaToolStripMenuItem.Text = "Nueva Factura";
             this.nuevoFacturaToolStripMenuItem.Click += new System.EventHandler(this.nuevoFacturaToolStripMenuItem_Click);
             // 
@@ -460,7 +460,7 @@
             this.cosultarFacturaToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.cosultarFacturaToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.cosultarFacturaToolStripMenuItem.Name = "cosultarFacturaToolStripMenuItem";
-            this.cosultarFacturaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.cosultarFacturaToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
             this.cosultarFacturaToolStripMenuItem.Text = "Cosultar Factura";
             this.cosultarFacturaToolStripMenuItem.Click += new System.EventHandler(this.cosultarFacturaToolStripMenuItem_Click);
             // 
@@ -488,7 +488,7 @@
             this.desarrolladoresToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.desarrolladoresToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.desarrolladoresToolStripMenuItem.Name = "desarrolladoresToolStripMenuItem";
-            this.desarrolladoresToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.desarrolladoresToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
             this.desarrolladoresToolStripMenuItem.Text = "Desarrolladores";
             this.desarrolladoresToolStripMenuItem.Click += new System.EventHandler(this.desarrolladoresToolStripMenuItem_Click);
             // 
@@ -496,6 +496,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(1192, 620);
             this.Controls.Add(this.panelContenedor);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
