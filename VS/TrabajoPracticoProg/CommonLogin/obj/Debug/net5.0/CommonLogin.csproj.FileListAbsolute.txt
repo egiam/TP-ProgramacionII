@@ -34,3 +34,15 @@ D:\UTN\Carrera\Semestre 2\Programacion II\Commits a traves de la Historia\TP-Pro
 D:\UTN\Carrera\Semestre 2\Programacion II\Commits a traves de la Historia\TP-ProgramacionII-main 4  Arreglo de btnRestaurar\VS\TrabajoPracticoProg\CommonLogin\obj\Debug\net5.0\CommonLogin.dll
 D:\UTN\Carrera\Semestre 2\Programacion II\Commits a traves de la Historia\TP-ProgramacionII-main 4  Arreglo de btnRestaurar\VS\TrabajoPracticoProg\CommonLogin\obj\Debug\net5.0\ref\CommonLogin.dll
 D:\UTN\Carrera\Semestre 2\Programacion II\Commits a traves de la Historia\TP-ProgramacionII-main 4  Arreglo de btnRestaurar\VS\TrabajoPracticoProg\CommonLogin\obj\Debug\net5.0\CommonLogin.pdb
+C:\Users\Luis\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\CommonLogin\bin\Debug\net5.0\CommonLogin.deps.json
+C:\Users\Luis\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\CommonLogin\bin\Debug\net5.0\CommonLogin.dll
+C:\Users\Luis\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\CommonLogin\bin\Debug\net5.0\ref\CommonLogin.dll
+C:\Users\Luis\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\CommonLogin\bin\Debug\net5.0\CommonLogin.pdb
+C:\Users\Luis\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\CommonLogin\obj\Debug\net5.0\CommonLogin.csproj.AssemblyReference.cache
+C:\Users\Luis\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\CommonLogin\obj\Debug\net5.0\CommonLogin.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Luis\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\CommonLogin\obj\Debug\net5.0\CommonLogin.AssemblyInfoInputs.cache
+C:\Users\Luis\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\CommonLogin\obj\Debug\net5.0\CommonLogin.AssemblyInfo.cs
+C:\Users\Luis\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\CommonLogin\obj\Debug\net5.0\CommonLogin.csproj.CoreCompileInputs.cache
+C:\Users\Luis\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\CommonLogin\obj\Debug\net5.0\CommonLogin.dll
+C:\Users\Luis\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\CommonLogin\obj\Debug\net5.0\ref\CommonLogin.dll
+C:\Users\Luis\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\CommonLogin\obj\Debug\net5.0\CommonLogin.pdb

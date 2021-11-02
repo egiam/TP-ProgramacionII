@@ -29,6 +29,8 @@ namespace FacturasFront
         {
             InitializeComponent();
             articulo = new Articulo();
+            AsignarNumeroArticuloAsync();
+            this.modo = Accion.CREATE;
         }
         public FrmNuevoArticulo(Accion modo, Articulo articuloSeleccionado)
         {
