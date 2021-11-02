@@ -104,7 +104,7 @@ exec pa_Registrar_Users 'egiam','fernandez357','Ezequiel','Giampaoli','ezegiampa
 exec pa_Registrar_Users 'sampaoli','fernandez357','Ezequiel','Giampaoli','ezegiampaoli@gmail.com'
 exec pa_Registrar_Users 'fabio','FABIOCA','Fabio','Caceres','fabioCC@gmail.com'
 
-select * from Users
+--select * from Users
 
 
 
@@ -136,7 +136,7 @@ BEGIN
 END
 GO
 
-exec [dbo].[SP_INSERTAR_FACTURA] 4,'pepe',1,200,'01/01/0001'
+--exec [dbo].[SP_INSERTAR_FACTURA] 4,'pepe',1,200,'01/01/0001'
 
 
 CREATE OR ALTER PROCEDURE [dbo].[SP_INSERTAR_DETALLES] 
@@ -151,8 +151,8 @@ BEGIN
     VALUES (@nro_factura, @id_articulo, @cantidad);
   
 END
-select * from facturas
-select * from detalles_factura
+--select * from facturas
+--select * from detalles_factura
 GO
 ------
 
@@ -169,7 +169,7 @@ AS
 	WHERE nro_factura=@nro_factura
 
 GO
-exec [dbo].[SP_EDITAR_FACTURA]  'Luis', 1, 1, 3500,'29/10/2021'
+--exec [dbo].[SP_EDITAR_FACTURA]  'Luis', 1, 1, 3500,'29/10/2021'
 
 
 
@@ -179,11 +179,12 @@ AS
 	delete detalles_factura
 	where nro_factura=@nro_factura 
 
-exec[dbo].[SP_ELIMINAR_DETALLES] 4
-
 GO
 
- 
+--exec [SP_ELIMINAR_DETALLES] 1
+
+
+--select * from facturas
 
 CREATE OR ALTER PROCEDURE [dbo].[SP_CONSULTAR_ARTICULOS]
 AS
@@ -202,7 +203,7 @@ BEGIN
 	SELECT * from formas_pago ORDER BY id_forma_pago;
 END
 GO
-exec SP_CONSULTAR_FORMAS_DE_PAGO
+--exec SP_CONSULTAR_FORMAS_DE_PAGO
 
 
 CREATE OR ALTER PROCEDURE [dbo].[SP_PROXIMO_ID_ART]
@@ -216,7 +217,7 @@ BEGIN
 END
 
 GO
-Select * from articulos
+--Select * from articulos
 
 GO
 
@@ -232,8 +233,8 @@ BEGIN
 END
 GO
 
-exec SP_INSERTAR_ARTICULO 1, 'Cama', 15000
-select * from articulos
+--exec SP_INSERTAR_ARTICULO 1, 'Cama', 15000
+--select * from articulos
 
 GO
 
@@ -258,7 +259,7 @@ END
 GO
 
 
-exec SP_CONSULTAR_FACTURAS @fecha_desde = '1/10/2021',@fecha_hasta = '31/10/2021'
+--exec SP_CONSULTAR_FACTURAS @fecha_desde = '1/10/2021',@fecha_hasta = '31/10/2021'
 
 CREATE OR ALTER PROCEDURE [dbo].[SP_CONSULTAR_FACTURA_POR_ID]
 	@id int	
@@ -273,7 +274,7 @@ BEGIN
 	AND f.nro_factura = @id;
 END
 GO
-exec [SP_CONSULTAR_FACTURA_POR_ID] 4
+--exec [SP_CONSULTAR_FACTURA_POR_ID] 4
 
 
 GO
@@ -304,7 +305,7 @@ BEGIN
 	
 END
 
-EXEC SP_CONSULTAR_ARTICULOS_FILTROS
+--EXEC SP_CONSULTAR_ARTICULOS_FILTROS
 
 
 CREATE OR ALTER PROCEDURE [dbo].[SP_REGISTRAR_BAJA_ARTICULO] 
@@ -316,11 +317,8 @@ BEGIN
 	
 END
 GO
-SP_REGISTRAR_BAJA_ARTICULO 7
 
-GO
-
-select * from articulos
+--select * from articulos
 
 GO
 
@@ -336,6 +334,6 @@ BEGIN
 END
 GO
 
-select * from articulos
-
-exec[SP_EDITAR_ARTICULO] 2, 'Ventana', 2000
+--select * from articulos
+	
+--exec[SP_EDITAR_ARTICULO] 2, 'Ventana', 2000
