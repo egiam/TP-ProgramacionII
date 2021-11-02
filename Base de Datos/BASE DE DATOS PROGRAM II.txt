@@ -1,0 +1,112 @@
+CREATE TABLE articulos (
+	cod_articulo int IDENTITY (1, 1) NOT NULL ,
+	descripcion nvarchar (50) NULL ,
+	stock_minimo smallint NULL ,
+	stock smallint NOT NULL,
+	pre_unitario decimal(10, 2) NOT NULL ,
+	observaciones nvarchar (50)NULL ,
+	CONSTRAINT PK_articulos PRIMARY KEY (cod_articulo)
+)
+//ARTICULOS
+insert into articulos (descripcion, stock_minimo, stock, pre_unitario, observaciones) values ('Lápiz HB',null,150, 160.00, 'Muy buena calidad');
+insert into articulos (descripcion, stock_minimo, stock, pre_unitario, observaciones) values ('Hojas A4 * 10 u',100,100,500.00, 'Para fotocopias');
+insert into articulos (descripcion, stock_minimo, stock, pre_unitario, observaciones) values ('Cuaderno',20,155,600.00, 'Tamaño oficio');
+insert into articulos (descripcion, stock_minimo, stock, pre_unitario, observaciones) values ('Lapicera BOC',50,100, 120.50, 'trazo fino y azul');
+insert into articulos (descripcion, stock_minimo, stock, pre_unitario, observaciones) values ('Resaltadores * 6',50,300,250,null);
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+
+CREATE TABLE facturas (
+	nro_factura int IDENTITY (1, 1) NOT NULL ,
+	fecha datetime NOT NULL ,
+	cod_cliente int NOT NULL ,
+	cod_vendedor int NOT NULL ,
+	CONSTRAINT PK_facturas PRIMARY KEY (nro_factura),
+	CONSTRAINT FK_facturas_clientes FOREIGN KEY (cod_cliente) REFERENCES clientes (cod_cliente),
+	CONSTRAINT FK_facturas_vendedores FOREIGN KEY (cod_vendedor) REFERENCES vendedores (cod_vendedor)
+)
+//FACTURAS AÑOS 2019/2020/2021
+insert into facturas (cod_vendedor, cod_cliente, fecha) values(2,4,'06/01/2019'); //FACTURA 1
+insert into facturas (cod_vendedor, cod_cliente, fecha) values(3,1,'25/01/2019'); //FACTURA 2
+insert into facturas (cod_vendedor, cod_cliente, fecha) values(1,4,'31/01/2020'); //FACTURA 3
+insert into facturas (cod_vendedor, cod_cliente, fecha) values(5,2,'08/03/2020'); //FACTURA 4
+insert into facturas (cod_vendedor, cod_cliente, fecha) values(2,3,'07/04/2021'); //FACTURA 5
+insert into facturas (cod_vendedor, cod_cliente, fecha) values(4,2,'05/05/2021'); //FACTURA 6
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+CREATE TABLE detalle_facturas (
+	nro_factura int NOT NULL ,
+	cod_articulo int NOT NULL ,
+	pre_unitario numeric(18, 2) NOT NULL ,
+	cantidad smallint NOT NULL ,
+	CONSTRAINT PK_detalle PRIMARY KEY  (nro_factura, cod_articulo),
+	CONSTRAINT FK_detalle_articulos FOREIGN KEY (cod_articulo) REFERENCES articulos (cod_articulo),
+	CONSTRAINT FK_detalle_facturas FOREIGN KEY (nro_factura) REFERENCES facturas (nro_factura)
+)
+//DETALLE FACTURA
+insert into detalle_facturas (nro_factura, cod_articulo, pre_unitario, cantidad) values(1,8,12.90,10);
+insert into detalle_facturas (nro_factura, cod_articulo, pre_unitario, cantidad) values(2,18,31.00,22);
+insert into detalle_facturas (nro_factura, cod_articulo, pre_unitario, cantidad) values(3,13,41.90,15);
+insert into detalle_facturas (nro_factura, cod_articulo, pre_unitario, cantidad) values(4,19,1.00,35);
+insert into detalle_facturas (nro_factura, cod_articulo, pre_unitario, cantidad) values(5,1,149.90,20);
+insert into detalle_facturas (nro_factura, cod_articulo, pre_unitario, cantidad) values(6,18,41.00,20);
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+CREATE TABLE vendedores (
+	cod_vendedor int IDENTITY (1, 1) NOT NULL ,
+	nom_vendedor nvarchar (50) NOT NULL ,
+	ape_vendedor nvarchar(50) not null,
+	calle nvarchar (50) NOT NULL ,
+	altura int,
+	cod_barrio int NOT NULL,
+	nro_tel bigint NULL ,
+	[e-mail] nvarchar (50) NULL ,
+	fec_nac smalldatetime NULL ,
+	CONSTRAINT PK_vendedores PRIMARY KEY (cod_vendedor),
+	CONSTRAINT FK_vendedores_barrios FOREIGN KEY (cod_barrio) REFERENCES barrios (cod_barrio)
+)
+//VENDEDORES
+insert into vendedores (ape_vendedor, nom_vendedor, calle, altura, cod_barrio, nro_tel, [e-mail], fec_nac) values ('Caceres', 'Marcelo','Los Sauces', 369,1,NULL,'mcaceres@gmail.com',null);
+insert into vendedores (ape_vendedor, nom_vendedor, calle, altura, cod_barrio, nro_tel, [e-mail], fec_nac) values ('Letona', 'Silvia','Venecia', 1560,2,4526060,NULL,'13/5/1996');
+insert into vendedores (ape_vendedor, nom_vendedor, calle, altura, cod_barrio, nro_tel, [e-mail], fec_nac) values ('Martinez', 'Juan','Valladolid', 12,3,4612525,'NULL','26/3/1999');
+insert into vendedores (ape_vendedor, nom_vendedor, calle, altura, cod_barrio, nro_tel, [e-mail], fec_nac) values ('Pereyra', 'Gabriel','Obispo Trejo', 320,4,NULL,NULL,'17/10/1995');
+insert into vendedores (ape_vendedor, nom_vendedor, calle, altura, cod_barrio, nro_tel, [e-mail], fec_nac) values ('Rivadavia', 'Jose','Misiones', 1245,5,4522122,NULL,'04/6/1978');
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+CREATE TABLE clientes (
+	cod_cliente int IDENTITY (1, 1) NOT NULL ,
+	nom_cliente nvarchar (50) NOT NULL ,
+	ape_cliente nvarchar (50) NOT NULL ,
+	calle nvarchar (50) NOT NULL ,
+	altura int,
+	cod_barrio int NOT NULL,
+	nro_tel bigint NULL ,
+	[e-mail] nvarchar (50) NULL,
+	CONSTRAINT PK_clientes PRIMARY KEY (cod_cliente),
+	CONSTRAINT FK_clientes_barrios FOREIGN KEY (cod_barrio) REFERENCES barrios (cod_barrio)
+)
+//CLIENTES
+insert into clientes (ape_cliente, nom_cliente, calle, altura, cod_barrio, nro_tel, [e-mail]) values ('Rodriguez', 'Diego','Hipolito Yrigoyen', 120,1,3516431567,NULL);
+insert into clientes (ape_cliente, nom_cliente, calle, altura, cod_barrio, nro_tel, [e-mail]) values ('Mendoza', 'Rocio','Juan Domingo Peron', 1450,2,NULL,'mrocio@yahoo.com');
+insert into clientes (ape_cliente, nom_cliente, calle, altura, cod_barrio, nro_tel, [e-mail]) values ('Abarca', 'Héctor','Luis Gongora', 160,3,4701314,'habarca@hotmail.com');
+insert into clientes (ape_cliente, nom_cliente, calle, altura, cod_barrio, nro_tel, [e-mail]) values ('Monte','Gerardo','Av. Colon', 55,4,155471516,NULL);
+insert into clientes (ape_cliente, nom_cliente, calle, altura, cod_barrio, nro_tel, [e-mail]) values ('Villalba', 'Macarena','Tanti', 455,5,4554466,NULL);
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+CREATE TABLE barrios (
+	cod_barrio int NOT NULL ,
+	barrio nvarchar (50) NULL ,
+	CONSTRAINT PK_barrios PRIMARY KEY (cod_barrio)
+)
+
+//BARRIOS
+INSERT INTO BARRIOS(cod_barrio, BARRIO) VALUES (1,'CORONEL OLMEDO') 
+INSERT INTO BARRIOS(cod_barrio, BARRIO) VALUES (2,'BELLA VISTA') 
+INSERT INTO BARRIOS(cod_barrio, BARRIO) VALUES (3,'GENERAL PAZ') 
+INSERT INTO BARRIOS(cod_barrio, BARRIO) VALUES (4,'1 DE MAYO') 
+INSERT INTO BARRIOS(cod_barrio, BARRIO) VALUES (5,'DEAN FUNES')
