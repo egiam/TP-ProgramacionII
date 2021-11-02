@@ -48,6 +48,19 @@
             this.btnMinimizar = new System.Windows.Forms.PictureBox();
             this.btnMaximizar = new System.Windows.Forms.PictureBox();
             this.btnCerrar = new System.Windows.Forms.PictureBox();
+            this.menuPrincipal = new System.Windows.Forms.MenuStrip();
+            this.archivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.logOutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.soporteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.nuevoArticuloToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.consultarArticuloToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.transaccionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.nuevoFacturaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cosultarFacturaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.reportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.acercaDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.desarrolladoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panelContenedor.SuspendLayout();
             this.panelformularios.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -59,6 +72,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
+            this.menuPrincipal.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelContenedor
@@ -274,6 +288,7 @@
             this.panelBarraTitulo.Controls.Add(this.btnMinimizar);
             this.panelBarraTitulo.Controls.Add(this.btnMaximizar);
             this.panelBarraTitulo.Controls.Add(this.btnCerrar);
+            this.panelBarraTitulo.Controls.Add(this.menuPrincipal);
             this.panelBarraTitulo.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelBarraTitulo.Location = new System.Drawing.Point(0, 0);
             this.panelBarraTitulo.Margin = new System.Windows.Forms.Padding(2);
@@ -288,57 +303,193 @@
             this.btnRestaurar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRestaurar.Enabled = false;
             this.btnRestaurar.Image = ((System.Drawing.Image)(resources.GetObject("btnRestaurar.Image")));
-            this.btnRestaurar.Location = new System.Drawing.Point(1143, 10);
+            this.btnRestaurar.Location = new System.Drawing.Point(1132, 11);
             this.btnRestaurar.Margin = new System.Windows.Forms.Padding(2);
             this.btnRestaurar.Name = "btnRestaurar";
             this.btnRestaurar.Size = new System.Drawing.Size(20, 20);
             this.btnRestaurar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnRestaurar.TabIndex = 4;
+            this.btnRestaurar.TabIndex = 12;
             this.btnRestaurar.TabStop = false;
             this.btnRestaurar.Visible = false;
-            this.btnRestaurar.Click += new System.EventHandler(this.btnRestaurar_Click_1);
+            this.btnRestaurar.Click += new System.EventHandler(this.btnRestaurar_Click);
             // 
             // btnMinimizar
             // 
             this.btnMinimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnMinimizar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMinimizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMinimizar.Image")));
-            this.btnMinimizar.Location = new System.Drawing.Point(1119, 10);
+            this.btnMinimizar.Location = new System.Drawing.Point(1108, 11);
             this.btnMinimizar.Margin = new System.Windows.Forms.Padding(2);
             this.btnMinimizar.Name = "btnMinimizar";
             this.btnMinimizar.Size = new System.Drawing.Size(20, 20);
             this.btnMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnMinimizar.TabIndex = 2;
+            this.btnMinimizar.TabIndex = 11;
             this.btnMinimizar.TabStop = false;
-            this.btnMinimizar.Click += new System.EventHandler(this.btnMinimizar_Click);
+            this.btnMinimizar.Click += new System.EventHandler(this.btnMinimizar_Click_1);
             // 
             // btnMaximizar
             // 
             this.btnMaximizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnMaximizar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMaximizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMaximizar.Image")));
-            this.btnMaximizar.Location = new System.Drawing.Point(1143, 10);
+            this.btnMaximizar.Location = new System.Drawing.Point(1132, 11);
             this.btnMaximizar.Margin = new System.Windows.Forms.Padding(2);
             this.btnMaximizar.Name = "btnMaximizar";
             this.btnMaximizar.Size = new System.Drawing.Size(20, 20);
             this.btnMaximizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnMaximizar.TabIndex = 1;
+            this.btnMaximizar.TabIndex = 10;
             this.btnMaximizar.TabStop = false;
-            this.btnMaximizar.Click += new System.EventHandler(this.btnMaximizar_Click);
+            this.btnMaximizar.Click += new System.EventHandler(this.btnMaximizar_Click_1);
             // 
             // btnCerrar
             // 
             this.btnCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCerrar.Image = ((System.Drawing.Image)(resources.GetObject("btnCerrar.Image")));
-            this.btnCerrar.Location = new System.Drawing.Point(1167, 10);
+            this.btnCerrar.Location = new System.Drawing.Point(1156, 11);
             this.btnCerrar.Margin = new System.Windows.Forms.Padding(2);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(20, 20);
             this.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnCerrar.TabIndex = 0;
+            this.btnCerrar.TabIndex = 9;
             this.btnCerrar.TabStop = false;
-            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click_1);
+            // 
+            // menuPrincipal
+            // 
+            this.menuPrincipal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(93)))), ((int)(((byte)(142)))));
+            this.menuPrincipal.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.archivoToolStripMenuItem,
+            this.soporteToolStripMenuItem,
+            this.transaccionToolStripMenuItem,
+            this.reportesToolStripMenuItem,
+            this.acercaDeToolStripMenuItem});
+            this.menuPrincipal.Location = new System.Drawing.Point(0, 0);
+            this.menuPrincipal.Name = "menuPrincipal";
+            this.menuPrincipal.Size = new System.Drawing.Size(1192, 24);
+            this.menuPrincipal.TabIndex = 1;
+            this.menuPrincipal.Text = "menuStrip1";
+            // 
+            // archivoToolStripMenuItem
+            // 
+            this.archivoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.salirToolStripMenuItem,
+            this.logOutToolStripMenuItem});
+            this.archivoToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.archivoToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.archivoToolStripMenuItem.Name = "archivoToolStripMenuItem";
+            this.archivoToolStripMenuItem.Size = new System.Drawing.Size(62, 20);
+            this.archivoToolStripMenuItem.Text = "Archivo";
+            // 
+            // salirToolStripMenuItem
+            // 
+            this.salirToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(41)))), ((int)(((byte)(68)))));
+            this.salirToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.salirToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.salirToolStripMenuItem.Text = "Salir";
+            this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
+            // 
+            // logOutToolStripMenuItem
+            // 
+            this.logOutToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(41)))), ((int)(((byte)(68)))));
+            this.logOutToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.logOutToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.logOutToolStripMenuItem.Name = "logOutToolStripMenuItem";
+            this.logOutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.logOutToolStripMenuItem.Text = "Log Out";
+            this.logOutToolStripMenuItem.Click += new System.EventHandler(this.logOutToolStripMenuItem_Click);
+            // 
+            // soporteToolStripMenuItem
+            // 
+            this.soporteToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.nuevoArticuloToolStripMenuItem,
+            this.consultarArticuloToolStripMenuItem});
+            this.soporteToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.soporteToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.soporteToolStripMenuItem.Name = "soporteToolStripMenuItem";
+            this.soporteToolStripMenuItem.Size = new System.Drawing.Size(64, 20);
+            this.soporteToolStripMenuItem.Text = "Soporte";
+            // 
+            // nuevoArticuloToolStripMenuItem
+            // 
+            this.nuevoArticuloToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(41)))), ((int)(((byte)(68)))));
+            this.nuevoArticuloToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.nuevoArticuloToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.nuevoArticuloToolStripMenuItem.Name = "nuevoArticuloToolStripMenuItem";
+            this.nuevoArticuloToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.nuevoArticuloToolStripMenuItem.Text = "Nuevo Articulo";
+            this.nuevoArticuloToolStripMenuItem.Click += new System.EventHandler(this.nuevoArticuloToolStripMenuItem_Click);
+            // 
+            // consultarArticuloToolStripMenuItem
+            // 
+            this.consultarArticuloToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(41)))), ((int)(((byte)(68)))));
+            this.consultarArticuloToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.consultarArticuloToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.consultarArticuloToolStripMenuItem.Name = "consultarArticuloToolStripMenuItem";
+            this.consultarArticuloToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.consultarArticuloToolStripMenuItem.Text = "Consultar Articulo";
+            this.consultarArticuloToolStripMenuItem.Click += new System.EventHandler(this.consultarArticuloToolStripMenuItem_Click);
+            // 
+            // transaccionToolStripMenuItem
+            // 
+            this.transaccionToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.nuevoFacturaToolStripMenuItem,
+            this.cosultarFacturaToolStripMenuItem});
+            this.transaccionToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.transaccionToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.transaccionToolStripMenuItem.Name = "transaccionToolStripMenuItem";
+            this.transaccionToolStripMenuItem.Size = new System.Drawing.Size(83, 20);
+            this.transaccionToolStripMenuItem.Text = "Transaccion";
+            // 
+            // nuevoFacturaToolStripMenuItem
+            // 
+            this.nuevoFacturaToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(41)))), ((int)(((byte)(68)))));
+            this.nuevoFacturaToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.nuevoFacturaToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.nuevoFacturaToolStripMenuItem.Name = "nuevoFacturaToolStripMenuItem";
+            this.nuevoFacturaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.nuevoFacturaToolStripMenuItem.Text = "Nueva Factura";
+            this.nuevoFacturaToolStripMenuItem.Click += new System.EventHandler(this.nuevoFacturaToolStripMenuItem_Click);
+            // 
+            // cosultarFacturaToolStripMenuItem
+            // 
+            this.cosultarFacturaToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(41)))), ((int)(((byte)(68)))));
+            this.cosultarFacturaToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.cosultarFacturaToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.cosultarFacturaToolStripMenuItem.Name = "cosultarFacturaToolStripMenuItem";
+            this.cosultarFacturaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.cosultarFacturaToolStripMenuItem.Text = "Cosultar Factura";
+            this.cosultarFacturaToolStripMenuItem.Click += new System.EventHandler(this.cosultarFacturaToolStripMenuItem_Click);
+            // 
+            // reportesToolStripMenuItem
+            // 
+            this.reportesToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.reportesToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.reportesToolStripMenuItem.Name = "reportesToolStripMenuItem";
+            this.reportesToolStripMenuItem.Size = new System.Drawing.Size(70, 20);
+            this.reportesToolStripMenuItem.Text = "Reportes";
+            // 
+            // acercaDeToolStripMenuItem
+            // 
+            this.acercaDeToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.desarrolladoresToolStripMenuItem});
+            this.acercaDeToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.acercaDeToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.acercaDeToolStripMenuItem.Name = "acercaDeToolStripMenuItem";
+            this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(76, 20);
+            this.acercaDeToolStripMenuItem.Text = "Acerca De";
+            // 
+            // desarrolladoresToolStripMenuItem
+            // 
+            this.desarrolladoresToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(41)))), ((int)(((byte)(68)))));
+            this.desarrolladoresToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.desarrolladoresToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.desarrolladoresToolStripMenuItem.Name = "desarrolladoresToolStripMenuItem";
+            this.desarrolladoresToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.desarrolladoresToolStripMenuItem.Text = "Desarrolladores";
+            this.desarrolladoresToolStripMenuItem.Click += new System.EventHandler(this.desarrolladoresToolStripMenuItem_Click);
             // 
             // FrmPrincipal
             // 
@@ -361,10 +512,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnMenu)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panelBarraTitulo.ResumeLayout(false);
+            this.panelBarraTitulo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnRestaurar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
+            this.menuPrincipal.ResumeLayout(false);
+            this.menuPrincipal.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -375,9 +529,6 @@
         private System.Windows.Forms.Panel panelformularios;
         private System.Windows.Forms.Panel panelMenu;
         private System.Windows.Forms.Panel panelBarraTitulo;
-        private System.Windows.Forms.PictureBox btnMinimizar;
-        private System.Windows.Forms.PictureBox btnMaximizar;
-        private System.Windows.Forms.PictureBox btnCerrar;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnLogOut;
         private System.Windows.Forms.Button btnNuevoArticulo;
@@ -390,6 +541,22 @@
         private System.Windows.Forms.Label lblPosition;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox btnRestaurar;
+        private System.Windows.Forms.PictureBox btnMinimizar;
+        private System.Windows.Forms.PictureBox btnMaximizar;
+        private System.Windows.Forms.PictureBox btnCerrar;
+        private System.Windows.Forms.MenuStrip menuPrincipal;
+        private System.Windows.Forms.ToolStripMenuItem archivoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem logOutToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem soporteToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem nuevoArticuloToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem consultarArticuloToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem transaccionToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem nuevoFacturaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cosultarFacturaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem reportesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem acercaDeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem desarrolladoresToolStripMenuItem;
     }
 }
 

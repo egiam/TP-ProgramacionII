@@ -127,7 +127,6 @@ D:\UTN\Carrera\Semestre 2\Programacion II\Commits a traves de la Historia\TP-Pro
 D:\UTN\Carrera\Semestre 2\Programacion II\Commits a traves de la Historia\TP-ProgramacionII-main 4  Arreglo de btnRestaurar\VS\TrabajoPracticoProg\TrabajoPracticoProg\obj\Debug\net5.0-windows\Presentacion.csproj.CoreCompileInputs.cache
 D:\UTN\Carrera\Semestre 2\Programacion II\Commits a traves de la Historia\TP-ProgramacionII-main 4  Arreglo de btnRestaurar\VS\TrabajoPracticoProg\TrabajoPracticoProg\obj\Debug\net5.0-windows\Presentacion.csproj.CopyComplete
 D:\UTN\Carrera\Semestre 2\Programacion II\Commits a traves de la Historia\TP-ProgramacionII-main 4  Arreglo de btnRestaurar\VS\TrabajoPracticoProg\TrabajoPracticoProg\obj\Debug\net5.0-windows\Presentacion.genruntimeconfig.cache
-D:\UTN\Carrera\Semestre 2\Programacion II\TP-ProgramacionII\VS\TrabajoPracticoProg\TrabajoPracticoProg\obj\Debug\net5.0-windows\Presentacion.csproj.CopyComplete
 C:\Users\Luis\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\TrabajoPracticoProg\bin\Debug\net5.0-windows\FacturasFront.deps.json
 C:\Users\Luis\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\TrabajoPracticoProg\bin\Debug\net5.0-windows\FacturasFront.runtimeconfig.json
 C:\Users\Luis\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\TrabajoPracticoProg\bin\Debug\net5.0-windows\FacturasFront.runtimeconfig.dev.json

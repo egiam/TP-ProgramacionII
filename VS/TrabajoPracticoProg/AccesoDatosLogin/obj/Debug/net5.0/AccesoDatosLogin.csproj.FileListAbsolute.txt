@@ -57,3 +57,4 @@ C:\Users\Luis\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\AccesoDa
 C:\Users\Luis\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\AccesoDatosLogin\obj\Debug\net5.0\AccesoDatosLogin.dll
 C:\Users\Luis\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\AccesoDatosLogin\obj\Debug\net5.0\ref\AccesoDatosLogin.dll
 C:\Users\Luis\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\AccesoDatosLogin\obj\Debug\net5.0\AccesoDatosLogin.pdb
+D:\UTN\Carrera\Semestre 2\Programacion II\TP-ProgramacionII\VS\TrabajoPracticoProg\AccesoDatosLogin\obj\Debug\net5.0\AccesoDatosLogin.csproj.CopyComplete

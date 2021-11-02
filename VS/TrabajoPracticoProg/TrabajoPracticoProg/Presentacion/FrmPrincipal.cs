@@ -193,7 +193,82 @@ namespace TrabajoPracticoProg.Presentacion
 
         private void btnMenu_Click(object sender, EventArgs e)
         {
-            AbrirFormulario<FrmMenu>();
+            if (menuPrincipal.Visible == true)
+                menuPrincipal.Visible = false;
+            else
+                menuPrincipal.Visible = true;
+        }
+
+        private void btnCerrar_Click_1(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Are you sure to close the application?", "Warning",
+           MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+                Application.Exit();
+        }
+
+        private void btnRestaurar_Click(object sender, EventArgs e)
+        {
+            btnMaximizar.Visible = true;
+            btnRestaurar.Visible = false;
+            this.Size = new Size(sw, sh);
+            this.Location = new Point(lx, ly);
+        }
+
+        private void btnMinimizar_Click_1(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void btnMaximizar_Click_1(object sender, EventArgs e)
+        {
+            lx = this.Location.X;
+            ly = this.Location.Y;
+            sw = this.Size.Width;
+            sh = this.Size.Height;
+            btnMaximizar.Visible = false;
+            btnRestaurar.Visible = true;
+            btnRestaurar.Enabled = true;
+            this.Size = Screen.PrimaryScreen.WorkingArea.Size;
+            this.Location = Screen.PrimaryScreen.WorkingArea.Location;
+        }
+
+        private void salirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Are you sure to close the application?", "Warning",
+           MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+                Application.Exit();
+        }
+
+        private void logOutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Are you sure to log out?", "Warning",
+           MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+                this.Close();
+        }
+
+        private void nuevoArticuloToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<FrmNuevoArticulo>();
+        }
+
+        private void consultarArticuloToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<FrmConsultarArticulos>();
+        }
+
+        private void nuevoFacturaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<FrmNuevaFactura>();
+        }
+
+        private void cosultarFacturaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<FrmConsultarFactura>();
+        }
+
+        private void desarrolladoresToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<FrmDesarrolladores>();
         }
         #endregion
 
