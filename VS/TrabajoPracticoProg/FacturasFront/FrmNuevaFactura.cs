@@ -104,7 +104,7 @@ namespace FacturasFront
 
         private async Task CargarCboArticulosAsync()
         {
-            string url = "https://localhost:44357/api/Facturas/articulos";
+            string url = "https://localhost:44357/api/Articulos/articulos";
             List<Articulo> lst = await ClienteSingleton.GetInstancia().ConsultarArticulos(url);
 
             cboArticulos.DataSource = lst;

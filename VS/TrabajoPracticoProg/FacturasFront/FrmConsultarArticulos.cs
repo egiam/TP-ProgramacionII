@@ -45,7 +45,7 @@ namespace FacturasFront
             List<Articulo> lst = null;
 
             string filtrosJSON = JsonConvert.SerializeObject(filtros);
-            string url = "https://localhost:44357/api/Facturas/consultar_articulos";
+            string url = "https://localhost:44357/api/Articulos/consultar";
 
             var resultado = await ClienteSingleton.GetInstancia().PostAsync(url, filtrosJSON);
 

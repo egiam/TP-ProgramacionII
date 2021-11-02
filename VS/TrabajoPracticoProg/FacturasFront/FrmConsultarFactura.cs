@@ -103,7 +103,7 @@ namespace FacturasFront
                 if (row != null)
                 {
                     int idFactura = Int32.Parse(row.Cells["Id"].Value.ToString());
-                    if (MessageBox.Show("Seguro que desea eliminar la factura seleccionada?", "Confirmación", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                    if (MessageBox.Show("Seguro que desea dar de baja la factura seleccionada?", "Confirmación", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                     {
                         string url = "https://localhost:44357/api/Facturas/" + idFactura.ToString();
                         string respuesta = await ClienteSingleton.GetInstancia().DeleteAsync(url);
