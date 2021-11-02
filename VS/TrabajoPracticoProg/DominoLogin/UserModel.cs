@@ -28,5 +28,25 @@ namespace DominoLogin
         //    }
         //    return true;
         //}
+
+        public void anyMethod()
+        {
+            if (UserLoginCache.Position == Positions.Empleado)
+            {
+                //Lineas o métodos que quieras ejecutar para el cargo recepcionita
+            }
+            if (UserLoginCache.Position == Positions.Gerente)
+            {
+                //Lineas o métodos que quieras ejecutar para el cargo contador
+            }
+            if (UserLoginCache.Position == Positions.Administrador)
+            {
+                //Lineas o métodos que quieras ejecutar para el cargo contador
+            }
+            if (UserLoginCache.Position == Positions.Cliente)
+            {
+                //Lineas o métodos que quieras ejecutar para el cargo contador
+            }
+        }
     }
 }

@@ -1,4 +1,5 @@
-﻿using FacturasBack.dominio;
+﻿using CommonLogin.Cache;
+using FacturasBack.dominio;
 using FacturasFront.clienteHttp;
 using Newtonsoft.Json;
 using System;
@@ -267,6 +268,11 @@ namespace FacturasFront
             gbDatosFactura.Enabled = true;
             btnEditar.Enabled = false;
             this.modo = Accion.UPDATE;
+        }
+
+        private void gbDatosFactura_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }

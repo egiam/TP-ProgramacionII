@@ -56,6 +56,14 @@ namespace AccesoDatosLogin
             {
                 //Lineas o métodos que quieras ejecutar para el cargo contador
             }
+            if (UserLoginCache.Position == Positions.Administrador)
+            {
+                //Lineas o métodos que quieras ejecutar para el cargo contador
+            }
+            if (UserLoginCache.Position == Positions.Cliente)
+            {
+                //Lineas o métodos que quieras ejecutar para el cargo contador
+            }
         }
 
     }

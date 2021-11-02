@@ -46,6 +46,7 @@ namespace FacturasFront
             this.ColPrecio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColAccionEditar = new System.Windows.Forms.DataGridViewButtonColumn();
             this.ColAccion = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.btnSalir = new System.Windows.Forms.Button();
             this.gbBusqueda.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudPrecioHasta)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudPrecioDesde)).BeginInit();
@@ -234,11 +235,22 @@ namespace FacturasFront
             this.ColAccion.Text = "Dar de Baja";
             this.ColAccion.UseColumnTextForButtonValue = true;
             // 
+            // btnSalir
+            // 
+            this.btnSalir.Location = new System.Drawing.Point(684, 177);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(75, 23);
+            this.btnSalir.TabIndex = 9;
+            this.btnSalir.Text = "Salir";
+            this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
+            // 
             // FrmConsultarArticulos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(839, 494);
+            this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.gbResultados);
             this.Controls.Add(this.gbBusqueda);
             this.Name = "FrmConsultarArticulos";
@@ -272,5 +284,6 @@ namespace FacturasFront
         private System.Windows.Forms.DataGridViewTextBoxColumn ColPrecio;
         private System.Windows.Forms.DataGridViewButtonColumn ColAccionEditar;
         private System.Windows.Forms.DataGridViewButtonColumn ColAccion;
+        private System.Windows.Forms.Button btnSalir;
     }
 }

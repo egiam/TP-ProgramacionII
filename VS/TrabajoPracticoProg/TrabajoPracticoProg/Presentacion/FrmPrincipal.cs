@@ -23,6 +23,16 @@ namespace TrabajoPracticoProg.Presentacion
         private void FormPrincipal_Load(object sender, EventArgs e)
         {
             LoadUserData();
+            //Manage Positions
+            if(UserLoginCache.Position == Positions.Cliente)
+            {
+                btnNuevaFactura.Enabled = false;
+                btnNuevoArticulo.Enabled = false;
+            }
+            if(UserLoginCache.Position == Positions.Empleado)
+            {
+                btnMenu.Enabled = false;
+            }
         }
 
         private void LoadUserData()

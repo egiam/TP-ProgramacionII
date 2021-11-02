@@ -241,6 +241,7 @@ namespace FacturasFront
             this.gbDatosFactura.Size = new System.Drawing.Size(763, 395);
             this.gbDatosFactura.TabIndex = 15;
             this.gbDatosFactura.TabStop = false;
+            this.gbDatosFactura.Enter += new System.EventHandler(this.gbDatosFactura_Enter);
             // 
             // label2
             // 
@@ -263,7 +264,7 @@ namespace FacturasFront
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(431, 424);
+            this.btnCancelar.Location = new System.Drawing.Point(474, 426);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(111, 23);
             this.btnCancelar.TabIndex = 12;
@@ -273,7 +274,7 @@ namespace FacturasFront
             // 
             // btnAceptar
             // 
-            this.btnAceptar.Location = new System.Drawing.Point(300, 424);
+            this.btnAceptar.Location = new System.Drawing.Point(343, 426);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(111, 23);
             this.btnAceptar.TabIndex = 11;
@@ -283,7 +284,7 @@ namespace FacturasFront
             // 
             // btnEditar
             // 
-            this.btnEditar.Location = new System.Drawing.Point(161, 424);
+            this.btnEditar.Location = new System.Drawing.Point(204, 426);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(111, 23);
             this.btnEditar.TabIndex = 17;
@@ -302,6 +303,7 @@ namespace FacturasFront
             this.Controls.Add(this.gbDatosFactura);
             this.Controls.Add(this.btnAceptar);
             this.Controls.Add(this.btnCancelar);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmNuevaFactura";
             this.Text = "Nueva Factura";
             this.Load += new System.EventHandler(this.FrmNuevaFactura_Load);
