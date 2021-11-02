@@ -65,7 +65,7 @@ namespace FacturasFront
             this.gbBusqueda.Controls.Add(this.lblPrecioDesde);
             this.gbBusqueda.Controls.Add(this.txtNombre);
             this.gbBusqueda.Controls.Add(this.lblNombre);
-            this.gbBusqueda.Location = new System.Drawing.Point(52, 30);
+            this.gbBusqueda.Location = new System.Drawing.Point(106, 56);
             this.gbBusqueda.Name = "gbBusqueda";
             this.gbBusqueda.Size = new System.Drawing.Size(560, 192);
             this.gbBusqueda.TabIndex = 0;
@@ -165,7 +165,7 @@ namespace FacturasFront
             // gbResultados
             // 
             this.gbResultados.Controls.Add(this.dgvResultados);
-            this.gbResultados.Location = new System.Drawing.Point(52, 248);
+            this.gbResultados.Location = new System.Drawing.Point(106, 274);
             this.gbResultados.Name = "gbResultados";
             this.gbResultados.Size = new System.Drawing.Size(710, 234);
             this.gbResultados.TabIndex = 1;
@@ -176,6 +176,8 @@ namespace FacturasFront
             // 
             this.dgvResultados.AllowUserToAddRows = false;
             this.dgvResultados.AllowUserToDeleteRows = false;
+            this.dgvResultados.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(200)))));
+            this.dgvResultados.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvResultados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvResultados.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Id,
@@ -237,7 +239,7 @@ namespace FacturasFront
             // 
             // btnSalir
             // 
-            this.btnSalir.Location = new System.Drawing.Point(684, 177);
+            this.btnSalir.Location = new System.Drawing.Point(738, 203);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(75, 23);
             this.btnSalir.TabIndex = 9;
@@ -249,10 +251,12 @@ namespace FacturasFront
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(839, 494);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(200)))));
+            this.ClientSize = new System.Drawing.Size(973, 583);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.gbResultados);
             this.Controls.Add(this.gbBusqueda);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmConsultarArticulos";
             this.Text = "Consultar Articulos";
             this.gbBusqueda.ResumeLayout(false);

@@ -20,5 +20,10 @@ namespace FacturasFront
         private void FrmDesarrolladores_Load(object sender, EventArgs e)
         {
         }
+
+        private void lblVolver_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.Close();
+        }
     }
 }

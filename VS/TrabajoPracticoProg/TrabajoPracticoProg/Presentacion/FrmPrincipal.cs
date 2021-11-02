@@ -270,6 +270,11 @@ namespace TrabajoPracticoProg.Presentacion
         {
             AbrirFormulario<FrmDesarrolladores>();
         }
+
+        private void panelMenu_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
         #endregion
 
 

@@ -119,6 +119,11 @@ namespace FacturasFront
             // 
             // btnAgregar
             // 
+            this.btnAgregar.FlatAppearance.BorderSize = 0;
+            this.btnAgregar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Yellow;
+            this.btnAgregar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(110)))));
+            this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAgregar.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnAgregar.Location = new System.Drawing.Point(611, 181);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(128, 25);
@@ -236,7 +241,7 @@ namespace FacturasFront
             this.gbDatosFactura.Controls.Add(this.lblCliente);
             this.gbDatosFactura.Controls.Add(this.lblFormaPago);
             this.gbDatosFactura.Controls.Add(this.dgvDetalles);
-            this.gbDatosFactura.Location = new System.Drawing.Point(12, 12);
+            this.gbDatosFactura.Location = new System.Drawing.Point(95, 67);
             this.gbDatosFactura.Name = "gbDatosFactura";
             this.gbDatosFactura.Size = new System.Drawing.Size(763, 395);
             this.gbDatosFactura.TabIndex = 15;
@@ -264,7 +269,12 @@ namespace FacturasFront
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(474, 426);
+            this.btnCancelar.FlatAppearance.BorderSize = 0;
+            this.btnCancelar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Yellow;
+            this.btnCancelar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(110)))));
+            this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancelar.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnCancelar.Location = new System.Drawing.Point(557, 481);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(111, 23);
             this.btnCancelar.TabIndex = 12;
@@ -274,7 +284,12 @@ namespace FacturasFront
             // 
             // btnAceptar
             // 
-            this.btnAceptar.Location = new System.Drawing.Point(343, 426);
+            this.btnAceptar.FlatAppearance.BorderSize = 0;
+            this.btnAceptar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Yellow;
+            this.btnAceptar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(110)))));
+            this.btnAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAceptar.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnAceptar.Location = new System.Drawing.Point(426, 481);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(111, 23);
             this.btnAceptar.TabIndex = 11;
@@ -284,7 +299,12 @@ namespace FacturasFront
             // 
             // btnEditar
             // 
-            this.btnEditar.Location = new System.Drawing.Point(204, 426);
+            this.btnEditar.FlatAppearance.BorderSize = 0;
+            this.btnEditar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Yellow;
+            this.btnEditar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(110)))));
+            this.btnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEditar.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnEditar.Location = new System.Drawing.Point(287, 481);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(111, 23);
             this.btnEditar.TabIndex = 17;
@@ -298,7 +318,7 @@ namespace FacturasFront
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(200)))));
-            this.ClientSize = new System.Drawing.Size(800, 461);
+            this.ClientSize = new System.Drawing.Size(973, 583);
             this.Controls.Add(this.btnEditar);
             this.Controls.Add(this.gbDatosFactura);
             this.Controls.Add(this.btnAceptar);

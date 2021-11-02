@@ -41,8 +41,6 @@ namespace FacturasFront
             this.label1 = new System.Windows.Forms.Label();
             this.gbResultados = new System.Windows.Forms.GroupBox();
             this.dgvResultados = new System.Windows.Forms.DataGridView();
-            this.btnNuevo = new System.Windows.Forms.Button();
-            this.btnSalir = new System.Windows.Forms.Button();
             this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColFecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColCliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -50,6 +48,8 @@ namespace FacturasFront
             this.ColFecBaja = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColAcciones = new System.Windows.Forms.DataGridViewButtonColumn();
             this.ColAccionesBaja = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.btnNuevo = new System.Windows.Forms.Button();
+            this.btnSalir = new System.Windows.Forms.Button();
             this.gbFiltros.SuspendLayout();
             this.gbResultados.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvResultados)).BeginInit();
@@ -66,7 +66,7 @@ namespace FacturasFront
             this.gbFiltros.Controls.Add(this.label2);
             this.gbFiltros.Controls.Add(this.dtpDesde);
             this.gbFiltros.Controls.Add(this.label1);
-            this.gbFiltros.Location = new System.Drawing.Point(43, 30);
+            this.gbFiltros.Location = new System.Drawing.Point(77, 59);
             this.gbFiltros.Name = "gbFiltros";
             this.gbFiltros.Size = new System.Drawing.Size(781, 133);
             this.gbFiltros.TabIndex = 0;
@@ -161,7 +161,7 @@ namespace FacturasFront
             // gbResultados
             // 
             this.gbResultados.Controls.Add(this.dgvResultados);
-            this.gbResultados.Location = new System.Drawing.Point(43, 183);
+            this.gbResultados.Location = new System.Drawing.Point(77, 212);
             this.gbResultados.Name = "gbResultados";
             this.gbResultados.Size = new System.Drawing.Size(781, 228);
             this.gbResultados.TabIndex = 6;
@@ -172,6 +172,8 @@ namespace FacturasFront
             // 
             this.dgvResultados.AllowUserToAddRows = false;
             this.dgvResultados.AllowUserToDeleteRows = false;
+            this.dgvResultados.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(200)))));
+            this.dgvResultados.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvResultados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvResultados.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Id,
@@ -188,26 +190,6 @@ namespace FacturasFront
             this.dgvResultados.Size = new System.Drawing.Size(754, 176);
             this.dgvResultados.TabIndex = 0;
             this.dgvResultados.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvResultados_CellContentClick);
-            // 
-            // btnNuevo
-            // 
-            this.btnNuevo.Location = new System.Drawing.Point(43, 431);
-            this.btnNuevo.Name = "btnNuevo";
-            this.btnNuevo.Size = new System.Drawing.Size(75, 23);
-            this.btnNuevo.TabIndex = 1;
-            this.btnNuevo.Text = "Nuevo";
-            this.btnNuevo.UseVisualStyleBackColor = true;
-            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
-            // 
-            // btnSalir
-            // 
-            this.btnSalir.Location = new System.Drawing.Point(746, 431);
-            this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(75, 23);
-            this.btnSalir.TabIndex = 8;
-            this.btnSalir.Text = "Salir";
-            this.btnSalir.UseVisualStyleBackColor = true;
-            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // Id
             // 
@@ -261,15 +243,37 @@ namespace FacturasFront
             this.ColAccionesBaja.Text = "Dar de Baja";
             this.ColAccionesBaja.UseColumnTextForButtonValue = true;
             // 
+            // btnNuevo
+            // 
+            this.btnNuevo.Location = new System.Drawing.Point(77, 460);
+            this.btnNuevo.Name = "btnNuevo";
+            this.btnNuevo.Size = new System.Drawing.Size(75, 23);
+            this.btnNuevo.TabIndex = 1;
+            this.btnNuevo.Text = "Nuevo";
+            this.btnNuevo.UseVisualStyleBackColor = true;
+            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
+            // 
+            // btnSalir
+            // 
+            this.btnSalir.Location = new System.Drawing.Point(780, 460);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(75, 23);
+            this.btnSalir.TabIndex = 8;
+            this.btnSalir.Text = "Salir";
+            this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
+            // 
             // FrmConsultarFactura
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(856, 465);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(200)))));
+            this.ClientSize = new System.Drawing.Size(957, 544);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnNuevo);
             this.Controls.Add(this.gbResultados);
             this.Controls.Add(this.gbFiltros);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmConsultarFactura";
             this.Text = "Consultar Factura";
             this.Load += new System.EventHandler(this.FrmConsultarFactura_Load);

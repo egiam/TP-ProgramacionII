@@ -42,7 +42,7 @@ namespace FacturasFront
             // lblNombre
             // 
             this.lblNombre.AutoSize = true;
-            this.lblNombre.Location = new System.Drawing.Point(73, 87);
+            this.lblNombre.Location = new System.Drawing.Point(303, 211);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(54, 15);
             this.lblNombre.TabIndex = 0;
@@ -51,7 +51,7 @@ namespace FacturasFront
             // lblPrecio
             // 
             this.lblPrecio.AutoSize = true;
-            this.lblPrecio.Location = new System.Drawing.Point(73, 127);
+            this.lblPrecio.Location = new System.Drawing.Point(303, 251);
             this.lblPrecio.Name = "lblPrecio";
             this.lblPrecio.Size = new System.Drawing.Size(52, 15);
             this.lblPrecio.TabIndex = 1;
@@ -59,7 +59,7 @@ namespace FacturasFront
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(144, 84);
+            this.txtNombre.Location = new System.Drawing.Point(374, 208);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(201, 23);
             this.txtNombre.TabIndex = 2;
@@ -67,7 +67,7 @@ namespace FacturasFront
             // nudPrecio
             // 
             this.nudPrecio.DecimalPlaces = 2;
-            this.nudPrecio.Location = new System.Drawing.Point(147, 127);
+            this.nudPrecio.Location = new System.Drawing.Point(377, 251);
             this.nudPrecio.Maximum = new decimal(new int[] {
             1000000,
             0,
@@ -80,7 +80,12 @@ namespace FacturasFront
             // 
             // btnAceptar
             // 
-            this.btnAceptar.Location = new System.Drawing.Point(100, 208);
+            this.btnAceptar.FlatAppearance.BorderSize = 0;
+            this.btnAceptar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Yellow;
+            this.btnAceptar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(110)))));
+            this.btnAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAceptar.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnAceptar.Location = new System.Drawing.Point(330, 332);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(130, 23);
             this.btnAceptar.TabIndex = 4;
@@ -90,7 +95,12 @@ namespace FacturasFront
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(249, 208);
+            this.btnCancelar.FlatAppearance.BorderSize = 0;
+            this.btnCancelar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Yellow;
+            this.btnCancelar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(110)))));
+            this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancelar.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnCancelar.Location = new System.Drawing.Point(479, 332);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(130, 23);
             this.btnCancelar.TabIndex = 5;
@@ -102,7 +112,7 @@ namespace FacturasFront
             // 
             this.lblNroArticulo.AutoSize = true;
             this.lblNroArticulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblNroArticulo.Location = new System.Drawing.Point(44, 25);
+            this.lblNroArticulo.Location = new System.Drawing.Point(274, 149);
             this.lblNroArticulo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNroArticulo.Name = "lblNroArticulo";
             this.lblNroArticulo.Size = new System.Drawing.Size(118, 20);
@@ -113,7 +123,8 @@ namespace FacturasFront
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(499, 320);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(200)))));
+            this.ClientSize = new System.Drawing.Size(957, 544);
             this.Controls.Add(this.lblNroArticulo);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnAceptar);
@@ -121,6 +132,7 @@ namespace FacturasFront
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.lblPrecio);
             this.Controls.Add(this.lblNombre);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmNuevoArticulo";
             this.Text = "Nuevo Artículo";
             this.Load += new System.EventHandler(this.FrmNuevoArticulo_Load);
