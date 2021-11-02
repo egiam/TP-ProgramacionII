@@ -228,13 +228,13 @@ namespace TrabajoPracticoProg.Presentacion
 
             if (gestor.NuevoRegistro(oUsuario))
             {
-                MessageBox.Show("Receta registrada con exito.", "Informe", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Registro registrado con exito.", "Informe", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 //Close();
                 Terminar();
             }
             else
             {
-                MessageBox.Show("ERROR. No se pudo registrar la factura.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("ERROR. No se pudo registrar.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
