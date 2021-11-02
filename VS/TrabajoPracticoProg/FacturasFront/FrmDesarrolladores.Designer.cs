@@ -80,9 +80,9 @@ namespace FacturasFront
             this.label4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label4.Location = new System.Drawing.Point(307, 284);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(331, 21);
+            this.label4.Size = new System.Drawing.Size(196, 21);
             this.label4.TabIndex = 4;
-            this.label4.Text = "112658 - Giampaoli, Ezequiel Maximiliano";
+            this.label4.Text = "110643 - Ricatti Facundo";
             // 
             // label5
             // 
@@ -91,9 +91,9 @@ namespace FacturasFront
             this.label5.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label5.Location = new System.Drawing.Point(307, 322);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(331, 21);
+            this.label5.Size = new System.Drawing.Size(320, 21);
             this.label5.TabIndex = 5;
-            this.label5.Text = "112658 - Giampaoli, Ezequiel Maximiliano";
+            this.label5.Text = "112957 - González Tulián, Noelia Ximena";
             // 
             // label6
             // 
