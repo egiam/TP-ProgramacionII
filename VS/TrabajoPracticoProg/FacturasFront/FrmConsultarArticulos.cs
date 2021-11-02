@@ -68,6 +68,7 @@ namespace FacturasFront
             txtNombre.Text = "";
             nudPrecioDesde.Value = 0;
             nudPrecioHasta.Value = 15000;
+            chkDadoBaja.Checked = false;
             dgvResultados.Rows.Clear();
         }
 

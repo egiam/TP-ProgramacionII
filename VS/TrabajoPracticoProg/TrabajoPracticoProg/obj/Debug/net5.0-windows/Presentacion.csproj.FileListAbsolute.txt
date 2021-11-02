@@ -54,7 +54,6 @@ C:\Users\Felpu\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\Trabajo
 C:\Users\Felpu\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\TrabajoPracticoProg\obj\Debug\net5.0-windows\Presentacion.Presentacion.FrmLogin - Copy.resources
 C:\Users\Felpu\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\TrabajoPracticoProg\obj\Debug\net5.0-windows\TrabajoPracticoProg.FrmLogin.resources
 C:\Users\Felpu\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\TrabajoPracticoProg\obj\Debug\net5.0-windows\TrabajoPracticoProg.Presentacion.FrmPrincipal.resources
-C:\Users\Felpu\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\TrabajoPracticoProg\obj\Debug\net5.0-windows\TrabajoPracticoProg.Presentacion.FrmRegistrarse.resources
 C:\Users\Felpu\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\TrabajoPracticoProg\obj\Debug\net5.0-windows\Presentacion.Properties.Resources.resources
 C:\Users\Felpu\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\TrabajoPracticoProg\obj\Debug\net5.0-windows\Presentacion.csproj.GenerateResource.cache
 C:\Users\Felpu\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\TrabajoPracticoProg\obj\Debug\net5.0-windows\Presentacion.GeneratedMSBuildEditorConfig.editorconfig

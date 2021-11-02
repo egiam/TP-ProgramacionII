@@ -154,7 +154,7 @@ namespace TrabajoPracticoProg.Presentacion
 
         private void btnLogOut_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Are you sure to log out?", "Warning",
+            if (MessageBox.Show("Seguro quiere cerrar la sesión?", "Warning",
            MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
                 this.Close();
         }
@@ -201,7 +201,7 @@ namespace TrabajoPracticoProg.Presentacion
 
         private void btnCerrar_Click_1(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Are you sure to close the application?", "Warning",
+            if (MessageBox.Show("Seguro quiere cerrar la aplicación?", "Warning",
            MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
                 Application.Exit();
         }
@@ -234,14 +234,14 @@ namespace TrabajoPracticoProg.Presentacion
 
         private void salirToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Are you sure to close the application?", "Warning",
+            if (MessageBox.Show("Seguro quiere cerrar la aplicación?", "Warning",
            MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
                 Application.Exit();
         }
 
         private void logOutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Are you sure to log out?", "Warning",
+            if (MessageBox.Show("Seguro quiere cerrar la sesión?", "Warning",
            MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
                 this.Close();
         }

@@ -10,6 +10,7 @@ INSERT INTO articulos(nombre, pre_unitario,dado_baja) values('Silla',1500,'N')
 INSERT INTO articulos(nombre, pre_unitario,dado_baja) values('Escritorio',6500,'N')
 INSERT INTO articulos(nombre, pre_unitario,dado_baja) values('Biblioteca',8000,'N')
 INSERT INTO articulos(nombre, pre_unitario,dado_baja) values('Vajillero',9900,'N')
+INSERT INTO articulos(nombre, pre_unitario,dado_baja) values('Alacena',10000,'N')
 
 select * from facturas
 select* from detalles_factura

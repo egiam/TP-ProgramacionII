@@ -145,3 +145,4 @@ D:\UTN\Carrera\Semestre 2\Programacion II\Commits a traves de la Historia\TP-Pro
 D:\UTN\Carrera\Semestre 2\Programacion II\Commits a traves de la Historia\TP-ProgramacionII-main 4  Arreglo de btnRestaurar\VS\TrabajoPracticoProg\FacturasWebAPI\obj\Debug\net5.0\ref\FacturasWebAPI.dll
 D:\UTN\Carrera\Semestre 2\Programacion II\Commits a traves de la Historia\TP-ProgramacionII-main 4  Arreglo de btnRestaurar\VS\TrabajoPracticoProg\FacturasWebAPI\obj\Debug\net5.0\FacturasWebAPI.pdb
 D:\UTN\Carrera\Semestre 2\Programacion II\Commits a traves de la Historia\TP-ProgramacionII-main 4  Arreglo de btnRestaurar\VS\TrabajoPracticoProg\FacturasWebAPI\obj\Debug\net5.0\FacturasWebAPI.genruntimeconfig.cache
+C:\Users\Felpu\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\FacturasWebAPI\obj\Debug\net5.0\FacturasWebAPI.csproj.CopyComplete

@@ -133,3 +133,8 @@ C:\Users\Luis\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\Facturas
 C:\Users\Luis\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\FacturasFront\obj\Debug\net5.0-windows\FacturasFront.FrmMenu.resources
 C:\Users\Luis\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\FacturasFront\obj\Debug\net5.0-windows\TrabajoPracticoProg.Presentacion.FrmRegistrarse.resources
 D:\UTN\Carrera\Semestre 2\Programacion II\TP-ProgramacionII\VS\TrabajoPracticoProg\FacturasFront\obj\Debug\net5.0-windows\FacturasFront.Properties.Resources.resources
+C:\Users\Felpu\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\FacturasFront\bin\Debug\net5.0-windows\CommonLogin.dll
+C:\Users\Felpu\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\FacturasFront\bin\Debug\net5.0-windows\CommonLogin.pdb
+C:\Users\Felpu\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\FacturasFront\obj\Debug\net5.0-windows\FacturasFront.FrmDesarrolladores.resources
+C:\Users\Felpu\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\FacturasFront\obj\Debug\net5.0-windows\TrabajoPracticoProg.Presentacion.FrmRegistrarse.resources
+C:\Users\Felpu\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\FacturasFront\obj\Debug\net5.0-windows\FacturasFront.Properties.Resources.resources
