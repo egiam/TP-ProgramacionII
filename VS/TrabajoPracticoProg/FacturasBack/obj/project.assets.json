@@ -454,19 +454,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Ezequiel\\.nuget\\packages\\": {}
+    "C:\\Users\\Felpu\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\UTN\\Carrera\\Semestre 2\\Programacion II\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\FacturasBack\\FacturasBack.csproj",
+      "projectUniqueName": "C:\\Users\\Felpu\\Documents\\GitHub\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\FacturasBack\\FacturasBack.csproj",
       "projectName": "FacturasBack",
-      "projectPath": "D:\\UTN\\Carrera\\Semestre 2\\Programacion II\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\FacturasBack\\FacturasBack.csproj",
-      "packagesPath": "C:\\Users\\Ezequiel\\.nuget\\packages\\",
-      "outputPath": "D:\\UTN\\Carrera\\Semestre 2\\Programacion II\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\FacturasBack\\obj\\",
+      "projectPath": "C:\\Users\\Felpu\\Documents\\GitHub\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\FacturasBack\\FacturasBack.csproj",
+      "packagesPath": "C:\\Users\\Felpu\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Felpu\\Documents\\GitHub\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\FacturasBack\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Ezequiel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Felpu\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

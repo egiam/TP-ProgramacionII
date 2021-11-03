@@ -63,12 +63,7 @@ namespace FacturasFront.clienteHttp
             var result = await cliente.PostAsync(url, content);
             return result.IsSuccessStatusCode;
 
-            //using (HttpClient client = new HttpClient())
-            //{
-            //    StringContent content = new StringContent(data, Encoding.UTF8, "application/json");
-            //    var result = await client.PostAsync(url, content);
-            //    return (int)result.StatusCode == 200;
-            //}
+
         }
 
         public async Task<bool> EditarFacturaAsync(string url, string data)
@@ -79,14 +74,14 @@ namespace FacturasFront.clienteHttp
             return result.IsSuccessStatusCode;
         }
 
-            public async Task<int> AsignarNumeroFacturaAsync(string url)//revisar nombre
+            public async Task<int> AsignarNumeroFacturaAsync(string url)
         {
             var result = await cliente.GetStringAsync(url);
             return Int32.Parse(result);
 
         }
 
-        public async Task<List<Articulo>> ConsultarArticulos(string url)//revisar duplicado
+        public async Task<List<Articulo>> ConsultarArticulos(string url)
         {
           
             var result = await cliente.GetAsync(url);
