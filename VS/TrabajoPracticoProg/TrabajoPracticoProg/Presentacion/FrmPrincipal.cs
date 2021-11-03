@@ -28,6 +28,8 @@ namespace TrabajoPracticoProg.Presentacion
             {
                 btnNuevaFactura.Enabled = false;
                 btnNuevoArticulo.Enabled = false;
+                nuevoArticuloToolStripMenuItem.Enabled = false;
+                nuevoFacturaToolStripMenuItem.Enabled = false;
             }
             if(UserLoginCache.Position == Positions.Empleado)
             {

@@ -228,7 +228,7 @@ namespace TrabajoPracticoProg.Presentacion
 
             if (gestor.NuevoRegistro(oUsuario))
             {
-                MessageBox.Show("Registro registrado con exito.", "Informe", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Registro realizado con exito.", "Informe", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 //Close();
                 Terminar();
             }
