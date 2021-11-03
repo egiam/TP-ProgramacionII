@@ -208,7 +208,7 @@
             this.btnConsultarFactura.Margin = new System.Windows.Forms.Padding(2);
             this.btnConsultarFactura.Name = "btnConsultarFactura";
             this.btnConsultarFactura.Size = new System.Drawing.Size(219, 46);
-            this.btnConsultarFactura.TabIndex = 6;
+            this.btnConsultarFactura.TabIndex = 2;
             this.btnConsultarFactura.Text = "Consultar Facturas";
             this.btnConsultarFactura.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnConsultarFactura.UseVisualStyleBackColor = true;
@@ -228,7 +228,7 @@
             this.btnNuevaFactura.Margin = new System.Windows.Forms.Padding(2);
             this.btnNuevaFactura.Name = "btnNuevaFactura";
             this.btnNuevaFactura.Size = new System.Drawing.Size(219, 46);
-            this.btnNuevaFactura.TabIndex = 5;
+            this.btnNuevaFactura.TabIndex = 1;
             this.btnNuevaFactura.Text = "Nueva Factura";
             this.btnNuevaFactura.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnNuevaFactura.UseVisualStyleBackColor = true;
@@ -269,7 +269,7 @@
             this.btnLogOut.Margin = new System.Windows.Forms.Padding(2);
             this.btnLogOut.Name = "btnLogOut";
             this.btnLogOut.Size = new System.Drawing.Size(219, 46);
-            this.btnLogOut.TabIndex = 4;
+            this.btnLogOut.TabIndex = 5;
             this.btnLogOut.Text = "Log Out";
             this.btnLogOut.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnLogOut.UseVisualStyleBackColor = true;
@@ -289,7 +289,7 @@
             this.btnNuevoArticulo.Margin = new System.Windows.Forms.Padding(2);
             this.btnNuevoArticulo.Name = "btnNuevoArticulo";
             this.btnNuevoArticulo.Size = new System.Drawing.Size(219, 46);
-            this.btnNuevoArticulo.TabIndex = 3;
+            this.btnNuevoArticulo.TabIndex = 4;
             this.btnNuevoArticulo.Text = "Nuevo Articulo";
             this.btnNuevoArticulo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnNuevoArticulo.UseVisualStyleBackColor = true;
@@ -401,7 +401,7 @@
             this.salirToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.salirToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.salirToolStripMenuItem.Text = "Salir";
             this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
             // 
@@ -411,7 +411,7 @@
             this.logOutToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.logOutToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.logOutToolStripMenuItem.Name = "logOutToolStripMenuItem";
-            this.logOutToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
+            this.logOutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.logOutToolStripMenuItem.Text = "Log Out";
             this.logOutToolStripMenuItem.Click += new System.EventHandler(this.logOutToolStripMenuItem_Click);
             // 

@@ -192,7 +192,7 @@ namespace TrabajoPracticoProg
             this.btnRegistrarse.Location = new System.Drawing.Point(548, 295);
             this.btnRegistrarse.Name = "btnRegistrarse";
             this.btnRegistrarse.Size = new System.Drawing.Size(64, 15);
-            this.btnRegistrarse.TabIndex = 12;
+            this.btnRegistrarse.TabIndex = 4;
             this.btnRegistrarse.TabStop = true;
             this.btnRegistrarse.Text = "Registrarse";
             this.btnRegistrarse.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.btnRegistrarse_LinkClicked);

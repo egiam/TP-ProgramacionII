@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Felpu\\Documents\\GitHub\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\TrabajoPracticoProg\\Presentacion.csproj": {}
+    "D:\\UTN\\Carrera\\Semestre 2\\Programacion II\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\TrabajoPracticoProg\\Presentacion.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Felpu\\Documents\\GitHub\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\AccesoDatosLogin\\AccesoDatosLogin.csproj": {
+    "D:\\UTN\\Carrera\\Semestre 2\\Programacion II\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\AccesoDatosLogin\\AccesoDatosLogin.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Felpu\\Documents\\GitHub\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\AccesoDatosLogin\\AccesoDatosLogin.csproj",
+        "projectUniqueName": "D:\\UTN\\Carrera\\Semestre 2\\Programacion II\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\AccesoDatosLogin\\AccesoDatosLogin.csproj",
         "projectName": "AccesoDatosLogin",
-        "projectPath": "C:\\Users\\Felpu\\Documents\\GitHub\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\AccesoDatosLogin\\AccesoDatosLogin.csproj",
-        "packagesPath": "C:\\Users\\Felpu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Felpu\\Documents\\GitHub\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\AccesoDatosLogin\\obj\\",
+        "projectPath": "D:\\UTN\\Carrera\\Semestre 2\\Programacion II\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\AccesoDatosLogin\\AccesoDatosLogin.csproj",
+        "packagesPath": "C:\\Users\\Ezequiel\\.nuget\\packages\\",
+        "outputPath": "D:\\UTN\\Carrera\\Semestre 2\\Programacion II\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\AccesoDatosLogin\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Felpu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Ezequiel\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +28,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\Felpu\\Documents\\GitHub\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\CommonLogin\\CommonLogin.csproj": {
-                "projectPath": "C:\\Users\\Felpu\\Documents\\GitHub\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\CommonLogin\\CommonLogin.csproj"
+              "D:\\UTN\\Carrera\\Semestre 2\\Programacion II\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\CommonLogin\\CommonLogin.csproj": {
+                "projectPath": "D:\\UTN\\Carrera\\Semestre 2\\Programacion II\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\CommonLogin\\CommonLogin.csproj"
               }
             }
           }
@@ -68,17 +68,17 @@
         }
       }
     },
-    "C:\\Users\\Felpu\\Documents\\GitHub\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\CommonLogin\\CommonLogin.csproj": {
+    "D:\\UTN\\Carrera\\Semestre 2\\Programacion II\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\CommonLogin\\CommonLogin.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Felpu\\Documents\\GitHub\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\CommonLogin\\CommonLogin.csproj",
+        "projectUniqueName": "D:\\UTN\\Carrera\\Semestre 2\\Programacion II\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\CommonLogin\\CommonLogin.csproj",
         "projectName": "CommonLogin",
-        "projectPath": "C:\\Users\\Felpu\\Documents\\GitHub\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\CommonLogin\\CommonLogin.csproj",
-        "packagesPath": "C:\\Users\\Felpu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Felpu\\Documents\\GitHub\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\CommonLogin\\obj\\",
+        "projectPath": "D:\\UTN\\Carrera\\Semestre 2\\Programacion II\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\CommonLogin\\CommonLogin.csproj",
+        "packagesPath": "C:\\Users\\Ezequiel\\.nuget\\packages\\",
+        "outputPath": "D:\\UTN\\Carrera\\Semestre 2\\Programacion II\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\CommonLogin\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Felpu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Ezequiel\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -122,17 +122,17 @@
         }
       }
     },
-    "C:\\Users\\Felpu\\Documents\\GitHub\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\DominoLogin\\DominoLogin.csproj": {
+    "D:\\UTN\\Carrera\\Semestre 2\\Programacion II\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\DominoLogin\\DominoLogin.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Felpu\\Documents\\GitHub\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\DominoLogin\\DominoLogin.csproj",
+        "projectUniqueName": "D:\\UTN\\Carrera\\Semestre 2\\Programacion II\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\DominoLogin\\DominoLogin.csproj",
         "projectName": "DominoLogin",
-        "projectPath": "C:\\Users\\Felpu\\Documents\\GitHub\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\DominoLogin\\DominoLogin.csproj",
-        "packagesPath": "C:\\Users\\Felpu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Felpu\\Documents\\GitHub\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\DominoLogin\\obj\\",
+        "projectPath": "D:\\UTN\\Carrera\\Semestre 2\\Programacion II\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\DominoLogin\\DominoLogin.csproj",
+        "packagesPath": "C:\\Users\\Ezequiel\\.nuget\\packages\\",
+        "outputPath": "D:\\UTN\\Carrera\\Semestre 2\\Programacion II\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\DominoLogin\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Felpu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Ezequiel\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -146,11 +146,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\Felpu\\Documents\\GitHub\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\AccesoDatosLogin\\AccesoDatosLogin.csproj": {
-                "projectPath": "C:\\Users\\Felpu\\Documents\\GitHub\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\AccesoDatosLogin\\AccesoDatosLogin.csproj"
+              "D:\\UTN\\Carrera\\Semestre 2\\Programacion II\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\AccesoDatosLogin\\AccesoDatosLogin.csproj": {
+                "projectPath": "D:\\UTN\\Carrera\\Semestre 2\\Programacion II\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\AccesoDatosLogin\\AccesoDatosLogin.csproj"
               },
-              "C:\\Users\\Felpu\\Documents\\GitHub\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\CommonLogin\\CommonLogin.csproj": {
-                "projectPath": "C:\\Users\\Felpu\\Documents\\GitHub\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\CommonLogin\\CommonLogin.csproj"
+              "D:\\UTN\\Carrera\\Semestre 2\\Programacion II\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\CommonLogin\\CommonLogin.csproj": {
+                "projectPath": "D:\\UTN\\Carrera\\Semestre 2\\Programacion II\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\CommonLogin\\CommonLogin.csproj"
               }
             }
           }
@@ -189,17 +189,17 @@
         }
       }
     },
-    "C:\\Users\\Felpu\\Documents\\GitHub\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\FacturasBack\\FacturasBack.csproj": {
+    "D:\\UTN\\Carrera\\Semestre 2\\Programacion II\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\FacturasBack\\FacturasBack.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Felpu\\Documents\\GitHub\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\FacturasBack\\FacturasBack.csproj",
+        "projectUniqueName": "D:\\UTN\\Carrera\\Semestre 2\\Programacion II\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\FacturasBack\\FacturasBack.csproj",
         "projectName": "FacturasBack",
-        "projectPath": "C:\\Users\\Felpu\\Documents\\GitHub\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\FacturasBack\\FacturasBack.csproj",
-        "packagesPath": "C:\\Users\\Felpu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Felpu\\Documents\\GitHub\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\FacturasBack\\obj\\",
+        "projectPath": "D:\\UTN\\Carrera\\Semestre 2\\Programacion II\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\FacturasBack\\FacturasBack.csproj",
+        "packagesPath": "C:\\Users\\Ezequiel\\.nuget\\packages\\",
+        "outputPath": "D:\\UTN\\Carrera\\Semestre 2\\Programacion II\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\FacturasBack\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Felpu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Ezequiel\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -249,17 +249,17 @@
         }
       }
     },
-    "C:\\Users\\Felpu\\Documents\\GitHub\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\FacturasFront\\FacturasFront.csproj": {
+    "D:\\UTN\\Carrera\\Semestre 2\\Programacion II\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\FacturasFront\\FacturasFront.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Felpu\\Documents\\GitHub\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\FacturasFront\\FacturasFront.csproj",
+        "projectUniqueName": "D:\\UTN\\Carrera\\Semestre 2\\Programacion II\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\FacturasFront\\FacturasFront.csproj",
         "projectName": "FacturasFront",
-        "projectPath": "C:\\Users\\Felpu\\Documents\\GitHub\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\FacturasFront\\FacturasFront.csproj",
-        "packagesPath": "C:\\Users\\Felpu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Felpu\\Documents\\GitHub\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\FacturasFront\\obj\\",
+        "projectPath": "D:\\UTN\\Carrera\\Semestre 2\\Programacion II\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\FacturasFront\\FacturasFront.csproj",
+        "packagesPath": "C:\\Users\\Ezequiel\\.nuget\\packages\\",
+        "outputPath": "D:\\UTN\\Carrera\\Semestre 2\\Programacion II\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\FacturasFront\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Felpu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Ezequiel\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -273,11 +273,11 @@
           "net5.0-windows7.0": {
             "targetAlias": "net5.0-windows",
             "projectReferences": {
-              "C:\\Users\\Felpu\\Documents\\GitHub\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\CommonLogin\\CommonLogin.csproj": {
-                "projectPath": "C:\\Users\\Felpu\\Documents\\GitHub\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\CommonLogin\\CommonLogin.csproj"
+              "D:\\UTN\\Carrera\\Semestre 2\\Programacion II\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\CommonLogin\\CommonLogin.csproj": {
+                "projectPath": "D:\\UTN\\Carrera\\Semestre 2\\Programacion II\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\CommonLogin\\CommonLogin.csproj"
               },
-              "C:\\Users\\Felpu\\Documents\\GitHub\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\FacturasBack\\FacturasBack.csproj": {
-                "projectPath": "C:\\Users\\Felpu\\Documents\\GitHub\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\FacturasBack\\FacturasBack.csproj"
+              "D:\\UTN\\Carrera\\Semestre 2\\Programacion II\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\FacturasBack\\FacturasBack.csproj": {
+                "projectPath": "D:\\UTN\\Carrera\\Semestre 2\\Programacion II\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\FacturasBack\\FacturasBack.csproj"
               }
             }
           }
@@ -319,17 +319,17 @@
         }
       }
     },
-    "C:\\Users\\Felpu\\Documents\\GitHub\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\TrabajoPracticoProg\\Presentacion.csproj": {
+    "D:\\UTN\\Carrera\\Semestre 2\\Programacion II\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\TrabajoPracticoProg\\Presentacion.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Felpu\\Documents\\GitHub\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\TrabajoPracticoProg\\Presentacion.csproj",
+        "projectUniqueName": "D:\\UTN\\Carrera\\Semestre 2\\Programacion II\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\TrabajoPracticoProg\\Presentacion.csproj",
         "projectName": "Presentacion",
-        "projectPath": "C:\\Users\\Felpu\\Documents\\GitHub\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\TrabajoPracticoProg\\Presentacion.csproj",
-        "packagesPath": "C:\\Users\\Felpu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Felpu\\Documents\\GitHub\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\TrabajoPracticoProg\\obj\\",
+        "projectPath": "D:\\UTN\\Carrera\\Semestre 2\\Programacion II\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\TrabajoPracticoProg\\Presentacion.csproj",
+        "packagesPath": "C:\\Users\\Ezequiel\\.nuget\\packages\\",
+        "outputPath": "D:\\UTN\\Carrera\\Semestre 2\\Programacion II\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\TrabajoPracticoProg\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Felpu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Ezequiel\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -343,14 +343,14 @@
           "net5.0-windows7.0": {
             "targetAlias": "net5.0-windows",
             "projectReferences": {
-              "C:\\Users\\Felpu\\Documents\\GitHub\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\CommonLogin\\CommonLogin.csproj": {
-                "projectPath": "C:\\Users\\Felpu\\Documents\\GitHub\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\CommonLogin\\CommonLogin.csproj"
+              "D:\\UTN\\Carrera\\Semestre 2\\Programacion II\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\CommonLogin\\CommonLogin.csproj": {
+                "projectPath": "D:\\UTN\\Carrera\\Semestre 2\\Programacion II\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\CommonLogin\\CommonLogin.csproj"
               },
-              "C:\\Users\\Felpu\\Documents\\GitHub\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\DominoLogin\\DominoLogin.csproj": {
-                "projectPath": "C:\\Users\\Felpu\\Documents\\GitHub\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\DominoLogin\\DominoLogin.csproj"
+              "D:\\UTN\\Carrera\\Semestre 2\\Programacion II\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\DominoLogin\\DominoLogin.csproj": {
+                "projectPath": "D:\\UTN\\Carrera\\Semestre 2\\Programacion II\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\DominoLogin\\DominoLogin.csproj"
               },
-              "C:\\Users\\Felpu\\Documents\\GitHub\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\FacturasFront\\FacturasFront.csproj": {
-                "projectPath": "C:\\Users\\Felpu\\Documents\\GitHub\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\FacturasFront\\FacturasFront.csproj"
+              "D:\\UTN\\Carrera\\Semestre 2\\Programacion II\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\FacturasFront\\FacturasFront.csproj": {
+                "projectPath": "D:\\UTN\\Carrera\\Semestre 2\\Programacion II\\TP-ProgramacionII\\VS\\TrabajoPracticoProg\\FacturasFront\\FacturasFront.csproj"
               }
             }
           }

@@ -110,7 +110,7 @@ namespace TrabajoPracticoProg.Presentacion
             this.btnRegistrarse.Location = new System.Drawing.Point(313, 440);
             this.btnRegistrarse.Name = "btnRegistrarse";
             this.btnRegistrarse.Size = new System.Drawing.Size(423, 40);
-            this.btnRegistrarse.TabIndex = 17;
+            this.btnRegistrarse.TabIndex = 6;
             this.btnRegistrarse.Text = "Registrarse";
             this.btnRegistrarse.UseVisualStyleBackColor = false;
             this.btnRegistrarse.Click += new System.EventHandler(this.btnRegistrarse_Click);
@@ -123,7 +123,7 @@ namespace TrabajoPracticoProg.Presentacion
             this.label3.Location = new System.Drawing.Point(448, 9);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(155, 33);
-            this.label3.TabIndex = 20;
+            this.label3.TabIndex = 0;
             this.label3.Text = "Registrarse";
             // 
             // txtContra
@@ -135,7 +135,7 @@ namespace TrabajoPracticoProg.Presentacion
             this.txtContra.Location = new System.Drawing.Point(313, 130);
             this.txtContra.Name = "txtContra";
             this.txtContra.Size = new System.Drawing.Size(423, 20);
-            this.txtContra.TabIndex = 16;
+            this.txtContra.TabIndex = 1;
             this.txtContra.Text = "Contraseña";
             this.txtContra.UseSystemPasswordChar = true;
             this.txtContra.Enter += new System.EventHandler(this.txtContra_Enter);
@@ -161,7 +161,7 @@ namespace TrabajoPracticoProg.Presentacion
             this.txtUsuario.Location = new System.Drawing.Point(313, 71);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(423, 20);
-            this.txtUsuario.TabIndex = 15;
+            this.txtUsuario.TabIndex = 0;
             this.txtUsuario.Text = "Usuario";
             this.txtUsuario.Enter += new System.EventHandler(this.txtUsuario_Enter);
             this.txtUsuario.Leave += new System.EventHandler(this.txtUsuario_Leave);
@@ -186,7 +186,7 @@ namespace TrabajoPracticoProg.Presentacion
             this.txtNombre.Location = new System.Drawing.Point(313, 194);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(423, 20);
-            this.txtNombre.TabIndex = 23;
+            this.txtNombre.TabIndex = 2;
             this.txtNombre.Text = "Nombre";
             this.txtNombre.Enter += new System.EventHandler(this.txtNombre_Enter);
             this.txtNombre.Leave += new System.EventHandler(this.txtNombre_Leave);
@@ -211,7 +211,7 @@ namespace TrabajoPracticoProg.Presentacion
             this.txtApellido.Location = new System.Drawing.Point(313, 255);
             this.txtApellido.Name = "txtApellido";
             this.txtApellido.Size = new System.Drawing.Size(423, 20);
-            this.txtApellido.TabIndex = 25;
+            this.txtApellido.TabIndex = 3;
             this.txtApellido.Text = "Apellido";
             this.txtApellido.Enter += new System.EventHandler(this.txtApellido_Enter);
             this.txtApellido.Leave += new System.EventHandler(this.txtApellido_Leave);
@@ -236,7 +236,7 @@ namespace TrabajoPracticoProg.Presentacion
             this.txtEmail.Location = new System.Drawing.Point(313, 314);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(423, 20);
-            this.txtEmail.TabIndex = 27;
+            this.txtEmail.TabIndex = 4;
             this.txtEmail.Text = "Email";
             this.txtEmail.Enter += new System.EventHandler(this.txtEmail_Enter);
             this.txtEmail.Leave += new System.EventHandler(this.txtEmail_Leave);
@@ -260,7 +260,7 @@ namespace TrabajoPracticoProg.Presentacion
             this.btnVolver.Location = new System.Drawing.Point(499, 493);
             this.btnVolver.Name = "btnVolver";
             this.btnVolver.Size = new System.Drawing.Size(39, 15);
-            this.btnVolver.TabIndex = 29;
+            this.btnVolver.TabIndex = 7;
             this.btnVolver.TabStop = true;
             this.btnVolver.Text = "Volver";
             this.btnVolver.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.btnVolver_LinkClicked);
@@ -274,7 +274,7 @@ namespace TrabajoPracticoProg.Presentacion
             this.txtPosicion.Location = new System.Drawing.Point(313, 373);
             this.txtPosicion.Name = "txtPosicion";
             this.txtPosicion.Size = new System.Drawing.Size(423, 20);
-            this.txtPosicion.TabIndex = 30;
+            this.txtPosicion.TabIndex = 5;
             this.txtPosicion.Text = "Posicion";
             this.txtPosicion.Enter += new System.EventHandler(this.txtPosicion_Enter);
             this.txtPosicion.Leave += new System.EventHandler(this.txtPosicion_Leave);
