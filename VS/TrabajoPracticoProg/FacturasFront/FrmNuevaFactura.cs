@@ -36,7 +36,7 @@ namespace FacturasFront
         public FrmNuevaFactura(Accion modo, int nroFactura)
         {
             InitializeComponent();
-           // servicio = new ServiceFactoryImp().CrearService();
+          
             this.modo = modo;
 
             if (modo.Equals(Accion.READ))
