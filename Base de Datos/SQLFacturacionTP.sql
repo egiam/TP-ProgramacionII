@@ -100,8 +100,8 @@ go
 
 --No se puede tener el mismo nombre de usuario
 
-exec pa_Registrar_Users 'egiam','fernandez357','Ezequiel','Giampaoli','ezegiampaoli@gmail.com','Gerente'
-exec pa_Registrar_Users 'sampaoli','fernandez357','Ezequiel','Giampaoli','ezegiampaoli@gmail.com'
+exec pa_Registrar_Users 'egiam','egiam','Ezequiel','Giampaoli','ezegiampaoli@gmail.com','Gerente'
+exec pa_Registrar_Users 'sampaoli','sampaoli','Ezequiel','Giampaoli','ezegiampaoli@gmail.com'
 exec pa_Registrar_Users 'fabio','FABIOCA','Fabio','Caceres','fabioCC@gmail.com'
 
 --select * from Users
