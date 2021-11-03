@@ -14,7 +14,7 @@ namespace FacturasBack.negocio
 
         public Aplicacion()
         {
-            dao = new FacturaDao(); //cambiar esto por un factory
+            dao = new FacturaDao(); 
         }
 
 
@@ -39,7 +39,7 @@ namespace FacturasBack.negocio
 
         public List<Factura> ConsultarFacturas(List<Parametro> criterios)
         {
-            return dao.GetByFilters(criterios);//
+            return dao.GetByFilters(criterios);
         }
 
         public bool CrearFactura(Factura oFactura)

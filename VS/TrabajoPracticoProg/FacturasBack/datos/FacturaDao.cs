@@ -47,7 +47,7 @@ namespace FacturasBack.datos
             return lst;
         }
 
-        //mover el nombre de los sp dentro de cada metodo
+        
         public int GetFacturaNro()
         {
             return HelperDao.GetInstance().EjecutarSQLConValorOUT("SP_PROXIMO_ID", "@next");

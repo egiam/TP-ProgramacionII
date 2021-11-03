@@ -138,3 +138,4 @@ C:\Users\Felpu\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\Factura
 C:\Users\Felpu\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\FacturasFront\obj\Debug\net5.0-windows\FacturasFront.FrmDesarrolladores.resources
 C:\Users\Felpu\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\FacturasFront\obj\Debug\net5.0-windows\TrabajoPracticoProg.Presentacion.FrmRegistrarse.resources
 C:\Users\Felpu\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\FacturasFront\obj\Debug\net5.0-windows\FacturasFront.Properties.Resources.resources
+C:\Users\Felpu\Documents\GitHub\TP-ProgramacionII\VS\TrabajoPracticoProg\FacturasFront\obj\Debug\net5.0-windows\FacturasFront.csproj.CopyComplete

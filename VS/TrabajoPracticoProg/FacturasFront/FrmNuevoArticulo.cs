@@ -96,7 +96,7 @@ namespace FacturasFront
 
             if (modo.Equals(Accion.CREATE))
             {
-                success = await GrabarArticuloAsync(data); //agregar singleton
+                success = await GrabarArticuloAsync(data);
                 MostrarMensajeResultado(success);
                 await limpiarCamposAsync();
             }
