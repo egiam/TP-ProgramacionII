@@ -325,6 +325,7 @@ namespace FacturasFront
             this.Controls.Add(this.btnCancelar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmNuevaFactura";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Nueva Factura";
             this.Load += new System.EventHandler(this.FrmNuevaFactura_Load);
             ((System.ComponentModel.ISupportInitialize)(this.nudCantidad)).EndInit();

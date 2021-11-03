@@ -111,5 +111,10 @@ namespace FacturasFront
         {
             this.Dispose();
         }
+
+        private void nudPrecioDesde_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -134,9 +134,15 @@ namespace FacturasFront
             // 
             this.nudPrecioDesde.DecimalPlaces = 2;
             this.nudPrecioDesde.Location = new System.Drawing.Point(127, 73);
+            this.nudPrecioDesde.Maximum = new decimal(new int[] {
+            100000,
+            0,
+            0,
+            0});
             this.nudPrecioDesde.Name = "nudPrecioDesde";
             this.nudPrecioDesde.Size = new System.Drawing.Size(120, 23);
             this.nudPrecioDesde.TabIndex = 4;
+            this.nudPrecioDesde.ValueChanged += new System.EventHandler(this.nudPrecioDesde_ValueChanged);
             // 
             // lblPrecioHasta
             // 
